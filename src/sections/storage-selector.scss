@@ -21,3 +21,26 @@
   padding: 5px;
   background-color: #f4f4f4;
 }
+
+.table.filetable td {
+  max-width: 200px; /* Customise it accordingly */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table.filetable .check-col {
+  width: 30px;
+}
+
+.table.filetable .type-col {
+  width: 65px;
+}
+
+.table.filetable .filesize-col {
+  width: 95px;
+}
+
+.table.filetable .datemod-col {
+  width: 130px;
+}
