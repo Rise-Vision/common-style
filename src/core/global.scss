@@ -664,8 +664,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 5px;
 
   > thead > tr > th {
-    background: none;
-    border-color: #cbcbcb;
+    border-bottom-width: 0;
+  }
+  > tbody > tr > td {
+    padding: 15px 8px;
   }
 }
 
@@ -742,8 +744,10 @@ ul.social {
 
 /* Buttons
    ========================================================================== */
+
 .btn-default {
-  .fa::before, .glyphicons::before { color: $gray; }
+  background: #d4d4d4;
+  .fa::before, .glyphicons::before { color: $dark-gray; }
 
   &:hover {
     @extend .button-hover;
@@ -785,36 +789,9 @@ ul.social {
   &.rounded { border-radius: 30px; }
 }
 
-.btn-rv-status {
-  @extend .btn-default;
-  font-weight: 700;
-  background: none;
-  border: 1px solid #F1A9A0;
-
-  &:hover,
-  &:active {
-    border-color: $btn-default-border;
-    background-color: $btn-default-bg;
-    color: $btn-default-color;
-    @include box-shadow(none);
-    .fa::before,
-    .glyphicons::before {
-     color: $gray !important;
-    }
-  }
-
-  &.rounded { border-radius: 30px; }
-}
-
 .btn-github {
   @extend .btn-sm;
   @extend .btn-rv-help;
-  @extend .rounded;
-}
-
-.btn-status {
-  @extend .btn-sm;
-  @extend .btn-rv-status;
   @extend .rounded;
 }
 

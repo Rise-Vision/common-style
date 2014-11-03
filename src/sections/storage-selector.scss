@@ -46,6 +46,8 @@ iframe.modal-dialog {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: middle;
+  color: #888;
 }
 
 .table.filetable .check-col {
@@ -53,13 +55,45 @@ iframe.modal-dialog {
 }
 
 .table.filetable .type-col {
-  width: 65px;
+  width: 130px;
 }
 
 .table.filetable .filesize-col {
-  width: 95px;
+  width: 130px;
 }
 
 .table.filetable .datemod-col {
-  width: 130px;
+  width: 180px;
+}
+
+.table.filetable {
+  input {
+    margin:0;
+  }
+  .copy-url {
+    width: 1px;
+    .btn-link {
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+  .file-name {
+    a {
+      color: #444;
+      .fa::before {
+        margin-right: 5px;
+        font-size: 20px;
+        vertical-align: middle;
+        color: #d4d4d4;
+      }
+    }
+    &.folder-type {
+      a {
+        font-weight: 600;
+        .fa::before {
+        color: $rise-green;
+        }
+      }
+    }
+  }
 }

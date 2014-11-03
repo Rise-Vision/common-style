@@ -1,29 +1,30 @@
 .app-header {
   @include make-row;
-  .app-title {
+  margin-bottom: 40px;
+  .title-block {
     @include make-sm-column(6);
   }
   h1 {
-    line-height: 80px;
-    font-weight: 400;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 40px;
     margin: 0 5px 0 0;
     display: inline-block;
   }
-  .btn-github, .btn-status {
+  .btn-github {
     vertical-align: top;
-    margin-top: 28px;
+    margin-top: 8px;
   }
   .global-actions {
+    text-align: right;
     @include make-sm-column(6);
-    margin-top: 20px;
     .btn {
-      float: right;
-      margin-left: 10px;
     }
   }
   @media(max-width: $screen-sm){
     .global-actions {
       float:none;
+      margin-top: 20px;
       .btn {
       width: 100%;
       margin: 0 0 10px 0;
