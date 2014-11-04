@@ -1,0 +1,47 @@
+.responsive-table {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  margin-bottom: 20px;
+  overflow: hidden;
+  min-height: 300px;
+
+  .highlight { color: $brand-success; }
+
+  .title-row {
+    @extend .row;
+    font-size: 12px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .tr-row {
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+    color: #aaa;
+    @extend .row;
+    margin: 0;
+    line-height: 66px;
+
+    &:not(:last-child) { border-bottom: 1px solid #eee; }
+
+    * {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

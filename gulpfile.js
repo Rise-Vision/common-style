@@ -33,7 +33,8 @@ gulp.task('build', ['build-alignment'], function() {
     }))
     .pipe(minifyCSS())
     .pipe(rename('rise.min.css'))
-    .pipe(gulp.dest(paths.distCss));
+    .pipe(gulp.dest(paths.distCss))
+    .pipe(gulp.dest('/Users/winkerVSbecks/Desktop/developer-hub/web/components/rv-common-style/dist/css'));
   console.log('[CSS] minifying'.yellow);
 
   console.log('[COPY] copying over fonts'.yellow);
@@ -41,10 +42,7 @@ gulp.task('build', ['build-alignment'], function() {
     .pipe(gulp.dest(paths.distFonts));
 });
 
-
-gulp.task('dev', function() {
-  // Compile LESS on start once
-  gulp.run('build');
+gulp.task('dev', ['build'], function() {
   // Watch Less files for changes
   gulp.watch(paths.sass, ['build']);
   console.log('[SASS] Watching for changes in SASS files'.yellow.inverse);

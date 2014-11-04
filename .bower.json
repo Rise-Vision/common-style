@@ -1,0 +1,28 @@
+{
+  "name": "rv-style-guide",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "select2": "~3.4",
+    "spectrum": "git://github.com/Rise-Vision/spectrum"
+  },
+  "homepage": "https://github.com/Rise-Vision/style-guide",
+  "_release": "5306f1e45d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5306f1e45d9c17e85fac498ab4322f96414d5c07"
+  },
+  "_source": "https://github.com/Rise-Vision/style-guide.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/Rise-Vision/style-guide.git"
+}

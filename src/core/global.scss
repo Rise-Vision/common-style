@@ -631,6 +631,16 @@ input[type=number]::-webkit-outer-spin-button {
 
   /* Visual */
   background-color: #fff;
+
+  > button {
+    /* Display & Box Model */
+    margin-bottom: 10px;
+  }
+
+  > a[type="button"] {
+    /* Display & Box Model */
+    margin-bottom: 10px;
+  }
 }
 
 /* Toggle buttons (http://www.bootstrap-switch.org/)
@@ -970,8 +980,8 @@ ul.social {
 
 .remove-top { margin-top: 0 !important; }
 .half-top { margin-top: 10px !important; }
-.add-top { margin-bottom: 20px !important; }
-.add-top-double { margin-bottom: 40px !important; }
+.add-top { margin-top: 20px !important; }
+.add-top-double { margin-top: 40px !important; }
 
 .remove-radius { border-radius: 0 !important; }
 

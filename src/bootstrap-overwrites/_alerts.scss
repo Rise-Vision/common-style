@@ -4,3 +4,14 @@
 .alert-danger {
   @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text, #843534);
 }
+
+.alert-link {
+  @include alert-variant(#F8FFD6, #E9F19C, $text-color, $text-color);
+  display: block;
+  h2 { margin-top: 0; }
+
+  &:hover,
+  &:active {
+    color: $text-color;
+  }
+}

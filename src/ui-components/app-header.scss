@@ -2,11 +2,22 @@
   @include make-row;
   margin-bottom: 40px;
   .title-block {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D6D6D6;
+  }
+  .app-title {
     @include make-sm-column(6);
+  }
+  .app-title-links,
+  .app-title-links:hover,
+  .app-title-links:active  {
+    display: block;
+    color: $brand-success;
+    i:before { color: $brand-success !important; }
   }
   h1 {
     font-size: 38px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 40px;
     margin: 0 5px 0 0;
     display: inline-block;
@@ -32,7 +43,3 @@
     }
   }
 }
-
-
-
-
