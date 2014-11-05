@@ -1,19 +1,15 @@
 .app-header {
   @include make-row;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   .title-block {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #D6D6D6;
-  }
-  .app-title {
     @include make-sm-column(6);
   }
-  .app-title-links,
-  .app-title-links:hover,
-  .app-title-links:active  {
+  .title-block-links,
+  .title-block-links:hover,
+  .title-block-links:active  {
     display: block;
-    color: $brand-success;
-    i:before { color: $brand-success !important; }
+    color: $rise-green;
+    i:before { color: $rise-green !important; }
   }
   h1 {
     font-size: 38px;
@@ -31,6 +27,10 @@
     @include make-sm-column(6);
     .btn {
     }
+  }
+  .form-group {
+    @include make-sm-column(12);
+    margin-top: 10px; 
   }
   @media(max-width: $screen-sm){
     .global-actions {
