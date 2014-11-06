@@ -5,6 +5,7 @@ var colors = require('colors');
 var minifyCSS = require('gulp-minify-css');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
+var path = require('path');
 
 var paths = {
   sass: ['./src/**/*.scss', './src/*.scss'],
@@ -34,7 +35,7 @@ gulp.task('build', ['build-alignment'], function() {
     .pipe(minifyCSS())
     .pipe(rename('rise.min.css'))
     .pipe(gulp.dest(paths.distCss))
-    .pipe(gulp.dest('/Users/winkerVSbecks/Desktop/developer-hub/web/components/rv-common-style/dist/css'));
+    .pipe(gulp.dest(path.join(__dirname, 'dist/css')));
   console.log('[CSS] minifying'.yellow);
 
   console.log('[COPY] copying over fonts'.yellow);
