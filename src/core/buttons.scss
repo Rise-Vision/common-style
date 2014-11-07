@@ -1,0 +1,269 @@
+/* Buttons
+   ========================================================================== */
+.btn-default {
+  .fa::before, .glyphicons::before { color: $gray; }
+
+  &:hover {
+    @extend .button-hover;
+  }
+
+  &:hover,
+  &:hover .fa::before,
+  &:hover .glyphicons::before {
+    color: $dark-gray;
+  }
+}
+
+.btn-primary {
+  .fa::before, .glyphicons::before { color: $white; }
+}
+
+.btn-success:hover {
+  background: #45b864;
+  border-color: #45b864;
+}
+
+.btn-rv-help {
+  @extend .btn-default;
+  font-weight: 700;
+  background-color: $btn-default-bg;
+
+  &:hover,
+  &:active {
+    border-color: $btn-default-border;
+    background-color: $btn-default-bg;
+    color: $btn-default-color;
+    @include box-shadow(none);
+    .fa::before,
+    .glyphicons::before {
+     color: $gray !important;
+    }
+  }
+
+  &.rounded { border-radius: 30px; }
+}
+
+.btn-rv-status {
+  @extend .btn-default;
+  font-weight: 700;
+  background: none;
+  border: 1px solid #F1A9A0;
+
+  &:hover,
+  &:active {
+    border-color: $btn-default-border;
+    background-color: $btn-default-bg;
+    color: $btn-default-color;
+    @include box-shadow(none);
+    .fa::before,
+    .glyphicons::before {
+     color: $gray !important;
+    }
+  }
+
+  &.rounded { border-radius: 30px; }
+}
+
+.btn-github {
+  @extend .btn-sm;
+  @extend .btn-rv-help;
+  @extend .rounded;
+}
+
+.btn-status {
+  @extend .btn-sm;
+  @extend .btn-rv-status;
+  @extend .rounded;
+}
+
+.btn-remove .fa::before,
+.btn-remove .glyphicons::before {
+  color: #d9534f;
+  font-size: 16px;
+}
+
+.btn-all {
+  background: #fff;
+  border-color: #fff;
+
+  .fa, .glyphicons {
+    margin-top: -5px;
+  }
+}
+
+.btn-back:hover .fa-back,
+.btn-back:hover .glyphicons-back {
+  background: url('//s3.amazonaws.com/rise-common-test/images/glyphicons-back-active.png') center no-repeat;
+}
+
+/* Sign In button */
+.btn-sign-in {
+  @extend .btn-success;
+
+  .log_in { color: #fff; }
+}
+
+.sign-in,.top-auth-button {
+  @extend .btn;
+  @extend .btn-link;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  border: 0;
+  color: $brand-primary !important;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.top-auth-button {
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 5px;
+  }
+}
+
+/* Stripe */
+.stripe { margin-bottom: 10px; }
+
+/* Glyphicon buttons
+   ========================================================================== */
+.btn-box {
+  /* Positioning */
+  position: relative;
+
+  /* Display & Box Model */
+  /* TODO: See about moving this to some sort of SASS extend. */
+  display: block;
+  padding: 3px 10px;
+  border: 1px solid #fff;
+
+  /* Visual */
+  text-align: center;
+
+  .fa::before ,
+  .glyphicons::before{
+    line-height: 30px;
+  }
+
+  &:hover {
+    @extend .button-hover;
+  }
+}
+/* (?) button to display a tooltip for help info
+   Assumes use of glyphicon circle_question_mark
+   Is to be used with .btn and .btn-link classes */
+.btn-help {
+  /* Display & Box Model */
+  padding: 0 5px 2px 5px;
+
+  /* Visual */
+
+  .fa::before,
+  .glyphicons::before {
+    /* Visual */
+    font-size: 18px;
+  }
+
+}
+
+
+.btn-google-drive,
+.btn-google-drive:active
+.btn-google-drive.active {
+  width: 30px;
+  height: 30px;
+  border: none !important;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  background-image: url(http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-drive.png);
+  @include background-image-retina('http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-drive', 'png', 30px, 30px);
+}
+
+
+.btn-widget-icon-link,
+.btn-widget-icon-link:active
+.btn-widget-icon-link.active {
+  width: 30px;
+  height: 30px;
+  border: none !important;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  background-image: url(http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-link.png);
+  @include background-image-retina('http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-link', 'png', 30px, 30px);
+}
+
+
+.btn-widget-icon-storage,
+.btn-widget-icon-storage:active
+.btn-widget-icon-storage.active {
+  width: 30px;
+  height: 30px;
+  border: none !important;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  background-image: url(http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage.png);
+  @include background-image-retina('http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage', 'png', 30px, 30px);
+}
+
+/* Close button
+   ========================================================================== */
+.close {
+  opacity: 1;
+
+  .fa::before , .glyphicons::before{ color: $gray; }
+  &:hover .fa::before ,&:hover .glyphicons::before { color: $dark-gray; }
+}
+
+/* Sticky buttons
+   ========================================================================== */
+.sticky-buttons {
+  /* Positioning */
+  z-index: 10;
+
+  /* Display & Box Model */
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  /* Visual */
+  background-color: #fff;
+
+  > button {
+    /* Display & Box Model */
+    margin-bottom: 10px;
+  }
+
+  > a[type="button"] {
+    /* Display & Box Model */
+    margin-bottom: 10px;
+  }
+}
+
+/* Toggle buttons (http://www.bootstrap-switch.org/)
+   ========================================================================== */
+.has-switch {
+  /* Visual */
+  border-radius: 8px;
+  border-color: $light-border-color;
+
+  /* Display & Box Model */
+  min-width: 120px;
+  margin-top: -1px;
+
+  > div {
+    > label,
+    > span {
+      /* Display & Box Model */
+      padding-bottom: 7px;
+      padding-top: 7px;
+
+      /* Visual */
+      font-size: 16px;
+    }
+  }
+}

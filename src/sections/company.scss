@@ -1,0 +1,119 @@
+/* Company Selector
+   ========================================================================== */
+.company-search {
+  padding-top: 20px;
+}
+
+/* Move Company
+   ========================================================================== */
+.move-company {
+  label {
+    font-weight: normal;
+  }
+
+  a {
+    line-height: 34px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .to-company {
+    margin-bottom: 20px;
+  }
+}
+
+/* Company Settings
+   ========================================================================== */
+.company-settings .action-link {
+  margin-left: 20px;
+}
+
+/* Presentation Selector */
+.presentation-selector {
+  margin-top: 20px;
+
+  /* Styled the same as navbar-left. */
+  .selector-header {
+    /* Positioning */
+    float: left;
+
+    /* Display & Box Model */
+    width: 100%;
+    padding: 5px 15px 5px 0;
+    border-bottom: $light-border;
+    margin: 0;
+
+    li {
+      /* Positioning */
+      float: left;
+
+      /* Display & Box Model */
+      display: block;
+      margin-left: 5px;
+    }
+
+    a {
+      /* Display & Box Model */
+      display: block;
+      padding: 3px 10px;
+      border: 1px solid #fff;
+
+      /* Visual */
+      font-weight: bold;
+      line-height: 32px;
+      color: $gray;
+    }
+
+    a:hover,
+    .active > a,
+    .active > a:hover,
+    .active > a:focus {
+      /* Display & Box Model */
+      border: 1px solid $light-gray;
+
+      /* Visual */
+      color: $rise-blue;
+      background-color: $lighter-gray;
+    }
+
+    .close-button {
+      float: right;
+    }
+
+    .close {
+      line-height: 32px;
+    }
+  }
+
+  .search {
+    margin-bottom: 20px;
+  }
+
+  .panel-body {
+    clear: both;
+  }
+}
+
+/* Company Users
+   ========================================================================== */
+.company-users {
+  .action-bar {
+    margin-bottom: 10px;
+
+    .sort {
+      > a {
+        color: #333;
+      }
+
+      > a:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .edit {
+    text-align: right;
+  }
+}

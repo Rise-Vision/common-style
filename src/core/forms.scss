@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/* Drop-downs & text fields */
+.dropdown-toggle,
+.dropdown-toggle:hover,
+.open .dropdown-toggle.btn-default,
+.bfh-selectbox-toggle {
+  color: #555;
+  background-color: #fff;
+  border-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Input field focus */
+input:focus {
+  outline: none;
+}
+
+/* Turn off number input spinners in WebKit. */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkbox-primary {
+  > label {
+    font-weight: bold;
+  }
+}
+
+.label-disabled {
+  color: $light-gray;
+}

@@ -1,0 +1,21 @@
+/* Profile
+   ========================================================================== */
+.profile-pic {
+  /* Display & Box Model */
+  width: 30px;
+  height: 30px;
+
+  /* Visual */
+  border-radius: 50%;
+}
+
+/* Payment Methods */
+.payment-methods {
+  .list-group-item {
+    padding: 10px 0;
+  }
+
+  .expiry {
+    color: $gray;
+  }
+}

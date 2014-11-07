@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-nav {
+  .fa::before , .glyphicons::before{
+    line-height: 30px;
+  }
+}
+
+/* Hamburger icon */
+.navbar-toggle {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Logo container */
+.navbar-brand {
+  height: auto;
+  padding: 0;
+  margin-left: 15px;
+}
+
+/* Primary Menu (left-hand side)
+   ========================================================================== */
+/* Expanded primary menu. */
+.navbar-left {
+  border-top: none;
+
+  .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    > a {
+      border: #fff solid 1px;
+
+      /* Visual */
+      font-weight: bold;
+    }
+
+    > a:hover,
+    > .active > a,
+    > .active > a:hover,
+    .active > a:focus {
+      /* Display & Box Model */
+      border: 1px solid $light-gray;
+
+      /* Visual */
+      color: $rise-blue;
+      background-color: $lighter-gray;
+    }
+  }
+
+  /* First-level menu items. */
+  > a {
+    font-size: 14px;
+    border-radius: 0;
+  }
+}
+
+/* Actions Menu
+   ========================================================================== */
+
+/* First-level menu items. */
+.navbar-default .actions-nav {
+  /* Display & Box Model */
+  padding: 5px 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  /* Visual */
+  text-align: center;
+
+  > li {
+    /* Positioning */
+    float: none;
+
+    /* Display & Box Model */
+    display: inline-block;
+
+    /* Visual */
+    vertical-align: top;
+
+    ul {
+      text-align: left;
+    }
+
+    > a {
+      @extend .fa-box;
+      @extend .glyphicon-box;
+    }
+
+    > a:hover {
+      border-color: $light-gray;
+      background-color: $lighter-gray;
+    }
+
+    > a:focus {
+      background-color: transparent;
+    }
+  }
+
+  /* Links in system messages */
+  .open .dropdown-menu .system-message > a {
+    /* Display & Box Model */
+    display: inline-block;
+    padding: 0;
+
+    /* Visual */
+    color: $rise-blue;
+    background-color: transparent;
+  }
+
+  > li > a .label {
+    /* Positioning */
+    position: absolute;
+    left: 60%;
+    top: -2px;
+    z-index: 1;
+
+    /* Display & Box Model */
+    padding: 4px 7px;
+
+    /* Visual */
+    font-size: 50%;
+    vertical-align: middle;
+  }
+
+  .system-messages {
+    left: 0;
+  }
+
+  .system-message {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 9px 0;
+  }
+
+  /* Shopping cart */
+  > li.shopping-cart > a .label { left: 75%; }
+
+  /* Company menu */
+  .dropdown .company-menu { right: -62px; }
+  .dropdown .company-menu::before { right: 80px; }
+  .dropdown .company-menu::after { right: 81px; }
+}
+
+/* All Navbars
+   ========================================================================== */
+.navbar-default .navbar-nav {
+  > li > a {
+    border: 1px solid #fff;
+  }
+
+  /* CSS arrows at top of dropdowns. */
+  .dropdown {
+    .dropdown-menu {
+      /* Positioning */
+      top: 120%;
+      left: auto;
+      right: 0;
+
+      /* Display & Box Model */
+      min-width: 250px;
+
+      .item-name {
+        font-weight: bold;
+      }
+
+      .fa, .glyphicons {
+        min-width: 40px;
+      }
+    }
+
+    > .dropdown-menu::before,
+    > .dropdown-menu::after {
+      /* Positioning */
+      position: absolute;
+
+      /* Display & Box Model */
+      display: inline-block;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #ccc;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+
+      /* Visual */
+      content: '';
+    }
+
+    > .dropdown-menu::before {
+      top: -7px;
+      right: 9px;
+    }
+
+    > .dropdown-menu::before,
+    > .dropdown-menu::after {
+      top: -7px;
+      right: 23px;
+    }
+
+    > .dropdown-menu::after {
+      /* Positioning */
+      top: -6px;
+      right: 24px;
+
+      /* Display & Box Model */
+      border-left-width: 6px;
+      border-right-width: 6px;
+      border-bottom-width: 6px;
+
+      /* Visual */
+      border-bottom-color: #fff;
+    }
+  }
+
+  /* Expanded dropdown. */
+  .open .dropdown-menu {
+    /* Positioning */
+    position: absolute;
+
+    /* Display & Box Model */
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+
+    /* Visual */
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+
+    .dropdown-header {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .fa , .glyphicons{
+        min-width: 20px;
+      }
+
+      .fa::before, .glyphicons::before {
+        font-size: 14px;
+      }
+    }
+
+    > li > a {
+      padding: 10px 20px;
+    }
+  }
+
+  /* Top-level links and hover state of icons in expanded dropdown. */
+  > .open {
+    > a,
+    > a:hover,
+    > a:focus {
+      .fa::before,.glyphicons::before {
+        color: $dark-gray;
+      }
+
+      .fa-danger::before,.glyphicon-danger::before {
+        color: $danger;
+      }
+    }
+  }
+}
+
+
+/* Media queries
+   ========================================================================== */
+
+@media (max-width: $screen-xs) {
+  .navbar-default .actions-nav>li>a {
+    min-width: 50px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .navbar-collapse {
+      margin-left: 20px;
+
+      .navbar-nav {
+        > li {
+          margin-left: 5px;
+
+          > a {
+            font-weight: bold;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      margin-top: 5px;
+    }
+  }
+
+  .navbar-header { padding: 0; }
+
+  .navbar-left .navbar-nav > li > a {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px !important;
+  }
+
+  .navbar-default .actions-nav {
+    padding: 0;
+    border-top: none;
+
+    > li {
+      /* Positioning */
+      float: none;
+
+      /* Display & Box Model */
+      margin-left: 5px;
+    }
+
+    .dropdown {
+      .system-messages {
+        /* Display & Box Model */
+        min-width: 425px;
+      }
+    }
+  }
+
+  .actions-nav:last-child { margin-right: 0; }
+
+  /* Payment Methods */
+  .payment-methods .edit { text-align: right; }
+}

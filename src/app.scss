@@ -38,6 +38,11 @@
 @import "core/glyphicons";
 @import "core/media";
 @import "core/print";
+@import "core/forms";
+@import "core/buttons";
+@import "core/utilities";
+@import "core/footer";
+@import "core/navbar";
 
 
 /* UI-Components
@@ -78,3 +83,5 @@
 @import "sections/alerts-app";
 @import "sections/storage-full";
 @import "sections/paid-on-board";
+@import "sections/company";
+@import "sections/profile";

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  /* Display & Box Model */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: $dark-border;
+
+  /* Visual */
+  background-color: #fff;
+}
+
+.social-text {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+ul.social {
+  display: inline-block;
+
+  li {
+    a {
+      /* Display & Box Model */
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      /* Visual */
+      text-indent: -9999em;
+      background: url("http://s3.amazonaws.com/Common-Test/css/images/social.png") 0 0 no-repeat;
+    }
+  }
+
+  li.twit {
+    a {
+      background-position: -24px 0;
+    }
+  }
+
+  li.in {
+    a {
+      background-position: -48px 0;
+    }
+  }
+
+  li.gplus {
+    a {
+      background-position: -72px 0;
+    }
+  }
+
+  li.email {
+    a {
+      background-position: -96px 0;
+    }
+  }
+}
+
+/* Media queries
+   ========================================================================== */
+@media (min-width: 768px) {
+  .copyright {
+    text-align: right;
+  }
+}
