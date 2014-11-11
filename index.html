@@ -22,23 +22,23 @@
                     <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> New Folder</button>
                     <button class="btn btn-primary btn-lg"><i class="fa fa-cloud-upload"></i> Upload a File</button>
                 </div>
-                <form class="form-group">
-                    <input type="text" class="form-control" placeholder="Search files or folders">
-                </form>
             </div>
             <div class="bar">
                 <div class="col-sm-6">
+                    <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#foldersModal"><i class="fa fa-folder"></i> <strong>Folders</strong></button>
                     <button class="btn btn-default btn-lg"><i class="fa fa-trash-o"></i> Trash</button>
-                    <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#foldersModal"><i class="fa fa-folder"></i> Folders</button>
                 </div>
                 <div class="col-sm-6 text-right hidden-xs">
-                    <button class="btn btn-default btn-lg" disabled="disabled">
+                    <button class="btn btn-default btn-lg">
                         <i class="fa fa-cloud-download"></i>
                     </button>
-                    <button class="btn btn-default btn-lg" disabled="disabled">
-                        <i class="fa fa-trash-o"></i>
+                    <button class="btn btn-default btn-lg">
+                        <i class="fa fa-times"></i>
                     </button>
                 </div>
+                <form class="form-group form-group-lg">
+                    <input type="text" class="form-control" placeholder="Search files or folders">
+                </form>
             </div>
             <div class="table-responsive">
             <table class="table table-hover filetable">
@@ -64,7 +64,7 @@
                         <td class="datemod-col text-right">31/10/14 6:20 PM</td>
                     </tr>
                     <tr>
-                        <td class="check-col"><input type="checkbox"></td>
+                        <td class="check-col"><input type="checkbox" checked="checked"></td>
                         <td class="copy-url"><button class="btn btn-link"><i class="fa fa-link"></i></button></td>
                         <td class="file-name">
                             <a href="#"><i class="fa fa-file"></i> document.doc</a>

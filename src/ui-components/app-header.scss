@@ -27,10 +27,6 @@
     .btn {
     }
   }
-  .form-group {
-    @include make-sm-column(12);
-    margin-top: 10px; 
-  }
   @media(max-width: $screen-sm){
     .global-actions {
       float:none;

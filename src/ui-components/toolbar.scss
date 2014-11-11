@@ -1,9 +1,20 @@
 .bar {
   @include make-row;
-  margin-bottom: 10px;
   h3 {
     margin:0;
     line-height: 32px;
     font-weight: normal;
+  }
+  .form-group {
+    @include make-sm-column(12);
+    margin-top: 20px;
+    margin-bottom: 0; 
+  }
+  .btn-danger {
+  	background: #f2dede;
+  	border-color: #f2dede;
+  	.fa:before {
+  	  color: #d9534f;
+  	}
   }
 }
