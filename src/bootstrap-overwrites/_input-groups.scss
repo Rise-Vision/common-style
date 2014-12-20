@@ -5,3 +5,27 @@
 .form-group .form-control-feedback {
   top: 34px;
 }
+
+.form-inline .form-control-static {
+  display:inline-block;
+}
+
+.form-control-static {
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 7px 0;
+}
+
+.control-label {
+	line-height: 22px;
+}
+
+.control-label-secondary {
+	font-weight: normal;
+}
+
+.input-group > .form-control,
+.input-group > .input-group-addon,
+.input-group > .input-group-btn > .btn {
+  height: 34px;
+}

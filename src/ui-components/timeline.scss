@@ -1,0 +1,107 @@
+.timeline {
+  .control-label {
+  	font-weight: normal;
+  }
+  .input-group-btn {
+  	.btn {
+  	  height: 34px;
+  	}
+  }
+  section {
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .add-bottom {
+  }
+  label {
+  }
+}
+
+.time-picker {
+  .btn-default {
+    margin-left: 2px;
+    height: 34px;
+    color: $gray;
+  }
+  td.form-group {
+    padding: 0;
+  }
+  td {
+    padding: 0 3px;
+  }
+  .btn-link {
+    padding: 0 10px;
+    margin: 0 0 3px 0;
+    line-height: 10px;
+    .glyphicon {
+      font-size: 11px;
+      &:before {
+        color:#bcbcbc;
+        vertical-align: middle; 
+      }
+    }
+  }
+}
+
+.date-picker {
+  * {
+    outline: 0;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .datepicker-button-bar {
+    margin:0;
+    overflow: hidden;
+    padding: 5px 5px 0;
+  }
+}
+
+
+/* ==========================================================================
+  OLD Styles
+  ========================================================================== */
+
+.timeline-settings {
+  section {
+    .control-label {
+      font-weight: normal;
+    }
+  }
+  .set-recurrence {
+    display: table;
+    width: 100%;
+    label {
+      display: table-cell;
+    }
+  }
+}
+
+.recurrence-option, .timelineSeconds {
+  * {
+    display: inline-block;
+  }
+  label {
+    &:first-child {
+    }
+  }
+  input[type=text] {
+    width: 40px;
+    font-size: 13;
+    padding: 6px 0;
+    text-align: center;
+  }
+  select {
+    width: auto;
+  }
+  .form-group {
+    display: block;
+  }
+  .timelineWeekdays {
+    label {
+    display: block;
+    width: auto;
+  }
+  }
+}

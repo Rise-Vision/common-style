@@ -75,7 +75,9 @@
 @import "ui-components/bootstrap-slider-overwrites";
 @import "ui-components/store-status.scss";
 @import "ui-components/url-field";
-
+@import "ui-components/tags.scss";
+@import "ui-components/timeline.scss";
+@import "ui-components/colorpicker";
 
 /* Sections/Views
    ========================================================================== */
@@ -86,3 +88,5 @@
 @import "sections/alerts-app";
 @import "sections/storage-full";
 @import "sections/paid-on-board";
+@import "sections/presentations";
+@import "sections/displays";

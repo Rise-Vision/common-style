@@ -1,0 +1,87 @@
+.label-tag {
+  background: $lighter-gray;
+  color: $gray;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid $light-gray;
+  padding: 2px 5px 2px 8px;
+  line-height: 20px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: normal;
+  color: #888;
+  .tag-value {
+    display: inline-block;
+    padding: 0 3px 0 2px;
+    font-weight: bold;
+    color: $dark-gray;
+  }
+}
+.tag-selector {
+  padding: 5px;
+  margin-bottom: 10px;
+  .scrollable-content {
+    white-space: normal;
+    .label-tag {
+      display: inline-block;
+      margin-top:5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.btn-remove {
+  color: $gray;
+  padding: 0;
+  .fa:before {
+    color: #666
+  }
+}
+
+.content-box-editable {
+  min-height: 34px;
+  padding-bottom: 3px;
+  padding-right: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  .edit-icon {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+  .label-tag {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  .text-muted,.text-placeholder {
+    line-height: 24px;
+    margin: 4px 0 0 0;
+    padding: 0 12px;
+    color: $gray-light;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+.content-box-filters {
+  background: #fcfcfc;
+  padding: 10px 10px 5px;
+  margin-top: 5px;
+}
+
+.select-tags {
+  padding: 3px;
+  .label {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+}
+
+.content-box-disabled {
+  pointer-events: none !important;
+  background: $light-gray !important;
+}
+
+
+

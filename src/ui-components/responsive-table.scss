@@ -20,11 +20,20 @@
   }
   > tbody > tr:hover {
     &.clickable-row {
-      cursor: pointer;    
+      cursor: pointer;
+      td {
+        color: $rise-blue;
+      }    
     }
     > td a {
       color: $rise-blue;
     }
+  }
+}
+
+.table-middle {
+  > tbody > tr > td {
+    vertical-align: middle;
   }
 }
 

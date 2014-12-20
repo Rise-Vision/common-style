@@ -1,0 +1,77 @@
+.checkbox-addon,.storage-group {
+  .input-group-addon {
+    background: none;
+    padding: 0 0 0 10px;
+    border: 0;
+  }
+  .form-control {
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+  }
+}
+.presentation-editor-box {
+  background: #FFF;
+  border: 1px solid #d4d4d4;
+  overflow: scroll;
+  max-height: 600px;
+}
+.editor-content {
+  border: 3px #d2d2d2 solid;
+  background: url('http://subtlepatterns.com/images/transp_bg.png');
+  position: relative;
+}
+.placeholder {
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid #bcbcbc;
+}
+
+.playlist-type {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  table-layout: fixed;
+}
+.playlist-types label {  
+  display: table-cell;
+  float: none;
+  width: 1%;
+  line-height: 34px;
+  @media (max-width: 768px) {
+    text-align:center;
+  }
+  input {
+   margin-right: 5px;
+  }
+}
+.playlist-product {
+  display: block;
+  width: 100%;
+  .product-icon {
+    float: left;
+    margin-right: 15px;
+  }
+  h4 {
+    margin:0;
+    font-size: 16px;
+    padding-top: 8px;
+  }
+  p {
+    margin:0;
+  }
+}
+#browse-store {
+  @media (max-width: 768px) {
+    margin-bottom:10px;
+  }
+}
+.editor-content {
+  .background-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

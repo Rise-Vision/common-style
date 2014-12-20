@@ -593,10 +593,6 @@ a:hover {
 .dropdown-toggle:hover,
 .open .dropdown-toggle.btn-default,
 .bfh-selectbox-toggle {
-  color: #555;
-  background-color: #fff;
-  border-color: #ccc;
-  border-radius: 4px;
 }
 
 /* Input field focus */
@@ -759,7 +755,6 @@ ul.social {
    ========================================================================== */
 
 .btn-default {
-  background: #d4d4d4;
   .fa::before, .glyphicons::before { color: $dark-gray; }
 
   &:hover {
@@ -780,20 +775,8 @@ a.btn-primary:hover {
 }
 
 .btn-primary {
-  font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
-  background: $rise-green;
-  border-color: $rise-green;
   .fa::before, .glyphicons::before { color: $white; }
-  &:hover, &:active, &:focus, &[disabled] {
-    background: darken($rise-green, 10%);
-    border-color: darken($rise-green, 10%);
-  }
-}
-
-.btn-success:hover {
-  background: #45b864;
-  border-color: #45b864;
 }
 
 .btn-rv-help {
@@ -986,9 +969,10 @@ a.btn-primary:hover {
   color: $light-gray;
 }
 
+.add-padding {padding: 10px !important;}
 
 .add-left { margin-left: 10px !important; }
-.add-right { margin-left: 10px !important; }
+.add-right { margin-right: 10px !important; }
 
 .remove-bottom { margin-bottom: 0 !important; }
 .half-bottom { margin-bottom: 10px !important; }

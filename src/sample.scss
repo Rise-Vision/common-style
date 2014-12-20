@@ -1,0 +1,311 @@
+ /* ==========================================================================
+ Tag Style
+  ========================================================================== */
+ .label-tag {
+  background: #f2f2f2;
+  font-size: 13px;
+  display: inline-block;
+  color: $gray;
+  border: 1px solid $light-gray;
+  padding: 1px;
+  line-height: 18px;
+  text-align: left;
+  .tag-category, .tag-value {
+    display: inline-block;
+  }
+  .tag-value {
+    padding: 0 3px 0 3px;
+  }
+  .tag-category {
+    font-weight: normal;
+    padding: 0 0 0 3px;
+    color: #888;
+  }
+  .btn {
+    padding: 2px 3px 2px 0;
+  }
+  a {
+    padding: 0 3px 0 0;
+  }
+}
+
+ /* ==========================================================================
+  Storage Tagging Styles
+  ========================================================================== */
+
+.tag-selector {
+  padding: 6px;
+  margin-bottom: 10px;
+  .scrollable-content {
+    white-space: normal;
+    .label-tag {
+      display: inline-block;
+      margin-top:6px;
+      margin-right: 6px;
+    }
+  }
+}
+
+.tags-input {
+  position: relative;
+  padding: 0 6px 6px 6px;
+  margin-bottom: 10px; 
+  cursor: pointer;
+  white-space: normal;
+  min-height: 34px;
+  .label-tag {
+    display: inline-block;
+    margin-top:6px;
+    margin-right: 6px;
+    vertical-align: top;
+  }
+}
+
+.search-options {
+  .dropdown-menu.filter-menu {
+    width: 500px;
+    padding: 10px 10px 0;
+    .form-group {
+      label {
+        font-weight: normal;
+      }
+    }
+  }
+  .btn-xs {
+    margin-bottom: 5px;
+  }
+}
+
+.btn-add {
+  color: $gray;
+  padding: 0;
+  .fa:before {
+    color: $rise-green;
+  }
+}
+.btn-remove {
+  color: $gray;
+  padding: 0;
+  .fa:before {
+    color: #666
+  }
+}
+
+.tag-settings {
+  background: #FFF;
+  .active-tags {
+    margin: 15px 0 10px;
+    &.content-box {
+      padding:5px;
+      padding-bottom: 0;
+      max-height: 150px;
+      cursor: pointer;
+      min-height: 100px;
+      &:hover {
+        background:#fcfcfc;
+      }
+    }
+  }
+  .label-tag {
+    margin:0 0 5px 5px;
+  }
+  .bg-warning {
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+    border-radius: 3px;
+  }
+  
+  .button-wrapper {
+    margin-top: 5px;
+  }
+  .hidden-form {
+    margin-top: 10px;
+  }
+  .content-box {
+    margin-bottom: 5px;
+    .scrollable-content {
+      margin-top: 5px;
+      padding: 0 5px 0;
+    }
+    section {
+      padding: 10px;
+      border-bottom: 1px solid #e6e6e6;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .btn-group {
+      margin-left: 5px;
+    }
+    input {
+    }
+  }
+  .input-short {
+    max-width: 40px;
+  }
+  .form-inline > * {
+    @media (max-width: 768px) {
+      display: inline-block;  
+    }
+  }
+  .control-label {
+    @media (max-width: 768px) {
+      margin: 5px 0;
+    }
+  }
+  .hidden-option {
+    display: none;
+  }
+  .hidden-form {
+    label {
+      font-weight: 400;
+    }
+  }
+  .weekdays-group {
+    label {
+      display: block;
+    }
+  }
+  #recurrence-options {
+    label {
+      margin-right: 20px;
+    }
+    @media (max-width: 768px) {
+      label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.content-box-editable {
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  .edit-icon {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+}
+.select-tags {
+  padding: 7px;
+  color: $gray;
+  .label {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+
+.display-settings {
+  #display-status {
+    text-align: right;
+    * {
+      display: inline-block;
+    }
+  	.form-control {
+  	  width: 120px;
+  	  margin-right: 5px;
+  	}
+  	@media (max-width: 768px) {
+      text-align: left;
+  	  .form-control {
+  	  	width: 100px;
+  	  }
+  	}
+  }
+  .bg-danger {
+  	padding: 5px;
+  	border-radius: 3px;
+  	p {
+  		margin: 0 0 0 5px;
+  		line-height: 33px;
+  	}
+  }
+  #monitor {
+    margin-left: 20px;
+    @media (max-width: 768px) {
+      margin-left:0;
+    }
+  }
+  @media (max-width: 768px) {
+    #installed-buttons button {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.recurrence-option, .timelineSeconds {
+  * {
+    display: inline-block;
+  }
+  label {
+    &:first-child {
+    }
+  }
+  input[type=text] {
+    width: 40px;
+    font-size: 13;
+    padding: 6px 0;
+    text-align: center;
+  }
+  select {
+    width: auto;
+  }
+  .form-group {
+    display: block;
+  }
+  .timelineWeekdays {
+    label {
+    display: block;
+    width: auto;
+  }
+  }
+}
+
+.timeline-settings {
+  section {
+    .control-label {
+      font-weight: normal;
+    }
+  }
+  .set-recurrence {
+    display: table;
+    width: 100%;
+    label {
+      display: table-cell;
+    }
+  }
+}
+
+.list-filters {
+  width: 480px;
+  padding: 10px;
+  .content-box {
+  }
+}
+
+.checkbox-col {
+  width: 1px;
+}
+
+.red-circle {
+  &:before {
+    color:#e74c3c;
+  }
+}
+.black-circle {
+  &:before {
+    color:#444;
+  }
+}
+.green-circle {
+  &:before {
+    color:$rise-green;
+  }
+}
+
