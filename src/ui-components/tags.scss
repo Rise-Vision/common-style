@@ -1,0 +1,313 @@
+ /* ==========================================================================
+  Storage Tagging Styles
+  ========================================================================== */
+
+.tag-selector {
+  padding: 5px;
+  margin-bottom: 10px;
+  .input-group {
+  }
+  .scrollable-content {
+    white-space: normal;
+    .label-tag {
+      display: inline-block;
+      margin-top:5px;
+    }
+  }
+}
+
+.tags-input {
+  position: relative;
+  padding: 0 5px 5px 5px;
+  height: auto;
+  margin-bottom: 10px; 
+  cursor: pointer;
+  white-space: normal;
+  .label-tag {
+    display: inline-block;
+    margin-top:5px;
+  }
+  .fixed-icon {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}
+
+.search-options {
+  .dropdown-menu.filter-menu {
+    width: 500px;
+    padding: 10px 10px 0;
+    .form-group {
+      label {
+        font-weight: normal;
+      }
+    }
+  }
+  .btn-xs {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+.label-tag {
+  background: #f2f2f2;
+  font-size: 13px;
+  display: inline-block;
+  color: $gray;
+  border: 1px solid $light-gray;
+  padding: 1px;
+  line-height: 18px;
+  text-align: left;
+  .tag-category, .tag-value {
+    display: inline-block;
+  }
+  .tag-value {
+    padding: 0 3px 0 3px;
+  }
+  .tag-category {
+    font-weight: normal;
+    padding: 0 0 0 3px;
+    color: #888;
+  }
+  a {
+    padding: 0 3px 0 0;
+  }
+}
+
+.btn-add {
+  color: $gray;
+  padding: 0;
+  .fa:before {
+    color: $rise-green;
+  }
+}
+.btn-remove {
+  color: $gray;
+  padding: 0;
+  .fa:before {
+    color: #666
+  }
+}
+
+.tag-settings {
+  background: #FFF;
+  .active-tags {
+    margin: 15px 0 10px;
+    &.content-box {
+      padding:5px;
+      padding-bottom: 0;
+      max-height: 150px;
+      cursor: pointer;
+      min-height: 100px;
+      &:hover {
+        background:#fcfcfc;
+      }
+    }
+  }
+  .label-tag {
+    margin:0 0 5px 5px;
+  }
+  .bg-warning {
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+    border-radius: 3px;
+  }
+  
+  .button-wrapper {
+    margin-top: 5px;
+  }
+  .hidden-form {
+    margin-top: 10px;
+  }
+  .content-box {
+    margin-bottom: 5px;
+    .scrollable-content {
+      margin-top: 5px;
+      padding: 0 5px 0;
+    }
+    section {
+      padding: 10px;
+      border-bottom: 1px solid #e6e6e6;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .btn-group {
+      margin-left: 5px;
+    }
+    input {
+    }
+  }
+  .input-short {
+    max-width: 40px;
+  }
+  .form-inline > * {
+    @media (max-width: 768px) {
+      display: inline-block;  
+    }
+  }
+  .control-label {
+    @media (max-width: 768px) {
+      margin: 5px 0;
+    }
+  }
+  .hidden-option {
+    display: none;
+  }
+  .hidden-form {
+    label {
+      font-weight: 400;
+    }
+  }
+  .weekdays-group {
+    label {
+      display: block;
+    }
+  }
+  #recurrence-options {
+    label {
+      margin-right: 20px;
+    }
+    @media (max-width: 768px) {
+      label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.no-tag {
+  .fa:before {
+    color:#d4d4d4;
+  } 
+}
+
+.editable-tag {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  input {
+    border:none;
+    background: none;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.content-box-editable {
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  .edit-icon {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+}
+.select-tags, .tags-input {
+  padding: 7px;
+  color: $gray;
+  .label {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+
+.display-settings {
+  #display-status {
+    text-align: right;
+    * {
+      display: inline-block;
+    }
+  	.form-control {
+  	  width: 120px;
+  	  margin-right: 5px;
+  	}
+  	@media (max-width: 768px) {
+      text-align: left;
+  	  .form-control {
+  	  	width: 100px;
+  	  }
+  	}
+  }
+  .bg-danger {
+  	padding: 5px;
+  	border-radius: 3px;
+  	p {
+  		margin: 0 0 0 5px;
+  		line-height: 33px;
+  	}
+  }
+  #monitor {
+    margin-left: 20px;
+    @media (max-width: 768px) {
+      margin-left:0;
+    }
+  }
+  @media (max-width: 768px) {
+    #installed-buttons button {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.timeline-settings {
+  section {
+    margin-bottom: 10px;
+    .control-label {
+      font-weight: normal;
+    }
+  }
+  .set-recurrence {
+    display: table;
+    width: 100%;
+    label {
+      display: table-cell;
+    }
+  }
+}
+
+.list-filters {
+  width: 480px;
+  padding: 10px;
+  .content-box {
+  }
+}
+
+.checkbox-col {
+  width: 1px;
+}
+
+.red-circle {
+  &:before {
+    color:#e74c3c;
+  }
+}
+.black-circle {
+  &:before {
+    color:#444;
+  }
+}
+.green-circle {
+  &:before {
+    color:$rise-green;
+  }
+}
+
+.time-settings {
+  border: 1px solid #d4d4d4;
+  select {
+    display: inline-block;
+    width: auto;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+}
