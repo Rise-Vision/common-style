@@ -5,3 +5,18 @@
 .form-group .form-control-feedback {
   top: 34px;
 }
+
+.form-inline .form-control-static {
+  display:inline-block;
+}
+
+.form-control-static {
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 7px 0;
+}
+
+.control-label {
+	line-height: 22px;
+}
+
