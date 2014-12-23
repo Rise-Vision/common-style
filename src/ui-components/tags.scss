@@ -261,9 +261,36 @@
   }
 }
 
+.recurrence-option {
+  * {
+    display: inline-block;
+  }
+  label {
+    &:first-child {
+      width: 58px;
+    }
+  }
+  input[type=text] {
+    width: 40px;
+    padding: 6px 0;
+    text-align: center;
+  }
+  select {
+    width: auto;
+  }
+  .form-group {
+    display: block;
+  }
+  .timelineWeekdays {
+    label {
+    display: block;
+    width: auto;
+  }
+  }
+}
+
 .timeline-settings {
   section {
-    margin-bottom: 10px;
     .control-label {
       font-weight: normal;
     }
