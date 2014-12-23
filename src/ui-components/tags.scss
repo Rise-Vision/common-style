@@ -261,17 +261,17 @@
   }
 }
 
-.recurrence-option {
+.recurrence-option, .timelineSeconds {
   * {
     display: inline-block;
   }
   label {
     &:first-child {
-      width: 58px;
     }
   }
   input[type=text] {
     width: 40px;
+    font-size: 13;
     padding: 6px 0;
     text-align: center;
   }
