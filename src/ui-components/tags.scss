@@ -1,30 +1,38 @@
+ /* ==========================================================================
+  Tag
+  ========================================================================== */
+
  .label-tag {
-  background: #f2f2f2;
-  font-size: 13px;
-  display: inline-block;
-  color: $gray;
-  border: 1px solid $light-gray;
-  padding: 1px;
-  line-height: 18px;
-  text-align: left;
-  .tag-category, .tag-value {
+    background: $lighter-gray;
+    color: $gray;
+    font-size: 14px;
     display: inline-block;
-  }
-  .tag-value {
-    padding: 0 3px 0 3px;
-  }
-  .tag-category {
+    border: 1px solid $light-gray;
+    padding: 3px 5px 3px 8px;
+    line-height: 22px;
+    text-align: left;
+    cursor: pointer;
     font-weight: normal;
-    padding: 0 0 0 3px;
     color: #888;
+    &:hover {
+      
+    }
+    .tag-value {
+      display: inline-block;
+      padding: 0 3px 0 2px;
+      font-weight: bold;
+      color: $dark-gray;
+    }
   }
-  .btn {
-    padding: 2px 3px 2px 0;
+
+  .tags-input {
+    padding: 0 5px 5px 5px;
+    min-height: 34px;
+    .label-tag {
+      margin-right: 5px;
+      margin-top: 5px;
+    } 
   }
-  a {
-    padding: 0 3px 0 0;
-  }
-}
 
  /* ==========================================================================
   Storage Tagging Styles

@@ -15,44 +15,45 @@
     <body>
 <div class="container">
 
-
-<div class="timeline-settings">
-<section>
-  <label class="control-label" for="everyday">
-  <input type="checkbox" ng-model="timelineDate" name="everyday" ng-init="timelineDate=true"> <strong>Every Day</strong></label>
-  <div class="row" ng-hide="timelineDate">
-    <div class="col-sm-6">
-      <label class="control-label">Start Date</label>
-      <div class="form-group" ng-controller="DatepickerDemoCtrl">
-        <div class="input-group">
-          <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-          <span class="input-group-btn">
-          <button type="button" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
-          </span>
+<div class="modal-body">
+<div class="timeline">
+  <section>
+    <label class="control-label add-bottom" for="everyday">
+    <input type="checkbox" ng-model="timelineDate" name="everyday" ng-init="timelineDate=true"> <strong>Every Day</strong></label>
+    <div class="form-group row" ng-hide="timelineDate">
+      <div class="col-sm-6">
+        <label class="control-label">Start Date</label>
+        <div class="form-group" ng-controller="DatepickerDemoCtrl">
+          <div class="input-group">
+            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
+            </span>
+          </div>
         </div>
-      </div>
-    </div><!--col-sm-6-->
-    <div class="col-sm-6">
-      <label class="control-label">End Date</label>
-      <div class="form-group" ng-controller="DatepickerDemoCtrl">
-        <div class="input-group">
-          <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-          <span class="input-group-btn">
-          <button type="button" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
-          </span>
-        </div>
-      </div>
-    </div><!--col-sm-6-->
-  </div><!--row-->
-</section>
+      </div><!--col-sm-6-->
 
-<section>
-  <label class="control-label" for="allDay">
-  <input type="checkbox" ng-model="timelineTime" name="allDay" ng-init="timelineTime=true"> <strong>All Day</strong></label>
-  <div class="row" ng-hide="timelineTime">
-    <div class="col-sm-6">
-      <label class="control-label">Start Time</label>
-      <div class="form-group" ng-controller="TimepickerDemoCtrl">
+      <div class="col-sm-6">
+        <label class="control-label">End Date</label>
+        <div class="form-group" ng-controller="DatepickerDemoCtrl">
+          <div class="input-group">
+            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
+            </span>
+          </div>
+        </div>
+      </div><!--col-sm-6-->
+    </div><!--row-->
+  </section>
+
+  <section>
+    <label class="control-label add-bottom" for="allDay">
+    <input type="checkbox" ng-model="timelineTime" name="allDay" ng-init="timelineTime=true"> <strong>All Day</strong></label>
+    <div class="row form-group" ng-hide="timelineTime">
+      <div class="col-sm-6">
+        <label class="control-label">Start Time</label>
+        <div class="form-group" ng-controller="TimepickerDemoCtrl">
         <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
       </div>
     </div><!--col-sm-6-->
@@ -65,115 +66,122 @@
   </div><!--row-->
 </section>
 
-<section class="add-top">
-  <label class="control-label"><strong>Duration</strong></label>
-  <div class="form-group timelineSeconds">
-    <label class="control-label"><input type="radio" checked> Seconds</label>
-    <input type="text" style="width:50px" class="form-control input-sm" value="60">  
-  </div>
-  <div class="form-group">
-    <label class="control-label"><input type="radio"> Play Until Done</label>
-  </div>
-  <div class="form-group">
-    <label class="control-label"><input type="checkbox"> Carry On</label>
+<section>
+  <label class="control-label add-bottom"><strong>Duration</strong></label>
+  <div class="form-group row">
+    <div class="col-sm-3">
+      <label class="control-label add-right"><input type="radio" checked> Seconds</label>
+      <label class="control-label"><input type="radio"> Play Until Done</label>
+      <input type="text" class="form-control" value="60">
+      <label class="control-label half-top"><input type="checkbox"> Carry On</label>
+    </div>
   </div>
 </section>
 
 <section>
-<label class="control-label"><strong>Recurrence</strong></label>
-<div class="set-recurrence add-bottom">
-  <label class="control-label" for="daily">
-    <input type="radio" ng-model="recurrence" value="daily" name="daily" ng-init="recurrence == 'daily'"> <strong>Daily</strong>
-  </label>
-  <label class="control-label" for="weekly">
-    <input type="radio" ng-model="recurrence" value="weekly" name="weekly"> <strong>Weekly</strong>
-  </label>
-  <label class="control-label" for="monthly">
-    <input type="radio" ng-model="recurrence" value="monthly" name="monthly"> <strong>Monthly</strong>
-  </label>
-  <label class="control-label" for="yearly">
-    <input type="radio" ng-model="recurrence" value="yearly" name="yearly"> <strong>Yearly</strong>
-  </label>
-</div>
+  <label class="control-label add-bottom" for="everyday">
+    <input type="checkbox" ng-model="timelineRecurrence" name="recurrence" ng-init="timelineRecurrence=true"> <strong>Recurrence</strong></label>
 
-  <div ng-show="recurrence == 'daily'" class="recurrence-option">
-  <div class="form-group">
-    <label class="control-label">Day</label>
-    <input type="text" class="form-control input-short" value="1">
-    <label class="control-label">of Every</label>
-    <input type="text" class="form-control input-short" value="1">
-    <label class="control-label">Month(s)</label>
-  </div>
-  </div>
-  <div ng-show="recurrence == 'weekly'" class="recurrence-option">
-  <div class="form-group">
-    <label class="control-label">Every</label>
-    <input type="text" class="form-control input-short" value="1">
-    <label class="control-label">Week(s)</label>
-  </div>
-  <div class="form-group timelineWeekdays">
-    <label class="control-label"><input type="checkbox"> Monday</label>
-    <label class="control-label"><input type="checkbox"> Tuesday</label>
-    <label class="control-label"><input type="checkbox"> Wednesday</label>
-    <label class="control-label"><input type="checkbox"> Thursday</label>
-    <label class="control-label"><input type="checkbox"> Friday</label>
-    <label class="control-label"><input type="checkbox"> Saturday</label>
-    <label class="control-label"><input type="checkbox"> Sunday</label>
-  </div>
-  </div>
-  <div ng-show="recurrence == 'yearly'" class="recurrence-option">
-  <div class="form-group">
-    <label class="control-label"><input type="radio"> Every</label>
-    <select class="form-control">
-      <option>January</option>
-    </select>
-    <input type="text" class="form-control input input-short" value="1">
-  </div>
-  <div class="form-group">
-    <label class="control-label"><input type="radio"> The</label>
-    <select class="form-control">
-      <option>First</option>
-    </select>
-    <select class="form-control">
-      <option>Sunday</option>
-    </select>
-    <label class="control-label">of</label>
-    <select class="form-control">
-      <option>January</option>
-    </select>
-  </div>
-  </div>
-  <div ng-show="recurrence == 'monthly'" class="recurrence-option">
-    <div class="form-group">
-      <label class="control-label"><input type="radio"> Day</label>
-      <input type="text" class="form-control input-short" value="1">
-      <label class="control-label">of Every</label>
-      <input type="text" class="form-control input-short" value="1">
-      <label class="control-label">Month(s)</label>
+    <div ng-hide="timelineRecurrence">
+
+    <div class="add-bottom">
+      <label class="control-label add-right" for="daily">
+        <input type="radio" ng-model="recurrence" value="daily" name="daily"> Daily
+      </label>
+      <label class="control-label add-right" for="weekly">
+        <input type="radio" ng-model="recurrence" value="weekly" name="weekly"> Weekly
+      </label>
+      <label class="control-label add-right" for="monthly">
+        <input type="radio" ng-model="recurrence" value="monthly" name="monthly"> Monthly
+      </label>
+      <label class="control-label" for="yearly">
+        <input type="radio" ng-model="recurrence" value="yearly" name="yearly"> Yearly
+      </label>
     </div>
-    <div>
-      <label class="control-label"><input type="radio"> The</label>
-      <select class="form-control">
-        <option>First</option>
-      </select>
-      <select class="form-control">
-        <option>Sunday</option>
-      </select>
-      <label class="control-label">of Every</label>
-      <input type="text" class="form-control input-short" value="1">
-      <label class="control-label">Month(s)</label>
-    </div>
+
+    <div ng-show="recurrence == 'daily'" class="recurrence-option">
+      <div class="form-group">
+        <label class="control-label">Day</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">of Every</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">Month(s)</label>
+      </div><!--form group-->
+    </div><!--daily-->
+
+    <div ng-show="recurrence == 'weekly'" class="recurrence-option">
+      <div class="form-group">
+        <label class="control-label">Every</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">Week(s)</label>
+      </div>
+      <div class="form-group timelineWeekdays">
+        <label class="control-label"><input type="checkbox"> Monday</label>
+        <label class="control-label"><input type="checkbox"> Tuesday</label>
+        <label class="control-label"><input type="checkbox"> Wednesday</label>
+        <label class="control-label"><input type="checkbox"> Thursday</label>
+        <label class="control-label"><input type="checkbox"> Friday</label>
+        <label class="control-label"><input type="checkbox"> Saturday</label>
+        <label class="control-label"><input type="checkbox"> Sunday</label>
+      </div><!--form-group-->
+    </div><!--weekly-->
+
+    <div ng-show="recurrence == 'yearly'" class="recurrence-option">
+      <div class="form-group">
+        <label class="control-label"><input type="radio"> Every</label>
+        <select class="form-control">
+          <option>January</option>
+        </select>
+        <input type="text" class="form-control input input-short" value="1">
+      </div>
+      <div class="form-group">
+        <label class="control-label"><input type="radio"> The</label>
+        <select class="form-control">
+          <option>First</option>
+        </select>
+        <select class="form-control">
+          <option>Sunday</option>
+        </select>
+        <label class="control-label">of</label>
+        <select class="form-control">
+          <option>January</option>
+        </select>
+      </div><!--form-group-->
+    </div><!--yearly-->
+
+    <div ng-show="recurrence == 'monthly'" class="recurrence-option">
+      <div class="form-group">
+        <label class="control-label"><input type="radio"> Day</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">of Every</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">Month(s)</label>
+      </div>
+      <div class="form-group">
+        <label class="control-label"><input type="radio"> The</label>
+        <select class="form-control">
+          <option>First</option>
+        </select>
+        <select class="form-control">
+          <option>Sunday</option>
+        </select>
+        <label class="control-label">of Every</label>
+        <input type="text" class="form-control input-short" value="1">
+        <label class="control-label">Month(s)</label>
+      </div><!--form-group-->
+    </div><!--monthly-->
+
+    </div><!--timeline-recurrence-->
+  </section>
+
+</div><!--timeline-->
+</div><!--modal-body-->
+
+<div class="modal-footer">
+  <button class="btn btn-primary" ui-sref="timeline">Apply</button>
+  <button class="btn btn-default" ui-sref="timeline"">Cancel</button>
+</div>
+
   </div>
-</section>
-
-</div>
-
-<div class="text-right add-top">
-            <button class="btn btn-primary" ui-sref="state1">Ok</button>
-            <button class="btn btn-default" ui-sref="state1"">Cancel</button>
-</div>
-
-
-</div>
-    </body>
+</body>
 </html>
