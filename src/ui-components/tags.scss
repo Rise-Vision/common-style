@@ -34,6 +34,18 @@
     } 
   }
 
+.dropdown-menu-filter {
+  margin-left: auto;
+  right: 0;
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .dropdown-menu-filter {
+    width: 600px;
+  }
+}
+
+
  /* ==========================================================================
   Storage Tagging Styles
   ========================================================================== */
