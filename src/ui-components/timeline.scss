@@ -11,6 +11,31 @@
   }
 }
 
+.time-picker {
+  .btn-default {
+    margin-left: 2px;
+    height: 34px;
+    color: $gray;
+  }
+  td.form-group {
+    padding: 0;
+  }
+  td {
+    padding: 0 3px;
+  }
+  .btn-link {
+    padding: 0 10px;
+    margin: 0 0 3px 0;
+    line-height: 10px;
+    .glyphicon {
+      font-size: 11px;
+      &:before {
+        color:#bcbcbc;
+        vertical-align: middle; 
+      }
+    }
+  }
+}
 
 
 /* ==========================================================================
