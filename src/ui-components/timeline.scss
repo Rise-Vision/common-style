@@ -52,12 +52,44 @@
     }
   }
   .btn-group {
+    display: none;
     .btn {
       @extend .btn-default
     }
   }
   .btn-success {
-    @extend .btn-default 
+    position: relative;
+    width: 90px;
+    background: none;
+    @extend .btn-default;
+    @extend .fa;
+    &:before {
+      content: "\f00d";
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      top: 0;
+      left: 5px;
+      width: 28px;
+      line-height: 28px;
+      height: 28px;
+      font-size: 16px;
+      color: $gray;
+    }
+    &:after {
+      @extend .btn-default;
+      display: block;
+      position: absolute;
+      content: 'Cancel';
+      top: 0;
+      left: 0;
+      width: 88px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 13px;
+      z-index: 100;
+      padding-left: 18px;
+    }
   }
   .btn-info {
     background: $rise-green;
@@ -70,13 +102,12 @@
     }
   }
   .dropdown-menu {
+    padding-bottom: 10px;
     table {
       .btn {
         border: none;
       }
     }
-  }
-  table {
   }
 }
 
