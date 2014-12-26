@@ -1,38 +1,33 @@
  /* ==========================================================================
-  Tag Style
+ Tag Style
   ========================================================================== */
-
  .label-tag {
-    background: $lighter-gray;
-    color: $gray;
-    font-size: 14px;
+  background: #f2f2f2;
+  font-size: 13px;
+  display: inline-block;
+  color: $gray;
+  border: 1px solid $light-gray;
+  padding: 1px;
+  line-height: 18px;
+  text-align: left;
+  .tag-category, .tag-value {
     display: inline-block;
-    border: 1px solid $light-gray;
-    padding: 3px 5px 3px 8px;
-    line-height: 22px;
-    text-align: left;
-    cursor: pointer;
+  }
+  .tag-value {
+    padding: 0 3px 0 3px;
+  }
+  .tag-category {
     font-weight: normal;
+    padding: 0 0 0 3px;
     color: #888;
-    &:hover {
-      
-    }
-    .tag-value {
-      display: inline-block;
-      padding: 0 3px 0 2px;
-      font-weight: bold;
-      color: $dark-gray;
-    }
   }
-
-  .tags-input {
-    padding: 0 5px 5px 5px;
-    min-height: 34px;
-    .label-tag {
-      margin-right: 5px;
-      margin-top: 5px;
-    } 
+  .btn {
+    padding: 2px 3px 2px 0;
   }
+  a {
+    padding: 0 3px 0 0;
+  }
+}
 
  /* ==========================================================================
   Storage Tagging Styles
@@ -41,13 +36,12 @@
 .tag-selector {
   padding: 5px;
   margin-bottom: 10px;
-  .input-group {
-  }
   .scrollable-content {
     white-space: normal;
     .label-tag {
       display: inline-block;
       margin-top:5px;
+      margin-right: 5px;
     }
   }
 }
@@ -55,20 +49,15 @@
 .tags-input {
   position: relative;
   padding: 0 5px 5px 5px;
-  height: auto;
   margin-bottom: 10px; 
   cursor: pointer;
   white-space: normal;
+  min-height: 34px;
   .label-tag {
     display: inline-block;
     margin-top:5px;
     margin-right: 5px;
-  }
-  .fixed-icon {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 5px;
+    vertical-align: top;
   }
 }
 
@@ -86,7 +75,6 @@
     margin-bottom: 5px;
   }
 }
-
 
 .btn-add {
   color: $gray;
@@ -250,15 +238,58 @@
   }
 }
 
+.recurrence-option, .timelineSeconds {
+  * {
+    display: inline-block;
+  }
+  label {
+    &:first-child {
+    }
+  }
+  input[type=text] {
+    width: 40px;
+    font-size: 13;
+    padding: 6px 0;
+    text-align: center;
+  }
+  select {
+    width: auto;
+  }
+  .form-group {
+    display: block;
+  }
+  .timelineWeekdays {
+    label {
+    display: block;
+    width: auto;
+  }
+  }
+}
 
-
-
+.timeline-settings {
+  section {
+    .control-label {
+      font-weight: normal;
+    }
+  }
+  .set-recurrence {
+    display: table;
+    width: 100%;
+    label {
+      display: table-cell;
+    }
+  }
+}
 
 .list-filters {
   width: 480px;
   padding: 10px;
   .content-box {
   }
+}
+
+.checkbox-col {
+  width: 1px;
 }
 
 .red-circle {
@@ -276,3 +307,4 @@
     color:$rise-green;
   }
 }
+

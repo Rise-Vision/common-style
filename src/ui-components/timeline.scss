@@ -10,3 +10,52 @@
   section {
   }
 }
+
+
+
+/* ==========================================================================
+  OLD Styles
+  ========================================================================== */
+
+.timeline-settings {
+  section {
+    .control-label {
+      font-weight: normal;
+    }
+  }
+  .set-recurrence {
+    display: table;
+    width: 100%;
+    label {
+      display: table-cell;
+    }
+  }
+}
+
+.recurrence-option, .timelineSeconds {
+  * {
+    display: inline-block;
+  }
+  label {
+    &:first-child {
+    }
+  }
+  input[type=text] {
+    width: 40px;
+    font-size: 13;
+    padding: 6px 0;
+    text-align: center;
+  }
+  select {
+    width: auto;
+  }
+  .form-group {
+    display: block;
+  }
+  .timelineWeekdays {
+    label {
+    display: block;
+    width: auto;
+  }
+  }
+}
