@@ -593,10 +593,6 @@ a:hover {
 .dropdown-toggle:hover,
 .open .dropdown-toggle.btn-default,
 .bfh-selectbox-toggle {
-  color: #555;
-  background-color: #fff;
-  border-color: #ccc;
-  border-radius: 4px;
 }
 
 /* Input field focus */
@@ -759,7 +755,6 @@ ul.social {
    ========================================================================== */
 
 .btn-default {
-  background: #d4d4d4;
   .fa::before, .glyphicons::before { color: $dark-gray; }
 
   &:hover {
