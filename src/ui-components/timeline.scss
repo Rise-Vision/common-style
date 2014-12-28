@@ -47,7 +47,7 @@
 .date-picker {
   * {
     outline: none;
-    $:focus {
+    &:focus {
       outline: none;
     }
   }   
