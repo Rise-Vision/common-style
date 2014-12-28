@@ -45,11 +45,10 @@
 }
 
 .date-picker {
-   outline: 0;
   * {
-    outline: 0;
-    &:focus {
-      outline: 0;
+    outline: none;
+    $:focus {
+      outline: none;
     }
   }   
 }
