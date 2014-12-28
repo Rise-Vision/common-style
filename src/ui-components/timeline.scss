@@ -46,11 +46,11 @@
 
 .date-picker {
   * {
-    outline: none;
+    outline: 0;
     &:focus {
-      outline: none;
+      outline: 0;
     }
-  }   
+  }
 }
 
 
