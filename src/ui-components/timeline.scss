@@ -45,39 +45,7 @@
 }
 
 .date-picker {
-  * {
-    outline: 0;
-    &:focus {
-      outline: 0;
-    }
-  }
-  .btn-group {
-    display: none;
-    .btn {
-      @extend .btn-default
-    }
-  }
-  .btn-success {
-    display: none;
-  }
-  .btn-info {
-    background: $rise-green;
-    .text-info {
-      color: #FFF;
-      font-weight: bold;
-    }
-    &.active {
-      color: #FFF;
-    }
-  }
-  .dropdown-menu {
-    padding-bottom: 10px;
-    table {
-      .btn {
-        border: none;
-      }
-    }
-  }
+ 
 }
 
 
