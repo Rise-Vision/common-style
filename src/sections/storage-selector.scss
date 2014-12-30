@@ -29,6 +29,10 @@
   border: 0px;
   padding: 0px;
   background-color: #f4f4f4;
+  top: -20px;
+  @media (max-width: 768px) {
+    position: relative;
+  }
 }
 
 iframe.modal-dialog {
