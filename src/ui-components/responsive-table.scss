@@ -31,6 +31,12 @@
   }
 }
 
+.table-middle {
+  > tbody > tr > td {
+    vertical-align: middle;
+  }
+}
+
 .table-stack {
   @media (max-width: 768px) {
     > thead > tr > th {
