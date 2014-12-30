@@ -172,25 +172,17 @@
   }
 }
 
-
-.list-filters {
-  width: 480px;
-  padding: 10px;
-  .content-box {
-  }
-}
-
-.red-circle {
+.offline {
   &:before {
     color:#e74c3c;
   }
 }
-.black-circle {
+.noninstalled {
   &:before {
     color:#444;
   }
 }
-.green-circle {
+.online {
   &:before {
     color:$rise-green;
   }
