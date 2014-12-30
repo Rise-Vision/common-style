@@ -114,70 +114,6 @@
   }
 }
 
-.tag-settings {
-  background: #FFF;
-  .active-tags {
-    margin: 15px 0 10px;
-    &.content-box {
-      padding:5px;
-      padding-bottom: 0;
-      max-height: 150px;
-      cursor: pointer;
-      min-height: 100px;
-      &:hover {
-        background:#fcfcfc;
-      }
-    }
-  }
-  .content-box {
-    margin-bottom: 5px;
-    .scrollable-content {
-      margin-top: 5px;
-      padding: 0 5px 0;
-    }
-    section {
-      padding: 10px;
-      border-bottom: 1px solid #e6e6e6;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-    .btn-group {
-      margin-left: 5px;
-    }
-    input {
-    }
-  }
-  .input-short {
-    max-width: 40px;
-  }
-  .form-inline > * {
-    @media (max-width: 768px) {
-      display: inline-block;  
-    }
-  }
-  .control-label {
-    @media (max-width: 768px) {
-      margin: 5px 0;
-    }
-  }
-  .weekdays-group {
-    label {
-      display: block;
-    }
-  }
-  #recurrence-options {
-    label {
-      margin-right: 20px;
-    }
-    @media (max-width: 768px) {
-      label {
-        margin-right: 10px;
-      }
-    }
-  }
-}
-
 .content-box-editable {
   padding: 7px;
   position: relative;
@@ -236,9 +172,6 @@
     }
   }
 }
-
-
-
 
 
 .list-filters {
