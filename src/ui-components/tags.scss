@@ -129,22 +129,6 @@
       }
     }
   }
-  .label-tag {
-    margin:0 0 5px 5px;
-  }
-  .bg-warning {
-    padding: 5px;
-    margin-top: 5px;
-    display: block;
-    border-radius: 3px;
-  }
-  
-  .button-wrapper {
-    margin-top: 5px;
-  }
-  .hidden-form {
-    margin-top: 10px;
-  }
   .content-box {
     margin-bottom: 5px;
     .scrollable-content {
@@ -177,14 +161,6 @@
       margin: 5px 0;
     }
   }
-  .hidden-option {
-    display: none;
-  }
-  .hidden-form {
-    label {
-      font-weight: 400;
-    }
-  }
   .weekdays-group {
     label {
       display: block;
@@ -213,7 +189,7 @@
   }
 }
 .select-tags {
-  padding: 7px;
+  padding: 5px;
   color: $gray;
   .label {
     margin-right: 5px;
