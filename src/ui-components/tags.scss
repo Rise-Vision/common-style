@@ -133,10 +133,12 @@
 }
 
 .reboot-time {
-  background: aqua;
-  table.timepicker, label, .checkbox {
-    display: inline-block !important;
+  table.time-picker {
+    display: inline-block;
     vertical-align: middle;
+  }
+  label, .checkbox {
+    display: inline-block;
   }
   @media (max-width: 768px) {
     .checkbox {
