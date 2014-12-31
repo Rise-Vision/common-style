@@ -114,10 +114,7 @@
   }
 }
 
-.content-box-disabled {
-  pointer-events: none;
-  background: $light-gray;
-}
+
 
 .content-box-editable {
   padding: 7px;
@@ -135,6 +132,11 @@
     margin-right: 5px;
     margin-top: 5px;
   }
+}
+
+.content-box-disabled {
+  pointer-events: none !important;
+  background: $light-gray !important;
 }
 
 .reboot-time {
