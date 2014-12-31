@@ -132,6 +132,12 @@
   }
 }
 
+.reboot-time {
+  * {
+    display: inline-block;
+  }
+}
+
 .display-settings {
   #display-status {
     text-align: right;
