@@ -114,6 +114,11 @@
   }
 }
 
+.content-box-disabled {
+  pointer-events: none;
+  background: $light-gray;
+}
+
 .content-box-editable {
   padding: 7px;
   position: relative;
