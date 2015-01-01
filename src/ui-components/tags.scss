@@ -117,13 +117,13 @@
 
 
 .content-box-editable {
-  padding: 7px;
+  padding: 7px 10px;
   position: relative;
   cursor: pointer;
   .edit-icon {
     position: absolute;
     top: 7px;
-    right: 7px;
+    right: 15px;
   }
 }
 .select-tags {
