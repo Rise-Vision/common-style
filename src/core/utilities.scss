@@ -16,9 +16,10 @@
 }
 .ellipsis {
   overflow: hidden;
+  display: block;
 }
 
-span.eliipsis {
+span.ellipsis {
   display: inline-block;
   vertical-align: top;
 }
