@@ -23,6 +23,9 @@
 .ellipsis-md {
   @include ellipsis(2,full);
 }
+.ellipsis-sm {
+  @include ellipsis(1,medium);
+}
 .ellipsis-xs {
   @include ellipsis(1,small);
 }
