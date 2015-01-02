@@ -17,6 +17,12 @@
 .ellipsis {
   overflow: hidden;
 }
+
+span.eliipsis {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .nowrap {
   white-space: nowrap;
 }
