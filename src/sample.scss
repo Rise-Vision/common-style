@@ -34,29 +34,29 @@
   ========================================================================== */
 
 .tag-selector {
-  padding: 5px;
+  padding: 6px;
   margin-bottom: 10px;
   .scrollable-content {
     white-space: normal;
     .label-tag {
       display: inline-block;
-      margin-top:5px;
-      margin-right: 5px;
+      margin-top:6px;
+      margin-right: 6px;
     }
   }
 }
 
 .tags-input {
   position: relative;
-  padding: 0 5px 5px 5px;
+  padding: 0 6px 6px 6px;
   margin-bottom: 10px; 
   cursor: pointer;
   white-space: normal;
   min-height: 34px;
   .label-tag {
     display: inline-block;
-    margin-top:5px;
-    margin-right: 5px;
+    margin-top:6px;
+    margin-right: 6px;
     vertical-align: top;
   }
 }
