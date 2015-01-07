@@ -24,9 +24,8 @@
 	font-weight: normal;
 }
 
-.input-group {
-	.form-control {
-		height: 33px;
-	}
+.input-group > .form-control,
+.input-group > .input-group-addon,
+.input-group > .input-group-btn > .btn {
+  height: 34px;
 }
-
