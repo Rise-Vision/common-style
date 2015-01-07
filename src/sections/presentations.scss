@@ -1,19 +1,57 @@
-.presentation-name {
-	.form-control {
-		width: 74%;
-		@media (max-width: 768px) {
-			width: 78%;
-		}
-		@media (min-width: 992px) {
-			width:79%;
-		}
-		@media (min-width: 1200px) {
-			width:82%;
-		}
-	}
-	.control-label {
-		width: 78px;
-		float: right;
-		margin-top: 5px;
-	}
+.checkbox-addon {
+  .input-group-addon {
+  	background: none;
+  	padding: 0 0 0 10px;
+  	border: 0;
+  }
+  .form-control {
+  	border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+  }
+}
+.presentation-editor-box {
+  background: #FFF;
+  border: 1px solid #d4d4d4;
+  overflow: scroll;
+  max-height: 600px;
+}
+.editor-content {
+  border: 3px #d2d2d2 solid;
+  background: url('http://subtlepatterns.com/images/transp_bg.png');
+  position: relative;
+}
+.placeholder {
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid #bcbcbc;
+}
+.placeholder .btn-group {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.storage-group .input-group-addon {
+  background: none;
+  padding: 0 0 0 10px;
+  border: 0;
+}
+.color-placeholder {
+  height: 34px;
+  width: 55px;
+  padding: 4px;
+}
+.color-placeholder .label {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.btn-placeholder-add span {
+  background-image: url(http://192.254.220.36/~rvi/mockups/images/placeholder-icon.png);
+  -webkit-background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  display: block;
 }
