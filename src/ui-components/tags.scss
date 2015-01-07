@@ -115,7 +115,7 @@
 }
 
 .content-box-editable {
-  padding: 7px 12px;
+  min-height: 34px;
   position: relative;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -124,8 +124,17 @@
   color: #555;
   .edit-icon {
     position: absolute;
-    top: 8px;
-    right: 15px;
+    top: 6px;
+    right: 12px;
+  }
+  .label-tag {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  .text-muted {
+    line-height: 32px;
+    margin:0;
+    padding: 0 12px;
   }
 }
 
