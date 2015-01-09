@@ -60,12 +60,16 @@
   width: 100%;
   border-collapse: separate;
   table-layout: fixed;
+  
 }
 .playlist-types label {  
   display: table-cell;
   float: none;
   width: 1%;
   line-height: 34px;
+  @media (max-width: 768px) {
+    text-align:center;
+  }
 }
 .playlist-types input {
    margin-right: 5px;
@@ -90,4 +94,10 @@
   float: right;
   padding-top: 8px;
   font-weight: bold;
+}
+
+#browse-store {
+  @media (max-width: 768px) {
+    margin-bottom:10px;
+  }
 }
