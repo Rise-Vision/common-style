@@ -55,3 +55,39 @@
   width: 28px;
   display: block;
 }
+.playlist-type {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  table-layout: fixed;
+}
+.playlist-types label {  
+  display: table-cell;
+  float: none;
+  width: 1%;
+  line-height: 34px;
+}
+.playlist-types input {
+   margin-right: 5px;
+}
+.playlist-product {
+  display: block;
+  width: 100%;
+}
+.playlist-product .product-icon {
+  float: left;
+  margin-right: 15px;
+}
+.playlist-product h4 {
+  margin:0;
+  padding-top: 8px;
+}
+.playlist-product p {
+  margin:0;
+  display: block;
+}
+.playlist-product .product-trial {
+  float: right;
+  padding-top: 8px;
+  font-weight: bold;
+}
