@@ -1,6 +1,5 @@
 .app-header {
   @include make-row;
-  margin-top:20px;
   margin-bottom: 10px;
   .title-block,.app-title {
     @include make-sm-column(6);
