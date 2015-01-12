@@ -85,6 +85,7 @@
 
 .content-box-editable {
   min-height: 34px;
+  padding-bottom: 3px;
   position: relative;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -99,7 +100,6 @@
   .label-tag {
     margin-top: 3px;
     margin-left: 3px;
-    margin-bottom: 3px;
   }
   .text-muted {
     line-height: 32px;
@@ -115,11 +115,10 @@
 }
 
 .select-tags {
-  padding: 3px 3px 0;
+  padding: 3px;
   .label {
     margin-right: 3px;
     margin-top: 3px;
-    margin-bottom: 3px;
   }
 }
 
