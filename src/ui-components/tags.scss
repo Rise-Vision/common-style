@@ -2,49 +2,25 @@
   Tag Style
   ========================================================================== */
 
- .label-tag {
-    background: $lighter-gray;
-    color: $gray;
-    font-size: 14px;
+.label-tag {
+  background: $lighter-gray;
+  color: $gray;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid $light-gray;
+  padding: 2px 5px 2px 8px;
+  line-height: 20px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: normal;
+  color: #888;
+  .tag-value {
     display: inline-block;
-    border: 1px solid $light-gray;
-    padding: 2px 5px 2px 8px;
-    line-height: 20px;
-    text-align: left;
-    cursor: pointer;
-    font-weight: normal;
-    color: #888;
-    &:hover {
-      
-    }
-    .tag-value {
-      display: inline-block;
-      padding: 0 3px 0 2px;
-      font-weight: bold;
-      color: $dark-gray;
-    }
-  }
-
-  .tags-input {
-    padding: 0 5px 5px 5px;
-    min-height: 34px;
-    .label-tag {
-      margin-right: 5px;
-      margin-top: 5px;
-    } 
-  }
-
-.dropdown-menu-filter {
-  margin-left: auto;
-  right: 0;
-  width: 320px;
-}
-@media (min-width: 768px) {
-  .dropdown-menu-filter {
-    width: 600px;
+    padding: 0 3px 0 2px;
+    font-weight: bold;
+    color: $dark-gray;
   }
 }
-
 
  /* ==========================================================================
   Storage Tagging Styles
@@ -75,12 +51,6 @@
     margin-top:5px;
     margin-right: 5px;
   }
-  .fixed-icon {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-  }
 }
 
 .search-options {
@@ -97,7 +67,6 @@
     margin-bottom: 5px;
   }
 }
-
 
 .btn-add {
   color: $gray;
@@ -130,6 +99,7 @@
   .label-tag {
     margin-top: 3px;
     margin-left: 3px;
+    margin-bottom: 3px;
   }
   .text-muted {
     line-height: 32px;
@@ -145,10 +115,11 @@
 }
 
 .select-tags {
-  padding: 5px;
+  padding: 3px 3px 0;
   .label {
-    margin-right: 5px;
-    margin-top: 5px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
 }
 
@@ -187,14 +158,6 @@
   	  .form-control {
   	  	width: 100px;
   	  }
-  	}
-  }
-  .bg-danger {
-  	padding: 5px;
-  	border-radius: 3px;
-  	p {
-  		margin: 0 0 0 5px;
-  		line-height: 33px;
   	}
   }
   #monitor {
