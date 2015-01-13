@@ -64,6 +64,13 @@ span.ellipsis {
     pointer-events: none;
 }
 
+.ahrefdisabled {
+  color: #AAAAAA;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+}
+
 .highlighted {
   background: #FFFFE0;
   text-transform: uppercase;
