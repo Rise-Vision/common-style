@@ -16,7 +16,7 @@ $btn-default-color: #444;
 }
 
 .btn-primary {
-  @include button-variant($white, $rise-green, $rise-green, $btn-default-border-disabled, darken($rise-green, 10%), #000);
+  @include button-variant($white, $rise-green, $rise-green, $btn-default-border-disabled, darken($rise-green, 10%), lighten($rise-green, 5%));
 }
 
 .btn-lg {
