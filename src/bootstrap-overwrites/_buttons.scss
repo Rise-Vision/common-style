@@ -15,6 +15,10 @@ $btn-default-color: #444;
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $btn-default-border-disabled, #fff, #d5d5d5);
 }
 
+.btn-primary {
+  @include button-variant($white, $rise-green, $rise-green, $btn-default-border-disabled, darken($rise-green, 10%), #000);
+}
+
 .btn-lg {
 	font-size: 16px;
 }

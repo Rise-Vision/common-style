@@ -775,20 +775,8 @@ a.btn-primary:hover {
 }
 
 .btn-primary {
-  font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
-  background: $rise-green;
-  border-color: $rise-green;
   .fa::before, .glyphicons::before { color: $white; }
-  &:hover, &:active, &:focus, &[disabled] {
-    background: darken($rise-green, 10%);
-    border-color: darken($rise-green, 10%);
-  }
-}
-
-.btn-success:hover {
-  background: #45b864;
-  border-color: #45b864;
 }
 
 .btn-rv-help {

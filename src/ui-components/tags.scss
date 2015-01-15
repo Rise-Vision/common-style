@@ -101,9 +101,9 @@
     margin-top: 3px;
     margin-left: 3px;
   }
-  .text-muted {
+  .text-muted,.text-placeholder {
     line-height: 24px;
-    margin:3px 0 0 0;
+    margin: 4px 0 0 0;
     padding: 0 12px;
     color: $gray-light;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -129,77 +129,5 @@
   background: $light-gray !important;
 }
 
-.reboot-time {
-  table.time-picker {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  label, .checkbox {
-    display: inline-block;
-  }
-  @media (max-width: 768px) {
-    .checkbox {
-      display: block;
-    }
-  }
-}
 
-.display-settings {
-  #display-status {
-    text-align: right;
-    * {
-      display: inline-block;
-    }
-  	.form-control {
-  	  width: 120px;
-  	  margin-right: 5px;
-  	}
-  	@media (max-width: 768px) {
-      text-align: left;
-  	  .form-control {
-  	  	width: 100px;
-  	  }
-  	}
-  }
-  #monitor {
-    margin-left: 20px;
-    @media (max-width: 768px) {
-      margin-left:0;
-    }
-  }
-  @media (max-width: 768px) {
-    #installed-buttons button {
-      display: block;
-      width: 100%;
-      margin-bottom: 5px;
-    }
-  }
-}
-
-.ui-sortable-helper {
-  border:1px solid #d4d4d4;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.ui-sortable-placeholder {
-  background: #f2f2f2;
-  visibility: visible!important;
-}
-
-.offline {
-  &:before {
-    color:#e74c3c;
-  }
-}
-.noninstalled {
-  &:before {
-    color:#444;
-  }
-}
-.online {
-  &:before {
-    color:$rise-green;
-  }
-}
 
