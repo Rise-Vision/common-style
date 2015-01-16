@@ -2,6 +2,14 @@
 	margin-bottom: 40px !important;
 }
 
+.sub-company-alert.test-company-alert {
+	background-color: $brand-danger;
+}
+
+.sub-company-alert.test-company-alert + .sub-company-alert {
+	margin-top: 5px;
+}
+
 .sub-company-alert {
 	width: 100%;
 	line-height: 24px;
