@@ -18,12 +18,10 @@
   overflow: hidden;
   display: block;
 }
-
 span.ellipsis {
   display: inline-block;
   vertical-align: top;
 }
-
 .nowrap {
   white-space: nowrap;
 }
@@ -36,53 +34,26 @@ span.ellipsis {
 .ellipsis-xs {
   @include ellipsis(1,small);
 }
-
-.left-inner-addon {
-    position: relative;
-}
-.left-inner-addon input {
-    padding-left: 40px;
-}
-.left-inner-addon i {
-    position: absolute;
-    padding: 10px 14px;
-    pointer-events: none;
-    &::before {
-      color: #CCC;
-    }
-}
-.right-inner-addon {
-    position: relative;
-}
-.right-inner-addon input {
-    padding-right: 40px;
-}
-.right-inner-addon i {
-    position: absolute;
-    right: 0px;
-    padding: 10px 12px;
-    pointer-events: none;
-}
-
 .ahrefdisabled {
   color: #AAAAAA;
   cursor: default;
   pointer-events: none;
   text-decoration: none;
 }
-
 .highlighted {
   background: #FFFFE0;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
 }
-
 %vertical-align {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.clickable {
+  cursor: pointer;
 }
 

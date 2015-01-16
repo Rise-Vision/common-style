@@ -1,11 +1,11 @@
-.checkbox-addon {
+.checkbox-addon,.storage-group {
   .input-group-addon {
-  	background: none;
-  	padding: 0 0 0 10px;
-  	border: 0;
+    background: none;
+    padding: 0 0 0 10px;
+    border: 0;
   }
   .form-control {
-  	border-bottom-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
     border-top-right-radius: 4px !important;
   }
 }
@@ -26,41 +26,12 @@
   cursor: pointer;
   border: 1px solid #bcbcbc;
 }
-.placeholder .btn-group {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-.storage-group .input-group-addon {
-  background: none;
-  padding: 0 0 0 10px;
-  border: 0;
-}
-.color-placeholder {
-  height: 34px;
-  width: 55px;
-  padding: 4px;
-}
-.color-placeholder .label {
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-.btn-placeholder-add span {
-  background-image: url(http://192.254.220.36/~rvi/mockups/images/placeholder-icon.png);
-  -webkit-background-size: 28px 28px;
-  height: 28px;
-  width: 28px;
-  display: block;
-}
+
 .playlist-type {
   display: table;
   width: 100%;
   border-collapse: separate;
   table-layout: fixed;
-  
 }
 .playlist-types label {  
   display: table-cell;
@@ -70,44 +41,37 @@
   @media (max-width: 768px) {
     text-align:center;
   }
-}
-.playlist-types input {
+  input {
    margin-right: 5px;
+  }
 }
 .playlist-product {
   display: block;
   width: 100%;
+  .product-icon {
+    float: left;
+    margin-right: 15px;
+  }
+  h4 {
+    margin:0;
+    font-size: 16px;
+    padding-top: 8px;
+  }
+  p {
+    margin:0;
+  }
 }
-.playlist-product .product-icon {
-  float: left;
-  margin-right: 15px;
-}
-.playlist-product h4 {
-  margin:0;
-  font-size: 16px;
-  padding-top: 8px;
-}
-.playlist-product p {
-  margin:0;
-}
-.playlist-product .product-trial {
-  float: right;
-  padding-top: 8px;
-  font-weight: bold;
-}
-
 #browse-store {
   @media (max-width: 768px) {
     margin-bottom:10px;
   }
 }
-
-.storage-group .input-group-addon {
-  background: none;
-  padding: 0 0 0 10px;
-  border: 0;
-}
-
-.storage-group .form-control {
-  border-radius: 4px !important;
+.editor-content {
+  .background-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

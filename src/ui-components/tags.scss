@@ -1,7 +1,3 @@
- /* ==========================================================================
-  Tag Style
-  ========================================================================== */
-
 .label-tag {
   background: $lighter-gray;
   color: $gray;
@@ -21,11 +17,6 @@
     color: $dark-gray;
   }
 }
-
- /* ==========================================================================
-  Storage Tagging Styles
-  ========================================================================== */
-
 .tag-selector {
   padding: 5px;
   margin-bottom: 10px;
@@ -39,42 +30,6 @@
   }
 }
 
-.tags-input {
-  position: relative;
-  padding: 0 5px 5px 5px;
-  height: auto;
-  margin-bottom: 10px; 
-  cursor: pointer;
-  white-space: normal;
-  .label-tag {
-    display: inline-block;
-    margin-top:5px;
-    margin-right: 5px;
-  }
-}
-
-.search-options {
-  .dropdown-menu.filter-menu {
-    width: 500px;
-    padding: 10px 10px 0;
-    .form-group {
-      label {
-        font-weight: normal;
-      }
-    }
-  }
-  .btn-xs {
-    margin-bottom: 5px;
-  }
-}
-
-.btn-add {
-  color: $gray;
-  padding: 0;
-  .fa:before {
-    color: $rise-green;
-  }
-}
 .btn-remove {
   color: $gray;
   padding: 0;
@@ -88,7 +43,6 @@
   padding-bottom: 3px;
   padding-right: 20px;
   position: relative;
-  cursor: pointer;
   border: 1px solid #ccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
