@@ -16,6 +16,10 @@
     font-weight: bold;
     color: $dark-gray;
   }
+  &.invalid {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
 }
 .tag-selector {
   padding: 5px;
