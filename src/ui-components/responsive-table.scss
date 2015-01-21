@@ -20,23 +20,6 @@
   > tbody > tr > td {
     a {
       color: $gray;
-      .fa-file:before {
-        color: #CCC;
-      }
-      .fa-folder:before {
-        color: $rise-green;
-      }
-    }
-  }
-  > tbody > tr > td:first-child {
-    .fa {
-      margin-right: 5px;
-    }
-    input + span {
-      margin-left: 10px;
-    }
-    span {
-      margin-left: 25px;
     }
   }
   > tbody > tr:hover {
@@ -48,6 +31,9 @@
     }
     > td a {
       color: $rise-blue;
+    }
+    > td a.non-clickable-file {
+      color: $gray;
     }
   }
 }
