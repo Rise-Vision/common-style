@@ -2,7 +2,7 @@
   @include make-row;
   margin-bottom: 10px;
   .title-block,.app-title {
-    @include make-sm-column(6);
+    @include make-sm-column(4);
     h1 {
       font-weight: 400;
       line-height: 38px;
@@ -47,7 +47,7 @@
       float: right;
       margin-left: 10px;
     }
-    @include make-sm-column(6);
+    @include make-sm-column(8);
     @media (max-width: 768px) {
       margin-top: 10px;
       float:none;

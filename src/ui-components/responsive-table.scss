@@ -6,17 +6,38 @@
     overflow: hidden;
     padding: 10px 15px;
     white-space: nowrap;
-    cursor: pointer;
+    color: $gray;
+    a {
+      color: $gray;
+    }
   }
   > tbody > tr > td {
     padding: 10px 15px;
-    color: $gray;
+    color: #777;
     border-bottom: 1px solid $lighter-gray;
     vertical-align: top;
   }
-  > tbody > tr > td > a {
-    color: $gray;
-    display: block;
+  > tbody > tr > td {
+    a {
+      color: $gray;
+      .fa-file:before {
+        color: #CCC;
+      }
+      .fa-folder:before {
+        color: $rise-green;
+      }
+    }
+  }
+  > tbody > tr > td:first-child {
+    .fa {
+      margin-right: 5px;
+    }
+    input + span {
+      margin-left: 10px;
+    }
+    span {
+      margin-left: 25px;
+    }
   }
   > tbody > tr:hover {
     &.clickable-row {
