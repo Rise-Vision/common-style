@@ -23,6 +23,9 @@
     }
   }
   > tbody > tr > td:first-child {
+    input {
+      display: inline-block;
+    }
     .fa {
       margin-right: 5px;
     }
@@ -34,6 +37,15 @@
     }
     span {
       margin-left: 25px;
+    }
+    @media (max-width: 480px) {
+      span a {
+        @include ellipsis(1,medium);
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        vertical-align: middle;
+      }
     }
    }
   }
