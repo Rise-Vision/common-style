@@ -39,14 +39,19 @@
       margin-left: 25px;
     }
     span a {
+      @include ellipsis(1,large);
       display: inline-block;
       vertical-align: middle;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      span a {
+      }
     }
     @media (max-width: 480px) {
       span a {
         @include ellipsis(1,medium);
-        text-overflow: ellipsis;
-        overflow: hidden;
+        
       }
     }
    }
