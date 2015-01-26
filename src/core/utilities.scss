@@ -5,10 +5,10 @@
     width: 120px
   }
   @if $line-width == medium {
-    width: 200px
+    width: 160px
   } 
   @if $line-width == large {
-    width: 400px
+    width: 320px
   }
   @if $line-width == full {
     width: 100%
