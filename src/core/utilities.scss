@@ -5,10 +5,10 @@
     width: 120px
   }
   @if $line-width == medium {
-    width: 160px
+    width: 200px
   } 
   @if $line-width == large {
-    width: 320px
+    width: 400px
   }
   @if $line-width == full {
     width: 100%
@@ -28,8 +28,14 @@ span.ellipsis {
 .ellipsis-md {
   @include ellipsis(2,full);
 }
+.ellipsis-full {
+  @include ellipsis(1,full);
+}
 .ellipsis-sm {
   @include ellipsis(1,medium);
+}
+.ellipsis-lg {
+  @include ellipsis(1,large);
 }
 .ellipsis-xs {
   @include ellipsis(1,small);
