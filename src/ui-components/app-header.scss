@@ -2,7 +2,7 @@
   @include make-row;
   margin-bottom: 10px;
   .title-block,.app-title {
-    @include make-sm-column(4);
+    @include make-sm-column(6);
     h1 {
       font-weight: 400;
       line-height: 38px;
@@ -11,11 +11,7 @@
     }
     .store-status-2 {
       display: inline-block;
-      vertical-align: top;
-      margin-top: 10px;
-      @media (max-width: 768px) {
-        display: block;
-      }
+      vertical-align: middle;
     }    
     .store-status {
       display: inline-block;
@@ -42,19 +38,36 @@
   }
 
   .global-actions {
+    @include make-sm-column(6);
     text-align: right;
-    .btn {
-      float: right;
-      margin-left: 10px;
+    .btn-group {
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+        label {
+          margin: 0;
+          display: block;
+          padding: 10px;
+          font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            color: $rise-blue;
+          }
+        }
+      }
     }
-    @include make-sm-column(8);
+    
     @media (max-width: 768px) {
-      margin-top: 10px;
-      float:none;
       .btn {
-        float: none;
         width: 100%;
         margin: 0 0 5px;
+        padding: 8px 0;
+      }
+      .btn-group {
+        width: 100%;
+        .dropdown-menu {
+          width: 100%;
+        }
       }
     }
   }

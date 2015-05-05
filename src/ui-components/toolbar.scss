@@ -1,20 +1,19 @@
-.bar {
-  @include make-row;
-  h3 {
-    margin:0;
-    line-height: 32px;
-    font-weight: normal;
-  }
-  .form-group {
-    @include make-sm-column(12);
-    margin-top: 20px;
-    margin-bottom: 0; 
-  }
-  .btn-danger {
-  	background: #f2dede;
-  	border-color: #f2dede;
-  	.fa:before {
-  	  color: #d9534f;
-  	}
+.toolbar {
+  overflow: hidden;
+}
+
+.icon-nav {
+  display: inline-block;
+  .btn-link {
+    height: 32px;
+    padding: 0 4px;
+    .fa {
+      font-size: 24px;
+    }
+    .fa+.fa {
+      font-size: 12px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
   }
 }
