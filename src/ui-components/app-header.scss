@@ -29,7 +29,16 @@
         left: auto;
         right: 0;
         label {
-      margin-left: 8px;
+          margin-left: 8px;
+          display: block;
+          padding: 10px;
+          font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            color: $rise-blue;
+          }
+        }
+      }
     }
     @media (max-width: 768px) {
       float:none;
@@ -77,22 +86,5 @@
         float: right;
       }
     }
-  }
-}
-
-/* ==========================================================================
-   DEPRECATE
-   ========================================================================== */
-
-.active-folder {
-  .fa:before {
-    color:$rise-green;
-  }
-  span {
-    margin-left: 5px;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 5px;
-    color: $gray;
   }
 }
