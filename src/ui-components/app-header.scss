@@ -12,6 +12,10 @@
     }
     .store-status-2 {
       display: inline-block;
+      vertical-align: middle;
+    }    
+    .store-status {
+      display: inline-block;
       margin-top: 12px;
       vertical-align: top;
     }
@@ -20,23 +24,36 @@
   .global-actions {
     @include make-sm-column(6);
     text-align: right;
-    .btn {
-      float: right;
-      margin-left: 8px;
+    .btn-group {
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+        label {
+          margin-left: 8px;
+          display: block;
+          padding: 10px;
+          font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            color: $rise-blue;
+          }
+        }
+      }
     }
     @media (max-width: 768px) {
-      float:none;
-      margin-top: 10px;
       .btn {
-        float: none;
-        font-size: 14px;
-        margin: 0 0 4px;
-        padding: 8px;
         width: 100%;
+        margin: 0 0 5px;
+        padding: 8px 0;
+      }
+      .btn-group {
+        width: 100%;
+        .dropdown-menu {
+          width: 100%;
+        }
       }
     }
   }
-}
 
 .selector-header {
   padding: 0 15px 15px;
