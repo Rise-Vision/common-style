@@ -1,17 +1,16 @@
-.bar {
-  @include make-row;
-  span {
-    margin-right: 4px;
-    color: $gray;
-  }
+.toolbar {
+  overflow: hidden;
+}
+
+.icon-nav {
+  display: inline-block;
   .btn-link {
-    padding: 0;
-    width: 40px;
-    height: 40px;
+    height: 32px;
+    padding: 0 4px;
     .fa {
       font-size: 24px;
     }
-    .fa + .fa {
+    .fa+.fa {
       margin-left: -4px;
       margin-top: 6px;
       font-size: 12px;
