@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: 10px;
   .title-block {
-  @include make-sm-column(6);
+    @include make-sm-column(6);
     h1 {
       display: inline-block;
       font-weight: 400;
@@ -13,11 +13,6 @@
     .store-status-2 {
       display: inline-block;
       vertical-align: middle;
-    }    
-    .store-status {
-      display: inline-block;
-      margin-top: 12px;
-      vertical-align: top;
     }
   }
 
@@ -54,6 +49,7 @@
       }
     }
   }
+}
 
 .selector-header {
   padding: 0 15px 15px;
@@ -83,22 +79,5 @@
         float: right;
       }
     }
-  }
-}
-
-/* ==========================================================================
-   DEPRECATE
-   ========================================================================== */
-
-.active-folder {
-  .fa:before {
-    color:$rise-green;
-  }
-  span {
-    margin-left: 5px;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 5px;
-    color: $gray;
   }
 }
