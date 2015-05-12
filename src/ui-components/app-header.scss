@@ -1,21 +1,20 @@
 .app-header {
   @include make-row;
   position: relative;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   .title-block {
     @include make-sm-column(6);
     h1 {
       display: inline-block;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 40px;
       margin: 0 5px 0 0;
     }
     .store-status-2 {
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: text-bottom;
     }
   }
-
   .global-actions {
     @include make-sm-column(6);
     text-align: right;
@@ -36,6 +35,7 @@
       }
     }
     @media (max-width: 768px) {
+      margin-top: 10px;
       .btn {
         width: 100%;
         margin: 0 0 5px;

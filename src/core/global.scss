@@ -24,20 +24,6 @@ body {
   /*background: transparent;*/
 }
 
-/**
- * Start of workaround for Bootstrap bug where content shifts when modal
- * is opened.
- *
- * https://github.com/twbs/bootstrap/issues/9855
- */
-html {
-  overflow: hidden;
-  -ms-overflow-style: scrollbar;
-}
-
-body { overflow: auto; }
-/* End of workaround */
-
 h1, h2, h3, h4, h5, h6 { font-weight: bold;}
 
 a:hover {
@@ -945,6 +931,62 @@ a.btn-primary:hover {
   border-top: 2px dashed #cbcbcb;
 }
 
+/* ==========================================================================
+   Upload Panel
+   ========================================================================== */
+
+  .upload-panel {
+    background: #fcfcfc;
+    border: 1px solid $light-gray;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    .content-box-header {
+      cursor: pointer;
+      overflow: hidden;
+      p {
+        float: left;
+      }
+      @media (max-width: 768px) {
+        p {
+          float: none;
+        }
+        .actions-block {
+          text-align: left;
+        }
+      }
+    }
+    p {
+      overflow: hidden;
+      margin: 5px 0 5px 0;
+      a {
+        text-transform:capitalize;
+        float: right;
+      }
+    }
+    .ellipsed {  
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+      @media (max-width: 480px) {
+        width: 120px;
+      }
+      @media (max-width: 768px) {
+        width: 180px;
+      }
+    }
+
+    .actions-block {
+      text-align: right; 
+    }
+    .collapse-control {
+      line-height: 28px;
+      padding: 0 15px;
+      margin-right: -15px;
+      float: right;
+    }
+  }
+
+
 /* Other
    ========================================================================== */
 .title {
@@ -1042,3 +1084,4 @@ a.btn-primary:hover {
   background-image: url(http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage.png);
   @include background-image-retina('http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage', 'png', 30px, 30px);
 }
+
