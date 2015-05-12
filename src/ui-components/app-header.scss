@@ -63,23 +63,17 @@
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
-    &:first-child {
-      display:block;
-    }
+    &:first-child {display:block;}
   }
   @media (max-width: 768px) {
     .icon-nav {
-      .btn {
-        margin-left: -4px;
-      }
+      .btn {margin-left: -4px;}
     }
     .store-status-2 {
       vertical-align: top;
       display: block;
       margin: 10px 0 0 0;
-      .btn {
-        float: right;
-      }
+      .btn {float: right;}
     }
   }
 }
