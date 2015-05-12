@@ -936,10 +936,15 @@ a.btn-primary:hover {
    ========================================================================== */
 
   .upload-panel {
-    background: #fcfcfc;
-    border: 1px solid $light-gray;
-    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    overflow: hidden;
+    .content-box-body {
+      border-left: 3px solid #d4d4d4;
+    }
     .content-box-header {
+      background: #f7f7f7;
+      border-left: 3px solid #d4d4d4;
+      padding: 10px 15px;
+      color: $gray;
       cursor: pointer;
       overflow: hidden;
       p {
