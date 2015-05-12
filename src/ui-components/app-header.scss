@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: 10px;
   .title-block {
-  @include make-sm-column(6);
+    @include make-sm-column(6);
     h1 {
       display: inline-block;
       font-weight: 400;
@@ -13,11 +13,6 @@
     .store-status-2 {
       display: inline-block;
       vertical-align: middle;
-    }    
-    .store-status {
-      display: inline-block;
-      margin-top: 12px;
-      vertical-align: top;
     }
   }
 
