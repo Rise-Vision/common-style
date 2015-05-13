@@ -1,38 +1,51 @@
 .app-header {
   @include make-row;
   position: relative;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   .title-block {
-  @include make-sm-column(6);
+    @include make-sm-column(6);
     h1 {
       display: inline-block;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 40px;
       margin: 0 5px 0 0;
     }
     .store-status-2 {
       display: inline-block;
-      margin-top: 12px;
-      vertical-align: top;
+      vertical-align: text-bottom;
     }
   }
-
   .global-actions {
     @include make-sm-column(6);
     text-align: right;
-    .btn {
-      float: right;
-      margin-left: 8px;
+    .btn-group {
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+        label {
+          margin-left: 8px;
+          display: block;
+          padding: 10px;
+          font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            color: $rise-blue;
+          }
+        }
+      }
     }
     @media (max-width: 768px) {
-      float:none;
       margin-top: 10px;
       .btn {
-        float: none;
-        font-size: 14px;
-        margin: 0 0 4px;
-        padding: 8px;
         width: 100%;
+        margin: 0 0 5px;
+        padding: 8px 0;
+      }
+      .btn-group {
+        width: 100%;
+        .dropdown-menu {
+          width: 100%;
+        }
       }
     }
   }
@@ -48,40 +61,17 @@
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
-    &:first-child {
-      display:block;
-    }
+    &:first-child {display:block;}
   }
   @media (max-width: 768px) {
     .icon-nav {
-      .btn {
-        margin-left: -4px;
-      }
+      .btn {margin-left: -4px;}
     }
     .store-status-2 {
       vertical-align: top;
       display: block;
       margin: 10px 0 0 0;
-      .btn {
-        float: right;
-      }
+      .btn {float: right;}
     }
-  }
-}
-
-/* ==========================================================================
-   DEPRECATE
-   ========================================================================== */
-
-.active-folder {
-  .fa:before {
-    color:$rise-green;
-  }
-  span {
-    margin-left: 5px;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 5px;
-    color: $gray;
   }
 }
