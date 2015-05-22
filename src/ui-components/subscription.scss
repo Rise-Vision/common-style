@@ -1,0 +1,34 @@
+
+.subscription-status {
+    font-size: 17px;
+    display: none;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 4px;
+    text-align: center;
+    color: white;
+    &.active {
+        display: inline-block;
+    }
+    &.trial {
+        background: #4ab767;
+    }
+    &.trial .btn-white {
+        margin-left: 12px;
+        color: green;
+        background-color: white;
+    }
+    &.expired,
+    &.suspended,
+    &.cancelled {
+        color: #d20606;
+        background: #f0b9b8;
+    }
+    &.expired .btn-white,
+    &.suspended .btn-white,
+    &.cancelled .btn-white {
+        margin-left: 12px;
+        color: #d20606;
+        background-color: white;
+    }
+}
