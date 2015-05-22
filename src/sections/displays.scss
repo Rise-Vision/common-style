@@ -1,4 +1,5 @@
 .reboot-time {
+  margin-bottom: 0;
   table.time-picker {
     display: inline-block;
     vertical-align: middle;
@@ -13,47 +14,18 @@
   }
 }
 
-.display-settings {
-  #display-status {
-    text-align: right;
-    * {
-      display: inline-block;
-    }
-  	.form-control {
-  	  width: 120px;
-  	  margin-right: 5px;
-  	}
-  	@media (max-width: 768px) {
-      text-align: left;
-  	  .form-control {
-  	  	width: 100px;
-  	  }
-  	}
+.display-add {
+  .input-group {
+    display: block;
+    overflow: hidden;
   }
-  #monitor {
-    margin-left: 20px;
-    @media (max-width: 768px) {
-      margin-left:0;
-    }
+  input {
+    width: 100%;
+    display: block;
   }
-  @media (max-width: 768px) {
-    #installed-buttons button {
-      display: block;
-      width: 100%;
-      margin-bottom: 5px;
-    }
+  .input-group-addon {
+    display: none;
   }
-}
-
-.ui-sortable-helper {
-  border:1px solid #d4d4d4;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.ui-sortable-placeholder {
-  background: #f2f2f2;
-  visibility: visible!important;
 }
 
 .offline {
@@ -71,3 +43,4 @@
     color:$rise-green;
   }
 }
+

@@ -24,6 +24,20 @@ body {
   /*background: transparent;*/
 }
 
+/**    
+* Start of workaround for Bootstrap bug where content shifts when modal   
+* is opened.
+*   
+* https://github.com/twbs/bootstrap/issues/9855   
+*/    
+html {   
+  overflow: hidden;    
+  -ms-overflow-style: scrollbar;   
+}    
+   
+body { overflow: auto;}   
+/* End of workaround */
+
 h1, h2, h3, h4, h5, h6 { font-weight: bold;}
 
 a:hover {
@@ -715,6 +729,11 @@ ul.social {
       background-position: -96px 0;
     }
   }
+}
+
+.button-row {
+  overflow: hidden;
+  margin: 40px 0 40px;
 }
 
 /* Media queries

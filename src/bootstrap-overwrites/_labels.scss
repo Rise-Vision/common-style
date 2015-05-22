@@ -5,3 +5,13 @@
 .label-success {
   @include label-variant($label-success-bg, $label-success-color-hover);
 }
+
+.label-default {
+  background: #f4f4f4;
+  border:1px solid $light-gray;
+  color: $gray;
+}
+
+.label {
+	font-size: 12px;
+}
