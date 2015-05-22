@@ -1,5 +1,5 @@
 
-#filters {
+.filters {
     margin-top: 20px;
     text-align: center;
     .btn-default {
@@ -27,7 +27,7 @@
     }
 }
 
-#mobile-filters {
+.mobile-filters {
     display: none;
     .btn {
         width: 100% !important;
@@ -35,7 +35,7 @@
     }
 }
 
-#store-selector {
+.store-selector {
     .btn-default {
         width: 100% !important;
         padding: 20px 0;
@@ -61,17 +61,17 @@
 /*MOBILE BREAKPOINT */
 
 @media screen and (max-width: 660px) {
-    #filters {
+    .filters {
         display: none;
     }
-    #mobile-filters {
+    .mobile-filters {
         display: block;
     }
 }
 /*LINE BREAK FIX*/
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    #filters .btn-default {
+    .filters .btn-default {
         width: 123px !important;
         padding: 6px 0;
     }
