@@ -60,7 +60,7 @@
 
 /*MOBILE BREAKPOINT */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: $screen-sm) {  
     .filters {
         display: none;
     }
@@ -68,17 +68,19 @@
         display: block;
     }
 }
+
 /*LINE BREAK FIX*/
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: $screen-sm-min) and (max-width: $screen-lg) {
     .filters .btn-default {
         width: 123px !important;
         padding: 6px 0;
     }
 }
-/*EXPANDED THE PRODUCT CONTAINER ON TABLET AND BELOWß */
 
-@media only screen and (max-width: 767px) {
+/*EXPANDED THE PRODUCT CONTAINER ON TABLET AND BELOW */
+
+@media only screen and (max-width: $screen-sm) {
     .product-container {
         width: 100%;
     }
