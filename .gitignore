@@ -13,3 +13,5 @@ node_modules
 /bower_components
 build
 /tmp
+bower_components
+/bower_components/rv-common-style
