@@ -11,7 +11,6 @@
 .modal-open {
   overflow: auto;
 }
-
 .modal-custom > div {
     width: auto;
     display: table;
@@ -30,7 +29,6 @@
     }
   }
 }
-
 .modal { z-index: 9999; }
 
 .modal-backdrop.in { z-index: 9001; }
@@ -53,7 +51,6 @@
     padding: 15px;
   }
 }
-
 .modal-title {
   font-weight: 500;
   padding:15px;

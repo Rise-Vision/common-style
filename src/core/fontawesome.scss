@@ -3,41 +3,54 @@
    ========================================================================== */
 .fa-box {
   /* Display & Box Model */
-  min-width: 50px;
-  padding: 1px 10px 0;
-  line-height: 30px;
-
-  /* Visual */
-  font-size: 24px;
+  min-width: 40px;
 }
-
 .fa {
   padding: 0;
 }
-
 .fa:before {
   position: relative;
   margin: 0;
-}
-
-.fa::before {
   color: $gray;
 }
-
-.fa-white::before {
+.fa-white::before, .fa.icon-white:before {
   color: $white;
 }
-
 .fa-danger::before {
   color: $danger;
 }
-
+.fa.icon-gray:before {
+  color: #BBB;
+}
+.fa.icon-red:before {
+  color: #cf371f;
+}
+.fa.icon-green:before {
+  color: $rise-green;
+}
 .chevron-right::before {
   font-size: 16px;
 }
-
 .fa-back {
   width: 24px;
   height: 24px;
   background: url('//s3.amazonaws.com/rise-common-test/images/glyphicons-back.png') center no-repeat;
+}
+
+.btn {
+  .fa {
+    vertical-align: middle;
+  }
+}
+
+.btn {
+  .fa + .fa {
+    margin-left: -18px;
+    vertical-align: top;
+    margin-top: 7px;
+    font-size: 10px;
+    &:before {
+      color:$light-gray;
+    }
+  }
 }

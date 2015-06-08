@@ -1,24 +1,20 @@
 .navbar-brand {
-  width: 100px;
-  margin-top: 5px;
-  line-height: 33px;
-  font-size: 22px;
-
+  width: 96px;
   @media (min-width: $grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: 0;
     }
   }
-
   @media (max-width: $screen-lg) {
     width: 70px;
     margin-left: 0px !important;
-    margin-top: 10px;
+    margin-top: 4px;
   }
-
-  @media (max-width: $screen-sm) { width: 50px; }
-
+  @media (max-width: $screen-md) { width: 50px; margin-top: 4px; }
+  @media (max-width: $screen-sm) {
+    margin-top: 12px;
+  }
   i {
     @media (max-width: $screen-lg) {
       font-size: 24px;
@@ -32,23 +28,28 @@
   }
 }
 
-
 .navbar-toggle {
   border-radius: $border-radius-base2;
 }
 
 .navbar-default {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
   .navbar-nav {
-    margin-top: 8px;
     > li > a {
       color: $navbar-default-link-color;
       border-radius: 3px;
-      padding: 0;
-      height: 33px;
-
-
+      padding: 0 10px;
+      height: 34px;
+      vertical-align: top;
+      .fa {
+        font-size: 24px;
+        margin-top: 5px;
+        vertical-align: top;
+      }
+      .fa + p {
+        margin-left: 10px;
+        margin-top: 5px;
+        display: inline-block;
+      }
       &:hover,
       &:focus {
         color: $navbar-default-li-link-hover-color;
