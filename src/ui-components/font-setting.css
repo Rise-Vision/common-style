@@ -1,0 +1,18 @@
+/* line 1, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
+.font-setting-button > div {
+  width: 54px; }
+
+@media (min-width: 667px) and (max-width: 1000px) {
+  /* line 6, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
+  .media-break {
+    width: 300px; } }
+
+@media (min-width: 100px) and (max-width: 667px) {
+  /* line 12, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
+  .media-break {
+    width: 255px; }
+  /* line 16, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
+  .font-setting-button {
+    padding-bottom: 10px; } }
+
+/*# sourceMappingURL=font-setting.css.map */

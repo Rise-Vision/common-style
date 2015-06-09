@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "font-setting.css",
+  "sources": [
+    "font-setting.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,AAAuB;EACrB,AAAQ;;AAGV;;EACA;IACG,AAAM;;AAIT;;EACA;IACG,AAAM;;EAGT;IACE,AAAgB",
+  "names": []
+}
