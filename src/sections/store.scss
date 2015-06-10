@@ -319,17 +319,18 @@
 }
 
   .product-graphic {
-
      @media screen and (max-width: $screen-sm) {
-                margin: -14px auto 0;
-                width: 96px;
-                height: 48px;
+                margin: 0 auto -24px;
+                height: 80px;
           }
 
-    width: 128px;
-    height: 128px;
+    height: 96px;
     position: relative;
     margin: 30px auto 0;
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
   }
   .circled-icon {
     background: #47b767;
