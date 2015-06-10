@@ -2,17 +2,16 @@
   width : 54px;
 }
 
-@media (min-width: 667px) and (max-width: 1000px) {
-  .media-break { 
+@media (min-width: 768px) and (max-width: 1000px) {
+  .font-setting { 
 	  width:300px;
   }
 }
 
-@media (min-width: 100px) and (max-width: 667px) {
-  .media-break {
-	  width:255px;
+@media (min-width: 0px) and (max-width: 768px) {
+  .font-setting {
+	  width:250px;
   }
-	
  .font-setting-button {
 	 padding-bottom: 10px;
  }

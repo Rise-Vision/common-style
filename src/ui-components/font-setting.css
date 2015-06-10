@@ -2,16 +2,16 @@
 .font-setting-button > div {
   width: 54px; }
 
-@media (min-width: 667px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   /* line 6, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
-  .media-break {
+  .font-setting {
     width: 300px; } }
 
-@media (min-width: 100px) and (max-width: 667px) {
+@media (min-width: 0px) and (max-width: 768px) {
   /* line 12, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
-  .media-break {
-    width: 255px; }
-  /* line 16, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
+  .font-setting {
+    width: 250px; }
+  /* line 15, /Users/matmeiers/Desktop/repos/common-style/src/ui-components/font-setting.scss */
   .font-setting-button {
     padding-bottom: 10px; } }
 
