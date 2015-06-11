@@ -1,3 +1,49 @@
+// CUSTOM LAYOUT FOR CART MODAL
+
+.cart-modal
+{
+    .modal-header
+    {
+        padding: 3px 15px;
+    }
+    .modal-body,
+    .modal-footer
+    {
+        padding-top: 0;
+    }
+    .alert-danger
+    {
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding-top: 5px 11px;
+    }
+    .alert-info
+    {
+        margin-bottom: 5px;
+    }
+}
+
+
+.form-group
+{
+    margin-bottom: 2px;
+}
+
+.help-block
+{
+    &.with-errors
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    ul,
+    ol
+    {
+        margin-bottom: 0;
+    }
+}
+
+
 
 // SPACING FOR SHOPPING CART
 .shopping-cart
