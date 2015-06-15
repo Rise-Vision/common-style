@@ -1,0 +1,112 @@
+
+//EQUAL HEIGHTS DIV 
+.shopping-cart .inner-box-wrap
+{
+  display: table;
+
+  width: 100%;
+  .inner-box
+  {
+    display: table-cell;
+
+    padding: 5px 11px;
+
+    border-spacing: 0;
+  }
+  @media (max-width: 768px)
+  {
+    display: block;
+    .inner-box
+    {
+      display: block;
+
+      width: auto;
+    }
+  }
+}
+
+
+// CUSTOM LAYOUT FOR SHOPPING CART MODAL
+.cart-modal
+{
+  .modal-header
+  {
+    padding: 3px 15px;
+  }
+  .modal-footer
+  {
+    padding-top: 0;
+  }
+  .modal-body
+  {
+    padding: 5px 15px;
+  }
+  .alert-danger
+  {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 5px 11px;
+  }
+  .alert-info
+  {
+    margin-bottom: 5px;
+  }
+}
+
+.form-group
+{
+  margin-bottom: 2px;
+}
+
+.help-block
+{
+  &.with-errors
+  {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  ul,
+  ol
+  {
+    margin-bottom: 0;
+  }
+}
+
+
+
+// SPACING FOR SHOPPING CART
+
+.shopping-cart
+{
+  .inner-box
+  {
+    margin-top: 4px;
+    padding: 8px 12px;
+
+    @extend .content-box;
+  }
+  .table
+  {
+    margin-bottom: 0;
+  }
+  .wrapper
+  {
+    padding: 0;
+  }
+  .subtotals tbody tr td
+  {
+    padding: 2px 8px;
+  }
+  .alert-danger
+  {
+    margin-bottom: 0;
+  }
+  // THIS IS TO HAVE THE DROPDOWN REMAIN STATIC AS THE RESOLUTION LOWERS
+  select.form-control
+  {
+    position: relative;
+    top: -9px;
+
+    width: inherit;
+  }
+}
