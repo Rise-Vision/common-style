@@ -1,19 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,700);
-
-.signup-modal {
-  background-color: red;
-}
-
-.navbar {
-    background: #FFF;
-    font-size: 14px;
-    border: none;
-    margin-bottom: 0;
-    padding-top: 32px;
-    -webkit-transition: all 0.2s; /* Safari 3.1 to 6.0 */
-    transition: all 0.2s;
-}
-
 .website {
   font-size: 16px;
   color: #757575;
@@ -121,7 +106,7 @@
   background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-  padding: 128px 0 64px 0;
+  padding: 176px 0 64px 0;
   @media (max-width: 768px){
     padding:64px 0 32px 0;
   }
@@ -437,28 +422,10 @@
     position: relative;
     background-color: #FFF;
     border: 1px solid $light-gray;
-    height: 280px;
     border-radius: 6px 6px 0 0;
-    @media (max-width: 992px) {
-      height:320px;
-    }
-    @media (max-width: 768px) {
-      height:auto;
-    }
-    .premium-badge {
-      display: none;
-      position: absolute;
-      top: -16px;
-      right: -16px;
-      background-color: #FFF;
-      border:5px solid $rise-green;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-    }
-    h3 {padding: 0 16px 0;}
+    padding: 16px;
+    h3 {margin: 0;}
     p {padding: 16px;}
-
   }
 
   &.row:hover {
@@ -732,7 +699,7 @@
 .page-header {
   background: #FFF;
   border: none;
-  padding-top: 64px;
+  padding-top: 96px;
   padding-bottom: 16px;
   margin: 0;
   h1 {
@@ -1003,17 +970,6 @@
     }
   }
 
-.sticky-wrapper.is-sticky {
-  .navbar {
-    background: #FFF;
-    padding-top: 10px;
-    border-bottom: 1px solid $light-gray;
-    box-shadow: 0px 0px 2px 2px rgba(150,150,150,0.1);
-  }
-  .blog-sidebar {
-    padding-top: 64px;
-  }
-}
 
 #team {
   padding-top: 32px;
@@ -1123,7 +1079,6 @@
     }
     img {
       width: 200px;
-
     }
   }
   .quotes {
