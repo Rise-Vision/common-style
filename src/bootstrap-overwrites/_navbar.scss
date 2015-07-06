@@ -7,11 +7,10 @@
     }
   }
   @media (max-width: $screen-lg) {
-    width: 70px;
     margin-left: 0px !important;
     margin-top: 4px;
   }
-  @media (max-width: $screen-md) { width: 50px; margin-top: 4px; }
+  @media (max-width: $screen-md) { margin-top: 4px; }
   @media (max-width: $screen-sm) {
     margin-top: 12px;
   }
@@ -24,7 +23,6 @@
 
 .navbar-collapse.navbar-left {
   @media (max-width: $screen-lg) {
-    margin-left: 20px;
   }
 }
 
