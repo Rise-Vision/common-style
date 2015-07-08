@@ -1,56 +1,37 @@
-.navbar-website {
-  padding: 16px 0;
-  border-bottom: none;
-  .navbar-brand {
-    margin-top: 4px;
-    margin-left: 0;
-  }
-  .navbar-left .navbar-nav {
-    margin-top: 4px;
-  }
-  .btn-link {
-    font-weight: 500;
-    &:hover, &:active, &:focus {
-      color:$dark-gray;
-      text-decoration: none;
-      outline: none;
-    }
-  }
-}
-
-.is-sticky {
-  .navbar-website {
-    padding: 8px 0;
-    border-bottom: 1px solid $lighter-gray;
-  }
-}
 
 .website {
-  font-size: 16px;
-  color: #757575;
+  font-size: 18px;
+  color: #555;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   h1, h2, h3, h4 {
-    color: #333;
+    color: #222;
     line-height: 1.3;
   }
   h1 {
-    font-size: 52px;
+    font-size: calc(52px + 0.3vw);
     font-weight: 600;
     letter-spacing: -.01em;
-    margin-top: 0;
-    @media (max-width: 1200px) {font-size:48px;}
-    @media (max-width: 992px) {font-size: 36px;}
+
+    @media (max-width: 1200px) {
+      font-size: calc(42px + 0.3vw);
+    }
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
   h2 {
-    font-size: 36px;
-    margin-bottom: 0;
+    font-size: 40px;
+    margin-bottom: 16px;
     margin-top: 0;
     font-weight: 300;
     @media (max-width: 992px) {font-size:30px;}
   }
   h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 16px;
   }
   h4 {
     font-size: 16px;
@@ -69,7 +50,7 @@
     display: inline-block;
     &:after {
       margin: 16px 0 16px;
-      width: 70%;
+      width: 60%;
       height: 2px;
       background: $rise-green;
       display: block;
@@ -105,14 +86,6 @@
       }
     }
   }
-
-  .modal-body {
-    @media (max-width: 768px) {
-      p {
-        font-size: 13px;
-      }
-    }
-  }
   
   .btn {
     svg {margin-right: 8px;}
@@ -123,21 +96,65 @@
   }
 }
 
+
+.navbar-website {
+  padding: 16px 0;
+  border-bottom: none;
+  height: 64px;
+  font-size: 16px;
+  .navbar-brand {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+  .navbar-left .navbar-nav {
+    margin-top: 4px;
+  }
+  .collapsed-nav {
+    background: #FFF;
+    border-bottom: 1px solid $light-gray;
+  }
+  .btn-link {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: -15px;
+    &:hover, &:active, &:focus {
+      color:$dark-gray;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}
+
+.is-sticky {
+  .navbar-website {
+    padding: 8px 0;
+    border-bottom: 1px solid $lighter-gray;
+  }
+}
+
 .home-banner {
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-  padding: 144px 0 64px 0;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  padding: 144px 0 128px 0;
   @media (max-width: 768px){
     padding:48px 0 32px 0;
+  }
+  .banner-headline {
+    float: right;
+    @media (max-width: 992px) {
+      float:none;
+    }
   }
   h1 {
     position: relative;
     z-index: 100;
+    margin-top: 8px;
+    letter-spacing: -1px;
+    span {
+      display: block;  
+    }
   }
   h2 {
     color: $rise-green;
@@ -162,57 +179,36 @@
     width: 100px;
     margin-bottom: 32px;
   }
-  .content-showcase {
-    transform: perspective(1000px) rotateY(-30deg);
-    -webkit-transform: perspective(1000px) rotateY(-30deg);
-    perspective-origin: bottom right;
-    -webkit-perspective-origin: bottom right;
-    float: right;
+  .content-showcase {  
+    transform: rotateY(45deg);
+    -webkit-transform: rotateY(45deg);
+    backface-visibility: hidden;
+    position: relative;
     margin-top: -48px;
-    margin-right: -16px;
-    @media (max-width: 1200px) {margin-top:0;}
-    @media (max-width: 768px) {margin-top:32px;}
-    img {
-      width: 580px;
-      @media (max-width: 1200px) {width:430px;}
-      @media (max-width: 992px) {width: 400px;}
-      @media (max-width: 768px) {width: 100%;}
+    @media (max-width: 992px) {
+      margin: 32px auto 0;
+      transform: rotateY(-45deg);
+      -webkit-transform: rotateY(-45deg);
     }
-  }
-}
-
-.counters-block {
-  z-index: 100;
-  margin-top: 32px;
-  ul {
-    margin: 0;
-    li {
-      display: inline-block;
-      margin-right: 32px;
-      @media (max-width: 768px) {margin-bottom:8px;}
-      h3 {
-        display: block;
-        margin: 0;
-        color: $rise-green;
+    img {
+      width: 500px;
+      @media (max-width: 1200px) {
+        width: 420px;
       }
-      p {
-        display: inline-block;
-        margin: 3px 0 0 5px;
-        vertical-align: text-bottom;
-        vertical-align: top;
+      @media (max-width: 992px) {
+        width: 400px;
       }
-      &:last-child {margin-right:0;}
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
 
 .content-showcase {
-  backface-visibility: hidden; 
-  position: relative;
   display: inline-block;
-  z-index: 100;
   border-radius: 5px;
-  padding: 20px 20px 35px 20px;
+  padding: 15px 15px 30px 15px;
   -webkit-box-shadow: inset 0px 0px 2px 5px rgba(0,0,0,0.55), 10px 10px 15px 10px rgba(0,0,0,0.15);
   -moz-box-shadow: inset 0px 0px 2px 5px rgba(0,0,0,0.55), 10px 10px 15px 10px rgba(0,0,0,0.15);
   box-shadow: inset inset 0px 0px 2px 5px rgba(0,0,0,0.55), 10px 10px 15px 10px rgba(0,0,0,0.15);
@@ -251,10 +247,8 @@
   }
 }
 
-
-
 .home-features {
-  padding:64px 0 32px 0;
+  padding: 32px 0 32px 0;
   background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -262,49 +256,38 @@
   background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  h2 {
-    margin-bottom: 32px;
-  }
   .feature {
-    border:1px solid #CCC;
+    border:1px solid $light-gray;
     background-color: #FFF;
     padding: 0;
     margin-bottom: 32px;
     border-radius: 4px;
     overflow: hidden;
-    h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-    }
-    p {
-      margin-bottom: 0;
-    }
-    p + p {
-      margin-top: 8px;
-    }
-    .content-showcase {
-      display: inline-block;
-      .screen {
-        position: relative;
-        img {width: 100%;}
-      }
+    -webkit-box-shadow: inset 0 -1px 0 #d5d1cb,0 1px 4px rgba(113,108,102,.1),transparent 0 0 0;
+    box-shadow: inset 0 -1px 0 #d5d1cb,0 1px 4px rgba(113,108,102,.1),transparent 0 0 0;
+    p {margin-bottom: 0;}
+    p + p {margin-top: 8px;}
+    &.upcoming {
+      border-style: dashed;
+      opacity: 0.5;
     }
   }
   .image {
-    margin-bottom: 32px;
-    float: left;
-    img {
-      width: 64px;
-    }
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 24px;
+    vertical-align: top;
+    line-height: 48px;
+    img {width: 48px;}
   }
   .image + h3 {
-    margin-left: 84px;
-  }
-  .image + h3 + p {
-    margin-left: 84px;
-  }
-  .image + h3 + p + p {
-    margin-left: 84px;
+    display: inline-block;
+    max-width: 400px;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    &.multi-line {
+      @media (min-width: 1200px) {margin-top:-4px;}
+    }
   }
   .image + h3 + p + .btn {
     margin-left: 20px;
@@ -368,7 +351,7 @@
   }
   h4 {
     padding: 16px 0;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     line-height: 1.7;
     @media (max-width: 768px) {
       margin:0;
@@ -604,11 +587,13 @@
 }
 
 .common-footer {
+  
   padding-top: 64px;
   font-size: 14px;
   font-weight: 400;
+
   .footer-col {
-    width: 49.6%;
+    width: 49.5%;
     vertical-align: top;
     display: inline-block;
   }
@@ -674,13 +659,15 @@
   h1 {
     margin-bottom: 0;
     line-height: 60px;
+    font-size: 48px;
     font-weight: 500;
   }
   h2 {
     margin-bottom: 8px; 
+    font-size: 48px;
   }
   h2 + p {
-    font-size: 20px;
+    font-size: 24px;
     color: #777;
     font-weight: 300;
   }
@@ -857,92 +844,7 @@
   }
 }
 
-.player-install {
-  padding: 8px;
-  .btn {
-    float: left;
-    padding: 14px;
-  }
-  p {
-    margin-left: 170px;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 0;
-  }
-}
 
-.ideas-list {
-  position: relative;
-  text-align: center;
-  margin:0 -8px 16px;
-  display: table;
-  border-spacing: 8px;
-  border-collapse: separate;
-  font-size: 16px;
-  li {
-    display: table-cell;
-    border:1px solid #CCC;
-    background: #FFF;
-    border-radius: 4px;
-    width: 20%;
-    padding: 24px;
-    vertical-align: top;
-    text-align: left;
-    span {
-      text-align: center;
-      transform: perspective(600px) rotateY(30deg);
-      -webkit-transform: perspective(600px) rotateY(30deg);
-      padding: 3px;
-      display: inline-block;
-      font-size: 48px;
-      margin-bottom: 8px;
-      border-radius: 2px;
-      box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.1);
-      background: rgb(149,149,149); /* Old browsers */
-      background: -moz-linear-gradient(-45deg,  rgba(149,149,149,1) 0%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(78,78,78,1) 76%, rgba(56,56,56,1) 87%, rgba(27,27,27,1) 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(149,149,149,1)), color-stop(46%,rgba(13,13,13,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(53%,rgba(10,10,10,1)), color-stop(76%,rgba(78,78,78,1)), color-stop(87%,rgba(56,56,56,1)), color-stop(100%,rgba(27,27,27,1))); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(-45deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(-45deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(-45deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* IE10+ */
-      background: linear-gradient(135deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 );
-      border: 1px solid #555;
-      i {
-        background: #FFF;
-        height: 85px;
-        line-height: 85px;
-        width: 128px;
-        &:before {
-          color:$rise-green;
-        }
-      }
-    }
-  }
-  @media (max-width: 768px) {
-      display:block;
-      margin: 0;
-      li {
-        display: block;
-        width: 100%;
-        margin-bottom: 16px;
-        h3 {
-          margin-top: 8px;
-        }
-        span {
-          float: left;
-          margin-right: 16px;
-          margin-top: 8px;
-          width: 70px;
-          i {width: 58px; font-size: 32px;}
-        }
-      }
-    }
-  }
-
-
-#team {
-  padding-top: 32px;
-}
 
 .team-list {
   margin: 32px -10px 0 0;
@@ -1033,32 +935,7 @@
   }
 }
 
-.logged-out-block {
-  padding: 16px 0 16px;
-  .content-box {
-    padding: 24px;
-    h3 {margin-top: 0;}
-  }
-  span {
-    float: left;
-    display: block;
-    margin-right: 32px;
-    @media (max-width: 768px) {
-      float:none;
-    }
-    img {
-      width: 200px;
-    }
-  }
-  .quotes {
-    display: none;
-    .content-box {
-      padding: 16px;
-      font-size: 14px;
-      font-style: italic;
-    }
-  }
-}
+
 
 .light-gray-bg {
   padding-bottom: 100px;
@@ -1099,190 +976,8 @@
   }
 }
 
-.pricing-list, .compare-list {
-  position: relative;
-  h3 {
-    text-align: center;
-    -webkit-transition: all 0.2s; /* Safari 3.1 to 6.0 */
-    transition: all 0.2s;
-  }
-  @media (max-width: 768px) {
-    .heading {
-      border:1px solid #CCC;
-      border-bottom-color: $light-gray;
-      margin: 0;
-      font-weight: 600;
-      border-radius: 16px 16px 0 0;
-      padding: 16px;
-      background:#FFF;
-      text-align: left;
-    }
-  }
-  .col-container {
-    h3 {
-      font-size: 16px;
-      font-weight: 500;
-      text-align: left;
-      -webkit-transition: all 0.2s; /* Safari 3.1 to 6.0 */
-      transition: all 0.2s;
-    }
-    p {
-      margin: 0;
-    }
-    .btn-primary {
-      display: block;
-      margin: 0 35%;
-    }
-    &:hover {
-      .free-col {
-        background: lighten($rise-green, 45%);
-        box-shadow: 3px 3px 14px $light-gray;
-      }  
-      h3:first-child {
-        font-weight: 600;
-      }
-    }
-    
-  }
-
-  .free-col {
-    position: relative;
-    text-align: center;
-    background: rgba(255,255,255,0.6);
-    border-left: 1px solid $light-gray;
-    border-right: 1px solid $light-gray;
-    border-bottom: 1px solid $light-gray;
-    -webkit-transition: all 0.2s; /* Safari 3.1 to 6.0 */
-    transition: all 0.2s;
-    &.first-col {
-      border-radius: 16px 16px 0 0;
-      border-top: 1px solid $light-gray;
-    }
-    &.last-col {
-      border-radius:  0 0 16px 16px;
-      border-bottom: 1px solid $light-gray;
-    }
-    @media (max-width: 768px) {
-      display:block;
-      width:100%;
-      height:auto;
-    }
-  }
-}
-
-.pricing-list {
-  margin: 32px 0 64px;
-  .col-container {
-    h3 {
-      margin-top: 48px;
-    }
-    @media (max-width: 768px) {
-      border:1px solid #CCC;
-      border-bottom-color: $light-gray;
-      border-top: 0;
-      background: #FFF;
-      padding: 16px;
-      &:last-child {
-        border-radius: 0 0 16px 16px;
-      }
-      h3 {margin: 0 0 8px;}
-      .btn {
-        margin: 0;
-        display: inline-block;
-        width: 80px;
-      }
-    }
-  }
-  .free-col {
-    padding: 16px;
-    width: 480px;
-    margin-right: 20px;
-    height: 128px;
-    vertical-align: middle;
-    display: table-cell;
-  }
-  
-}
-
-.players-list {
-  margin: 32px 0;
-  .col-xs-2 {width: 20%;}
-  .free-col {
-    width: 140px;
-    font-size: 14px;
-    padding: 8px;
-    height: 64px;
-    vertical-align: middle;
-    display: table-cell;
-    @media (max-width: 1200px) {
-      width: 120px;
-    }
-    @media (max-width: 992px) {
-      width: 140px;
-    }
-  }
-}
-.player-info {
-  background: #eee;
-  padding: 48px 0;
-  margin: 32px 0 48px;
-}
 
 
-.comparison {
-  padding: 0 16px;
-  img {
-    width: 256px;
-    margin-bottom: 16px;
-  }
-  @media (max-width: 768px) {
-      padding:0;
-    }
-  .compare-labels {
-    vertical-align: top;
-    display: inline-block;
-    width: 15%;
-    span {
-      display: block;
-      border-bottom: 1px solid transparent;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 16px 16px;
-    }
-  }
-  .compare-columns {
-    font-size: 14px;
-    width: 84%;
-    display: inline-block;
-    @media (max-width: 768px) {
-      width:100%;
-    }
-    @media (max-width: 992px) {
-      font-size:13px;
-    }
-    .content-box {
-      margin-left: 5px;
-      @media (max-width: 768px) {
-        margin-left:0;
-      }
-    }
-    .btn {
-      display: block;
-    }
-    span {
-      display: block;
-      padding: 16px 16px;
-      border-bottom: 1px solid $light-gray;
-      &:first-child {
-        font-weight:500;
-        font-size: 16px;
-      }
-      @media (max-width: 992px) {
-        padding:16px 8px;
-      }
-    }
-  }
-}
 
 @mixin linear-gradient($fromColor, $toColor) {
   background-color: $toColor; /* Fallback Color */
@@ -1464,97 +1159,3 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-.odometer.odometer-auto-theme, .odometer.odometer-theme-plaza {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  position: relative;
-}
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-plaza .odometer-digit {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  position: relative;
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-plaza .odometer-digit .odometer-digit-spacer {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  visibility: hidden;
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-plaza .odometer-digit .odometer-digit-inner {
-  text-align: left;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-plaza .odometer-digit .odometer-ribbon {
-  display: block;
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-plaza .odometer-digit .odometer-ribbon-inner {
-  display: block;
-  -webkit-backface-visibility: hidden;
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-plaza .odometer-digit .odometer-value {
-  display: block;
-  -webkit-transform: translateZ(0);
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-plaza .odometer-digit .odometer-value.odometer-last-value {
-  position: absolute;
-}
-.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-plaza.odometer-animating-up .odometer-ribbon-inner {
-  -webkit-transition: -webkit-transform 2s;
-  -moz-transition: -moz-transform 2s;
-  -ms-transition: -ms-transform 2s;
-  -o-transition: -o-transform 2s;
-  transition: transform 2s;
-}
-.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-plaza.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-plaza.odometer-animating-down .odometer-ribbon-inner {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-plaza.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
-  -webkit-transition: -webkit-transform 2s;
-  -moz-transition: -moz-transform 2s;
-  -ms-transition: -ms-transform 2s;
-  -o-transition: -o-transform 2s;
-  transition: transform 2s;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-
-.odometer.odometer-auto-theme, .odometer.odometer-theme-plaza {
-  -moz-border-radius: 0.15em;
-  -webkit-border-radius: 0.15em;
-  border-radius: 0.15em;
-  background-color: #222;
-  padding: 2px 6px 0px 6px;
-}
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-plaza .odometer-digit {
-}
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-plaza .odometer-digit .odometer-digit-inner {
-  left: 0.03em;
-}
