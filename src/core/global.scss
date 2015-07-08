@@ -9,12 +9,15 @@
 /* ==========================================================================
    Standard tags
    ========================================================================== */
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 html,
 body {
-  /* Display & Box Model */
-  height: 100%;
-
-  /* Visual */
   background: $brand-bg;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
