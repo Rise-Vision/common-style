@@ -1061,3 +1061,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+#webinar-frame {
+  background: #222;
+  iframe {
+    margin: 16px;
+    width: 800px;
+    height: 600px;
+  }
+}
