@@ -9,34 +9,20 @@
 /* ==========================================================================
    Standard tags
    ========================================================================== */
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 html,
 body {
-  /* Display & Box Model */
-  height: 100%;
-
-  /* Fir off Canvas Menu */
-  overflow-x: hidden;
-
-  /* Visual */
   background: $brand-bg;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   /*background: transparent;*/
 }
-
-/**    
-* Start of workaround for Bootstrap bug where content shifts when modal   
-* is opened.
-*   
-* https://github.com/twbs/bootstrap/issues/9855   
-*/    
-html {   
-  overflow: hidden;    
-  -ms-overflow-style: scrollbar;   
-}    
-   
-body { overflow: auto;}   
-/* End of workaround */
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold;}
 
@@ -86,7 +72,6 @@ a:hover {
   .navbar-nav {
     > a {
       border: #fff solid 1px;
-
       /* Visual */
       font-weight: bold;
     }
@@ -97,13 +82,11 @@ a:hover {
     .active > a:focus {
       /* Display & Box Model */
       border: 1px solid $light-gray;
-
       /* Visual */
       color: $rise-blue;
       background-color: $lighter-gray;
     }
   }
-
   /* First-level menu items. */
   > a {
     border-radius: 0;
@@ -115,78 +98,59 @@ a:hover {
 
 /* First-level menu items. */
 .navbar-default .actions-nav {
-  /* Display & Box Model */
-
-  /* Visual */
   text-align: center;
-
   > li {
     /* Positioning */
     float: none;
-
     /* Display & Box Model */
     display: inline-block;
-
     /* Visual */
     vertical-align: top;
-
     ul {
       text-align: left;
     }
-
     > a {
       @extend .fa-box;
     }
-
     > a:hover {
       border-color: $light-gray;
       background-color: $lighter-gray;
     }
-
     > a:focus {
       background-color: transparent;
     }
   }
-
   /* Links in system messages */
   .open .dropdown-menu .system-message > a {
     /* Display & Box Model */
     display: inline-block;
     padding: 0;
-
     /* Visual */
     color: $rise-blue;
     background-color: transparent;
   }
-
   > li > a .label {
     /* Positioning */
     position: absolute;
     left: 60%;
     top: -2px;
     z-index: 1;
-
     /* Display & Box Model */
     padding: 4px 7px;
-
     /* Visual */
     font-size: 50%;
     vertical-align: middle;
   }
-
   .system-messages {
     left: 0;
   }
-
   .system-message {
     padding-left: 20px;
     padding-right: 20px;
     margin: 9px 0;
   }
-
   /* Shopping cart */
   > li.shopping-cart > a .label { left: 75%; }
-
   /* Company menu */
   .dropdown .company-menu { right: -62px; }
   .dropdown .company-menu::before { right: 80px; }
@@ -199,6 +163,7 @@ a:hover {
   > li > a {
     border: 1px solid #fff;
   }
+  
 
   /* CSS arrows at top of dropdowns. */
   .dropdown {
@@ -330,36 +295,28 @@ a:hover {
 .menu-box {
   /* Display & Box Model */
   /* Visual */
-  text-align: center;
-
   a {
     /* Display & Box Model */
     display: block;
     padding: 10px 15px;
-
+    text-align: center;
     /* Visual */
     color: $gray;
-
     &:hover {
       background-color: $lighter-gray;
     }
   }
-
   span {
     /* Display & Box Model */
     display: block;
     width: 100%;
-
     /* Visual */
   }
-
   .fa {
     @extend .fa-box;
     @extend .glyphicon-box;
     margin: 0 auto;
   }
-
-  .fa::before { font-size: 40px; }
 }
 
 /* Company Selector
@@ -486,8 +443,9 @@ a:hover {
    ========================================================================== */
 .profile-pic {
   /* Display & Box Model */
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  background-color: $lighter-gray;
 
   /* Visual */
   border-radius: 50%;
@@ -518,14 +476,11 @@ a:hover {
   .navbar-default {
     padding-top: 10px;
     padding-bottom: 10px;
-
     .navbar-collapse {
       margin-left: 20px;
-
       .navbar-nav {
         > li {
           margin-left: 5px;
-
           > a {
             font-weight: 500;
             line-height: 32px;
@@ -544,15 +499,12 @@ a:hover {
   .navbar-default .actions-nav {
     padding: 0;
     border-top: none;
-
     > li {
       /* Positioning */
       float: none;
-
       /* Display & Box Model */
       margin-left: 5px;
     }
-
     .dropdown {
       .system-messages {
         /* Display & Box Model */
@@ -560,13 +512,10 @@ a:hover {
       }
     }
   }
-
-  .actions-nav:last-child { margin-right: 0; }
-
+  .actions-nav:last-child {margin-right: 0;}
   /* Payment Methods */
-  .payment-methods .edit { text-align: right; }
+  .payment-methods .edit {text-align: right;}
 }
-
 
 /* ==========================================================================
    Content
@@ -729,11 +678,6 @@ ul.social {
       background-position: -96px 0;
     }
   }
-}
-
-.button-row {
-  overflow: hidden;
-  margin: 40px 0 40px;
 }
 
 /* Media queries

@@ -8,7 +8,7 @@
 }
 
 .btn-lg {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .btn-hg,
@@ -28,4 +28,8 @@
 
 .btn-store {
   @include button-variant($white, $rise-blue, $rise-blue, $btn-default-border-disabled, darken($rise-blue, 10%), lighten($rise-blue, 5%));
+}
+
+.btn-white {
+  @include button-variant(darken($rise-green, 10%), $white, $white, $btn-default-border-disabled, darken($white, 10%), lighten($white, 5%));
 }

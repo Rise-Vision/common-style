@@ -1,15 +1,9 @@
-.double-margin {
-  margin-bottom: 40px !important;
-}
-
 .sub-company-alert.test-company-alert {
   background-color: $brand-danger;
 }
-
 .sub-company-alert.test-company-alert + .sub-company-alert {
   margin-top: 5px;
 }
-
 .sub-company-alert {
   width: 100%;
   line-height: 24px;
@@ -21,15 +15,12 @@
   text-align: center;
   display: inline-block;
 }
-
 .sub-company-alert .link-button {
   display: inline-block;
   font-weight: bold;
 }
-
 .authorization-modal {
   text-align: center;
-
   .profile-img {
     width: 72px;
     height: 72px;
@@ -37,18 +28,24 @@
        -moz-border-radius: 72px;
             border-radius: 72px;
   }
-
   p,
   .btn { margin-top: 40px;}
 }
 
 .user-profile-dropdown {
+  a {
+    border: none !important;
+    &:hover {
+      background: none !important;
+    }
+  }
   .dropdown-toggle {
     .user-id {
+      margin-top: 3px;
       span {
         display: block;
         line-height: 14px;
-        font-size: 12px;
+        font-size: 13px;
         text-align: right;
         white-space: nowrap;
         overflow: hidden;
@@ -103,7 +100,6 @@
     padding: 15px;
     text-align: right;
     border-top: 1px solid #e6e6e6;
-
   }
   @media (max-width: 480px) {
     .user-id {
@@ -112,11 +108,4 @@
         margin-right: 0;
       }
     }
-    .profile-pic {
-      display: none;
-    }
   }
-
-.app-navigation li {
-  padding: 0;
-}
