@@ -425,3 +425,56 @@
 
 
 
+.product-details
+{
+  h3
+  {
+    margin: 22px 0 11px 0;
+  }
+  .product-name
+  {
+    margin-top: 33px;
+  }
+  .purchase-form__button button
+  {
+    &.btn-primary
+    {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    &.btn-default
+    {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    &.btn-link
+    {
+      font-size: 14px;
+
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    i
+    {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and(max-width: 660px)
+{
+  .product-details .mobile-filters
+  {
+    position: relative;
+    top: 20px;
+    button i
+    {
+      margin-right: 5px;
+    }
+  }
+}
+.owl-item a img
+{
+  width: 94% !important;
+  height: 332px !important;
+}
