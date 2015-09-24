@@ -1,60 +1,11 @@
-@mixin ellipsis($line-number,$line-width) {
-  max-height: 
-    ($line-number * 20px);
-  @if $line-width == small {
-    width: 120px
-  }
-  @if $line-width == medium {
-    width: 160px
-  } 
-  @if $line-width == large {
-    width: 320px
-  }
-  @if $line-width == full {
-    width: 100%
-  }  
-}
-
-.text-action {
-  color: $rise-blue;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.auto-height {
-  margin:0 auto;
-  min-height: 200px;
-  overflow-y:auto;
-}
-
-.ellipsis {
-  overflow: hidden;
-  display: block;
-}
-
-span.ellipsis {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .nowrap {
   white-space: nowrap;
 }
 
-.ellipsis-md {
-  @include ellipsis(2,full);
-}
-.ellipsis-full {
-  @include ellipsis(1,full);
-}
-.ellipsis-sm {
-  @include ellipsis(1,medium);
-}
-.ellipsis-lg {
-  @include ellipsis(1,large);
-}
-.ellipsis-xs {
-  @include ellipsis(1,small);
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .ahrefdisabled {
@@ -115,7 +66,6 @@ svg {
   opacity: .65;
 }
 
-
 svg:hover path {
   fill: rgba(0,0,0,.7);
 }
@@ -124,7 +74,6 @@ path {
   fill: rgba(0,0,0,.4);
 }
 
-/* Icon Colors */
 .fa.icon-gray:before {
   color: #BBB;
 }
@@ -138,3 +87,28 @@ path {
   color: $white;
 }
 
+.row.sm-gutter {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.row.sm-gutter [class*='col-']:not(:first-child),
+.row.sm-gutter [class*='col-']:not(:last-child) {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.row.no-gutter {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.text-small {
+  font-size: 12px;
+}

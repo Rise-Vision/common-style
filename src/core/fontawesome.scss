@@ -1,16 +1,6 @@
 /* ==========================================================================
    font awesome
    ========================================================================== */
-.fa-box {
-  /* Display & Box Model */
-  min-width: 50px;
-  padding: 1px 10px 0;
-  line-height: 30px;
-
-  /* Visual */
-  font-size: 24px;
-}
-
 .fa {
   padding: 0;
 }
@@ -18,10 +8,6 @@
 .fa:before {
   position: relative;
   margin: 0;
-}
-
-.fa::before {
-  color: $gray;
 }
 
 .fa-white::before {

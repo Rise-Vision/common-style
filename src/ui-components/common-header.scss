@@ -1,3 +1,107 @@
+.navbar {
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-bottom: solid 1px #f4f4f4;
+  .navbar-header {
+    height: auto;
+    li {
+      vertical-align: top;
+      >a {
+        line-height: 33px;
+        padding: 0;
+      }
+    }
+    .navbar-brand {
+      margin-right: 10px;
+    }
+    .navbar-right {
+      margin:0;
+      >li {
+        display: inline-block;
+        >a {
+          display: block;
+          padding: 0;
+          font-size: 24px;
+          margin-left: 10px;
+          &:hover {}
+          &:focus {}
+          >.fa {
+            display: block;
+            line-height: 33px;
+            padding: 0 10px;
+          }
+        }
+        &.dropdown {
+        }
+      }
+      .profile-pic {
+        width: 33px;
+        height: 33px;
+        border-radius: 4px;
+        vertical-align: top;
+      }
+    }
+    .navbar-left {
+    }
+  }
+}
+
+.app-navigation {
+  width: 240px;
+  >li {
+    overflow: hidden;
+  }
+  .menu-box {
+    width: 50%;
+    text-align: center;
+    a {
+      display: block;
+      color: $dark-gray;
+      padding: 10px;
+      &:hover {
+        background: #f5f5f5;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+      span {
+        display: block;
+        line-height: 12px;
+      }
+    }
+  }
+}
+
+/* Company Selector
+   ========================================================================== */
+.company-search {
+  padding-top: 20px;
+}
+
+/* Move Company
+   ========================================================================== */
+.move-company {
+  label {
+    font-weight: normal;
+  }
+  a {
+    line-height: 34px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .to-company {
+    margin-bottom: 20px;
+  }
+}
+
+/* Company Settings
+   ========================================================================== */
+.company-settings .action-link {
+  margin-left: 20px;
+}
+
 .double-margin {
   margin-bottom: 40px !important;
 }
@@ -29,17 +133,14 @@
 
 .authorization-modal {
   text-align: center;
-
   .profile-img {
     width: 72px;
     height: 72px;
     -webkit-border-radius: 72px;
-       -moz-border-radius: 72px;
-            border-radius: 72px;
+    -moz-border-radius: 72px;
+    border-radius: 72px;
   }
-
-  p,
-  .btn { margin-top: 40px;}
+  p,.btn { margin-top: 40px;}
 }
 
 .user-profile-dropdown {
@@ -47,28 +148,21 @@
     .user-id {
       span {
         display: block;
-        line-height: 14px;
-        font-size: 12px;
+        line-height: 16px;
+        font-size: 14px;
         text-align: right;
         white-space: nowrap;
         overflow: hidden;
         text-overflow:ellipsis;
       }
+      strong {
+        font-size: 12px;
+        color: #999;
+      }
     }
   }
-  .app-nav-icon {
-    white-space: nowrap;
-    display: block;
-    color: #777;
-  }
+
   .dropdown-header .app-nav-icon {
-        text-align: right;
-        font-size: 12px;
-        line-height: 14px;
-  .dropdown-header span {
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
     }
   }
   .dropdown-header {
@@ -103,23 +197,12 @@
     padding: 15px;
     text-align: right;
     border-top: 1px solid #e6e6e6;
-
   }
   @media (max-width: 480px) {
     .user-id {
-      span {
-        max-width:96px;
-        margin-right: 0;
-      }
-    }
-    .profile-pic {
-      display: none;
+     
     }
   }
-
-.app-navigation li {
-  padding: 0;
-}
 
 .signup-modal {
   font-size: 18px;
@@ -130,4 +213,23 @@
     font-weight: 300;
     margin-top: 0;
   }
+}
+
+
+
+
+.actions-nav {
+  > li > a .label {
+    position: absolute;
+    left: 60%;
+    top: -2px;
+    z-index: 1;
+    padding: 4px 7px;
+    font-size: 50%;
+    vertical-align: middle;
+  }
+  > li.shopping-cart > a .label { left: 75%; }
+  .dropdown .company-menu { right: -62px; }
+  .dropdown .company-menu::before { right: 80px; }
+  .dropdown .company-menu::after { right: 81px; }
 }

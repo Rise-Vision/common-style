@@ -12,14 +12,14 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-darker:            lighten(#000, 15%); // #222
 $gray-dark:              lighten(#000, 20%);   // #333
 $gray:                   lighten(#000, 33.5%); // #555
 $gray-light:             lighten(#000, 46.7%); // #777
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
-$brand-primary:         #2d60ad;
-$brand-primary2:        #5cb85c;
+$brand-primary:         #0081BA;
+$brand-primary2:        #0081BA;
 $brand-bg:              #f4f4f4;
 $brand-success:         #45b864;
 $brand-success2:        #5cb85c;
@@ -62,7 +62,7 @@ $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 $font-size-h1:            floor(($font-size-base * 2.15)); // ~30px
 $font-size-h2:            floor(($font-size-base * 1.72)); // ~24px
 $font-size-h3:            ceil(($font-size-base * 1.25)); // ~18px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h4:            ceil(($font-size-base * 1.15)); // ~18px
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
@@ -108,10 +108,10 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.33;
 $line-height-small:         1.5;
 
-$border-radius-base:        0px;
-$border-radius-base2:       4px;
+$border-radius-base:        3px;
+$border-radius-base2:       3px;
 $border-radius-large:       6px;
-$border-radius-small:       3px;
+$border-radius-small:       2px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
@@ -129,7 +129,7 @@ $caret-width-large:         5px;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            8px;
+$table-cell-padding:            10px;
 //** Padding for cells in `.table-condensed`.
 $table-condensed-cell-padding:  5px;
 
@@ -149,9 +149,9 @@ $table-border-color:            #ddd;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal;
+$btn-font-weight:                400;
 
-$btn-default-color:              #555;
+$btn-default-color:              #333;
 $btn-default-bg:                 #e8e8e8;
 $btn-default-border:             #CCC;
 $btn-default-border-disabled:    $brand-bg;
@@ -173,8 +173,8 @@ $btn-warning-bg:                 $brand-warning;
 $btn-warning-border:             darken($btn-warning-bg, 5%);
 
 $btn-danger-color:               #fff;
-$btn-danger-bg:                  $brand-danger;
-$btn-danger-border:              darken($btn-danger-bg, 5%);
+$btn-danger-bg:                  lighten($brand-danger, 10%);
+$btn-danger-border:              darken($btn-danger-bg, 25%);
 
 $btn-link-disabled-color:        $gray-light;
 
@@ -184,18 +184,18 @@ $btn-link-disabled-color:        $gray-light;
 //##
 
 //** `<input>` background color
-$input-bg:                       #fff;
+$input-bg:                       #FFF;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter;
 
 //** Text color for `<input>`s
 $input-color:                    $gray;
 //** `<input>` border color
-$input-border:                   #ccc;
+$input-border:                   #d4d4d4;
 //** `<input>` border radius
 $input-border-radius:            $border-radius-base2;
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9;
+$input-border-focus:             #30a7fc;
 
 //** Placeholder text color
 $input-color-placeholder:        $gray-light;
@@ -612,8 +612,8 @@ $modal-header-border-color:   #e5e5e5;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color;
 
-$modal-lg:                    900px;
-$modal-md:                    600px;
+$modal-lg:                    1200px;
+$modal-md:                    900px;
 $modal-sm:                    300px;
 
 

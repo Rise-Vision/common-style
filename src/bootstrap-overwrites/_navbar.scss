@@ -1,61 +1,26 @@
-.navbar-brand {
-  width: 100px;
-  margin-top: 5px;
-  line-height: 33px;
-  font-size: 22px;
-
-  @media (min-width: $grid-float-breakpoint) {
-    .navbar > .container &,
-    .navbar > .container-fluid & {
-      margin-left: 0;
+.navbar {
+  .navbar-brand {
+    padding: 0;
+    height: auto;
+    img, i {
+      height: 33px;
+    }
+    i {
+      line-height: 33px;
+      padding: 0 15px;
     }
   }
-
-  @media (max-width: $screen-lg) {
-    width: 80px;
-    margin-left: 0px !important;
-    margin-top: 10px;
-  }
-
-  @media (max-width: $screen-sm) { width: 80px; }
-
-  i {
-    @media (max-width: $screen-lg) {
-      font-size: 24px;
-    }
-  }
-}
-
-.navbar-collapse.navbar-left {
-  @media (max-width: $screen-lg) {
-    margin-left: 20px;
-  }
-}
-
-
-.navbar-toggle {
-  border-radius: $border-radius-base2;
-}
-
-.navbar-default {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
   .navbar-nav {
-    margin-top: 8px;
     > li > a {
       color: $navbar-default-link-color;
-      border-radius: 3px;
-      padding: 0;
       height: 33px;
       &:hover,
       &:focus {
         color: $navbar-default-li-link-hover-color;
-        border: 1px solid #e5e5e5;
       }
     }
   }
 
-  // Dropdown menu items
   .navbar-nav {
     // Remove background color from open dropdown
     > .open > a {
@@ -88,5 +53,11 @@
         }
       }
     }
+  }
+}
+
+.navbar-collapse.navbar-left {
+  @media (max-width: $screen-lg) {
+    margin-left: 20px;
   }
 }

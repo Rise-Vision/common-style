@@ -1,18 +1,6 @@
 .storage-full {
-
-  /* ==========================================================================
-     General Styles
-     ========================================================================== */
-  body {
-    height: 100%;
-  }
-
   .notifications {
     margin: 0px 5px;
-  }
-
-  .icon-green.fa:before {
-    color: #4AB767;
   }
   .toolbar {
     margin: 10px 0;
@@ -21,37 +9,39 @@
     color: #777;
     margin-left: 5px;
   }
-  @-webkit-keyframes fadeOut {
-    0% {
-      opacity: 1;
+  .table-2 {
+    .folder,.file {
+      &:before {
+        font-family: FontAwesome;
+      }
     }
-    100% {
-      opacity: 0;
-      height: 0;
+    .back-btn .folder {
+      &:before {content:'\f07c'; color: $rise-green;}
     }
-  }
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
+    .folder {
+      &:before {content:'\f07b'; color: $rise-green; margin-right: 10px;}
     }
-    100% {
-      opacity: 0;
-      height: 0;
+    .file {
+      &:before {content:'\f15b'; color: #d4d4d4;}
     }
-  }
-  .fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
-  }
-  .animated {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    .sub-folder {
+      margin-left: 22px;
+      position: relative;
+      &:after {
+        content:'';
+        width: 15px;
+        height: 6px;
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: -20px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+    }
   }
 }
+
 #store-modal-frame {
   position: absolute;
   left: 0;
@@ -59,3 +49,5 @@
   width: 100%;
   height: 100%;
 }
+
+

@@ -1,23 +1,61 @@
-.dropdown-menu {
-  border-radius: $border-radius-base2;
+.dropdown {
+  .dropdown-menu {
+    top: 120%;
+    left: auto;
+    right: 0;
+    padding: 0;
+    border-radius: $border-radius-base2 !important;
+    .divider {
+      @include nav-divider($dropdown-divider-bg, 0);
+    }
+    ul {
+      list-style: none;
+      margin:0;
+      padding: 0;
+    }   
+  }
+  > .dropdown-menu::before,
+  > .dropdown-menu::after {
+      position: absolute;
+      display: inline-block;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #ccc;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      content: '';
+  }
+  > .dropdown-menu::before {
+    top: -7px;
+    right: 9px;
+  }
+  > .dropdown-menu::before,
+  > .dropdown-menu::after {
+    top: -7px;
+    right: 19px;
+  }
+  > .dropdown-menu::after {
+    top: -6px;
+    right: 20px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-bottom-color: #fff;
+  }
+  .dropdown-menu > ul > li > a, .action-sheet > ul > li > a {
+    color: $dark-gray;
+    display: block;
+    padding: 10px;
+  }
 
-  // Dividers (basically an hr) within the dropdown
-  .divider {
-    @include nav-divider($dropdown-divider-bg, 0);
+  .dropdown-menu > ul > li > a:hover,
+  .dropdown-menu > ul > li > a:focus {
+    background-color: rgba(150,150,150,0.1);
+    color: $rise-blue;
+  }
+  .dropdown-menu > ul > .active > a,
+  .dropdown-menu > ul > .active > a:hover,
+  .dropdown-menu > ul > .active > a:focus {
+    background-color: #357ebd
   }
 }
 
-.dropdown-menu > ul > li > a, .action-sheet > ul > li > a {
-	color: $dark-gray;
-}
-
-.dropdown-menu > ul > li > a:hover,
-.dropdown-menu > ul > li > a:focus {
-  background-color: #f5f5f5;
-  color: $rise-blue;
-}
-.dropdown-menu > ul > .active > a,
-.dropdown-menu > ul > .active > a:hover,
-.dropdown-menu > ul > .active > a:focus {
-  background-color: #357ebd
-}

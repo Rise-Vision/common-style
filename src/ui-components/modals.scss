@@ -1,17 +1,3 @@
-/* ==========================================================================
-   Modals
-   ========================================================================== */
-
-/**
- * Part of workaround for Bootstrap bug where content shifts when modal
- * is opened.
- *
- * https://github.com/twbs/bootstrap/issues/9855
- */
-.modal-open {
-  overflow: auto;
-}
-
 .modal-custom > div {
     width: auto;
     display: table;
@@ -31,98 +17,23 @@
   }
 }
 
-.modal { z-index: 9999; }
-
-.modal-backdrop.in { z-index: 9001; }
-
-.modal-content {
-  padding: 0;
-  background: #fcfcfc;
-}
-
-.close {
-  font-size: 16px;
-  margin-top: 0px;
-}
-
-.modal-header {
-  margin-bottom: 0;
-  background: $lighter-gray;
-  border-radius: 4px 4px 0 0;
-  .close {
-    padding: 15px;
-  }
-}
-
-.modal-title {
-  font-weight: 500;
-  padding:15px;
-}
-
-.modal-title + .header-nav {
-  margin-top: -5px;
-}
-
-.modal-header,
-.modal-footer {
-  border: none;
-  overflow: hidden;
-
-  .btn {
-    .fa::before, .glyphicons::before {
-      /* Display & Box Modes */
-      margin-top: -2px;
-      /* Visual */
-    }
-  }
-}
-
-
-.modal-body {
-  padding:15px;
-}
-
-.modal-header, .modal-footer {
-  padding: 0;
-}
-
-.modal-footer {
-  padding: 0 15px 15px;
-  margin-top: 0;
-
-  .btn-fixed-width {
-    width: 102px;
-  }
-
-  input[type="checkbox"] { float: none; }
-}
-
-/* Sign In button that is part of a modal. */
 .modal-dialog .sign-in,
 .modal-dialog .sign-in:hover {
   @extend .btn-sign-in;
-
-  /* Positioning */
   float: left;
-
   .fa::before, .glyphicons::before {
-    line-height: 30px; /* TODO: Make this a variable. */
+    line-height: 30px;
   }
 }
 
-/* Media queries
-   ========================================================================== */
-@media (max-width: $screen-xs) {
-  .modal-dialog { margin: 5px; }
+iframe {
+  height: calc(100vh - 240px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+} 
 
-  .modal-header {
-    .modal-title {  }
-    .close { padding: 15px;}
-  }
-
-  .modal-footer {
-    .btn-fixed-width {
-      width: 96px;
-    }
-  }
+iframe.modal-dialog {
+  border: none;
+  margin: 0;
+  width: 100%;
 }

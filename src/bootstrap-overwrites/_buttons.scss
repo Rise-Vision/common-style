@@ -1,6 +1,5 @@
 .btn {
   outline:0;
-  border-radius: 3px;
 }
 
 .btn-lg {
@@ -16,6 +15,10 @@
 
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $btn-default-border-disabled, #fff, #d5d5d5);
+}
+
+.btn-inverse {
+  @include button-variant($white, $gray-darker, $gray, $btn-default-border-disabled, $rise-green, lighten($gray-darker, 5%));
 }
 
 .btn-primary {

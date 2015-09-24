@@ -1,27 +1,22 @@
 /* ==========================================================================
-   SASS Extend
-   ========================================================================== */
-.button-hover {
-  background: $lighter-gray;
-  border-color: $light-gray;
-}
-
-/* ==========================================================================
    Standard tags
    ========================================================================== */
 html{
   height: 100%;
+  -ms-overflow-style: scrollbar; 
 }
 body {
   min-height: 100%;
+  overflow: auto;
+  position: relative;
 }
 
 html,
 body {
-  background: $brand-bg;
+  background: #fcfcfc;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  /*background: transparent;*/
 }
 
 /**    
@@ -33,365 +28,29 @@ body {
 
 body.modal-open {
     overflow: hidden;
-}
-
-html {   
-  -ms-overflow-style: scrollbar;   
 }    
    
-body { overflow: auto;}   
-/* End of workaround */
-
-h1, h2, h3, h4, h5, h6 { font-weight: bold;}
-
 a:hover {
   text-decoration: none;
-  .fa::before, .glyphicons::before {
-    color: $dark-gray;
-  }
-  .fa-danger::before , .glyphicon-danger::before{
-    color: $danger;
-  }
 }
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-
-.navbar-header {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-nav {
-  >li>a.selected {
-    color: $rise-blue;
+body.intercom-messenger-active {
+  @media (min-width: 1200px) {
+    width: calc(100% - 368px);
   }
 }
 
-/* Hamburger icon */
-.navbar-toggle {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
 
-/* Logo container */
-.navbar-brand {
-  height: auto;
-  padding: 0;
-  margin-left: 15px;
-}
 
-/* Primary Menu (left-hand side)
-   ========================================================================== */
-/* Expanded primary menu. */
-.navbar-left {
-  border-top: none;
-  .navbar-nav {
-    > a {
-      border: #fff solid 1px;
-      font-weight: bold;
-    }
-
-    > a:hover,
-    > .active > a,
-    > .active > a:hover,
-    .active > a:focus {
-      border: 1px solid $light-gray;
-      color: $rise-blue;
-      background-color: $lighter-gray;
-    }
-  }
-
-  /* First-level menu items. */
-  > a {
-    border-radius: 0;
-  }
+.intercom-launcher {
+  bottom: 80px !important;
+  right: 20px !important;
 }
 
 /* Actions Menu
    ========================================================================== */
 
-/* First-level menu items. */
-.navbar-default .actions-nav {
-  /* Display & Box Model */
 
-  /* Visual */
-  text-align: center;
-
-  > li {
-    /* Positioning */
-    float: none;
-
-    /* Display & Box Model */
-    display: inline-block;
-
-    /* Visual */
-    vertical-align: top;
-
-    ul {
-      text-align: left;
-    }
-
-    > a {
-      @extend .fa-box;
-    }
-
-    > a:hover {
-      border-color: $light-gray;
-      background-color: $lighter-gray;
-    }
-
-    > a:focus {
-      background-color: transparent;
-    }
-  }
-
-  /* Links in system messages */
-  .open .dropdown-menu .system-message > a {
-    /* Display & Box Model */
-    display: inline-block;
-    padding: 0;
-
-    /* Visual */
-    color: $rise-blue;
-    background-color: transparent;
-  }
-
-  > li > a .label {
-    /* Positioning */
-    position: absolute;
-    left: 60%;
-    top: -2px;
-    z-index: 1;
-
-    /* Display & Box Model */
-    padding: 4px 7px;
-
-    /* Visual */
-    font-size: 50%;
-    vertical-align: middle;
-  }
-
-  .system-messages {
-    left: 0;
-  }
-
-  .system-message {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 9px 0;
-  }
-
-  /* Shopping cart */
-  > li.shopping-cart > a .label { left: 75%; }
-
-  /* Company menu */
-  .dropdown .company-menu { right: -62px; }
-  .dropdown .company-menu::before { right: 80px; }
-  .dropdown .company-menu::after { right: 81px; }
-}
-
-/* All Navbars
-   ========================================================================== */
-.navbar-default .navbar-nav {
-  > li > a {
-    border: 1px solid #fff;
-  }
-
-  /* CSS arrows at top of dropdowns. */
-  .dropdown {
-    .dropdown-menu {
-      ul {
-        list-style: none;
-        margin:0;
-        padding: 0;
-      }
-      /* Positioning */
-      top: 120%;
-      left: auto;
-      right: 0;
-      padding: 0;
-
-      /* Display & Box Model */
-      min-width: 280px;
-
-      .item-name {
-        font-weight: 500;
-      }
-      .fa {
-        display: inline-block;
-        width: 24px;
-        text-align: center;
-      }
-    }
-
-    > .dropdown-menu::before,
-    > .dropdown-menu::after {
-      /* Positioning */
-      position: absolute;
-
-      /* Display & Box Model */
-      display: inline-block;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #ccc;
-      border-bottom-color: rgba(0, 0, 0, 0.2);
-
-      /* Visual */
-      content: '';
-    }
-
-    > .dropdown-menu::before {
-      top: -7px;
-      right: 9px;
-    }
-
-    > .dropdown-menu::before,
-    > .dropdown-menu::after {
-      top: -7px;
-      right: 19px;
-    }
-
-    > .dropdown-menu::after {
-      /* Positioning */
-      top: -6px;
-      right: 20px;
-
-      /* Display & Box Model */
-      border-left-width: 6px;
-      border-right-width: 6px;
-      border-bottom-width: 6px;
-
-      /* Visual */
-      border-bottom-color: #fff;
-    }
-  }
-
-  /* Expanded dropdown. */
-  .open .dropdown-menu {
-    /* Positioning */
-    position: absolute;
-
-    /* Display & Box Model */
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);
-
-    /* Visual */
-    background-color: #fff;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-clip: padding-box;
-
-    .dropdown-header {
-      padding-left: 15px;
-      padding-right: 15px;
-
-      .fa , .glyphicons{
-        min-width: 20px;
-      }
-      .fa::before, .glyphicons::before {
-        font-size: 14px;
-      }
-    }
-    li > a {
-      display: block;
-      padding: 10px 15px;
-    }
-  }
-
-  /* Top-level links and hover state of icons in expanded dropdown. */
-  > .open {
-    > a,
-    > a:hover,
-    > a:focus {
-      .fa::before,.glyphicons::before {
-        color: $dark-gray;
-      }
-
-      .fa-danger::before,.glyphicon-danger::before {
-        color: $danger;
-      }
-    }
-  }
-}
-
-/* App menu items
-   ========================================================================== */
-
-.dropdown-menu.app-navigation {
-  padding: 0 0 0 0;
-  .menu-box {
-    width: 50%;
-  }
-}
-.menu-box {
-  /* Display & Box Model */
-  /* Visual */
-  text-align: center;
-
-  a {
-    /* Display & Box Model */
-    display: block;
-    padding: 10px 15px;
-
-    /* Visual */
-    color: $gray;
-
-    &:hover {
-      background-color: $lighter-gray;
-    }
-  }
-
-  span {
-    /* Display & Box Model */
-    display: block;
-    width: 100%;
-
-    /* Visual */
-  }
-
-  .fa {
-    @extend .fa-box;
-    @extend .glyphicon-box;
-    margin: 0 auto;
-  }
-
-  .fa::before { font-size: 40px; }
-}
-
-/* Company Selector
-   ========================================================================== */
-.company-search {
-  padding-top: 20px;
-}
-
-/* Move Company
-   ========================================================================== */
-.move-company {
-  label {
-    font-weight: normal;
-  }
-
-  a {
-    line-height: 34px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .to-company {
-    margin-bottom: 20px;
-  }
-}
-
-/* Company Settings
-   ========================================================================== */
-.company-settings .action-link {
-  margin-left: 20px;
-}
 
 /* Presentation Selector */
 .presentation-selector {
@@ -481,91 +140,16 @@ a:hover {
   }
 }
 
-/* Profile
-   ========================================================================== */
-.profile-pic {
-  /* Display & Box Model */
-  width: 30px;
-  height: 30px;
-
-  /* Visual */
-  border-radius: 50%;
-  vertical-align: top;
-}
 
 /* Payment Methods */
 .payment-methods {
   .list-group-item {
     padding: 10px 0;
   }
-
   .expiry {
     color: $gray;
   }
 }
-
-/* Media queries
-   ========================================================================== */
-
-@media (max-width: $screen-xs) {
-  .navbar-default .actions-nav>li>a {
-    min-width: 40px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-default {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    .navbar-collapse {
-      margin-left: 20px;
-
-      .navbar-nav {
-        > li {
-          margin-left: 5px;
-
-          > a {
-            font-weight: 500;
-            line-height: 32px;
-          }
-        }
-      }
-    }
-
-  }
-
-  .navbar-header { padding: 0; }
-
-  .navbar-left .navbar-nav > li > a {
-    padding: 0 10px;
-  }
-  .navbar-default .actions-nav {
-    padding: 0;
-    border-top: none;
-
-    > li {
-      /* Positioning */
-      float: none;
-
-      /* Display & Box Model */
-      margin-left: 5px;
-    }
-
-    .dropdown {
-      .system-messages {
-        /* Display & Box Model */
-        min-width: 425px;
-      }
-    }
-  }
-
-  .actions-nav:last-child { margin-right: 0; }
-
-  /* Payment Methods */
-  .payment-methods .edit { text-align: right; }
-}
-
 
 /* ==========================================================================
    Content
@@ -578,13 +162,6 @@ a:hover {
 /* ==========================================================================
    Forms
    ========================================================================== */
-
-/* Drop-downs & text fields */
-.dropdown-toggle,
-.dropdown-toggle:hover,
-.open .dropdown-toggle.btn-default,
-.bfh-selectbox-toggle {
-}
 
 /* Input field focus */
 input:focus {
@@ -759,20 +336,6 @@ ul.social {
   padding: 0 7px;
 }
 
-.btn-default {
-  .fa::before, .glyphicons::before { color: $dark-gray; }
-
-  &:hover {
-    @extend .button-hover;
-  }
-
-  &:hover,
-  &:hover .fa::before,
-  &:hover .glyphicons::before {
-    color: $dark-gray;
-  }
-}
-
 a.btn-primary:hover {
   .fa::before {
       color:$white;
@@ -782,26 +345,6 @@ a.btn-primary:hover {
 .btn-primary {
   -webkit-font-smoothing: subpixel-antialiased;
   .fa::before, .glyphicons::before { color: $white; }
-}
-
-.btn-rv-help {
-  @extend .btn-default;
-  font-weight: 700;
-  background-color: $btn-default-bg;
-
-  &:hover,
-  &:active {
-    border-color: $btn-default-border;
-    background-color: $btn-default-bg;
-    color: $btn-default-color;
-    @include box-shadow(none);
-    .fa::before,
-    .glyphicons::before {
-     color: $gray !important;
-    }
-  }
-
-  &.rounded { border-radius: 30px; }
 }
 
 .btn-github {
@@ -865,9 +408,6 @@ a.btn-primary:hover {
   }
 }
 
-/* Stripe */
-.stripe { margin-bottom: 10px; }
-
 /* Glyphicon buttons
    ========================================================================== */
 .btn-box {
@@ -898,15 +438,12 @@ a.btn-primary:hover {
 .btn-help {
   /* Display & Box Model */
   padding: 0 5px 2px 5px;
-
   /* Visual */
-
   .fa::before,
   .glyphicons::before {
     /* Visual */
     font-size: 18px;
   }
-
 }
 
  /* SVG CLASSES */
@@ -996,7 +533,6 @@ a.btn-primary:hover {
         width: 180px;
       }
     }
-
     .actions-block {
       text-align: right; 
     }

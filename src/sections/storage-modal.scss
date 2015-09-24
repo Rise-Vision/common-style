@@ -16,14 +16,12 @@
       input {display: inline-block;}
       .fa {margin-right: 3px;}
       span a {
-        @include ellipsis(1,large);
         display: inline-block;
         vertical-align: middle;
         overflow: hidden;
       }
       @media (max-width: 480px) {
         span a {
-          @include ellipsis(1,medium);        
         }
       }
     }
@@ -213,8 +211,6 @@ tr.blocked-file {
     text-decoration: none;
   }
 }
-
-
 
 tr.blocked-file {
   position: relative;

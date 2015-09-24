@@ -1,20 +1,19 @@
-$table-padding: 10px 15px;
-
-.table-2 {
+ .table-2 {
   width: 100%;
   > thead > tr > th {
     border-bottom: 1px solid $light-gray;
     color: $gray;
-    padding: $table-padding;
+    padding: 10px;
     white-space: nowrap;
     a {
       color: $gray;
     }
   }
+   
   > tbody > tr > td {
     border-bottom: 1px solid $lighter-gray;
     color: $gray;
-    padding: $table-padding;
+    padding: 10px;
     vertical-align: top;
     strong {
       font-weight: 500;
@@ -22,6 +21,11 @@ $table-padding: 10px 15px;
     a {
       color: $gray;
       display: block;
+    }
+  }
+  > tbody > tr {
+    &:last-child td {
+      border-bottom: none;
     }
   }
   > tbody > tr:hover {
@@ -36,41 +40,7 @@ $table-padding: 10px 15px;
       color: $gray;
     }
   }
-  .folder,.file {
-    &:before {
-      font-family: FontAwesome;
-    }
-  }
-  .back-btn .folder {
-    &:before {content:'\f07c'; color: $rise-green;}
-  }
-  .folder {
-    &:before {content:'\f07b'; color: $rise-green; margin-right: 10px;}
-  }
-  .file {
-    &:before {content:'\f15b'; color: #d4d4d4;}
-  }
-  .sub-folder {
-    margin-left: 22px;
-    position: relative;
-    &:after {
-      content:'';
-      width: 15px;
-      height: 6px;
-      display: block;
-      position: absolute;
-      top: 4px;
-      left: -20px;
-      border-bottom: 1px solid #ccc;
-      border-left: 1px solid #ccc;
-    }
-  }
 }
-
-.table-actions {
-  white-space: nowrap;
-}
-
 
 .table-middle {
   > tbody > tr > td {

@@ -32,9 +32,8 @@
     outline: 0;
   }
   &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
+  &.active {
+  
   }
   &.disabled,
   &[disabled],
@@ -45,19 +44,13 @@
     &:active,
     &.active {
       background-color: $background;
-          border-color: $border-disabled;
+      border-color: $border-disabled;
     }
-  }
-
-  .badge {
-    color: $background;
-    background-color: $color;
   }
 }
 
 @mixin label-variant($color, $bg-color-hover: darken($color, 10%)) {
   background-color: $color;
-
   &[href] {
     &:hover,
     &:focus {
