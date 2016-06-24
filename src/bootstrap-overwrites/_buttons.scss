@@ -1,7 +1,7 @@
 $google-red: #D50F25;
 
 .btn {
-  outline:0;
+  outline: 0;
 }
 
 .btn-lg {
@@ -18,7 +18,7 @@ $google-red: #D50F25;
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $btn-default-border-disabled, #fff, #d5d5d5);
   .fa:before {
-  	color:$dark-gray;
+    color: $dark-gray;
   }
 }
 
@@ -36,4 +36,8 @@ $google-red: #D50F25;
 
 .btn-white {
   @include button-variant(darken($rise-green, 10%), $white, $white, $btn-default-border-disabled, darken($white, 10%), lighten($white, 5%));
+}
+
+.btn-toggle {
+  display: inline;
 }

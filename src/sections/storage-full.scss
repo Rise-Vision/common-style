@@ -44,7 +44,10 @@
 
 .storage-full {
   .scrollable-list {
-    max-height: calc(100vh - 340px);
+    overflow-y: auto;
+    max-height: calc(100vh - 320px);
+    border-radius: 4px;
+    min-height: 240px;
   }
 }
 

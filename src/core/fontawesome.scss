@@ -27,3 +27,13 @@
   height: 24px;
   background: url('//s3.amazonaws.com/rise-common-test/images/glyphicons-back.png') center no-repeat;
 }
+
+.fa.fa-grip-large {
+  position: relative;
+  left: -11px;
+  top: 20px;
+  color:#ddd;
+    &:before {
+      content: "\f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142";
+    }
+  }

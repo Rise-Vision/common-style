@@ -1,27 +1,32 @@
 $panel-width: 290px;
-
 .workspace {
-  -webkit-transition: all 0.2s; /* Safari 3.1 to 6.0 */
+  -webkit-transition: all 0.2s;
+  /* Safari 3.1 to 6.0 */
   transition: all 0.2s;
   position: relative;
   background: #d4d4d4;
   .workspace-toolbar {
-    width: calc(100% - 11px);
+    width: calc(100% - 5px);
     white-space: nowrap;
     position: absolute;
     z-index: 100;
-    background-color: rgba(255,255,255,0.9);
-    border-bottom: 1px solid $lighter-gray;
-    border-top: 1px solid $lighter-gray;
+    background-color: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
     padding: 8px 10px;
-    -webkit-transition: all 0.25s; /* Safari 3.1 to 6.0 */
-    transition: all 0.25s;
-    #addPlaceholderButton {
-      width: calc((#{$panel-width} - 20px));
-      margin-right: 10px;
-    }
+    -webkit-transition: all .25s;
+    transition: all .25s;
     #previewButton {
       margin-left: 10px;
+    }
+    #addPlaceholderButton {
+      width: calc((290px - 20px));
+      margin-right: 10px;
+    }
+    & > h4 {
+      position: absolute;
+      left: 14px;
+      top: -5px;
     }
     .presentation-name {
       display: inline-block;
@@ -41,8 +46,8 @@ $panel-width: 290px;
     @media (max-width: 768px) {
       width: 100%;
       overflow: hidden;
-      left:0;
-      top:0;
+      left: 0;
+      top: 0;
     }
     @media (max-width: 920px) {
       #addPlaceholderButton {
@@ -59,14 +64,19 @@ $panel-width: 290px;
     top: 49px;
     height: calc(100vh - 140px);
     width: $panel-width;
+    overflow: hidden;
     background-color: #f7f7f7;
-    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+    -webkit-transition: all 0.5s;
+    /* Safari 3.1 to 6.0 */
     transition: all 0.5s;
     border-right: 1px solid $light-gray;
     .scrollable-list {
       min-height: 45px;
-      max-height: calc(100vh - 280px);
+      max-height: calc(100vh - 150px);
       font-size: 13px;
+    }
+    #listWithHandle.scrollable-list {
+      max-height: calc(100vh - 290px);
     }
     .editor-playlist {
       height: calc(100vh - 290px);
@@ -93,7 +103,8 @@ $panel-width: 290px;
       margin-top: 0;
     }
     .workspace-sidebar-content {
-      width: calc((#{$panel-width} * 2)); /* Total width of panels */
+      width: calc((#{$panel-width} * 2));
+      /* Total width of panels */
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -103,10 +114,12 @@ $panel-width: 290px;
         height: 56px;
       }
     }
-    .ph-list, .ph-properties {
+    .ph-list,
+    .ph-properties {
       width: $panel-width;
       padding: 0 10px;
-      -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+      -webkit-transition: all 0.5s;
+      /* Safari 3.1 to 6.0 */
       transition: all 0.5s;
       @media (max-width: 768px) {
         width: 100vw;
@@ -114,8 +127,11 @@ $panel-width: 290px;
     }
     .ph-list {
       @media (max-width: 768px) {
-        margin-right:0;
+        margin-right: 0;
       }
+      // .editor-playlist-item {
+      //   padding: 6px !important;
+      // }
     }
     .ph-properties {
       float: right;
@@ -129,20 +145,24 @@ $panel-width: 290px;
     }
     &.show-ph-properties {
       .ph-list {
-        -webkit-transform: translateX(-$panel-width); /* Safari */
+        -webkit-transform: translateX(-$panel-width);
+        /* Safari */
         transform: translateX(-$panel-width);
         @media (max-width: 768px) {
-          -webkit-transform: translateX(0); /* Safari */
+          -webkit-transform: translateX(0);
+          /* Safari */
           transform: translateX(0);
           display: none;
         }
       }
       .ph-properties {
         opacity: 1;
-        -webkit-transform: translateX(-$panel-width); /* Safari */
+        -webkit-transform: translateX(-$panel-width);
+        /* Safari */
         transform: translateX(-$panel-width);
         @media (max-width: 768px) {
-          -webkit-transform: translateX(0); /* Safari */
+          -webkit-transform: translateX(0);
+          /* Safari */
           transform: translateX(0);
           display: block;
         }
@@ -157,7 +177,8 @@ $panel-width: 290px;
     position: relative;
     z-index: 80;
     margin-left: $panel-width;
-    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari 3.1 to 6.0 */
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Safari 3.1 to 6.0 */
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     @media (max-width: 992px) {
       height: calc(100vh - 125px);
@@ -165,19 +186,21 @@ $panel-width: 290px;
     @media (max-width: 768px) {
       position: absolute;
       top: 55px;
-      left:0;
-      margin-left:0;
+      left: 0;
+      margin-left: 0;
       width: 100%;
-      z-index:40;
+      z-index: 40;
     }
   }
   &.hide-sidebar {
     .workspace-toolbar {
       width: calc(100% - 11px);
       left: 0;
+      padding-left: 11px;
     }
     .workspace-sidebar {
-      -webkit-transform: translateX(-$panel-width); /* Safari */
+      -webkit-transform: translateX(-$panel-width);
+      /* Safari */
       transform: translateX(-$panel-width);
     }
     .workspace-board {
@@ -188,7 +211,8 @@ $panel-width: 290px;
         width: 100%;
       }
       .workspace-sidebar {
-        -webkit-transform: translateX(-100%); /* Safari */
+        -webkit-transform: translateX(-100%);
+        /* Safari */
         transform: translateX(-100%);
       }
     }
@@ -206,6 +230,7 @@ $panel-width: 290px;
     height: calc(100vh - 150px);
   }
 }
+
 .placeholder-item-name {
   @extend .ellipsis;
   width: 180px;
@@ -229,7 +254,7 @@ $panel-width: 290px;
   @media (max-width: 768px) {
     position: static;
     bottom: 0;
-    z-index:100;
+    z-index: 100;
   }
 }
 
@@ -237,9 +262,9 @@ $panel-width: 290px;
   position: absolute;
   border: 1px solid $white;
   cursor: pointer;
-  -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.15);
-  box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
   .icon-nav {
     position: absolute;
     top: 50%;
@@ -252,12 +277,13 @@ $panel-width: 290px;
     position: absolute;
     width: 100%;
     height: 100%;
-    border:2px solid rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
   }
   &:after {
-    -webkit-transition: all 1s; /* Safari 3.1 to 6.0 */
+    -webkit-transition: all 1s;
+    /* Safari 3.1 to 6.0 */
     transition: all 1s;
-    background-color: rgba(20,20,20,0.5);
+    background-color: rgba(20, 20, 20, 0.5);
     content: 'Edit';
     color: #FFF;
     line-height: 40px;
@@ -272,12 +298,13 @@ $panel-width: 290px;
   &:hover {
     border-color: $rise-green;
     &:after {
-      opacity:1;
+      opacity: 1;
     }
   }
   .ph-name {
     position: absolute;
-    top: -35px;
+    left: 3px;
+    top: 3px;
     z-index: 9999;
     line-height: 30px;
     color: #FFF;
@@ -285,19 +312,15 @@ $panel-width: 290px;
     padding: 0 10px;
     border-radius: 5px;
     font-weight: 600;
-    background: rgba(50,50,50,0.35);
-    text-shadow:
-       -1px -1px 0 #555,  
-        1px -1px 0 #555,
-        -1px 1px 0 #555,
-         1px 1px 0 #555;
-    }
+    background: rgba(50, 50, 50, 0.35);
+    text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555;
+  }
   &.edit-mode {
-    -webkit-box-shadow: 0px 0px 0px 10000px rgba(0,0,0,0.65);
-    -moz-box-shadow: 0px 0px 0px 10000px rgba(0,0,0,0.65);
-    box-shadow: 0px 0px 0px 10000px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
     &:after {
-      opacity:1;
+      opacity: 1;
       content: 'Editing';
     }
   }
@@ -318,28 +341,31 @@ $panel-width: 290px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    border: 2px solid $gray; /* should match background, can't be transparent */
+    border: 2px solid $gray;
+    /* should match background, can't be transparent */
     background-color: rgba(30, 30, 30, .8);
   }
   &::-webkit-scrollbar-track {
-    background-color: $gray; 
+    background-color: $gray;
     border-radius: 2px;
   }
 }
+
 .CodeMirror-vscrollbar {
   &::-webkit-scrollbar {
     -webkit-appearance: none;
   }
-    &::-webkit-scrollbar:vertical {
+  &::-webkit-scrollbar:vertical {
     width: 11px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    border: 2px solid $gray; /* should match background, can't be transparent */
+    border: 2px solid $gray;
+    /* should match background, can't be transparent */
     background-color: rgba(30, 30, 30, .8);
   }
   &::-webkit-scrollbar-track {
-    background-color: $gray; 
+    background-color: $gray;
     border-radius: 2px;
   }
 }
@@ -357,10 +383,10 @@ $panel-width: 290px;
         width: 50px;
       }
       &:last-child {
-        font-size:11px;
+        font-size: 11px;
       }
     }
-  }    
+  }
 }
 
 .editor-footer {
@@ -472,7 +498,8 @@ $panel-width: 290px;
   }
 }
 
-.workspace-sidebar, .workspace-board {
+.workspace-sidebar,
+.workspace-board {
   &::-webkit-scrollbar {
     -webkit-appearance: none;
   }
@@ -484,11 +511,12 @@ $panel-width: 290px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    border: 2px solid $lighter-gray; /* should match background, can't be transparent */
+    border: 2px solid $lighter-gray;
+    /* should match background, can't be transparent */
     background-color: rgba(50, 50, 50, .5);
   }
   &::-webkit-scrollbar-track {
-    background-color: $light-gray; 
+    background-color: $light-gray;
     border-radius: 2px;
   }
 }
@@ -507,8 +535,9 @@ $panel-width: 290px;
 
 .background-color-picker-input {
   .dropdown-menu {
-    &:before, &:after {
-      width:10px !important;
+    &:before,
+    &:after {
+      width: 10px !important;
     }
   }
   .close-colorpicker {
@@ -522,7 +551,7 @@ $panel-width: 290px;
     height: 128px;
   }
 }
- 
+
 .ph-item-icon {
   position: absolute;
   top: 0;
@@ -531,12 +560,12 @@ $panel-width: 290px;
   height: 100%;
   text-align: center;
   overflow: hidden;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   &:before {
     font-family: FontAwesome;
     content: '\f009';
     border-radius: 10px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     top: 50%;
     left: 50%;
     margin-left: -30px;
@@ -546,7 +575,7 @@ $panel-width: 290px;
     height: 60px;
     line-height: 60px;
     font-size: 30px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
   }
   &.ph-video-item {
     &:before {

@@ -445,6 +445,8 @@ a.btn-primary:hover {
 
 .icon-left { margin-right: 10px; }
 .icon-right { margin-left: 10px; }
+.icon-sm-left { margin-right: 5px; }
+.icon-sm-right { margin-left: 5px; }
 
 .list-separator {
   border-bottom: 1px solid #eee;
@@ -483,6 +485,8 @@ a.btn-primary:hover {
 .add-top-double { margin-top: 40px !important; }
 
 .remove-radius { border-radius: 0 !important; }
+.remove-margin { margin: 0 !important }
+.remove-padding { padding: 0 !important }
 
 .btn-google-drive,
 .btn-google-drive:active

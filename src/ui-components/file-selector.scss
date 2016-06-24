@@ -1,21 +1,14 @@
-.file-selector
-{
-
-  .subscription-status
-  {
+.file-selector {
+  .subscription-status {
     text-align: left;
-
     &.trial,
     &.cancelled,
     &.expired,
-    &.suspended
-    {
+    &.suspended {
       border: none;
     }
   }
-
-  .clear-selection
-  {
+  .clear-selection {
     span {
       position: absolute;
       top: 8px;
@@ -30,3 +23,135 @@
   }
 }
 
+.pt-media-list li {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.selectedBorder {
+  border: 5px solid #4ab767;
+}
+
+.pt-media-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.pt-media-list img.disabled {
+  opacity: .4;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+.pt-media-list li:hover {
+  border-color: #4ab767;
+}
+
+.pt-media-list li .checkbox {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  margin-right: 10px;
+  color: #d4d4d4;
+  font-size: 16px;
+  width: 16px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: FontAwesome;
+  cursor: pointer;
+}
+
+.pt-media-list li span {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+}
+
+.pt-media-list li.folder,
+.pt-media-list li.placeholder-item {
+  background-color: #eee;
+}
+
+.pt-media-list li.folder {
+  cursor: pointer;
+}
+
+.pt-media-list li.folder-extended {
+  width: 305px;
+  span.image-folder-info {
+    top: 21px !important;
+  }
+}
+
+.pt-media-list li.folder img {
+  width: 98px;
+  height: 98px;
+  float: left;
+}
+
+.pt-media-list li.folder span,
+.pt-media-list li.disabled-item span,
+.pt-media-list li.single-item span,
+.pt-media-list li.placeholder-item span {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 91px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 14px;
+  &:first-child {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 33px;
+    border: 1px solid red;
+  }
+  &.ellipsis {
+    width: 87%;
+    margin-left: 7px;
+    font-size: 11px;
+  }
+}
+
+.pt-media-list li.folder span.image-folder-info {
+  position: absolute;
+  left: 105px;
+  top: 25px;
+  line-height: 13px;
+  font-size: 11px;
+  width: 170px;
+}
+
+.pt-media-list li.placeholder-item svg {
+  width: 38px;
+  height: 38px;
+  margin-top: 19px;
+  position: relative;
+  top: 6px;
+  &:hover path {
+    fill: rgba(0, 0, 0, .4);
+  }
+}
+
+// REPLACE ABOVE WITH SCROLLING THUMBS IMGS
+.btn-upload {
+  background: #f2f2f2;
+  color: #555;
+}
+
+.btn-upload span {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn-upload i {
+  margin-top: 20px;
+  font-size: 28px;
+}

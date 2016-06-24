@@ -188,7 +188,7 @@
     > tbody > tr {
       td:first-child {
         &:before {
-          content:'\f10c';
+          content:'\f096';
         }
       }
       &.active { 
@@ -211,7 +211,16 @@
         }
       }
     }
-  }
+
+     > tbody > tr.info-row {
+      background-color: #eee;
+      td:first-child {
+        &:before {
+          content:initial;
+        }
+      }
+    }
+}
 }
 
 .table-2 {
