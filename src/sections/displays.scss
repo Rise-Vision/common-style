@@ -45,8 +45,23 @@
 // }
 
 
-/* Display Status Circle
+/* Display Status 
    ========================================================================== */
+
+.status {
+  position: relative;
+  top: 3px;
+  img {
+    width: 26px;
+    margin: 0 auto;
+  }
+  .status-online {
+    color: green;
+  }
+  .status-offline {
+    color: red;
+  }
+}
 
 
 /* Deprecate

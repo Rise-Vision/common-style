@@ -11817,7 +11817,8 @@ li.dropdown-header {
 
 .table-selector > tbody > tr.disabled-row {
   background: #f5f5f5; }
-  .table-selector > tbody > tr.disabled-row td, .table-selector > tbody > tr.disabled-row td a {
+  .table-selector > tbody > tr.disabled-row td,
+  .table-selector > tbody > tr.disabled-row td a {
     cursor: not-allowed;
     color: #999; }
   .table-selector > tbody > tr.disabled-row:hover a {
@@ -11875,6 +11876,9 @@ li.dropdown-header {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden; }
+
+.table-2 .table-link {
+  color: #0081BA; }
 
 tr.blocked-file > td {
   background: #f7f7f7;
@@ -14079,8 +14083,19 @@ tr.blocked-file {
 
 /* Display Settings
    ========================================================================== */
-/* Display Status Circle
+/* Display Status 
    ========================================================================== */
+.status {
+  position: relative;
+  top: 3px; }
+  .status img {
+    width: 26px;
+    margin: 0 auto; }
+  .status .status-online {
+    color: green; }
+  .status .status-offline {
+    color: red; }
+
 /* Deprecate
  +   ========================================================================== 
  +   ========================================================================== 

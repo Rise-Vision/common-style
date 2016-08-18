@@ -1,0 +1,33 @@
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.app-loading-dots {
+  font-size: 28px;
+  height: 12px;
+  position: relative;
+  top: -22px;
+}
+
+.app-loading-dots span {
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.app-loading-dots span:nth-child(2) {
+  -webkit-animation-delay: 100ms;
+}
+
+.app-loading-dots span:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+}
+
+.app-loading-dots span:nth-child(4) {
+  -webkit-animation-delay: 500ms;
+}
