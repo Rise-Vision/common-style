@@ -69,6 +69,9 @@
 	padding: 16px;
 	border-radius: 4px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.13);
+	& > img:first-child {
+		width: 100%;
+	}
 }
 
 .create-presentation-cta {

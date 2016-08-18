@@ -87,6 +87,25 @@
       }
     }
   }
+  .list-grip {
+    float: left;
+    width: 25px;
+    margin-right: 3px;
+    background-color: white;
+    height: 56px;
+    display: inline-block;
+    cursor: move;
+    cursor: -webkit-grabbing;
+    .btn {
+      margin: 0;
+      &:first-child {
+        border-radius: 3px 3px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 3px 3px;
+      }
+    }
+  }
   .actions {
     float: right;
     margin-right: 4px;
