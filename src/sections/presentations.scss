@@ -138,9 +138,12 @@ $panel-width: 290px;
   }
 
 
-    .ph-properties {
+   .ph-properties {
       float: right;
       opacity: 0;
+        .scrollable-list {
+          max-height: calc(100vh - 240px);
+        }
       @media (max-width: 768px) {
         -webkit-transform: translateX(0);
         /* Safari */
