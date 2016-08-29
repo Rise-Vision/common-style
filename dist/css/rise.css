@@ -13613,6 +13613,8 @@ tr.blocked-file {
     .workspace .workspace-sidebar .ph-properties {
       float: right;
       opacity: 0; }
+      .workspace .workspace-sidebar .ph-properties .scrollable-list, .workspace .workspace-sidebar .ph-properties .template-grid {
+        max-height: calc(100vh - 240px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-properties {
           -webkit-transform: translateX(0);
