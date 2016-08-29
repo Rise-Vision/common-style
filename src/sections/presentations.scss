@@ -142,7 +142,7 @@ $panel-width: 290px;
       float: right;
       opacity: 0;
         .scrollable-list {
-          max-height: calc(100vh - 240px);
+          max-height: calc(100vh - 250px);
         }
       @media (max-width: 768px) {
         -webkit-transform: translateX(0);
@@ -262,7 +262,7 @@ $panel-width: 290px;
   }
   @media (max-width: 768px) {
     position: static;
-    bottom: 0;
+    bottom: -66px;
     z-index: 100;
   }
 }
