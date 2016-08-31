@@ -85,7 +85,7 @@ $panel-width: 290px;
       }
     }
     @media (max-width: 992px) {
-      height: calc(100vh - 125px);
+      height: calc(100vh - 185px);
     }
     @media (max-width: 768px) {
       width: 100%;
@@ -130,17 +130,24 @@ $panel-width: 290px;
     .ph-list {
     .editor-playlist {
       height: calc(100vh - 210px);
-      max-height: calc(100vh - 250px);
+      max-height: calc(100vh - 210px);
       @media (max-width: 768px) {
         margin-right: 0;
+        max-height: calc(100vh - 300px);
       }
     }
   }
 
 
-    .ph-properties {
+   .ph-properties {
       float: right;
       opacity: 0;
+        .scrollable-list {
+          max-height: calc(100vh - 250px);
+          @media (max-width: 768px) {
+            max-height: calc(100vh - 420px);
+          }
+        }
       @media (max-width: 768px) {
         -webkit-transform: translateX(0);
         /* Safari */
@@ -173,6 +180,15 @@ $panel-width: 290px;
           display: block;
         }
       }
+      .ph-settings {
+        .scrollable-list {
+          @media (max-width: 768px) {
+            max-height: calc(100vh - 345px);
+          }
+        }
+      }
+
+
     }
   }
   .workspace-board {
@@ -244,23 +260,6 @@ $panel-width: 290px;
   line-height: 24px;
   &:hover {
     color: $rise-blue;
-  }
-}
-
-.editor-footer {
-  @media (max-width: 992px) {
-    .save-status {
-      display: block;
-      width: 100%;
-    }
-    #deleteButton {
-      margin-top: 20px;
-    }
-  }
-  @media (max-width: 768px) {
-    position: static;
-    bottom: 0;
-    z-index: 100;
   }
 }
 
@@ -402,8 +401,18 @@ $panel-width: 290px;
   .footer-content {
     padding: 8px 0;
   }
+  @media (max-width: 992px) {
+    .save-status {
+      display: block;
+      width: 100%;
+    }
+    #deleteButton {
+      margin-top: 20px;
+    }
+  }
   @media (max-width: 768px) {
     z-index: 100;
+    bottom: -66px;
     .footer-content {
       .btn {
         padding: 5px;
@@ -414,6 +423,7 @@ $panel-width: 290px;
     }
   }
 }
+
 
 .artboard-presentation {
   position: absolute;
