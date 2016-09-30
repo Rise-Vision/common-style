@@ -12,49 +12,6 @@ All utilities have a prefix u_ added to them
   line-height: 33px;
 }
 
-/* Ellipsis Utilities
-   ==========================================================================
-   To be used with forms and buttons
-*/
-.u_ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.u_ellipsis-md {
-  @extend .u_ellipsis;
-  @media(max-width:767px){
-    width: 100px;
-  }
-  @media(min-width:768px){
-    max-width: 140px;
-  }
-  @media(min-width:992px){
-    max-width: 180px;
-  }
-  @media(min-width:1200px){
-    max-width: 240px;
-  }
-}
-
-.u_ellipsis-lg {
-  @extend .u_ellipsis;
-  @media(max-width:767px){
-    width: 200px;
-  }
-  @media(min-width:768px){
-    max-width: 260px;
-  }
-  @media(min-width:992px){
-    max-width: 320px;
-  }
-  @media(min-width:1200px){
-    max-width: 340px;
-  }
-}
-
-
 /* Styling Utilities
    ========================================================================== */
 

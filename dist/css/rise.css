@@ -7868,47 +7868,6 @@ All utilities have a prefix u_ added to them
 .u_lh-normal {
   line-height: 33px; }
 
-/* Ellipsis Utilities
-   ==========================================================================
-   To be used with forms and buttons
-*/
-.u_ellipsis, .u_ellipsis-md, .u_ellipsis-lg {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-@media (max-width: 767px) {
-  .u_ellipsis-md {
-    width: 100px; } }
-
-@media (min-width: 768px) {
-  .u_ellipsis-md {
-    max-width: 140px; } }
-
-@media (min-width: 992px) {
-  .u_ellipsis-md {
-    max-width: 180px; } }
-
-@media (min-width: 1200px) {
-  .u_ellipsis-md {
-    max-width: 240px; } }
-
-@media (max-width: 767px) {
-  .u_ellipsis-lg {
-    width: 200px; } }
-
-@media (min-width: 768px) {
-  .u_ellipsis-lg {
-    max-width: 260px; } }
-
-@media (min-width: 992px) {
-  .u_ellipsis-lg {
-    max-width: 320px; } }
-
-@media (min-width: 1200px) {
-  .u_ellipsis-lg {
-    max-width: 340px; } }
-
 /* Styling Utilities
    ========================================================================== */
 .u_bordered {
