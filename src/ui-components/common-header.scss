@@ -1,12 +1,11 @@
 .navbar {
+  border: none;
+  border-radius: 0;
+  .navbar-header {
+    float: left;
+  }
   .navbar-nav {
     >li {
-      >a {
-        &.btn, &.company-buttons-icon-mobile {
-          margin-top: 8px;
-          margin-bottom: 0;
-        }
-      }
       button {
         @extend .navbar-btn;
       }
@@ -17,18 +16,14 @@
       }
     }
   }
-  .navbar-brand {
-    .fa {
-      padding: 8px;
-    }
-  }
 }
 
 
 .navbar-default {
 li.user-profile-dropdown {
   >a {
-    padding: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin-top: 0;
   }
   padding: 0;
@@ -38,16 +33,15 @@ li.user-profile-dropdown {
       @extend .u_ellipsis;
       display: block;
       font-size: 13px;
-      line-height: 18px;
+      line-height: 16px;
     }
     .username {
-      line-height: 16px;
+      line-height: 14px;
     }
   }
   .profile-pic {
-    margin-left: 8px;
-    margin-top: 4px;
-    border-radius: 4px;
+    margin-left: 4px;
+    border-radius: 3px;
     img {
       height: 100%;
     }
