@@ -11100,7 +11100,7 @@ a[data-wysihtml5-command=underline].active {
       color: #020621 !important; }
 
 li.dropdown-footer {
-  padding: 8px 8px 0; }
+  padding: 0 8px 0; }
 
 li.dropdown-header {
   padding: 8px; }
