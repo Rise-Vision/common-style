@@ -7311,8 +7311,8 @@ pre {
       border: 1px solid #CCC; } }
   @media (min-width: 992px) {
     .navbar {
-      padding: 2px 0;
-      margin-bottom: 0; }
+      padding: 4px 0;
+      margin-bottom: 20px; }
       .navbar .navbar-brand {
         padding-top: 0; } }
 
@@ -7847,7 +7847,8 @@ ul.social {
   padding: 0 !important; }
 
 .btn-google-drive,
-.btn-google-drive:active .btn-google-drive.active {
+.btn-google-drive:active
+.btn-google-drive.active {
   width: 30px;
   height: 30px;
   border: none !important;
@@ -7857,12 +7858,14 @@ ul.social {
   background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-drive.png"); }
   @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
     .btn-google-drive,
-    .btn-google-drive:active .btn-google-drive.active {
+    .btn-google-drive:active
+.btn-google-drive.active {
       background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-drive-2x.png");
       -webkit-background-size: 30px 30px; } }
 
 .btn-widget-icon-link,
-.btn-widget-icon-link:active .btn-widget-icon-link.active {
+.btn-widget-icon-link:active
+.btn-widget-icon-link.active {
   width: 30px;
   height: 30px;
   border: none !important;
@@ -7872,12 +7875,14 @@ ul.social {
   background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-link.png"); }
   @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
     .btn-widget-icon-link,
-    .btn-widget-icon-link:active .btn-widget-icon-link.active {
+    .btn-widget-icon-link:active
+.btn-widget-icon-link.active {
       background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-link-2x.png");
       -webkit-background-size: 30px 30px; } }
 
 .btn-widget-icon-storage,
-.btn-widget-icon-storage:active .btn-widget-icon-storage.active {
+.btn-widget-icon-storage:active
+.btn-widget-icon-storage.active {
   width: 30px;
   height: 30px;
   border: none !important;
@@ -7887,7 +7892,8 @@ ul.social {
   background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage.png"); }
   @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
     .btn-widget-icon-storage,
-    .btn-widget-icon-storage:active .btn-widget-icon-storage.active {
+    .btn-widget-icon-storage:active
+.btn-widget-icon-storage.active {
       background-image: url("http://s3.amazonaws.com/Rise-Images/Icons/widget-icon-storage-2x.png");
       -webkit-background-size: 30px 30px; } }
 
