@@ -7271,7 +7271,9 @@ pre {
         display: inline-block; }
       .navbar .navbar-nav > li > a {
         display: inline-block;
-        border-radius: 4px; }
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px; }
   .navbar .navbar-brand {
     margin: 0;
     padding: 8px;
@@ -10561,17 +10563,17 @@ a[data-wysihtml5-command=underline].active {
   padding: 0;
   text-align: right; }
   .navbar-default li.user-profile-dropdown > a {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: 0; }
   .navbar-default li.user-profile-dropdown .user-id span {
     display: block;
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px; }
   .navbar-default li.user-profile-dropdown .user-id .username {
-    line-height: 14px; }
+    line-height: 16px; }
   .navbar-default li.user-profile-dropdown .profile-pic {
     margin-left: 4px;
+    margin-top: 2px;
     border-radius: 3px; }
     .navbar-default li.user-profile-dropdown .profile-pic img {
       height: 100%; }

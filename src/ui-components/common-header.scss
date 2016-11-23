@@ -22,8 +22,8 @@
 .navbar-default {
 li.user-profile-dropdown {
   >a {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: 0;
   }
   padding: 0;
@@ -32,15 +32,15 @@ li.user-profile-dropdown {
     span {
       @extend .u_ellipsis;
       display: block;
-      font-size: 13px;
-      line-height: 16px;
+      font-size: 14px;
     }
     .username {
-      line-height: 14px;
+      line-height: 16px;
     }
   }
   .profile-pic {
     margin-left: 4px;
+    margin-top: 2px;
     border-radius: 3px;
     img {
       height: 100%;
