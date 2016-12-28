@@ -1,5 +1,6 @@
 /* Standard Table
    ========================================================================== */
+
 .table {
   width: 100%;
   font-size: 14px;
@@ -120,28 +121,28 @@
 .table-selector {
   > thead > tr {
     th {
-        label {
-          margin: 0;
-        }
-        input[type=checkbox] {
-          display:none; 
-        }
-        input[type=checkbox] + label:before {
-          font-family: FontAwesome;
-          margin-right: 10px;
-          display: inline-block;
-          vertical-align: middle;
-          color: #d4d4d4;
-          font-size: 16px;
-          width: 16px;
-          text-align: center;
-          content:'\f096';
-        }
-        input[type=checkbox]:checked + label:before {
-          content: '\f14a';
-        }
+      label {
+        margin: 0;
+      }
+      input[type=checkbox] {
+        display: none;
+      }
+      input[type=checkbox] + label:before {
+        font-family: FontAwesome;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        color: #d4d4d4;
+        font-size: 16px;
+        width: 16px;
+        text-align: center;
+        content: '\f096';
+      }
+      input[type=checkbox]:checked + label:before {
+        content: '\f14a';
       }
     }
+  }
   > tbody > tr {
     td {
       -webkit-touch-callout: none;
@@ -167,7 +168,8 @@
     }
     &.disabled-row {
       background: #f5f5f5;
-      td, td a {
+      td,
+      td a {
         cursor: not-allowed;
         color: #999;
       }
@@ -177,7 +179,6 @@
         }
       }
     }
-
     &.back-btn {
       td {
         &:first-child:before {
@@ -185,7 +186,6 @@
         }
       }
     }
-
     &.no-select-row {
       td {
         &:first-child:before {
@@ -193,7 +193,6 @@
         }
       }
     }
-
     &.active {
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -205,21 +204,21 @@
         td {
           background: lighten($rise-green, 5%);
           color: #FFF;
-
         }
       }
       td {
         background: lighten($rise-green, 5%);
         color: #FFF;
-         a {
-            color: #FFF;
-          }
-          .text-muted {
-            color: #FFF;
-          }
-
+        a {
+          color: #FFF;
+        }
+        .text-muted {
+          color: #FFF;
+        }
         .folder {
-          &:before {color:#FFF;}
+          &:before {
+            color: #FFF;
+          }
         }
         &:first-child:before {
           color: #FFF;
@@ -231,12 +230,14 @@
     > tbody > tr {
       td:first-child {
         &:before {
-          content:'\f096';
+          content: '\f096';
         }
       }
-      &.active { 
+      &.active {
         td {
-          &:first-child:before {content: '\f192';}
+          &:first-child:before {
+            content: '\f192';
+          }
         }
       }
     }
@@ -245,117 +246,111 @@
     > tbody > tr {
       td:first-child {
         &:before {
-          content:'\f096';
+          content: '\f096';
         }
       }
-      &.active { 
+      &.active {
         td {
-          &:first-child:before {content: '\f14a';}
+          &:first-child:before {
+            content: '\f14a';
+          }
         }
       }
     }
-
-     > tbody > tr.info-row {
+    > tbody > tr.info-row {
       background-color: #eee;
       td:first-child {
         &:before {
-          content:initial;
+          content: initial;
         }
       }
     }
-}
+  }
 }
 
 .table-2 {
   > tbody > tr > td:first-child {
-      input {
-        display: inline-block;
-      }
-      span a {
-        display: inline-block;
-        vertical-align: middle;
-        overflow: hidden;
-      }
+    input {
+      display: inline-block;
+    }
+    span a {
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
     }
   }
-  tr.blocked-file {
-    >td {
+  .table-link {
+    color: #0081BA;
+  }
+}
+
+tr.blocked-file {
+  >td {
     background: #f7f7f7;
     cursor: pointer;
     position: relative;
     .callout {
-      top:45px;
+      top: 45px;
       left: 0;
     }
   }
 }
 
+
 /* DEPRECATE */
+
+
 /* Presentation Selector */
 
 .presentation-selector {
   margin-top: 20px;
-
   /* Styled the same as navbar-left. */
   .selector-header {
     /* Positioning */
     float: left;
-
     /* Display & Box Model */
     width: 100%;
     padding: 5px 15px 5px 0;
     border-bottom: $light-border;
     margin: 0;
-
     li {
       /* Positioning */
       float: left;
-
       /* Display & Box Model */
       display: block;
       margin-left: 5px;
     }
-
     a {
       /* Display & Box Model */
       display: block;
       padding: 3px 10px;
       border: 1px solid #fff;
-
       /* Visual */
       font-weight: bold;
       line-height: 32px;
       color: $gray;
     }
-
     a:hover,
     .active > a,
     .active > a:hover,
     .active > a:focus {
       /* Display & Box Model */
       border: 1px solid $light-gray;
-
       /* Visual */
       color: $rise-blue;
       background-color: $lighter-gray;
     }
-
     .close-button {
       float: right;
     }
-
     .close {
       line-height: 32px;
     }
   }
-
   .search {
     margin-bottom: 20px;
   }
-
   .panel-body {
     clear: both;
   }
 }
-
-
