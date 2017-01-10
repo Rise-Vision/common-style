@@ -2,22 +2,31 @@
    ========================================================================== */
 
 .l_display-screenshot {
-	
-	.panel-body {
-		min-height: 300px;
-		padding-top: 105px;
-    	background-position: center center;
-    	background-size: contain;
-    	background-repeat: no-repeat;
-	}
-	
-	&.l_display-screenshot-offline {
-	 	label {
-	        opacity: .4;
-	        -webkit-filter: grayscale(100%);
-	        filter: gray;
-	        filter: grayscale(100%);
-	        filter: url(desaturate.svg#greyscale);
-      }
-  }
+    .panel-body {
+        min-height: 300px;
+        max-height: 300px;
+        height: 300px;
+        padding-top: 105px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.display-screenshot-available {
+            padding-top: 15px !important;
+            & img {
+                top: 0;
+                left: 0;
+                max-width: 100%;
+                max-height: 100%
+            }
+        }
+    }
+    &.l_display-screenshot-offline {
+        label {
+            opacity: .4;
+            -webkit-filter: grayscale(100%);
+            filter: gray;
+            filter: grayscale(100%);
+            filter: url(desaturate.svg#greyscale);
+        }
+    }
 }
