@@ -11654,6 +11654,7 @@ li.dropdown-header {
 /* Standard Table
    ========================================================================== */
 .table {
+  background-color: red !important;
   width: 100%;
   font-size: 14px; }
   .table .table-header .table-header__row > .table-header__cell > a {
