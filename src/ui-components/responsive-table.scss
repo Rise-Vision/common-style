@@ -89,27 +89,27 @@
    ========================================================================== 
    ========================================================================== */
 
-.table-2 {
-  @extend .table;
-  thead {
-    tr>th {
-      padding: 8px;
-    }
-  }
-  tbody {
-    tr {
-      &:hover {
-        cursor:pointer;
-        a {
-          color:$rise-blue;
-        }
-      }
-    }
-    tr>td {
-      padding: 12px 8px;
-    }
-  }
-}
+// .table-2 {
+//   @extend .table;
+//   thead {
+//     tr>th {
+//       padding: 8px;
+//     }
+//   }
+//   tbody {
+//     tr {
+//       &:hover {
+//         cursor:pointer;
+//         a {
+//           color:$rise-blue;
+//         }
+//       }
+//     }
+//     tr>td {
+//       padding: 12px 8px;
+//     }
+//   }
+// }
 
 .table-selector {
   > thead > tr {
