@@ -155,6 +155,53 @@
                 }
             }
         }
+        &.back-btn {
+            td {
+                &:first-child:before {
+                    content: '\f060' !important;
+                }
+            }
+        }
+        &.single-selector {
+            > tbody > tr {
+                td:first-child {
+                    &:before {
+                        content: '\f096';
+                    }
+                }
+                &.active {
+                    td {
+                        &:first-child:before {
+                            content: '\f192';
+                        }
+                    }
+                }
+            }
+        }
+        &.multiple-selector {
+            > tbody > tr {
+                td:first-child {
+                    &:before {
+                        content: '\f096';
+                    }
+                }
+                &.active {
+                    td {
+                        &:first-child:before {
+                            content: '\f14a';
+                        }
+                    }
+                }
+            }
+            > tbody > tr.info-row {
+                background-color: #eee;
+                td:first-child {
+                    &:before {
+                        content: initial;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -267,13 +314,13 @@
         //     }
         //   }
         // }
-        &.back-btn {
-            td {
-                &:first-child:before {
-                    content: '\f060' !important;
-                }
-            }
-        }
+        // &.back-btn {
+        //     td {
+        //         &:first-child:before {
+        //             content: '\f060' !important;
+        //         }
+        //     }
+        // }
         // &.no-select-row {
         //   td {
         //     &:first-child:before {
@@ -315,46 +362,46 @@
             }
         }
     }
-    &.single-selector {
-        > tbody > tr {
-            td:first-child {
-                &:before {
-                    content: '\f096';
-                }
-            }
-            &.active {
-                td {
-                    &:first-child:before {
-                        content: '\f192';
-                    }
-                }
-            }
-        }
-    }
-    &.multiple-selector {
-        > tbody > tr {
-            td:first-child {
-                &:before {
-                    content: '\f096';
-                }
-            }
-            &.active {
-                td {
-                    &:first-child:before {
-                        content: '\f14a';
-                    }
-                }
-            }
-        }
-        > tbody > tr.info-row {
-            background-color: #eee;
-            td:first-child {
-                &:before {
-                    content: initial;
-                }
-            }
-        }
-    }
+    // &.single-selector {
+    //     > tbody > tr {
+    //         td:first-child {
+    //             &:before {
+    //                 content: '\f096';
+    //             }
+    //         }
+    //         &.active {
+    //             td {
+    //                 &:first-child:before {
+    //                     content: '\f192';
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // &.multiple-selector {
+    //     > tbody > tr {
+    //         td:first-child {
+    //             &:before {
+    //                 content: '\f096';
+    //             }
+    //         }
+    //         &.active {
+    //             td {
+    //                 &:first-child:before {
+    //                     content: '\f14a';
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     > tbody > tr.info-row {
+    //         background-color: #eee;
+    //         td:first-child {
+    //             &:before {
+    //                 content: initial;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 // .table-2 {
@@ -369,7 +416,6 @@
 //         }
 //     }
 // }
-
 // tr.blocked-file {
 //     >td {
 //         background: #f7f7f7;
@@ -381,7 +427,6 @@
 //         }
 //     }
 // }
-
 
 /* DEPRECATE */
 
