@@ -4,7 +4,9 @@
 .table {
     width: 100%;
     font-size: 14px;
-    &.table--hover {@extend .table-hover;}
+    &.table--hover {
+        @extend .table-hover;
+    }
     .table-header {
         .table-header__row > .table-header__cell {
             padding: 8px;
@@ -134,7 +136,7 @@
             .table-body__row > .table-body__cell {
                 cursor: pointer;
                 &:first-child:before {
-                    @extend .selector-icon;  //Not Working?
+                    @extend .selector-icon; //Not Working?
                 }
                 &:first-child i {
                     margin: 0 4px;
@@ -212,13 +214,14 @@
 
 .selector-icon {
     font-family: FontAwesome;
-    font-size: 16px;
-    content: '\f096';
-    height: 16px;
+    margin-right: 10px;
     display: inline-block;
-    margin-right: 4px;
-    margin-left: 4px;
-    vertical-align: top;
+    vertical-align: middle;
+    color: #d4d4d4;
+    font-size: 16px;
+    width: 16px;
+    text-align: center;
+    content: '\f096';
     &.selector-icon--selected {
         content: '\f14a';
     }

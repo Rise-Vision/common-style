@@ -11804,13 +11804,14 @@ li.dropdown-header {
    ========================================================================== */
 .selector-icon, .table.table--selector .table-body .table-body__row > .table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row > .table-body__cell:first-child:before {
   font-family: FontAwesome;
-  font-size: 16px;
-  content: '\f096';
-  height: 16px;
+  margin-right: 10px;
   display: inline-block;
-  margin-right: 4px;
-  margin-left: 4px;
-  vertical-align: top; }
+  vertical-align: middle;
+  color: #d4d4d4;
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+  content: '\f096'; }
   .selector-icon.selector-icon--selected, .table.table--selector .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row--is-selected.table-body__row > .table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row--is-selected.table-body__row > .table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row--is-selected > .selector-icon.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row--is-selected > .selector-icon.table-body__cell:first-child:before {
     content: '\f14a'; }
 
