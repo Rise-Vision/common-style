@@ -4,6 +4,7 @@
 .table {
     width: 100%;
     font-size: 14px;
+    &.table--hover {@extend .table-hover;}
     .table-header {
         .table-header__row > .table-header__cell {
             padding: 8px;
@@ -155,14 +156,14 @@
                 }
             }
         }
-        &.back-btn {
+        &.table--back-btn {
             td {
                 &:first-child:before {
                     content: '\f060' !important;
                 }
             }
         }
-        &.single-selector {
+        &.table--single-selector {
             > tbody > tr {
                 td:first-child {
                     &:before {
@@ -178,7 +179,7 @@
                 }
             }
         }
-        &.multiple-selector {
+        &.table--multiple-selector {
             > tbody > tr {
                 td:first-child {
                     &:before {

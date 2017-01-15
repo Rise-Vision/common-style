@@ -1894,8 +1894,8 @@ th {
 .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9; }
 
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
+.table-hover > tbody > tr:hover > td, .table.table--hover > tbody > tr:hover > td, .table--hover.table-2 > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th, .table.table--hover > tbody > tr:hover > th, .table--hover.table-2 > tbody > tr:hover > th {
   background-color: #f5f5f5; }
 
 table col[class*="col-"] {
@@ -1923,11 +1923,11 @@ table th[class*="col-"] {
 .table > tfoot > tr.active > th, .table-2 > tfoot > tr.active > th {
   background-color: #f5f5f5; }
 
-.table-hover > tbody > tr > td.active:hover,
-.table-hover > tbody > tr > th.active:hover,
-.table-hover > tbody > tr.active:hover > td,
-.table-hover > tbody > tr:hover > .active,
-.table-hover > tbody > tr.active:hover > th {
+.table-hover > tbody > tr > td.active:hover, .table.table--hover > tbody > tr > td.active:hover, .table--hover.table-2 > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover, .table.table--hover > tbody > tr > th.active:hover, .table--hover.table-2 > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td, .table.table--hover > tbody > tr.active:hover > td, .table--hover.table-2 > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active, .table.table--hover > tbody > tr:hover > .active, .table--hover.table-2 > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th, .table.table--hover > tbody > tr.active:hover > th, .table--hover.table-2 > tbody > tr.active:hover > th {
   background-color: #e8e8e8; }
 
 .table > thead > tr > td.success, .table-2 > thead > tr > td.success,
@@ -1944,11 +1944,11 @@ table th[class*="col-"] {
 .table > tfoot > tr.success > th, .table-2 > tfoot > tr.success > th {
   background-color: #dff0d8; }
 
-.table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover,
-.table-hover > tbody > tr.success:hover > td,
-.table-hover > tbody > tr:hover > .success,
-.table-hover > tbody > tr.success:hover > th {
+.table-hover > tbody > tr > td.success:hover, .table.table--hover > tbody > tr > td.success:hover, .table--hover.table-2 > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover, .table.table--hover > tbody > tr > th.success:hover, .table--hover.table-2 > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td, .table.table--hover > tbody > tr.success:hover > td, .table--hover.table-2 > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success, .table.table--hover > tbody > tr:hover > .success, .table--hover.table-2 > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th, .table.table--hover > tbody > tr.success:hover > th, .table--hover.table-2 > tbody > tr.success:hover > th {
   background-color: #d0e9c6; }
 
 .table > thead > tr > td.info, .table-2 > thead > tr > td.info,
@@ -1965,11 +1965,11 @@ table th[class*="col-"] {
 .table > tfoot > tr.info > th, .table-2 > tfoot > tr.info > th {
   background-color: #d9edf7; }
 
-.table-hover > tbody > tr > td.info:hover,
-.table-hover > tbody > tr > th.info:hover,
-.table-hover > tbody > tr.info:hover > td,
-.table-hover > tbody > tr:hover > .info,
-.table-hover > tbody > tr.info:hover > th {
+.table-hover > tbody > tr > td.info:hover, .table.table--hover > tbody > tr > td.info:hover, .table--hover.table-2 > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover, .table.table--hover > tbody > tr > th.info:hover, .table--hover.table-2 > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td, .table.table--hover > tbody > tr.info:hover > td, .table--hover.table-2 > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info, .table.table--hover > tbody > tr:hover > .info, .table--hover.table-2 > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th, .table.table--hover > tbody > tr.info:hover > th, .table--hover.table-2 > tbody > tr.info:hover > th {
   background-color: #c4e3f3; }
 
 .table > thead > tr > td.warning, .table-2 > thead > tr > td.warning,
@@ -1986,11 +1986,11 @@ table th[class*="col-"] {
 .table > tfoot > tr.warning > th, .table-2 > tfoot > tr.warning > th {
   background-color: #fcf8e3; }
 
-.table-hover > tbody > tr > td.warning:hover,
-.table-hover > tbody > tr > th.warning:hover,
-.table-hover > tbody > tr.warning:hover > td,
-.table-hover > tbody > tr:hover > .warning,
-.table-hover > tbody > tr.warning:hover > th {
+.table-hover > tbody > tr > td.warning:hover, .table.table--hover > tbody > tr > td.warning:hover, .table--hover.table-2 > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover, .table.table--hover > tbody > tr > th.warning:hover, .table--hover.table-2 > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td, .table.table--hover > tbody > tr.warning:hover > td, .table--hover.table-2 > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning, .table.table--hover > tbody > tr:hover > .warning, .table--hover.table-2 > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th, .table.table--hover > tbody > tr.warning:hover > th, .table--hover.table-2 > tbody > tr.warning:hover > th {
   background-color: #faf2cc; }
 
 .table > thead > tr > td.danger, .table-2 > thead > tr > td.danger,
@@ -2007,11 +2007,11 @@ table th[class*="col-"] {
 .table > tfoot > tr.danger > th, .table-2 > tfoot > tr.danger > th {
   background-color: #f2dede; }
 
-.table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover,
-.table-hover > tbody > tr.danger:hover > td,
-.table-hover > tbody > tr:hover > .danger,
-.table-hover > tbody > tr.danger:hover > th {
+.table-hover > tbody > tr > td.danger:hover, .table.table--hover > tbody > tr > td.danger:hover, .table--hover.table-2 > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover, .table.table--hover > tbody > tr > th.danger:hover, .table--hover.table-2 > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td, .table.table--hover > tbody > tr.danger:hover > td, .table--hover.table-2 > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr:hover > .danger, .table.table--hover > tbody > tr:hover > .danger, .table--hover.table-2 > tbody > tr:hover > .danger,
+.table-hover > tbody > tr.danger:hover > th, .table.table--hover > tbody > tr.danger:hover > th, .table--hover.table-2 > tbody > tr.danger:hover > th {
   background-color: #ebcccc; }
 
 @media screen and (max-width: 767px) {
@@ -11787,19 +11787,19 @@ li.dropdown-header {
       color: #FFF; }
     .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell .fa:before, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell .fa:before {
       color: #FFF; }
-  .table.table--selector.back-btn td:first-child:before, .table--selector.back-btn.table-2 td:first-child:before {
+  .table.table--selector.table--back-btn td:first-child:before, .table--selector.table--back-btn.table-2 td:first-child:before {
     content: '\f060' !important; }
-  .table.table--selector.single-selector > tbody > tr td:first-child:before, .table--selector.single-selector.table-2 > tbody > tr td:first-child:before {
+  .table.table--selector.table--single-selector > tbody > tr td:first-child:before, .table--selector.table--single-selector.table-2 > tbody > tr td:first-child:before {
     content: '\f096'; }
-  .table.table--selector.single-selector > tbody > tr.active td:first-child:before, .table--selector.single-selector.table-2 > tbody > tr.active td:first-child:before {
+  .table.table--selector.table--single-selector > tbody > tr.active td:first-child:before, .table--selector.table--single-selector.table-2 > tbody > tr.active td:first-child:before {
     content: '\f192'; }
-  .table.table--selector.multiple-selector > tbody > tr td:first-child:before, .table--selector.multiple-selector.table-2 > tbody > tr td:first-child:before {
+  .table.table--selector.table--multiple-selector > tbody > tr td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr td:first-child:before {
     content: '\f096'; }
-  .table.table--selector.multiple-selector > tbody > tr.active td:first-child:before, .table--selector.multiple-selector.table-2 > tbody > tr.active td:first-child:before {
+  .table.table--selector.table--multiple-selector > tbody > tr.active td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr.active td:first-child:before {
     content: '\f14a'; }
-  .table.table--selector.multiple-selector > tbody > tr.info-row, .table--selector.multiple-selector.table-2 > tbody > tr.info-row {
+  .table.table--selector.table--multiple-selector > tbody > tr.info-row, .table--selector.table--multiple-selector.table-2 > tbody > tr.info-row {
     background-color: #eee; }
-    .table.table--selector.multiple-selector > tbody > tr.info-row td:first-child:before, .table--selector.multiple-selector.table-2 > tbody > tr.info-row td:first-child:before {
+    .table.table--selector.table--multiple-selector > tbody > tr.info-row td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr.info-row td:first-child:before {
       content: initial; }
 
 /* Table Selector Icon
