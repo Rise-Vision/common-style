@@ -11785,19 +11785,40 @@ li.dropdown-header {
       color: #FFF; }
     .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell .fa:before, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell .fa:before {
       color: #FFF; }
-  .table.table--selector.table--back-btn td:first-child:before, .table--selector.table--back-btn.table-2 td:first-child:before {
+  .table.table--selector.table--back-btn .table-body__cell:first-child:before, .table--selector.table--back-btn.table-2 .table-body__cell:first-child:before {
     content: '\f060' !important; }
-  .table.table--selector.table--single-selector > tbody > tr td:first-child:before, .table--selector.table--single-selector.table-2 > tbody > tr td:first-child:before {
+  .table.table--selector.active, .table--selector.active.table-2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn; }
+    .table.table--selector.active:hover .table-body__cell, .table--selector.active.table-2:hover .table-body__cell {
+      background: #5cbe76;
+      color: #FFF; }
+    .table.table--selector.active .table-body__cell, .table--selector.active.table-2 .table-body__cell {
+      background: #5cbe76;
+      color: #FFF; }
+      .table.table--selector.active .table-body__cell a, .table--selector.active.table-2 .table-body__cell a {
+        color: #FFF; }
+      .table.table--selector.active .table-body__cell .text-muted, .table--selector.active.table-2 .table-body__cell .text-muted {
+        color: #FFF; }
+      .table.table--selector.active .table-body__cell .folder:before, .table--selector.active.table-2 .table-body__cell .folder:before {
+        color: #FFF; }
+      .table.table--selector.active .table-body__cell:first-child:before, .table--selector.active.table-2 .table-body__cell:first-child:before {
+        color: #FFF; }
+  .table.table--selector.table--single-selector > .table-body > .table-body__row .table-body__cell:first-child:before, .table--selector.table--single-selector.table-2 > .table-body > .table-body__row .table-body__cell:first-child:before {
     content: '\f096'; }
-  .table.table--selector.table--single-selector > tbody > tr.active td:first-child:before, .table--selector.table--single-selector.table-2 > tbody > tr.active td:first-child:before {
+  .table.table--selector.table--single-selector > .table-body > .table-body__row.active .table-body__cell:first-child:before, .table--selector.table--single-selector.table-2 > .table-body > .table-body__row.active .table-body__cell:first-child:before {
     content: '\f192'; }
-  .table.table--selector.table--multiple-selector > tbody > tr td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr td:first-child:before {
+  .table.table--selector.table--multiple-selector > .table-body > .table-body__row .table-body__cell:first-child:before, .table--selector.table--multiple-selector.table-2 > .table-body > .table-body__row .table-body__cell:first-child:before {
     content: '\f096'; }
-  .table.table--selector.table--multiple-selector > tbody > tr.active td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr.active td:first-child:before {
+  .table.table--selector.table--multiple-selector > .table-body > .table-body__row.active .table-body__cell:first-child:before, .table--selector.table--multiple-selector.table-2 > .table-body > .table-body__row.active .table-body__cell:first-child:before {
     content: '\f14a'; }
-  .table.table--selector.table--multiple-selector > tbody > tr.info-row, .table--selector.table--multiple-selector.table-2 > tbody > tr.info-row {
+  .table.table--selector.table--multiple-selector > .table-body > .table-body__row.info-row, .table--selector.table--multiple-selector.table-2 > .table-body > .table-body__row.info-row {
     background-color: #eee; }
-    .table.table--selector.table--multiple-selector > tbody > tr.info-row td:first-child:before, .table--selector.table--multiple-selector.table-2 > tbody > tr.info-row td:first-child:before {
+    .table.table--selector.table--multiple-selector > .table-body > .table-body__row.info-row .table-body__cell:first-child:before, .table--selector.table--multiple-selector.table-2 > .table-body > .table-body__row.info-row .table-body__cell:first-child:before {
       content: initial; }
 
 /* Table Selector Icon
