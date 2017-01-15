@@ -11699,8 +11699,6 @@ li.dropdown-header {
     .table .table-header .table-header__row > .table-header__cell > a, .table-2 .table-header .table-header__row > .table-header__cell > a {
       color: #020621;
       display: block; }
-    .table .table-header .table-header__row > .table-header__cell > span, .table-2 .table-header .table-header__row > .table-header__cell > span {
-      display: block; }
     .table .table-header .table-header__row > .table-header__cell label, .table-2 .table-header .table-header__row > .table-header__cell label {
       margin: 0; }
     .table .table-header .table-header__row > .table-header__cell input[type=checkbox], .table-2 .table-header .table-header__row > .table-header__cell input[type=checkbox] {

@@ -8,13 +8,13 @@
     .table-header {
         .table-header__row > .table-header__cell {
             padding: 8px;
-            >a {
+            > a {
                 color: $gray-dark;
                 display: block;
             }
-            >span {
-                display: block;
-            }
+            // >span {
+            //     display: block;
+            // }
             label {
                 margin: 0;
             }
@@ -134,7 +134,7 @@
             .table-body__row > .table-body__cell {
                 cursor: pointer;
                 &:first-child:before {
-                    @extend .selector-icon;
+                    @extend .selector-icon;  //Not Working?
                 }
                 &:first-child i {
                     margin: 0 4px;
