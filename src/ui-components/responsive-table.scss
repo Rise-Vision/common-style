@@ -365,39 +365,39 @@
         //     }
         //   }
         // }
-        &.active {
-            //TODO Check this function?
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-            &:hover {
-                td {
-                    background: lighten($rise-green, 5%);
-                    color: #FFF;
-                }
-            }
-            td {
-                background: lighten($rise-green, 5%);
-                color: #FFF;
-                a {
-                    color: #FFF;
-                }
-                .text-muted {
-                    color: #FFF;
-                }
-                .folder {
-                    &:before {
-                        color: #FFF;
-                    }
-                }
-                &:first-child:before {
-                    color: #FFF;
-                }
-            }
-        }
+        // &.active {
+        //     //TODO Check this function?
+        //     -webkit-animation-duration: 1s;
+        //     animation-duration: 1s;
+        //     -webkit-animation-fill-mode: both;
+        //     animation-fill-mode: both;
+        //     -webkit-animation-name: fadeIn;
+        //     animation-name: fadeIn;
+        //     &:hover {
+        //         td {
+        //             background: lighten($rise-green, 5%);
+        //             color: #FFF;
+        //         }
+        //     }
+        //     td {
+        //         background: lighten($rise-green, 5%);
+        //         color: #FFF;
+        //         a {
+        //             color: #FFF;
+        //         }
+        //         .text-muted {
+        //             color: #FFF;
+        //         }
+        //         .folder {
+        //             &:before {
+        //                 color: #FFF;
+        //             }
+        //         }
+        //         &:first-child:before {
+        //             color: #FFF;
+        //         }
+        //     }
+        // }
     }
     // &.single-selector {
     //     > tbody > tr {

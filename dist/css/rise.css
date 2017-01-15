@@ -11842,28 +11842,6 @@ li.dropdown-header {
    ========================================================================== 
    ========================================================================== 
    ========================================================================== */
-.table-selector > tbody > tr.active {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn; }
-  .table-selector > tbody > tr.active:hover td {
-    background: #5cbe76;
-    color: #FFF; }
-  .table-selector > tbody > tr.active td {
-    background: #5cbe76;
-    color: #FFF; }
-    .table-selector > tbody > tr.active td a {
-      color: #FFF; }
-    .table-selector > tbody > tr.active td .text-muted {
-      color: #FFF; }
-    .table-selector > tbody > tr.active td .folder:before {
-      color: #FFF; }
-    .table-selector > tbody > tr.active td:first-child:before {
-      color: #FFF; }
-
 /* DEPRECATE */
 /* Presentation Selector */
 .presentation-selector {
