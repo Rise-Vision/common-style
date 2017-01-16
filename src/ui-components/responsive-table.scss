@@ -247,6 +247,7 @@
 
 .selector-icon {
     font-family: FontAwesome;
+
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
@@ -257,6 +258,7 @@
     content: '\f096';
     &.selector-icon--selected {
         content: '\f14a';
+        color: #fff;
     }
 }
 

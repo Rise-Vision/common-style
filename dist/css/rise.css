@@ -11834,7 +11834,8 @@ li.dropdown-header {
   text-align: center;
   content: '\f096'; }
   .selector-icon.selector-icon--selected, .table.table--selector .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row.active > .table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell:first-child:before {
-    content: '\f14a'; }
+    content: '\f14a';
+    color: #fff; }
 
 /* Deprecate
    ========================================================================== 
