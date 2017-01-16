@@ -271,8 +271,8 @@
    ========================================================================== */
 
 //Defined as clickable link table? A hrefs only for below?
-.table-2 {
-    @extend .table;
+// .table-2 {
+//     @extend .table;
     // thead {
     //   tr>th {
     //     padding: 8px;
@@ -291,9 +291,9 @@
     //   padding: 12px 8px;
     // }
     // }
-}
+// }
 
-.table-selector {
+// .table-selector {
     // > thead > tr {
     //   th {
     //       label {
@@ -318,8 +318,8 @@
     //       }
     //     }
     //   }
-    > tbody > tr {
-        td {
+    // > tbody > tr {
+    //     td {
             // -webkit-touch-callout: none;
             // -webkit-user-select: none;
             // -khtml-user-select: none;
@@ -340,7 +340,7 @@
             //   height: 18px;
             //   text-align: center;
             // }
-        }
+        // }
         // &.disabled-row {
         //   background: #f5f5f5;
         //   td, td a {
@@ -400,7 +400,7 @@
         //         }
         //     }
         // }
-    }
+    // }
     // &.single-selector {
     //     > tbody > tr {
     //         td:first-child {
@@ -441,7 +441,7 @@
     //         }
     //     }
     // }
-}
+// }
 
 // .table-2 {
 //     > tbody > tr > td:first-child {
