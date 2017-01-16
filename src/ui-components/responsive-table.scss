@@ -136,13 +136,13 @@
             .table-body__row > .table-body__cell {
                 cursor: pointer;
                 &:first-child:before {
-                    @extend .selector-icon; //Not Working?
+                    @extend .selector-icon; 
                 }
                 &:first-child i {
                     margin: 0 4px;
                 }
             }
-            .table-body__row--is-selected > .table-body__cell {
+            .table-body__row.active > .table-body__cell {
                 background: $rise-green;
                 color: #FFF;
                 a,
@@ -154,7 +154,7 @@
                     color: #FFF;
                 }
                 &:first-child:before {
-                    @extend .selector-icon--selected;
+                    @extend .selector-icon--selected;  //TODO Check this redundancy with Multiple Selector
                 }
             }
         }

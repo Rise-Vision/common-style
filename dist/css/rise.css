@@ -11776,14 +11776,14 @@ li.dropdown-header {
     cursor: pointer; }
     .table.table--selector .table-body .table-body__row > .table-body__cell:first-child i, .table--selector.table-2 .table-body .table-body__row > .table-body__cell:first-child i {
       margin: 0 4px; }
-  .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell {
+  .table.table--selector .table-body .table-body__row.active > .table-body__cell, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell {
     background: #4ab767;
     color: #FFF; }
-    .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell a, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell a,
-    .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell .text-muted, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell .text-muted,
-    .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell .text-green, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell .text-green {
+    .table.table--selector .table-body .table-body__row.active > .table-body__cell a, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell a,
+    .table.table--selector .table-body .table-body__row.active > .table-body__cell .text-muted, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell .text-muted,
+    .table.table--selector .table-body .table-body__row.active > .table-body__cell .text-green, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell .text-green {
       color: #FFF; }
-    .table.table--selector .table-body .table-body__row--is-selected > .table-body__cell .fa:before, .table--selector.table-2 .table-body .table-body__row--is-selected > .table-body__cell .fa:before {
+    .table.table--selector .table-body .table-body__row.active > .table-body__cell .fa:before, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell .fa:before {
       color: #FFF; }
   .table.table--selector.table--back-btn .table-body__cell:first-child:before, .table--selector.table--back-btn.table-2 .table-body__cell:first-child:before {
     content: '\f060' !important; }
@@ -11833,7 +11833,7 @@ li.dropdown-header {
   width: 16px;
   text-align: center;
   content: '\f096'; }
-  .selector-icon.selector-icon--selected, .table.table--selector .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row--is-selected.table-body__row > .table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row--is-selected.table-body__row > .table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row--is-selected > .selector-icon.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row--is-selected > .selector-icon.table-body__cell:first-child:before {
+  .selector-icon.selector-icon--selected, .table.table--selector .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row > .selector-icon--selected.table-body__cell:first-child:before, .table.table--selector .table-body .table-body__row.active > .table-body__cell:first-child:before, .table--selector.table-2 .table-body .table-body__row.active > .table-body__cell:first-child:before {
     content: '\f14a'; }
 
 /* Deprecate
