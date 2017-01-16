@@ -15289,10 +15289,10 @@ a.mfp-iframe:hover:after {
 .tax-notice {
   font-size: 11px; }
 
-.table-2 .store-block {
+.table .store-block {
   margin-top: 0;
   border: none; }
-  .table-2 .store-block .store-icon {
+  .table .store-block .store-icon {
     width: 40px;
     height: 40px; }
 
@@ -15556,10 +15556,10 @@ a.mfp-iframe:hover:after {
 .modal-content {
   margin: 0 10px; }
 
-.table-2 .store-block {
+.table .store-block {
   margin-bottom: 0; }
 
-.table-2 .description {
+.table .description {
   margin-top: 0; }
 
 .total-row {
