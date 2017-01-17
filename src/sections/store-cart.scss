@@ -66,9 +66,15 @@
     margin-top: 0px;
   }
   .subscriptions .btn,
-  .purchases .buttons .btn {
-    width: 204px;
-    margin-top: 4px;
+  .purchases {
+        &.table {
+          vertical-align: top;
+        }
+        & .buttons .btn {
+        width: 204px;
+        margin-top: 4px;
+      }
+
   }
 }
 
@@ -177,6 +183,7 @@
   .product-name {
     padding-left: 25px;
   }
+
   table.invoice-due-summary {
     td {
       width: 50%;
