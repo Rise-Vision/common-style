@@ -14,9 +14,6 @@
                 color: $gray-dark;
                 display: block;
             }
-            // >span {
-            //     display: block;
-            // }
             label {
                 margin: 0;
             }
@@ -136,7 +133,7 @@
             .table-body__row > .table-body__cell {
                 cursor: pointer;
                 &:first-child:before {
-                    @extend .selector-icon; 
+                    @extend .selector-icon;
                 }
                 &:first-child i {
                     margin: 0 4px;
@@ -154,7 +151,7 @@
                     color: #FFF;
                 }
                 &:first-child:before {
-                    @extend .selector-icon--selected;  //TODO Check this redundancy with Multiple Selector
+                    @extend .selector-icon--selected; //TODO Check this redundancy with Multiple Selector
                 }
             }
         }
@@ -247,7 +244,6 @@
 
 .selector-icon {
     font-family: FontAwesome;
-
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
@@ -263,215 +259,8 @@
 }
 
 
-/* Deprecate
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== */
-
-//Defined as clickable link table? A hrefs only for below?
-// .table-2 {
-//     @extend .table;
-    // thead {
-    //   tr>th {
-    //     padding: 8px;
-    //   }
-    // }
-    // tbody {
-    // tr {
-    //   &:hover {
-    //     cursor:pointer;
-    //     a {
-    //       color:$rise-blue;
-    //     }
-    //   }
-    // }
-    // tr>td {
-    //   padding: 12px 8px;
-    // }
-    // }
-// }
-
-// .table-selector {
-    // > thead > tr {
-    //   th {
-    //       label {
-    //         margin: 0;
-    //       }
-    //       input[type=checkbox] {
-    //         display:none; 
-    //       }
-    //       input[type=checkbox] + label:before {
-    //         font-family: FontAwesome;
-    //         margin-right: 10px;
-    //         display: inline-block;
-    //         vertical-align: middle;
-    //         color: #d4d4d4;
-    //         font-size: 16px;
-    //         width: 16px;
-    //         text-align: center;
-    //         content:'\f096';
-    //       }
-    //       input[type=checkbox]:checked + label:before {
-    //         content: '\f14a';
-    //       }
-    //     }
-    //   }
-    // > tbody > tr {
-    //     td {
-            // -webkit-touch-callout: none;
-            // -webkit-user-select: none;
-            // -khtml-user-select: none;
-            // -moz-user-select: none;
-            // -ms-user-select: none;
-            // user-select: none;
-            // cursor: pointer;
-            // vertical-align: middle;
-            // &:first-child:before {
-            //   font-family: FontAwesome;
-            //   font-style: normal;
-            //   margin-right: 10px;
-            //   display: inline-block;
-            //   vertical-align: middle;
-            //   color: #d4d4d4;
-            //   font-size: 16px;
-            //   width: 16px;
-            //   height: 18px;
-            //   text-align: center;
-            // }
-        // }
-        // &.disabled-row {
-        //   background: #f5f5f5;
-        //   td, td a {
-        //     cursor: not-allowed;
-        //     color: #999;
-        //   }
-        //   &:hover {
-        //     a {
-        //       color: #999;
-        //     }
-        //   }
-        // }
-        // &.back-btn {
-        //     td {
-        //         &:first-child:before {
-        //             content: '\f060' !important;
-        //         }
-        //     }
-        // }
-        // &.no-select-row {
-        //   td {
-        //     &:first-child:before {
-        //       content: '' !important;
-        //     }
-        //   }
-        // }
-        // &.active {
-        //     //TODO Check this function?
-        //     -webkit-animation-duration: 1s;
-        //     animation-duration: 1s;
-        //     -webkit-animation-fill-mode: both;
-        //     animation-fill-mode: both;
-        //     -webkit-animation-name: fadeIn;
-        //     animation-name: fadeIn;
-        //     &:hover {
-        //         td {
-        //             background: lighten($rise-green, 5%);
-        //             color: #FFF;
-        //         }
-        //     }
-        //     td {
-        //         background: lighten($rise-green, 5%);
-        //         color: #FFF;
-        //         a {
-        //             color: #FFF;
-        //         }
-        //         .text-muted {
-        //             color: #FFF;
-        //         }
-        //         .folder {
-        //             &:before {
-        //                 color: #FFF;
-        //             }
-        //         }
-        //         &:first-child:before {
-        //             color: #FFF;
-        //         }
-        //     }
-        // }
-    // }
-    // &.single-selector {
-    //     > tbody > tr {
-    //         td:first-child {
-    //             &:before {
-    //                 content: '\f096';
-    //             }
-    //         }
-    //         &.active {
-    //             td {
-    //                 &:first-child:before {
-    //                     content: '\f192';
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // &.multiple-selector {
-    //     > tbody > tr {
-    //         td:first-child {
-    //             &:before {
-    //                 content: '\f096';
-    //             }
-    //         }
-    //         &.active {
-    //             td {
-    //                 &:first-child:before {
-    //                     content: '\f14a';
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     > tbody > tr.info-row {
-    //         background-color: #eee;
-    //         td:first-child {
-    //             &:before {
-    //                 content: initial;
-    //             }
-    //         }
-    //     }
-    // }
-// }
-
-// .table-2 {
-//     > tbody > tr > td:first-child {
-//         input {
-//             display: inline-block;
-//         }
-//         span a {
-//             display: inline-block;
-//             vertical-align: middle;
-//             overflow: hidden;
-//         }
-//     }
-// }
-// tr.blocked-file {
-//     >td {
-//         background: #f7f7f7;
-//         cursor: pointer;
-//         position: relative;
-//         .callout {
-//             top: 45px;
-//             left: 0;
-//         }
-//     }
-// }
-
-/* DEPRECATE */
-
-
 /* Presentation Selector */
-
+//TODO: No references in current Presentation Selector in either Schedules or Alerts
 .presentation-selector {
     margin-top: 20px;
     /* Styled the same as navbar-left. */
