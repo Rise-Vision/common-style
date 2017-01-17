@@ -67,7 +67,7 @@
   }
   .subscriptions .btn,
   .purchases {
-        &.table {
+        & .table-body__row > .table-body__cell {
           vertical-align: top;
         }
         & .buttons .btn {

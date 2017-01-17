@@ -15018,8 +15018,8 @@ a.mfp-iframe:hover:after {
   .shopping-cart .alert.ship-to-restriction h5, .shopping-cart .support-app .ship-to-restriction.support-time h5, .support-app .shopping-cart .ship-to-restriction.support-time h5 {
     margin-top: 0; }
 
-.shopping-cart .subscriptions .btn.table, .shopping-cart .subscriptions .icon-nav label.table, .icon-nav .shopping-cart .subscriptions label.table,
-.shopping-cart .purchases.table {
+.shopping-cart .subscriptions .btn .table-body__row > .table-body__cell, .shopping-cart .subscriptions .icon-nav label .table-body__row > .table-body__cell, .icon-nav .shopping-cart .subscriptions label .table-body__row > .table-body__cell,
+.shopping-cart .purchases .table-body__row > .table-body__cell {
   vertical-align: top; }
 
 .shopping-cart .subscriptions .btn .buttons .btn, .shopping-cart .subscriptions .icon-nav label .buttons .btn, .icon-nav .shopping-cart .subscriptions label .buttons .btn, .shopping-cart .subscriptions .btn .buttons .icon-nav label, .icon-nav .shopping-cart .subscriptions .btn .buttons label, .shopping-cart .subscriptions .icon-nav label .buttons label, .icon-nav .shopping-cart .subscriptions label .buttons label,
