@@ -11655,7 +11655,8 @@ li.dropdown-header {
    ========================================================================== */
 .table {
   width: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 0; }
   .table .table-header .table-header__row > .table-header__cell {
     padding: 8px; }
     .table .table-header .table-header__row > .table-header__cell > a {
