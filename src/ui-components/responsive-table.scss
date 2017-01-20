@@ -98,7 +98,7 @@
                     }
                 }
                 &:first-child:before {
-                    font-family: FontAwesome; //TODO?
+                    font-family: FontAwesome;
                     font-style: normal;
                     margin-right: 10px;
                     display: inline-block;
@@ -119,6 +119,7 @@
             }
         }
     }
+    //end table-body
     &.table--sortable {
         .table-body {
             .table-body__row > .table-body__cell {
@@ -131,28 +132,56 @@
     }
     &.table--selector {
         .table-body {
-            .table-body__row > .table-body__cell {
-                cursor: pointer;
-                &:first-child:before {
-                    @extend .selector-icon;
+            .table-body__row {
+                & > .table-body__cell {
+                    cursor: pointer;
+                    // &:first-child:before {
+                    //     @extend .selector-icon;
+                    // }
+                    &:first-child i {
+                        margin: 0 4px;
+                    }
                 }
-                &:first-child i {
-                    margin: 0 4px;
-                }
-            }
-            .table-body__row.active > .table-body__cell {
-                background: $rise-green;
-                color: #FFF;
-                a,
-                .text-muted,
-                .text-green {
-                    color: #FFF;
-                }
-                .fa:before {
-                    color: #FFF;
-                }
-                &:first-child:before {
-                    @extend .selector-icon--selected; //TODO Check this redundancy with Multiple Selector
+                &.active {
+                    //TODO Rename this to something clearer?
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    -webkit-animation-name: fadeIn;
+                    animation-name: fadeIn;
+                    &:hover {
+                        .table-body__cell {
+                            background: lighten($rise-green, 5%);
+                            color: #FFF;
+                        }
+                    }
+                    .table-body__cell {
+                        background: $rise-green;
+                        color: #FFF;
+                        a,
+                        .text-muted,
+                        .text-green {
+                            color: #FFF;
+                        }
+                        .text-muted {
+                            color: #FFF;
+                        }
+                        .file,
+                        .folder,
+                        .fa {
+                            &:before {
+                                color: #FFF;
+                            }
+                        }
+                        &:first-child:before {
+                            color: #FFF;
+                        }
+                        //TODO Check this redundancy with Multiple Selector
+                        // &:first-child:before {
+                        //   @extend .selector-icon--selected; 
+                        // }
+                    }
                 }
             }
         }
@@ -160,39 +189,6 @@
             .table-body__cell {
                 &:first-child:before {
                     content: '\f060' !important;
-                }
-            }
-        }
-        &.active {
-            //TODO Rename this to something clearer?
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-            &:hover {
-                .table-body__cell {
-                    background: lighten($rise-green, 5%);
-                    color: #FFF;
-                }
-            }
-            .table-body__cell {
-                background: lighten($rise-green, 5%);
-                color: #FFF;
-                a {
-                    color: #FFF;
-                }
-                .text-muted {
-                    color: #FFF;
-                }
-                .folder {
-                    &:before {
-                        color: #FFF;
-                    }
-                }
-                &:first-child:before {
-                    color: #FFF;
                 }
             }
         }
@@ -237,27 +233,7 @@
             }
         }
     }
-}
-
-
-/* Table Selector Icon
-   ========================================================================== */
-
-.selector-icon {
-    font-family: FontAwesome;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    color: #d4d4d4;
-    font-size: 16px;
-    width: 16px;
-    text-align: center;
-    content: '\f096';
-    &.selector-icon--selected {
-        content: '\f14a';
-        color: #fff;
-    }
-}
+}  // end Table
 
 
 /* Presentation Selector */
