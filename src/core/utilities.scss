@@ -87,15 +87,15 @@ All utilities have a prefix u_ added to them
  */
 
 .u_padding-lg {
-  padding: 32px;
+  padding: 2em;
 }
 
 .u_padding-md {
-  padding: 16px;
+  padding: 1em;
 }
 
 .u_padding-sm {
-  padding: 8px;
+  padding: .5em;
 }
 
 .u_padding-lg-horizontal {
@@ -148,7 +148,7 @@ All utilities have a prefix u_ added to them
 
 /* Clearing Utilities
  */
- 
+
 .remove-radius { border-radius: 0 !important; }
 .remove-margin { margin: 0 !important }
 .remove-padding { padding: 0 !important }
