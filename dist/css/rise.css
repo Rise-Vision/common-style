@@ -7845,16 +7845,72 @@ All utilities have a prefix u_ added to them
 .u_icon-hover:hover > i {
   opacity: 1; }
 
-/* Spacing Utilities
+/* Padding Utilities
  */
 .u_padding-lg, .padding-large {
-  padding: 32px; }
+  padding: 2em; }
 
 .u_padding-md {
-  padding: 16px; }
+  padding: 1em; }
 
 .u_padding-sm {
-  padding: 8px; }
+  padding: .5em; }
+
+.padding-large-horizontal {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.padding-small-vertical {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.add-padding {
+  padding: 10px !important; }
+
+.add-left {
+  margin-left: 10px !important; }
+
+.add-right {
+  margin-right: 10px !important; }
+
+.remove-bottom {
+  margin-bottom: 0 !important; }
+
+.small-bottom {
+  margin-bottom: 3px !important; }
+
+.half-bottom {
+  margin-bottom: 10px !important; }
+
+.add-bottom {
+  margin-bottom: 20px !important; }
+
+.add-bottom-double {
+  margin-bottom: 40px !important; }
+
+.remove-top {
+  margin-top: 0 !important; }
+
+.small-top {
+  margin-top: 3px !important; }
+
+.half-top {
+  margin-top: 10px !important; }
+
+.add-top {
+  margin-top: 20px !important; }
+
+.add-top-double {
+  margin-top: 40px !important; }
+
+.remove-radius {
+  border-radius: 0 !important; }
+
+.remove-margin {
+  margin: 0 !important; }
+
+.remove-padding {
+  padding: 0 !important; }
 
 /* 
 ==========================================================================
@@ -7949,14 +8005,6 @@ path {
   padding-right: 0px;
   padding-left: 0px; }
 
-.padding-large-horizontal {
-  padding-left: 30px;
-  padding-right: 30px; }
-
-.padding-small-vertical {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
 .img-icon {
   height: 24px;
   width: 24px;
@@ -7980,54 +8028,6 @@ path {
     display: block;
     width: 100%;
     margin-bottom: 10px; } }
-
-.add-padding {
-  padding: 10px !important; }
-
-.add-left {
-  margin-left: 10px !important; }
-
-.add-right {
-  margin-right: 10px !important; }
-
-.remove-bottom {
-  margin-bottom: 0 !important; }
-
-.small-bottom {
-  margin-bottom: 3px !important; }
-
-.half-bottom {
-  margin-bottom: 10px !important; }
-
-.add-bottom {
-  margin-bottom: 20px !important; }
-
-.add-bottom-double {
-  margin-bottom: 40px !important; }
-
-.remove-top {
-  margin-top: 0 !important; }
-
-.small-top {
-  margin-top: 3px !important; }
-
-.half-top {
-  margin-top: 10px !important; }
-
-.add-top {
-  margin-top: 20px !important; }
-
-.add-top-double {
-  margin-top: 40px !important; }
-
-.remove-radius {
-  border-radius: 0 !important; }
-
-.remove-margin {
-  margin: 0 !important; }
-
-.remove-padding {
-  padding: 0 !important; }
 
 /* ==========================================================================
    font awesome
