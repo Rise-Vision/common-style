@@ -7847,26 +7847,41 @@ All utilities have a prefix u_ added to them
 
 /* Padding Utilities
  */
-.u_padding-lg, .padding-large {
-  padding: 2em; }
+.u_padding-lg {
+  padding: 30px; }
 
 .u_padding-md {
-  padding: 1em; }
+  padding: 18px; }
 
 .u_padding-sm {
-  padding: .5em; }
+  padding: 10px; }
 
-.padding-large-horizontal {
+.u_padding-lg-horizontal {
   padding-left: 30px;
   padding-right: 30px; }
 
-.padding-small-vertical {
-  padding-top: 15px;
-  padding-bottom: 15px; }
+.u_padding-md-horizontal {
+  padding-left: 18px;
+  padding-right: 18px; }
 
-.add-padding {
-  padding: 10px !important; }
+.u_padding-sm-horizontal {
+  padding-left: 10px;
+  padding-right: 10px; }
 
+.padding-lg-vertical {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.padding-md-vertical {
+  padding-top: 18px;
+  padding-bottom: 18px; }
+
+.padding-sm-vertical {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* Margin Utilities
+ */
 .add-left {
   margin-left: 10px !important; }
 
@@ -7903,6 +7918,8 @@ All utilities have a prefix u_ added to them
 .add-top-double {
   margin-top: 40px !important; }
 
+/* Clearing Utilities
+ */
 .remove-radius {
   border-radius: 0 !important; }
 
