@@ -11693,8 +11693,8 @@ li.dropdown-header {
       color: #0081BA; }
   .table .table-body .table-body__row.table-body__row--disabled .table-body__cell,
   .table .table-body .table-body__row.table-body__row--disabled .table-body__cell a {
-    cursor: not-allowed;
-    color: #999;
+    cursor: not-allowed !important;
+    color: #999 !important;
     background: #f5f5f5 !important; }
   .table .table-body .table-body__row.table-body__row--disabled:hover a {
     color: #999; }

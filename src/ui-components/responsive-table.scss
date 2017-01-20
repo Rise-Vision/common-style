@@ -48,8 +48,8 @@
             &.table-body__row--disabled {
                 .table-body__cell,
                 .table-body__cell a {
-                    cursor: not-allowed;
-                    color: #999;
+                    cursor: not-allowed !important;
+                    color: #999 !important;
                     background: #f5f5f5 !important;
                 }
                 &:hover {
