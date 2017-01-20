@@ -11702,7 +11702,7 @@ li.dropdown-header {
   .table .table-body .table-body__row.table-body__row--no-select .table-body__cell:first-child:before {
     content: '' !important; }
   .table .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell {
-    background: #f7f7f7;
+    background: #f7f7f7 !important;
     cursor: pointer;
     position: relative; }
     .table .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell .callout {

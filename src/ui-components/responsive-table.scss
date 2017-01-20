@@ -68,7 +68,7 @@
             }
             &.table-body__row--blocked-file {
                 > .table-body__cell {
-                    background: #f7f7f7;
+                    background: #f7f7f7 !important;
                     cursor: pointer;
                     position: relative;
                     .callout {
