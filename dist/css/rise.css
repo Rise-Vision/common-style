@@ -7848,13 +7848,13 @@ All utilities have a prefix u_ added to them
 /* Padding Utilities
  */
 .u_padding-lg {
-  padding: 30px; }
+  padding: 32px; }
 
 .u_padding-md {
-  padding: 18px; }
+  padding: 16px; }
 
 .u_padding-sm {
-  padding: 10px; }
+  padding: 8px; }
 
 .u_padding-lg-horizontal {
   padding-left: 32px;
