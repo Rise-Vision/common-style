@@ -45,37 +45,6 @@
                     color: $rise-blue;
                 }
             }
-            &.table-body__row--disabled {
-                .table-body__cell,
-                .table-body__cell a {
-                    cursor: not-allowed !important;
-                    color: #999 !important;
-                    background: #f5f5f5 !important;
-                }
-                &:hover {
-                    a {
-                        color: #999;
-                    }
-                }
-            }
-            &.table-body__row--no-select {
-                .table-body__cell {
-                    &:first-child:before {
-                        content: '' !important;
-                    }
-                }
-            }
-            &.table-body__row--blocked-file {
-                > .table-body__cell {
-                    background: #f7f7f7 !important;
-                    cursor: pointer;
-                    position: relative;
-                    .callout {
-                        top: 45px;
-                        left: 0;
-                    }
-                }
-            }
             & > .table-body__cell {
                 vertical-align: middle;
                 padding: 12px 8px;
@@ -174,6 +143,37 @@
                         }
                     }
                 }
+                &.table-body__row--disabled {
+                    .table-body__cell,
+                    .table-body__cell a {
+                        cursor: not-allowed;
+                        color: #999;
+                        background: #f5f5f5;
+                    }
+                    &:hover {
+                        a {
+                            color: #999;
+                        }
+                    }
+                }
+                &.table-body__row--no-select {
+                    .table-body__cell {
+                        &:first-child:before {
+                            content: '' !important;
+                        }
+                    }
+                }
+                &.table-body__row--blocked-file {
+                    > .table-body__cell {
+                        background: #f7f7f7;
+                        cursor: pointer;
+                        position: relative;
+                        .callout {
+                            top: 45px;
+                            left: 0;
+                        }
+                    }
+                }
             }
         }
         &.table--back-btn {
@@ -224,10 +224,10 @@
             }
         }
     }
-}  // end .table
-
+} // end .table
 
 /* Presentation Selector */
+
 //TODO: No references in current Presentation Selector in either Schedules or Alerts
 .presentation-selector {
     margin-top: 20px;

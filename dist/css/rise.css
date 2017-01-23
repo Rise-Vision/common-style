@@ -11691,22 +11691,6 @@ li.dropdown-header {
     cursor: pointer; }
     .table .table-body .table-body__row:hover a {
       color: #0081BA; }
-  .table .table-body .table-body__row.table-body__row--disabled .table-body__cell,
-  .table .table-body .table-body__row.table-body__row--disabled .table-body__cell a {
-    cursor: not-allowed !important;
-    color: #999 !important;
-    background: #f5f5f5 !important; }
-  .table .table-body .table-body__row.table-body__row--disabled:hover a {
-    color: #999; }
-  .table .table-body .table-body__row.table-body__row--no-select .table-body__cell:first-child:before {
-    content: '' !important; }
-  .table .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell {
-    background: #f7f7f7 !important;
-    cursor: pointer;
-    position: relative; }
-    .table .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell .callout {
-      top: 45px;
-      left: 0; }
   .table .table-body .table-body__row > .table-body__cell {
     vertical-align: middle;
     padding: 12px 8px;
@@ -11772,6 +11756,22 @@ li.dropdown-header {
         color: #FFF; }
       .table.table--selector .table-body .table-body__row.active .table-body__cell:first-child:before {
         color: #FFF; }
+  .table.table--selector .table-body .table-body__row.table-body__row--disabled .table-body__cell,
+  .table.table--selector .table-body .table-body__row.table-body__row--disabled .table-body__cell a {
+    cursor: not-allowed;
+    color: #999;
+    background: #f5f5f5; }
+  .table.table--selector .table-body .table-body__row.table-body__row--disabled:hover a {
+    color: #999; }
+  .table.table--selector .table-body .table-body__row.table-body__row--no-select .table-body__cell:first-child:before {
+    content: '' !important; }
+  .table.table--selector .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell {
+    background: #f7f7f7;
+    cursor: pointer;
+    position: relative; }
+    .table.table--selector .table-body .table-body__row.table-body__row--blocked-file > .table-body__cell .callout {
+      top: 45px;
+      left: 0; }
   .table.table--selector.table--back-btn .table-body__cell:first-child:before {
     content: '\f060' !important; }
   .table.table--selector.table--single-selector > .table-body > .table-body__row .table-body__cell:first-child:before {
