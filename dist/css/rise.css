@@ -7848,37 +7848,37 @@ All utilities have a prefix u_ added to them
 /* Padding Utilities
  */
 .u_padding-lg {
-  padding: 30px; }
+  padding: 32px; }
 
 .u_padding-md {
-  padding: 18px; }
+  padding: 16px; }
 
 .u_padding-sm {
-  padding: 10px; }
+  padding: 8px; }
 
 .u_padding-lg-horizontal {
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding-left: 32px;
+  padding-right: 32px; }
 
 .u_padding-md-horizontal {
-  padding-left: 18px;
-  padding-right: 18px; }
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .u_padding-sm-horizontal {
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 8px;
+  padding-right: 8px; }
 
 .padding-lg-vertical {
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 32px;
+  padding-bottom: 32px; }
 
 .padding-md-vertical {
-  padding-top: 18px;
-  padding-bottom: 18px; }
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 .padding-sm-vertical {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
 /* Margin Utilities
  */
