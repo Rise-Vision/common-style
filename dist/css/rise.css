@@ -7872,11 +7872,11 @@ All utilities have a prefix u_ added to them
   padding-top: 32px;
   padding-bottom: 32px; }
 
-.padding-md-vertical {
+.u_padding-md-vertical {
   padding-top: 16px;
   padding-bottom: 16px; }
 
-.padding-sm-vertical {
+.u_padding-sm-vertical {
   padding-top: 8px;
   padding-bottom: 8px; }
 
