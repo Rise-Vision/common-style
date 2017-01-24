@@ -40,3 +40,13 @@
 .btn-toggle {
     display: inline;
 }
+
+.button-row { //?
+    @media (max-width: 768px) {
+        .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 All utilities have a prefix u_ added to them
 */
 
+
 /* Line Height Utilities
    ==========================================================================
    To be used with forms and buttons
@@ -11,6 +12,7 @@ All utilities have a prefix u_ added to them
 .u_lh-normal { 
   line-height: 33px;
 }
+
 
 /* Ellipsis Utilities
    ==========================================================================
@@ -56,15 +58,34 @@ All utilities have a prefix u_ added to them
 
 
 /* Styling Utilities
-   ========================================================================== */
+   ==========================================================================
+*/
 
 .u_bordered {
   border: 1px solid $gray-lighter;
   border-radius: $border-radius-base;
 }
 
+.fa.u_icon-gray:before {
+    color: #BBB;
+}
+
+.fa.u_icon-red:before {
+    color: #cf371f;
+}
+
+.fa.u_icon-green:before {
+    color: $rise-green;
+}
+
+.fa.u_icon-white:before {
+    color: $white;
+}
+
+
 /* Text Utilities
- */
+   ========================================================================== 
+*/
 
 .u_text-ellipsis {
   overflow: hidden;
@@ -84,7 +105,8 @@ All utilities have a prefix u_ added to them
 }
 
 /* Padding Utilities
- */
+   ========================================================================== 
+*/
 
 .u_padding-lg {
   padding: 32px;
@@ -129,16 +151,64 @@ All utilities have a prefix u_ added to them
 }
 
 /* Margin Utilities
- */
+   ========================================================================== 
+*/
 
-.add-left { margin-left: 10px !important; }
-.add-right { margin-right: 10px !important; }
+.u_margin-xs {
+    margin: 3px !important;
+}
 
-.remove-bottom { margin-bottom: 0 !important; }
-.small-bottom { margin-bottom: 3px !important; }
-.half-bottom { margin-bottom: 10px !important; }
-.add-bottom { margin-bottom: 20px !important; }
-.add-bottom-double { margin-bottom: 40px !important; }
+.u_margin-sm {
+    margin: 10px !important;
+}
+
+.u_margin-md {
+    margin: 20px !important;
+}
+
+.u_margin-lg {
+    margin: 40px !important;
+}
+
+.u_margin-left {
+    margin-left: 10px !important;
+}
+
+.u_margin-right {
+    margin-right: 10px !important;
+}
+
+.u_margin-xs-top {
+    margin-top: 3px !important;
+}
+
+.u_margin-sm-top {
+    margin-top: 10px !important;
+}
+
+.u_margin-md-top {
+    margin-top: 20px !important;
+}
+
+.u_margin-lg-top {
+    margin-top: 40px !important;
+}
+
+.u_margin-xs-bottom {
+    margin-bottom: 3px !important;
+}
+
+.u_margin-sm-bottom {
+    margin-bottom: 10px !important;
+}
+
+.u_margin-md-bottom {
+    margin-bottom: 20px !important;
+}
+
+.u_margin-lg-bottom {
+    margin-bottom: 40px !important;
+}
 
 .remove-top { margin-top: 0 !important; }
 .small-top { margin-top: 3px !important; }
@@ -147,36 +217,58 @@ All utilities have a prefix u_ added to them
 .add-top-double { margin-top: 40px !important; }
 
 /* Clearing Utilities
- */
+   ========================================================================== 
+*/
 
-.remove-radius { border-radius: 0 !important; }
-.remove-margin { margin: 0 !important }
-.remove-padding { padding: 0 !important }
-
-/* 
-==========================================================================
-==========================================================================
-==========================================================================
-DEPRECATE Old Utilities
-   ========================================================================== */
-
-.nowrap {
-  white-space: nowrap;
+.u_remove-radius {
+    border-radius: 0 !important;
 }
 
-.clickable {
-  cursor: pointer;
+.u_remove-margin {
+    margin: 0 !important;
+}
+
+.u_remove-padding {
+    padding: 0 !important;
+}
+
+.u_remove-top {
+    margin-top: 0 !important;
+}
+
+.u_remove-bottom {
+    margin-bottom: 0 !important;
+}
+
+/* Alignment Utilities
+   ========================================================================== 
+*/
+
+%vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Misc Utilities
+   ========================================================================== 
+*/
+
+.u_nowrap {
+    white-space: nowrap;
 }
 
 .ellipsis {
   @extend .u_text-ellipsis;
 }
 
-.ahrefdisabled {
-  color: #AAAAAA;
-  cursor: default;
-  pointer-events: none;
-  text-decoration: none;
+.u_link-disabled {
+    color: #AAAAAA;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
 }
 .highlighted {
   background: #FFFFE0;
