@@ -7854,7 +7854,7 @@ All utilities have a prefix u_ added to them
 /* Text Utilities
    ========================================================================== 
 */
-.u_text-ellipsis, .ellipsis, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+.u_text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -7889,7 +7889,7 @@ All utilities have a prefix u_ added to them
   padding-left: 8px;
   padding-right: 8px; }
 
-.padding-lg-vertical {
+.u_padding-lg-vertical {
   padding-top: 32px;
   padding-bottom: 32px; }
 
@@ -7946,21 +7946,6 @@ All utilities have a prefix u_ added to them
 .u_margin-lg-bottom {
   margin-bottom: 40px !important; }
 
-.remove-top {
-  margin-top: 0 !important; }
-
-.small-top {
-  margin-top: 3px !important; }
-
-.half-top {
-  margin-top: 10px !important; }
-
-.add-top {
-  margin-top: 20px !important; }
-
-.add-top-double {
-  margin-top: 40px !important; }
-
 /* Clearing Utilities
    ========================================================================== 
 */
@@ -8001,62 +7986,11 @@ All utilities have a prefix u_ added to them
   pointer-events: none;
   text-decoration: none; }
 
-.highlighted {
+.u_highlighted {
   background: #FFFFE0;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block; }
-
-.empty-state .tag {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.radio-vertical-align {
-  display: inline-block; }
-
-.radio-vertical-align input,
-.radio-vertical-align label {
-  display: inline-block;
-  vertical-align: middle; }
-
-.app-navigation svg {
-  width: 24px;
-  height: 24px;
-  background: red; }
-
-.app-navigation path:first-child {
-  fill: #4AB767; }
-
-.app-navigation path:last-child {
-  fill: #2D60AD; }
-
-.file-empty-state path {
-  fill: #969595;
-  opacity: .65; }
-
-svg:hover path {
-  fill: rgba(0, 0, 0, 0.7); }
-
-path {
-  fill: rgba(0, 0, 0, 0.4); }
-
-.fa.icon-gray:before {
-  color: #BBB; }
-
-.fa.icon-red:before {
-  color: #cf371f; }
-
-.fa.icon-green:before {
-  color: #4ab767; }
-
-.fa.icon-white:before {
-  color: #fff; }
-
-.text-white {
-  color: #FFF; }
 
 .row.sm-gutter, .support-app .ticket-list-table .sm-gutter.title-row, .support-app .ticket-list-table .sm-gutter.ticket {
   margin-left: -4px;
@@ -8075,30 +8009,6 @@ path {
 .row.no-gutter [class*='col-']:not(:last-child), .support-app .ticket-list-table .no-gutter.title-row [class*='col-']:not(:last-child), .support-app .ticket-list-table .no-gutter.ticket [class*='col-']:not(:last-child) {
   padding-right: 0px;
   padding-left: 0px; }
-
-.img-icon {
-  height: 24px;
-  width: 24px;
-  margin-top: -4px;
-  margin-right: -4px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: 5px;
-  background-size: 100%; }
-  .img-icon.img-icon-google-calendar {
-    background-image: url("https://s3.amazonaws.com/Rise-Images/Icons/logo_calendar_32px.png"); }
-
-/* Deprecate
- ========================================================================== 
- ========================================================================== 
- ========================================================================== 
- ========================================================================== 
- ========================================================================== */
-@media (max-width: 768px) {
-  .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px; } }
 
 /* ==========================================================================
    font awesome
