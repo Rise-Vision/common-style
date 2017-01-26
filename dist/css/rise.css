@@ -11325,11 +11325,20 @@ li.dropdown-header {
     min-height: 1px;
     padding-left: 7.5px;
     padding-right: 7.5px;
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
     text-align: center; }
     @media (min-width: 768px) {
       .app-header .banner-block {
         float: left;
         width: 33.33333%; } }
+    @media (min-width: 768px) {
+      .app-header .banner-block {
+        left: 33.33333%; } }
     .app-header .banner-block .btn, .app-header .banner-block .icon-nav label, .icon-nav .app-header .banner-block label {
       margin-bottom: 0; }
   .app-header .global-actions {
