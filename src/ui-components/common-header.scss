@@ -38,7 +38,7 @@
         text-align: right;
         .user-id {
             span {
-                @extend .u_ellipsis;
+                @extend .u_ellipsis-md;
                 display: block;
                 font-size: 13px;
                 line-height: 18px;

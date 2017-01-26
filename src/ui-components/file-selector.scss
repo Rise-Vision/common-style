@@ -127,21 +127,18 @@
         height: 33px;
         border: 1px solid red;
     }
-    &.ellipsis {
+    &.u_ellipsis-md {
         width: 87%;
         margin-left: 7px;
         font-size: 11px;
     }
 }
 
-.pt-media-list li.folder span.ellipsis {
+.pt-media-list li.folder span.u_ellipsis-md {
     font-size: 11px;
 }
 
-// .pt-media-list li.throttled-item span.ellipsis {
-//   color:red;
-// }
-.pt-media-list li.folder-extended span.ellipsis {
+.pt-media-list li.folder-extended span.u_ellipsis-md {
     width: 29%;
 }
 

@@ -250,7 +250,7 @@ $panel-width: 290px;
 }
 
 .placeholder-item-name {
-  @extend .ellipsis;
+  @extend .u_ellipsis-md;
   width: 180px;
   font-weight: 500;
   line-height: 24px;

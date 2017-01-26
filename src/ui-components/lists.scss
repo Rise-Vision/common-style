@@ -57,7 +57,7 @@
     // }
     .playlist-item-name {
       span {
-        @extend .ellipsis;
+        @extend .u_ellipsis-md;
         font-weight: 500;
         display: inline-block;
         vertical-align: top;
