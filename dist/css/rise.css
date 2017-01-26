@@ -11314,12 +11314,24 @@ li.dropdown-header {
     @media (min-width: 768px) {
       .app-header .title-block {
         float: left;
-        width: 50%; } }
+        width: 33.33333%; } }
     .app-header .title-block h1 {
       display: inline-block;
       font-weight: 400;
       line-height: 43px;
       margin: 0 5px 0 0; }
+  .app-header .banner-block {
+    position: relative;
+    min-height: 1px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .app-header .banner-block {
+        float: left;
+        width: 33.33333%; } }
+    .app-header .banner-block .btn, .app-header .banner-block .icon-nav label, .icon-nav .app-header .banner-block label {
+      margin-bottom: 0; }
   .app-header .global-actions {
     position: relative;
     min-height: 1px;
@@ -11329,7 +11341,7 @@ li.dropdown-header {
     @media (min-width: 768px) {
       .app-header .global-actions {
         float: left;
-        width: 50%; } }
+        width: 33.33333%; } }
     .app-header .global-actions .btn, .app-header .global-actions .icon-nav label, .icon-nav .app-header .global-actions label {
       margin-bottom: 0; }
     @media (max-width: 768px) {

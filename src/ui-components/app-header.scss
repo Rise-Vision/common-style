@@ -4,7 +4,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   .title-block {
-    @include make-sm-column(6);
+    @include make-sm-column(4);
     h1 {
       display: inline-block;
       font-weight: 400;
@@ -12,8 +12,15 @@
       margin: 0 5px 0 0;
     }
   }
+  .banner-block{
+    @include make-sm-column(4);
+    text-align: center;
+    .btn {
+      margin-bottom: 0;
+    }
+  }
   .global-actions {
-    @include make-sm-column(6);
+    @include make-sm-column(4);
     text-align: right;
     .btn {
       margin-bottom: 0;
