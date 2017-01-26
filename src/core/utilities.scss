@@ -255,6 +255,10 @@ All utilities have a prefix u_ added to them
     white-space: nowrap;
 }
 
+.u_clickable {
+  cursor: pointer;
+}
+
 .u_link-disabled {
     color: #AAAAAA;
     cursor: default;
