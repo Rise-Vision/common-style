@@ -18,6 +18,7 @@
     @include make-sm-column-push(4);
     @include make-xs-column(12);
     text-align: center;
+    display: inline-block;
     .btn {
       margin-bottom: 0;
     }

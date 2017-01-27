@@ -11334,7 +11334,8 @@ li.dropdown-header {
     min-height: 1px;
     padding-left: 7.5px;
     padding-right: 7.5px;
-    text-align: center; }
+    text-align: center;
+    display: inline-block; }
     @media (min-width: 768px) {
       .app-header .banner-block {
         float: left;
