@@ -11365,7 +11365,7 @@ li.dropdown-header {
           width: 100%;
           margin: 0 0 5px;
           padding: 8px 0; } }
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       .app-header .global-actions .btn:nth-child(2), .app-header .global-actions .icon-nav label:nth-child(2), .icon-nav .app-header .global-actions label:nth-child(2) {
         margin-top: 10px; } }
 
