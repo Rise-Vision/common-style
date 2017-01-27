@@ -11334,7 +11334,7 @@ li.dropdown-header {
     min-height: 1px;
     padding-left: 7.5px;
     padding-right: 7.5px;
-    text-align: left; }
+    text-align: center; }
     @media (min-width: 768px) {
       .app-header .banner-block {
         float: left;
@@ -11346,9 +11346,6 @@ li.dropdown-header {
       display: inline-block; }
     .app-header .banner-block .btn, .app-header .banner-block .icon-nav label, .icon-nav .app-header .banner-block label {
       margin-bottom: 0; }
-    @media (max-width: 768px) {
-      .app-header .banner-block {
-        text-align: left; } }
   .app-header .global-actions {
     position: relative;
     min-height: 1px;

@@ -17,17 +17,13 @@
     @include make-sm-column(4);
     @include make-sm-column-push(4);
     @include make-xs-column(12);
-    text-align: left;
+    text-align: center;
     .span {
       display: inline-block;
     }
     .btn {
       margin-bottom: 0;
     }
-    @media (max-width: 768px) {
-      text-align: left;
-    }
-
   }
   .global-actions {
     @include make-sm-column(4);
