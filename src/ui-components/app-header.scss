@@ -5,6 +5,7 @@
   padding-bottom: 20px;
   .title-block {
     @include make-sm-column(4);
+    @include make-sm-column-pull(4);
     h1 {
       display: inline-block;
       font-weight: 400;

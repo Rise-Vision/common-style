@@ -11315,6 +11315,9 @@ li.dropdown-header {
       .app-header .title-block {
         float: left;
         width: 33.33333%; } }
+    @media (min-width: 768px) {
+      .app-header .title-block {
+        right: 33.33333%; } }
     .app-header .title-block h1 {
       display: inline-block;
       font-weight: 400;
