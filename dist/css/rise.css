@@ -11724,6 +11724,13 @@ li.dropdown-header {
     .table .table-body .table-body__row > .table-body__cell > span {
       display: inline-block;
       vertical-align: middle; }
+    .table .table-body .table-body__row > .table-body__cell.table-body__cell-text-select {
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+      cursor: text; }
   .table.table--sortable .table-body .table-body__row > .table-body__cell {
     cursor: move; }
   .table.table--sortable .table-body .table-body__row:hover > .table-body__cell {
