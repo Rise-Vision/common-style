@@ -87,18 +87,18 @@
             float: right;
         }
     }
-    .ellipsed {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: top;
-        @media (max-width: $screen-xs) {
-            width: 120px;
-        }
-        @media (max-width: $screen-sm) {
-            width: 180px;
-        }
-    }
+    // .ellipsed {
+    //     text-overflow: ellipsis;
+    //     overflow: hidden;
+    //     display: inline-block;
+    //     vertical-align: top;
+    //     @media (max-width: $screen-xs) {
+    //         width: 120px;
+    //     }
+    //     @media (max-width: $screen-sm) {
+    //         width: 180px;
+    //     }
+    // }
     .actions-block {
         text-align: right;
     }

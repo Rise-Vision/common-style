@@ -7325,17 +7325,6 @@ button.close {
     .upload-panel p a {
       text-transform: capitalize;
       float: right; }
-  .upload-panel .ellipsed, .upload-panel .box-list .title, .box-list .upload-panel .title, .upload-panel .box-list p, .box-list .upload-panel p, .upload-panel .box-list .box-list-body, .box-list .upload-panel .box-list-body, .upload-panel .box-list .box-list-aside, .box-list .upload-panel .box-list-aside {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: top; }
-    @media (max-width: 480px) {
-      .upload-panel .ellipsed, .upload-panel .box-list .title, .box-list .upload-panel .title, .upload-panel .box-list p, .box-list .upload-panel p, .upload-panel .box-list .box-list-body, .box-list .upload-panel .box-list-body, .upload-panel .box-list .box-list-aside, .box-list .upload-panel .box-list-aside {
-        width: 120px; } }
-    @media (max-width: 768px) {
-      .upload-panel .ellipsed, .upload-panel .box-list .title, .box-list .upload-panel .title, .upload-panel .box-list p, .box-list .upload-panel p, .upload-panel .box-list .box-list-body, .box-list .upload-panel .box-list-body, .upload-panel .box-list .box-list-aside, .box-list .upload-panel .box-list-aside {
-        width: 180px; } }
   .upload-panel .actions-block {
     text-align: right; }
   .upload-panel .collapse-control {
@@ -7795,25 +7784,25 @@ All utilities have a prefix u_ added to them
    ==========================================================================
    To be used with forms and buttons
 */
-.u_ellipsis, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
+.u_ellipsis, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
 @media (max-width: 767px) {
-  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     width: 100px; } }
 
 @media (min-width: 768px) {
-  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 140px; } }
 
 @media (min-width: 992px) {
-  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 180px; } }
 
 @media (min-width: 1200px) {
-  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 240px; } }
 
 @media (max-width: 767px) {
@@ -12384,12 +12373,18 @@ ul.tree ul li:last-child:before {
     text-overflow: ellipsis;
     height: 33px;
     border: 1px solid red; }
-  .pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference,
+  .pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder .box-list span.title, .box-list .pt-media-list li.folder span.title, .pt-media-list li.folder .box-list span.box-list-body, .box-list .pt-media-list li.folder span.box-list-body, .pt-media-list li.folder .box-list span.box-list-aside, .box-list .pt-media-list li.folder span.box-list-aside, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference,
   .pt-media-list li.disabled-item span.u_ellipsis-md,
   .pt-media-list li.disabled-item .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id
   .pt-media-list li.disabled-item span,
   .pt-media-list li.disabled-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.disabled-item span,
+  .pt-media-list li.disabled-item .box-list span.title, .box-list
+  .pt-media-list li.disabled-item span.title,
+  .pt-media-list li.disabled-item .box-list span.box-list-body, .box-list
+  .pt-media-list li.disabled-item span.box-list-body,
+  .pt-media-list li.disabled-item .box-list span.box-list-aside, .box-list
+  .pt-media-list li.disabled-item span.box-list-aside,
   .pt-media-list li.disabled-item span.placeholder-item-name,
   .pt-media-list li.disabled-item .display-name span, .display-name
   .pt-media-list li.disabled-item span,
@@ -12401,6 +12396,12 @@ ul.tree ul li:last-child:before {
   .pt-media-list li.single-item span,
   .pt-media-list li.single-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.single-item span,
+  .pt-media-list li.single-item .box-list span.title, .box-list
+  .pt-media-list li.single-item span.title,
+  .pt-media-list li.single-item .box-list span.box-list-body, .box-list
+  .pt-media-list li.single-item span.box-list-body,
+  .pt-media-list li.single-item .box-list span.box-list-aside, .box-list
+  .pt-media-list li.single-item span.box-list-aside,
   .pt-media-list li.single-item span.placeholder-item-name,
   .pt-media-list li.single-item .display-name span, .display-name
   .pt-media-list li.single-item span,
@@ -12412,6 +12413,12 @@ ul.tree ul li:last-child:before {
   .pt-media-list li.placeholder-item span,
   .pt-media-list li.placeholder-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.placeholder-item span,
+  .pt-media-list li.placeholder-item .box-list span.title, .box-list
+  .pt-media-list li.placeholder-item span.title,
+  .pt-media-list li.placeholder-item .box-list span.box-list-body, .box-list
+  .pt-media-list li.placeholder-item span.box-list-body,
+  .pt-media-list li.placeholder-item .box-list span.box-list-aside, .box-list
+  .pt-media-list li.placeholder-item span.box-list-aside,
   .pt-media-list li.placeholder-item span.placeholder-item-name,
   .pt-media-list li.placeholder-item .display-name span, .display-name
   .pt-media-list li.placeholder-item span,
@@ -12422,10 +12429,10 @@ ul.tree ul li:last-child:before {
     margin-left: 7px;
     font-size: 11px; }
 
-.pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference {
+.pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder .box-list span.title, .box-list .pt-media-list li.folder span.title, .pt-media-list li.folder .box-list span.box-list-body, .box-list .pt-media-list li.folder span.box-list-body, .pt-media-list li.folder .box-list span.box-list-aside, .box-list .pt-media-list li.folder span.box-list-aside, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference {
   font-size: 11px; }
 
-.pt-media-list li.folder-extended span.u_ellipsis-md, .pt-media-list li.folder-extended .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.placeholder-item-name, .pt-media-list li.folder-extended .display-name span, .display-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .display-address span, .display-address .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.playlist-item-reference {
+.pt-media-list li.folder-extended span.u_ellipsis-md, .pt-media-list li.folder-extended .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .box-list span.title, .box-list .pt-media-list li.folder-extended span.title, .pt-media-list li.folder-extended .box-list span.box-list-body, .box-list .pt-media-list li.folder-extended span.box-list-body, .pt-media-list li.folder-extended .box-list span.box-list-aside, .box-list .pt-media-list li.folder-extended span.box-list-aside, .pt-media-list li.folder-extended span.placeholder-item-name, .pt-media-list li.folder-extended .display-name span, .display-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .display-address span, .display-address .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.playlist-item-reference {
   width: 29%; }
 
 .pt-media-list li.folder span.image-folder-info {

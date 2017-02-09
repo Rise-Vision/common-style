@@ -172,10 +172,10 @@
   .title {
     margin: 0;
     line-height: 1.5;
-    @extend .ellipsed;
+    @extend .u_ellipsis-md;
   }
   p {
-    @extend .ellipsed;
+    @extend .u_ellipsis-md;
     font-size: 85%;
     line-height: 1.1;
     margin: 5px 0 0 0;
@@ -185,11 +185,11 @@
   }
   .box-list-body {
     padding-right: 40px;
-    @extend .ellipsed;
+    @extend .u_ellipsis-md;
   }
   .box-list-aside {
     float: right;
-    @extend .ellipsed;
+    @extend .u_ellipsis-md;
   }
 }
 
