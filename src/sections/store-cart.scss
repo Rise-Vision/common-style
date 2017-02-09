@@ -206,7 +206,7 @@
 /* Media queries
    ========================================================================== */
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   .subscription-confirmation,
   .purchase-invoice {
     padding-left: 100px;
@@ -369,7 +369,7 @@
       margin: 0;
       line-height: 20px;
       display: block;
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         text-overflow: ellipsis;
         width: 180px;
         overflow: hidden;
@@ -390,7 +390,7 @@
     .description {
       margin: 0;
       p {
-        @media (max-width: 480px) {
+        @media (max-width: $screen-xs) {
           text-overflow: ellipsis;
           width: 100px;
           white-space: nowrap;
@@ -430,7 +430,7 @@
     display: inline-block;
   }
   line-height: 20px;
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     display: block;
     float: none !important;
     width: 100%;
@@ -456,7 +456,7 @@
     width: 1%;
     display: table-cell;
   }
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     display: block;
     .card {
       display: block;
@@ -633,7 +633,7 @@
       color: #777;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     tbody {
       tr>td {
         font-size: 13px;

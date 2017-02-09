@@ -969,20 +969,20 @@ a.mfp-iframe:hover:after {
   text-align: left;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: $screen-md) {
   .nailthumb-image {
     width: 670px !important;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $screen-sm) {
   .nailthumb-image {
     width: 621px !important;
     height: 416px !important;
   }
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 468px) {  //TODO
   .nailthumb-image {
     width: 294px !important;
     height: 343px !important;

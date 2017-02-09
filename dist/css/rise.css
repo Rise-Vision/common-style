@@ -8076,23 +8076,6 @@ All utilities have a prefix u_ added to them
   height: 24px;
   background: url("//s3.amazonaws.com/rise-common-test/images/glyphicons-back.png") center no-repeat; }
 
-/* Media queries
-   ========================================================================== */
-@media (min-width: 768px) {
-  .modal-dialog .sign-in {
-    padding: 3px 10px;
-    /* TODO: Make this a variable. */ }
-  .stripe {
-    margin-bottom: 0; } }
-
-/* ==========================================================================
-   Print Media Queries
-   ========================================================================== */
-@media print {
-  /* Remove header when printing. */
-  .navbar {
-    display: none; } }
-
 /* Animation */
 .delayed {
   -webkit-animation-delay: 1s;

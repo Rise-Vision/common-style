@@ -230,7 +230,7 @@
   
   /* Tickets Table Stack View */
   .table-stack {
-    @media (max-width: 768px) {
+    @media (max-width: $screen-sm) {
       > tbody > tr {
         display: block;
         position: relative;

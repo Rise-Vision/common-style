@@ -26,32 +26,32 @@ All utilities have a prefix u_ added to them
 
 .u_ellipsis-md {
   @extend .u_ellipsis;
-  @media(max-width:767px){
+  @media(max-width: $screen-xs-max){
     width: 100px;
   }
-  @media(min-width:768px){
+  @media(min-width: $screen-sm){
     max-width: 140px;
   }
-  @media(min-width:992px){
+  @media(min-width: $screen-md){
     max-width: 180px;
   }
-  @media(min-width:1200px){
+  @media(min-width: $screen-lg){
     max-width: 240px;
   }
 }
 
 .u_ellipsis-lg {
   @extend .u_ellipsis;
-  @media(max-width:767px){
+  @media(max-width: $screen-xs-max){
     width: 200px;
   }
-  @media(min-width:768px){
+  @media(min-width: $screen-sm){
     max-width: 260px;
   }
-  @media(min-width:992px){
+  @media(min-width: $screen-md){
     max-width: 320px;
   }
-  @media(min-width:1200px){
+  @media(min-width: $screen-lg){
     max-width: 340px;
   }
 }

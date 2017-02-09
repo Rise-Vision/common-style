@@ -42,7 +42,7 @@
 }
 
 .button-row { //?
-    @media (max-width: 768px) {
+    @media (max-width: $screen-sm) {
         .btn {
             display: block;
             width: 100%;

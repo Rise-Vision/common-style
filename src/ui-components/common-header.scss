@@ -88,7 +88,7 @@
 
 /* Small Devices, Tablets */
 
-@media (max-width: 767px) {
+@media (max-width: $screen-xs-max) {
     li.user-profile-dropdown {
         >a {
             padding: 2px;
@@ -281,7 +281,7 @@
                     line-height: 32px;
                     display: none;
                 }
-                @media (max-width: 768px) {
+                @media (max-width: $screen-sm) {
                     width: 120px;
                 }
             }
@@ -308,7 +308,7 @@
         margin: 0;
         font-size: 13px;
         overflow: hidden;
-        @media (max-width: 480px) {
+        @media (max-width: $screen-xs) {
             strong {
                 text-overflow: ellipsis;
                 display: block;

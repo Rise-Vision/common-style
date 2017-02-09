@@ -271,7 +271,7 @@
       height: 284px;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     .grid-list-image {
       height: 300px;
     }

@@ -21,7 +21,7 @@
 		&.help-active {
 			height: calc(100vh - 977px);
 		}
-		@media (max-width: 768px) {
+		@media (max-width: $screen-sm) {
 			height: auto;
 		}
 		.list-item {
@@ -35,7 +35,7 @@
 				text-overflow: ellipsis;
 				overflow: hidden;
 				width: 260px;
-				@media (max-width: 992px){
+				@media (max-width: $screen-md){
 					width: 180px;
 				}
 			}
@@ -254,7 +254,7 @@
 		img {
 			width: 150px;
 		}
-		@media (max-width: 768px){
+		@media (max-width: $screen-sm){
 			border-right: none;
 			text-align: left;
 			padding:0;

@@ -75,7 +75,7 @@
 
 /* SINGLE COL */
 
-@media (max-width: 768px){
+@media (max-width: $screen-sm){
   .template-grid li{
     width: 100%;
     padding-top: calc(55.2% + 64px);

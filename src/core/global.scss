@@ -218,7 +218,7 @@ ul.social {
 
 /* Media queries
    ========================================================================== */
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   .copyright {
     text-align: right;
   }

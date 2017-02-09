@@ -18,9 +18,7 @@
 /* Bootstrap Overwrites
    ========================================================================== */
 @import "bootstrap-overwrites/mixins";
-// @import "bootstrap-overwrites/alerts";
 @import "bootstrap-overwrites/buttons";
-// @import "bootstrap-overwrites/code";
 @import "bootstrap-overwrites/dropdowns";
 @import "bootstrap-overwrites/input-groups";
 @import "bootstrap-overwrites/labels";
@@ -28,7 +26,6 @@
 @import "bootstrap-overwrites/navs";
 @import "bootstrap-overwrites/panels";
 @import "bootstrap-overwrites/responsive-utilities";
-// @import "bootstrap-overwrites/tooltip";
 @import "bootstrap-overwrites/input";
 @import "bootstrap-overwrites/modals";
 @import "bootstrap-overwrites/breadcrumb";
@@ -39,8 +36,7 @@
 @import "core/utilities";
 @import "core/fontawesome";
 @import "core/glyphicons";
-@import "core/media";
-@import "core/print";
+//@import "core/media";
 @import "core/animation";
 @import "core/layouts";
 
@@ -109,7 +105,5 @@
 @import "sections/store-products";
 @import "sections/store-product-details";
 @import "sections/store-cart";
-// @import "sections/blog";
 @import "sections/schedules";
 @import "sections/apps";
-// @import "sections/post";

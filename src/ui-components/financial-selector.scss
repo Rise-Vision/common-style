@@ -62,7 +62,7 @@
 }
 
 .financial-selector {
-	@media (min-width: 1200px) {
+	@media (min-width: $screen-lg) {
 		.hero {
 			h1 {
 				font-size: 48px;

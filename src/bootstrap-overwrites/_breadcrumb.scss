@@ -18,14 +18,14 @@
 }
 
 .breadcrumb {
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width : $screen-sm) {
 		>li {
 			a,span {
 				max-width: 240px;
 			}
 		}
 	}
-	@media (min-width: 1200px) {
+	@media (min-width: $screen-lg) {
 	}
 }
 

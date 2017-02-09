@@ -1,10 +1,10 @@
 
 /* Media queries
    ========================================================================== */
-@media (min-width: 768px) {
-  .modal-dialog .sign-in {
-    padding: 3px 10px;	/* TODO: Make this a variable. */
-  }
+// @media (min-width: $screen-sm) {
+//   .modal-dialog .sign-in {
+//     padding: 3px 10px;
+//   }
 
-  .stripe { margin-bottom: 0; }
-}
+//   .stripe { margin-bottom: 0; }
+// }

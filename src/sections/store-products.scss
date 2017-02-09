@@ -99,7 +99,7 @@
 /* Media queries
    ========================================================================== */
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   .product-info {
     padding: 40px;
   }

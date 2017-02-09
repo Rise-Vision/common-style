@@ -19,7 +19,7 @@
       margin-bottom: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-sm) {
       margin-top: 10px;
       .btn {
         width: 100%;

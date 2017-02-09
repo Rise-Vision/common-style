@@ -30,7 +30,7 @@
   padding: 0px 0px 50px;
   margin-top: 0;
   overflow: auto;
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     position: relative;
     padding: 0px;
   }

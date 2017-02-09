@@ -109,7 +109,7 @@
   /**
    * Three-column layout at tablet resolutions.
    */
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm) {
     .thumbnail {
       /* Positioning */
       float: left;
@@ -126,7 +126,7 @@
   /**
    * Six-column layout at desktop resolutions.
    */
-  @media (min-width: 992px) {
+  @media (min-width: $screen-md) {
     .thumbnail {
       width: 16.66667%;
     }

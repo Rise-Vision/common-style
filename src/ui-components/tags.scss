@@ -37,7 +37,7 @@
     font-weight: bold;
     color: $dark-gray;
   }
-  @media (max-width: 480px) {
+  @media (max-width: $screen-xs) {
     font-size: 13px;
     .tag-name::before {
       line-height: 18px;

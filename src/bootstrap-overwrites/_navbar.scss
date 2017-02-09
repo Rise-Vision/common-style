@@ -72,7 +72,7 @@
 
 .navbar {
 	/* Small Devices, Tablets */
-	@media (max-width: 767px) {
+	@media (max-width: $screen-xs-max) {
 			.navbar-nav {
 				.open {
 					.dropdown-menu {
@@ -85,7 +85,7 @@
 	}
 
 	/* Medium Devices, Desktops */
-	@media (min-width: 992px) {
+	@media (min-width: $screen-md) {
 		padding: 2px 0;
 		margin-bottom: 0;
 		.navbar-brand {
