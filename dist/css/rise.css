@@ -11304,7 +11304,10 @@ li.dropdown-header {
 
 .icon-nav {
   color: #555;
-  line-height: 32px; }
+  line-height: 32px;
+  border-right: 1px solid #DDDDDD;
+  margin-right: 20px;
+  padding-right: 10px; }
   .icon-nav .btn-link {
     padding: 0;
     border-radius: 3px;
@@ -13705,7 +13708,10 @@ tr.blocked-file {
   box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15); }
   .ph-block .icon-nav {
     position: absolute;
-    top: 50%; }
+    top: 50%;
+    border: 0;
+    padding: 0;
+    margin: 0; }
   .ph-block img {
     width: 100%; }
   .ph-block:before {
