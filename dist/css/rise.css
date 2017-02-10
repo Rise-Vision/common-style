@@ -7063,7 +7063,12 @@ button.close {
 .btn-toggle {
   display: none; }
   .btn-toggle.active {
-    display: inline-block !important; }
+    display: inline-block !important;
+    color: #333;
+    background-color: #e8e8e8;
+    border-color: #CCC;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 @media (max-width: 768px) {
   .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
