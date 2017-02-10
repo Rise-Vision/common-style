@@ -19,6 +19,7 @@ All utilities have a prefix u_ added to them
    To be used with forms and buttons
 */
 .u_ellipsis {
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

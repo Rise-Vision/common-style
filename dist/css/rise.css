@@ -7785,6 +7785,7 @@ All utilities have a prefix u_ added to them
    To be used with forms and buttons
 */
 .u_ellipsis, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
