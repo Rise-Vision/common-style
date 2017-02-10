@@ -38,10 +38,14 @@
 }
 
 .btn-toggle {
-    display: inline;
+    // display: inline;
+    display: none;
+    &.active {
+        display: inline-block !important;
+    }
 }
 
-.button-row { //?
+.button-row { 
     @media (max-width: $screen-sm) {
         .btn {
             display: block;

@@ -7061,7 +7061,9 @@ button.close {
     border-color: white; }
 
 .btn-toggle {
-  display: inline; }
+  display: none; }
+  .btn-toggle.active {
+    display: inline-block !important; }
 
 @media (max-width: 768px) {
   .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
