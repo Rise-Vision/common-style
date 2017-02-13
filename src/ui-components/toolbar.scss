@@ -41,13 +41,14 @@
       vertical-align: top;
     }
   }
-  .selected-count {
+}
+
+.selected-count {
     display: inline-block;
     line-height: 32px;
     border-right: 1px solid #DDD;
     margin-right: 20px;
     padding-right: 28px;
-  }
 }
 
 .custom-icon {
