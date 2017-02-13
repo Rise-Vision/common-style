@@ -11342,8 +11342,8 @@ li.dropdown-header {
   display: inline-block;
   line-height: 32px;
   border-right: 1px solid #DDD;
-  margin-right: 20px;
-  padding-right: 28px; }
+  margin-right: 10px;
+  padding-right: 20px; }
 
 .custom-icon {
   display: inline-block;
