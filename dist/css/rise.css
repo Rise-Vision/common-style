@@ -13717,12 +13717,6 @@ tr.blocked-file {
   -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15); }
-  .ph-block .icon-nav {
-    position: absolute;
-    top: 50%;
-    border: 0;
-    padding: 0;
-    margin: 0; }
   .ph-block img {
     width: 100%; }
   .ph-block:before {
