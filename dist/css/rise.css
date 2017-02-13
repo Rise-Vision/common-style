@@ -11310,6 +11310,7 @@ li.dropdown-header {
   margin-top: 10px; }
 
 .icon-nav {
+  display: inline-block;
   color: #555;
   line-height: 32px;
   border-right: 1px solid #DDDDDD;
@@ -11337,9 +11338,11 @@ li.dropdown-header {
       font-size: 12px;
       vertical-align: top; }
   .icon-nav .selected-count {
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px solid #DDD; }
+    display: inline-block;
+    line-height: 32px;
+    border-right: 1px solid #DDD;
+    margin-right: 20px;
+    padding-right: 28px; }
 
 .custom-icon {
   display: inline-block;
