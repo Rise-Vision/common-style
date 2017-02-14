@@ -43,7 +43,7 @@
     border: 1px solid $light-gray;
     border-radius: 4px;
     margin-bottom: 5px;
-    padding: 8px;
+    padding: 8px 8px 3px 8px;
     &:hover {
       border: 1px solid #bcbcbc;
     }
@@ -52,9 +52,6 @@
       margin: 0;
       line-height: 22px;
     }
-    // a > p > span {
-    //   border-bottom: 1px dotted #000;
-    // }
     .playlist-item-name {
       span {
         @extend .u_ellipsis-md;

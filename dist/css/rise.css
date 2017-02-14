@@ -11428,7 +11428,7 @@ li.dropdown-header {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   margin-bottom: 5px;
-  padding: 8px; }
+  padding: 8px 8px 3px 8px; }
   .editor-playlist .editor-playlist-item:hover {
     border: 1px solid #bcbcbc; }
   .editor-playlist .editor-playlist-item p,
@@ -13591,7 +13591,6 @@ tr.blocked-file {
       width: 290px;
       padding: 0 10px;
       -webkit-transition: all 0.5s;
-      /* Safari 3.1 to 6.0 */
       transition: all 0.5s; }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-list,
