@@ -11539,7 +11539,6 @@ li.dropdown-header {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 30px;
-  font-size: 16px;
   margin-bottom: 0;
   width: 100%; }
 
@@ -11552,17 +11551,21 @@ li.dropdown-header {
   overflow: hidden;
   position: relative; }
   .grid-list .grid-list-image > * {
-    display: inline-block;
-    border: solid 2px #fff; }
+    display: inline-block; }
   .grid-list .grid-list-image img {
-    width: 100%;
     height: 100%;
+    width: 100%;
     box-sizing: border-box; }
 
+.grid-list .grid-list-text {
+  color: #333;
+  padding-bottom: 12px;
+  min-height: 180px;
+  overflow: hidden; }
+
 .grid-list .panel, .grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .grid-list .list-group, .grid-list .panel-editable, .grid-list .card, .grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .grid-list .scrollable-list, .grid-list #appLauncherContainer .template-grid, #appLauncherContainer .grid-list .template-grid {
-  margin: 8px;
-  padding: 8px;
-  border: 1px solid #e6e6e6;
+  margin: 4px;
+  padding: 12px;
   -webkit-box-shadow: inset 0 -1px 0 #d5d1cb, 0 1px 4px rgba(113, 108, 102, 0.1), transparent 0 0 0;
   box-shadow: inset 0 -1px 0 #d5d1cb, 0 1px 4px rgba(113, 108, 102, 0.1), transparent 0 0 0;
   cursor: pointer;
@@ -11573,13 +11576,14 @@ li.dropdown-header {
   transition: border .2s ease-out; }
   .grid-list .panel .product-pricing, .grid-list .select-subcompany-modal .list-group .product-pricing, .select-subcompany-modal .grid-list .list-group .product-pricing, .grid-list .panel-editable .product-pricing, .grid-list .card .product-pricing, .grid-list #appLauncherContainer .scrollable-list .product-pricing, #appLauncherContainer .grid-list .scrollable-list .product-pricing, .grid-list #appLauncherContainer .template-grid .product-pricing, #appLauncherContainer .grid-list .template-grid .product-pricing {
     position: absolute;
-    bottom: 0; }
+    bottom: 4px; }
     .grid-list .panel .product-pricing span, .grid-list .select-subcompany-modal .list-group .product-pricing span, .select-subcompany-modal .grid-list .list-group .product-pricing span, .grid-list .panel-editable .product-pricing span, .grid-list .card .product-pricing span, .grid-list #appLauncherContainer .scrollable-list .product-pricing span, #appLauncherContainer .grid-list .scrollable-list .product-pricing span, .grid-list #appLauncherContainer .template-grid .product-pricing span, #appLauncherContainer .grid-list .template-grid .product-pricing span {
       color: #3C7BDA;
       font-weight: bold; }
   .grid-list .panel .info, .grid-list .select-subcompany-modal .list-group .info, .select-subcompany-modal .grid-list .list-group .info, .grid-list .panel-editable .info, .grid-list .card .info, .grid-list #appLauncherContainer .scrollable-list .info, #appLauncherContainer .grid-list .scrollable-list .info, .grid-list #appLauncherContainer .template-grid .info, #appLauncherContainer .grid-list .template-grid .info {
     position: absolute;
-    float: left;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -11597,42 +11601,36 @@ li.dropdown-header {
 
 @media only screen and (max-width: 992px) {
   .grid-list .grid-list-image {
-    height: 284px; } }
+    height: 200px; } }
 
 @media (max-width: 768px) {
-  .grid-list .grid-list-image {
-    height: 300px; }
   .grid-list h4 {
-    font-size: 14px; }
-  .grid-list .panel, .grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .grid-list .list-group, .grid-list .panel-editable, .grid-list .card, .grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .grid-list .scrollable-list, .grid-list #appLauncherContainer .template-grid, #appLauncherContainer .grid-list .template-grid {
-    padding: 5px;
-    margin: 5px; } }
+    font-size: 14px; } }
 
 .store.grid-list {
   /* Small devices  */
-  /* Medium devices  */ }
-  .store.grid-list .panel, .store.grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .store.grid-list .list-group, .store.grid-list .panel-editable, .store.grid-list .card, .store.grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .store.grid-list .scrollable-list, .store.grid-list #appLauncherContainer .template-grid, #appLauncherContainer .store.grid-list .template-grid {
-    min-height: 323px;
-    position: static; }
+  /* Medium devices  */
+  /* Large devices  */ }
   @media (min-width: 768px) {
-    .store.grid-list .panel, .store.grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .store.grid-list .list-group, .store.grid-list .panel-editable, .store.grid-list .card, .store.grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .store.grid-list .scrollable-list, .store.grid-list #appLauncherContainer .template-grid, #appLauncherContainer .store.grid-list .template-grid {
-      min-height: 408px; } }
+    .store.grid-list .grid-list-text {
+      min-height: 160px; } }
   @media (min-width: 992px) {
-    .store.grid-list .panel, .store.grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .store.grid-list .list-group, .store.grid-list .panel-editable, .store.grid-list .card, .store.grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .store.grid-list .scrollable-list, .store.grid-list #appLauncherContainer .template-grid, #appLauncherContainer .store.grid-list .template-grid {
-      min-height: 363px; } }
+    .store.grid-list .grid-list-text {
+      min-height: 200px; } }
+  @media (min-width: 1200px) {
+    .store.grid-list .grid-list-text {
+      min-height: 160px; } }
 
-.store-front.grid-list {
-  /* Small devices  */
-  /* Medium devices  */ }
-  @media (min-width: 768px) {
-    .store-front.grid-list .panel, .store-front.grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .store-front.grid-list .list-group, .store-front.grid-list .panel-editable, .store-front.grid-list .card, .store-front.grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .store-front.grid-list .scrollable-list, .store-front.grid-list #appLauncherContainer .template-grid, #appLauncherContainer .store-front.grid-list .template-grid {
-      min-height: 405px; } }
-  @media (min-width: 992px) {
-    .store-front.grid-list .panel, .store-front.grid-list .select-subcompany-modal .list-group, .select-subcompany-modal .store-front.grid-list .list-group, .store-front.grid-list .panel-editable, .store-front.grid-list .card, .store-front.grid-list #appLauncherContainer .scrollable-list, #appLauncherContainer .store-front.grid-list .scrollable-list, .store-front.grid-list #appLauncherContainer .template-grid, #appLauncherContainer .store-front.grid-list .template-grid {
-      min-height: 290px; } }
-
-.store.grid-list-text {
-  color: #333; }
+.submit-product-cta {
+  color: #FFF; }
+  .submit-product-cta .panel-default {
+    background-color: #caead2;
+    border: 1px solid #4ab767; }
+  .submit-product-cta h3 {
+    margin-top: 15px; }
+  .submit-product-cta:hover {
+    color: #FFF;
+    text-decoration: none; }
 
 /* Standard Table
    ========================================================================== */

@@ -193,14 +193,12 @@
 
 /* Grid List
    ========================================================================== */
-
 .grid-list {
   h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 30px;
-    font-size: 16px;
     margin-bottom: 0;
     width: 100%;
   }
@@ -214,18 +212,22 @@
     position: relative;
     & > * {
       display: inline-block;
-      border: solid 2px #fff;
     }
     img {
-      width: 100%;
       height: 100%;
+      width: 100%;
       box-sizing: border-box;
     }
   }
+  .grid-list-text {
+    color: #333;
+    padding-bottom: 12px;
+    min-height: 180px;
+    overflow: hidden;
+  }
   .panel {
-    margin: 8px;
-    padding: 8px;
-    border: 1px solid $light-gray;
+    margin: 4px;
+    padding: 12px;
     -webkit-box-shadow: inset 0 -1px 0 #d5d1cb, 0 1px 4px rgba(113, 108, 102, .1), transparent 0 0 0;
     box-shadow: inset 0 -1px 0 #d5d1cb, 0 1px 4px rgba(113, 108, 102, .1), transparent 0 0 0;
     cursor: pointer;
@@ -236,7 +238,7 @@
     transition: border .2s ease-out;
     & .product-pricing {
       position: absolute;
-      bottom: 0;
+      bottom: 4px;
       span {
         color: #3C7BDA;
         font-weight: bold;
@@ -244,7 +246,8 @@
     }
     & .info {
       position: absolute;
-      float: left;
+      top:0;
+      left: 0;
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -265,58 +268,50 @@
   }
   @media only screen and (max-width: $screen-md) {
     .grid-list-image {
-      height: 284px;
+      height: 200px;
     }
   }
   @media (max-width: $screen-sm) {
-    .grid-list-image {
-      height: 300px;
-    }
     h4 {
       font-size: 14px;
-    }
-    .panel {
-      padding: 5px;
-      margin: 5px;
     }
   }
 }
 
 // For RV Store Only
 .store.grid-list {
-  .panel {
-    min-height: 323px;
-    position: static;
-  }
   /* Small devices  */
   @media (min-width: $screen-sm-min) {
-    .panel {
-      min-height: 408px;
+    .grid-list-text {
+      min-height: 160px;
     }
   }
   /* Medium devices  */
   @media (min-width: $screen-md-min) {
-    .panel {
-      min-height: 363px;
+    .grid-list-text {
+      min-height: 200px;
+    }
+  }
+  /* Large devices  */
+  @media (min-width: $screen-lg-min) {
+    .grid-list-text {
+      min-height: 160px;
     }
   }
 }
 
-.store-front.grid-list {
-  /* Small devices  */
-  @media (min-width: $screen-sm-min) {
-    .panel {
-      min-height: 405px;
-    }
+.submit-product-cta {
+  .panel-default {
+    background-color: lighten($rise-green, 35%);
+    border: 1px solid $rise-green;
   }
-  /* Medium devices  */
-  @media (min-width: $screen-md-min) {
-    .panel {
-      min-height: 290px;
-    }
+  h3 {
+    margin-top: 15px;
   }
+  &:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+  color: #FFF;
 }
 
-.store.grid-list-text {
-  color: #333;
-}
