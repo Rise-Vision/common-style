@@ -219,6 +219,12 @@
       box-sizing: border-box;
     }
   }
+  .grid-list-image-featured {
+    height: 280px;
+    img {
+      height: auto;
+    }
+  }
   .grid-list-text {
     color: #333;
     padding-bottom: 12px;

@@ -11557,6 +11557,11 @@ li.dropdown-header {
     width: 100%;
     box-sizing: border-box; }
 
+.grid-list .grid-list-image-featured {
+  height: 280px; }
+  .grid-list .grid-list-image-featured img {
+    height: auto; }
+
 .grid-list .grid-list-text {
   color: #333;
   padding-bottom: 12px;
