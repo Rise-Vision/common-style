@@ -11564,7 +11564,6 @@ li.dropdown-header {
 
 .grid-list .grid-list-text {
   color: #333;
-  padding-bottom: 12px;
   min-height: 180px;
   overflow: hidden; }
 
@@ -11632,7 +11631,7 @@ li.dropdown-header {
     background-color: #caead2;
     border: 1px solid #4ab767; }
   .submit-product-cta h3 {
-    margin-top: 15px; }
+    margin-top: 10px; }
   .submit-product-cta:hover {
     color: #FFF;
     text-decoration: none; }
