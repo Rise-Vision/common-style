@@ -14017,6 +14017,15 @@ tr.blocked-file {
 .display-licensing-modal .scrollable-list, .display-licensing-modal .template-grid {
   max-height: calc(100vh - 440px); }
 
+.alert.alert-animated.ng-hide-remove, .support-app .alert-animated.ng-hide-remove.support-time {
+  -webkit-transition: 1s linear all;
+  /* Chrome */
+  transition: 1s linear all;
+  opacity: 0; }
+
+.alert.alert-animated.ng-hide-remove-active, .support-app .alert-animated.ng-hide-remove-active.support-time {
+  opacity: 1; }
+
 /* ==========================================================================
    Store Navigation
    ========================================================================== */

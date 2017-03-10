@@ -28,8 +28,24 @@
 }
 
 .display-licensing-modal {
-  .scrollable-list {
-    max-height: calc(100vh - 440px);
-  }
+  	.scrollable-list {
+    	max-height: calc(100vh - 440px);
+  	}
+}
+
+.alert.alert-animated.ng-hide-add {
+}
+
+.alert.alert-animated.ng-hide-add-active {
+}
+
+.alert.alert-animated.ng-hide-remove {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+    opacity: 0;
+}
+
+.alert.alert-animated.ng-hide-remove-active {
+	opacity: 1;
 }
 
