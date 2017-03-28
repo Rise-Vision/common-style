@@ -13525,6 +13525,7 @@ tr.blocked-file {
     .workspace .workspace-toolbar .presentation-name {
       display: inline-block;
       line-height: 32px;
+      cursor: pointer;
       font-size: 18px;
       font-weight: 400;
       vertical-align: top;
