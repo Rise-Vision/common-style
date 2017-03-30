@@ -12532,7 +12532,7 @@ ul.tree ul li:last-child:before {
   background: #eee;
   margin-right: 22px;
   width: 22.6%;
-  padding-top: calc(12.7% + 64px);
+  padding-top: calc(14% + 64px);
   /* Used instead of height to give elements fluid, width-based height */
   margin-bottom: 2.5%;
   position: relative; }
