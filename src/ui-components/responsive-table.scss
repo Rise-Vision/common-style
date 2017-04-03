@@ -78,6 +78,10 @@
                     display: inline-block;
                     vertical-align: middle;
                 }
+                &.table-body__cell_highlight {
+                    background-color: #dbf0e0;
+                    font-weight: bold;
+                }
             }
         }
     }
