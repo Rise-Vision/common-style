@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* Variables
    ========================================================================== */
-/* Bootstrap Variables
-   ========================================================================== */
 /* Variables
+   ========================================================================== */
+/* Bootstrap Variables
    ========================================================================== */
 /* Bootstrap Core
    ========================================================================== */
@@ -6987,12 +6987,12 @@ button.close {
 .btn-inverse {
   color: #fff;
   background-color: #262626;
-  border-color: #555; }
+  border-color: #5b5b5b; }
   .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active,
   .open > .btn-inverse.dropdown-toggle {
     color: #fff;
     background-color: #1a1a1a;
-    border-color: #363636;
+    border-color: #3c3c3c;
     outline: 0; }
   .btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active,
   fieldset[disabled] .btn-inverse,
@@ -7023,12 +7023,12 @@ button.close {
     border-color: #5cbe76; }
 
 .btn-google-auth {
-  color: #555;
+  color: #5b5b5b;
   background-color: #fff;
   border-color: #e8e8e8; }
   .btn-google-auth:hover, .btn-google-auth:focus, .btn-google-auth:active, .btn-google-auth.active,
   .open > .btn-google-auth.dropdown-toggle {
-    color: #555;
+    color: #5b5b5b;
     background-color: #f2f2f2;
     border-color: #c9c9c9;
     outline: 0; }
@@ -7186,6 +7186,15 @@ button.close {
 .input-group > .input-group-btn > label {
   height: 34px; }
 
+.alert-premium {
+  background-color: #dbf0e0;
+  border-color: #4ab767;
+  color: #333; }
+  .alert-premium hr {
+    border-top-color: #42a65c; }
+  .alert-premium .alert-link {
+    color: #1a1a1a; }
+
 .label {
   font-size: 12px; }
 
@@ -7202,7 +7211,7 @@ button.close {
 .label-default {
   background-color: #777777;
   border: 1px solid #e6e6e6;
-  color: #555; }
+  color: #5b5b5b; }
   .label-default[href]:hover, .label-default[href]:focus {
     background-color: #fff; }
 
@@ -7316,7 +7325,7 @@ button.close {
     background: #f7f7f7;
     border-left: 3px solid #d4d4d4;
     padding: 10px 15px;
-    color: #555;
+    color: #5b5b5b;
     cursor: pointer;
     overflow: hidden; }
     .upload-panel .panel-header p {
@@ -7515,7 +7524,7 @@ ul {
   padding: 10px 0; }
 
 .payment-methods .expiry {
-  color: #555; }
+  color: #5b5b5b; }
 
 /* ==========================================================================
    Forms
@@ -7535,7 +7544,7 @@ input[type=number]::-webkit-outer-spin-button {
 .close {
   opacity: 1; }
   .close .fa::before, .close .glyphicons::before {
-    color: #555; }
+    color: #5b5b5b; }
   .close:hover .fa::before, .close:hover .glyphicons::before {
     color: #4d4d4d; }
 
@@ -8060,7 +8069,7 @@ All utilities have a prefix u_ added to them
   margin: 0; }
 
 .glyphicons::before {
-  color: #555; }
+  color: #5b5b5b; }
 
 .glyphicon-danger::before {
   color: #d9534f; }
@@ -11804,7 +11813,7 @@ li.dropdown-header {
       /* Visual */
       font-weight: bold;
       line-height: 32px;
-      color: #555; }
+      color: #5b5b5b; }
     .presentation-selector .selector-header a:hover,
     .presentation-selector .selector-header .active > a,
     .presentation-selector .selector-header .active > a:hover,
@@ -11992,7 +12001,7 @@ ul.tree ul li:last-child:before {
     font-weight: normal;
     vertical-align: top;
     display: inline-block;
-    color: #555; }
+    color: #5b5b5b; }
     .store-status-2 h3 .fa:before {
       color: #4ab767; }
     .store-status-2 h3.warning .fa:before {
@@ -12023,7 +12032,7 @@ ul.tree ul li:last-child:before {
   cursor: pointer;
   font-weight: 500; }
   .label-tag:hover {
-    color: #555; }
+    color: #5b5b5b; }
   .label-tag .tag-name, .label-tag .tag-value {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -12064,7 +12073,7 @@ ul.tree ul li:last-child:before {
       margin-right: 5px; }
 
 .btn-remove {
-  color: #555;
+  color: #5b5b5b;
   padding: 0; }
 
 .panel-editable {
@@ -12603,7 +12612,7 @@ ul.tree ul li:last-child:before {
   bottom: 0;
   width: 100%;
   padding: 15px;
-  color: #555;
+  color: #5b5b5b;
   text-align: left; }
   .template-info h3 {
     margin: 0 0 8px;
@@ -13133,7 +13142,7 @@ tr.blocked-file {
     margin-top: -20px;
     margin-bottom: 40px;
     text-align: center;
-    color: #555; }
+    color: #5b5b5b; }
     .support-app .support-time.alert-warning {
       border-color: #FAEBCC; }
     .support-app .support-time.alert-success {
@@ -13786,12 +13795,12 @@ tr.blocked-file {
 
 .CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid #555;
+  border: 2px solid #5b5b5b;
   /* should match background, can't be transparent */
   background-color: rgba(30, 30, 30, 0.8); }
 
 .CodeMirror-hscrollbar::-webkit-scrollbar-track {
-  background-color: #555;
+  background-color: #5b5b5b;
   border-radius: 2px; }
 
 .CodeMirror-vscrollbar::-webkit-scrollbar {
@@ -13802,12 +13811,12 @@ tr.blocked-file {
 
 .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid #555;
+  border: 2px solid #5b5b5b;
   /* should match background, can't be transparent */
   background-color: rgba(30, 30, 30, 0.8); }
 
 .CodeMirror-vscrollbar::-webkit-scrollbar-track {
-  background-color: #555;
+  background-color: #5b5b5b;
   border-radius: 2px; }
 
 .ph-transform .input-group .form-control {
@@ -15247,7 +15256,7 @@ a.mfp-iframe:hover:after {
   height: 50px;
   overflow: hidden;
   border-radius: 10px;
-  background: #555; }
+  background: #5b5b5b; }
   .store-icon img,
   .icon-medium img {
     width: 100%; }

@@ -2,8 +2,8 @@
 
 /* Variables
    ========================================================================== */
-@import "bootstrap-variables";
 @import "variables";
+@import "bootstrap-variables";
 @import "fonts";
 
 
@@ -21,6 +21,7 @@
 @import "bootstrap-overwrites/buttons";
 @import "bootstrap-overwrites/dropdowns";
 @import "bootstrap-overwrites/input-groups";
+@import "bootstrap-overwrites/alerts";
 @import "bootstrap-overwrites/labels";
 @import "bootstrap-overwrites/navbar";
 @import "bootstrap-overwrites/navs";

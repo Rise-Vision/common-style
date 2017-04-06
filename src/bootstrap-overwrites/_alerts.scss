@@ -1,0 +1,3 @@
+.alert-premium {
+  @include alert-variant($alert-premium-bg, $alert-premium-border, $alert-premium-text);
+}
