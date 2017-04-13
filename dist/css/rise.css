@@ -13542,16 +13542,14 @@ tr.blocked-file {
       font-weight: 400;
       vertical-align: top;
       margin: 0;
-      max-width: calc(100% - 850px);
+      max-width: calc(100% - 810px);
+      min-width: 110px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .workspace .workspace-toolbar .presentation-name {
-          max-width: 200px; } }
-      @media (min-width: 992px) {
-        .workspace .workspace-toolbar .presentation-name {
-          min-width: 110px; } }
+          max-width: 100px; } }
     @media (max-width: 768px) {
       .workspace .workspace-toolbar {
         width: 100%;
