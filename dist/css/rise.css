@@ -13542,7 +13542,7 @@ tr.blocked-file {
       font-weight: 400;
       vertical-align: top;
       margin: 0;
-      max-width: calc(100% - 700px);
+      max-width: calc(100% - 850px);
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
