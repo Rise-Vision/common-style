@@ -36,12 +36,16 @@ $panel-width: 290px;
       font-weight: 400;
       vertical-align: top;
       margin: 0;
-      max-width: calc(100% - 700px);
+      max-width: calc(100% - 810px);
+      min-width: 90px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      @media (max-width: 920px) {
+        max-width: 480px;
+      }
       @media (max-width: $screen-sm) {
-        max-width: 200px;
+        max-width: 175px;
       }
     }
     @media (max-width: $screen-sm) {
