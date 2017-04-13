@@ -43,6 +43,9 @@ $panel-width: 290px;
       @media (max-width: $screen-sm) {
         max-width: 200px;
       }
+       @media (min-width: $screen-md) {
+        min-width: 110px;
+      }
     }
     @media (max-width: $screen-sm) {
       width: 100%;

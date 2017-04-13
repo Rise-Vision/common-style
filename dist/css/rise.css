@@ -13549,6 +13549,9 @@ tr.blocked-file {
       @media (max-width: 768px) {
         .workspace .workspace-toolbar .presentation-name {
           max-width: 200px; } }
+      @media (min-width: 992px) {
+        .workspace .workspace-toolbar .presentation-name {
+          min-width: 110px; } }
     @media (max-width: 768px) {
       .workspace .workspace-toolbar {
         width: 100%;
