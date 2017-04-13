@@ -13552,7 +13552,7 @@ tr.blocked-file {
           max-width: 480px; } }
       @media (max-width: 768px) {
         .workspace .workspace-toolbar .presentation-name {
-          max-width: 260px; } }
+          max-width: 175px; } }
     @media (max-width: 768px) {
       .workspace .workspace-toolbar {
         width: 100%;
