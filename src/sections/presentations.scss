@@ -41,15 +41,9 @@ $panel-width: 290px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      @media (max-width: $screen-md) {
-        max-width: 90px;
-      }
-      @media (max-width: $screen-sm) {
+      @media (max-width: 920px) {
         max-width: 480px;
       }
-      //  @media (min-width: $screen-md) {
-        
-      // }
     }
     @media (max-width: $screen-sm) {
       width: 100%;
