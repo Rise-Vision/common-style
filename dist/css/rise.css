@@ -13543,13 +13543,16 @@ tr.blocked-file {
       vertical-align: top;
       margin: 0;
       max-width: calc(100% - 810px);
-      min-width: 110px;
+      min-width: 90px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
       @media (max-width: 992px) {
         .workspace .workspace-toolbar .presentation-name {
-          max-width: 100px; } }
+          max-width: 90px; } }
+      @media (max-width: 768px) {
+        .workspace .workspace-toolbar .presentation-name {
+          max-width: 480px; } }
     @media (max-width: 768px) {
       .workspace .workspace-toolbar {
         width: 100%;
