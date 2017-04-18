@@ -1,64 +1,81 @@
 $panel-width: 290px;
 .workspace {
-  -webkit-transition: all 0.2s;
-  /* Safari 3.1 to 6.0 */
-  transition: all 0.2s;
-  position: relative;
-  background: #d4d4d4;
-  .workspace-toolbar {
-    width: calc(100% - 12px);
-    white-space: nowrap;
-    position: absolute;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, .9);
-    border-bottom: 1px solid #f2f2f2;
-    border-top: 1px solid #f2f2f2;
-    padding: 8px 10px;
-    -webkit-transition: all .25s;
-    transition: all .25s;
-    #previewButton {
-      margin-left: 10px;
-    }
-    #addPlaceholderButton {
-      width: calc((290px - 20px));
-      margin-right: 10px;
-    }
-    & > h4 {
-      position: absolute;
-      left: 14px;
-      top: -5px;
-    }
-    .presentation-name {
-      display: inline-block;
-      line-height: 32px;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: 400;
-      vertical-align: top;
-      margin: 0;
-      max-width: calc(100% - 700px);
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      @media (max-width: $screen-sm) {
-        max-width: 200px;
-      }
-    }
-    @media (max-width: $screen-sm) {
-      width: 100%;
-      overflow: hidden;
-      left: 0;
-      top: 0;
-    }
-    @media (max-width: 920px) {
-      #addPlaceholderButton {
+    -webkit-transition: all 0.25s;
+    /* Safari 3.1 to 6.0 */
+    transition: all 0.25s;
+    position: relative;
+    background: #d4d4d4;
+    .workspace-toolbar {
         width: 100%;
-        display: block;
-        float: none;
-        margin: 8px 0;
-      }
+        display: flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        position: absolute;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, .9);
+        border-bottom: 1px solid #f2f2f2;
+        border-top: 1px solid #f2f2f2;
+        padding: 8px 10px;
+        #previewButton {
+            margin-left: 10px;
+        }
+        #addPlaceholderButton {
+            width: calc((290px - 20px));
+            margin-right: 10px;
+        }
+        .column {
+            @media (max-width: 920px) {
+                width: 100%;
+                flex: none !important;
+            }
+        }
+        .fixed-toolset {
+            flex: none;
+            &.add-placeholder {
+                order: -1;
+                @media (max-width: 920px) {
+                    order: 0;
+                }
+            }
+        }
+        .flex-title {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            .btn {
+                display: inline;
+            }
+        }
+        .presentation-name {
+            display: inline;
+            line-height: 32px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+            vertical-align: top;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media (max-width: $screen-sm) {
+                max-width: 200px;
+            }
+        }
+        @media (max-width: $screen-sm) {
+            width: 100%;
+            overflow: hidden;
+            left: 0;
+            top: 0;
+        }
+        @media (max-width: 920px) {
+            #addPlaceholderButton {
+                width: 100%;
+                display: block;
+                float: none;
+                margin: 8px 0;
+            }
+        }
     }
-  }
   .workspace-sidebar {
     padding: 8px 0;
     position: absolute;

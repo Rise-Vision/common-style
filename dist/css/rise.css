@@ -13509,42 +13509,54 @@ tr.blocked-file {
         cursor: pointer; }
 
 .workspace {
-  -webkit-transition: all 0.2s;
+  -webkit-transition: all 0.25s;
   /* Safari 3.1 to 6.0 */
-  transition: all 0.2s;
+  transition: all 0.25s;
   position: relative;
   background: #d4d4d4; }
   .workspace .workspace-toolbar {
-    width: calc(100% - 12px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     white-space: nowrap;
     position: absolute;
     z-index: 100;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
     border-top: 1px solid #f2f2f2;
-    padding: 8px 10px;
-    -webkit-transition: all .25s;
-    transition: all .25s; }
+    padding: 8px 10px; }
     .workspace .workspace-toolbar #previewButton {
       margin-left: 10px; }
     .workspace .workspace-toolbar #addPlaceholderButton {
       width: calc((290px - 20px));
       margin-right: 10px; }
-    .workspace .workspace-toolbar > h4 {
-      position: absolute;
-      left: 14px;
-      top: -5px; }
+    @media (max-width: 920px) {
+      .workspace .workspace-toolbar .column {
+        width: 100%;
+        flex: none !important; } }
+    .workspace .workspace-toolbar .fixed-toolset {
+      flex: none; }
+      .workspace .workspace-toolbar .fixed-toolset.add-placeholder {
+        order: -1; }
+        @media (max-width: 920px) {
+          .workspace .workspace-toolbar .fixed-toolset.add-placeholder {
+            order: 0; } }
+    .workspace .workspace-toolbar .flex-title {
+      flex: 1;
+      min-width: 0;
+      display: flex; }
+      .workspace .workspace-toolbar .flex-title .btn, .workspace .workspace-toolbar .flex-title .icon-nav label, .icon-nav .workspace .workspace-toolbar .flex-title label {
+        display: inline; }
     .workspace .workspace-toolbar .presentation-name {
-      display: inline-block;
+      display: inline;
       line-height: 32px;
       cursor: pointer;
       font-size: 18px;
       font-weight: 400;
       vertical-align: top;
       margin: 0;
-      max-width: calc(100% - 700px);
-      overflow: hidden;
       white-space: nowrap;
+      overflow: hidden;
       text-overflow: ellipsis; }
       @media (max-width: 768px) {
         .workspace .workspace-toolbar .presentation-name {
