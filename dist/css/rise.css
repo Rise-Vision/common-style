@@ -13786,13 +13786,9 @@ tr.blocked-file {
     font-weight: 600;
     background: rgba(50, 50, 50, 0.35);
     text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555; }
-  .ph-block.edit-mode {
-    -webkit-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
-    box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65); }
-    .ph-block.edit-mode:after {
-      opacity: 1;
-      content: 'Editing'; }
+  .ph-block.edit-mode:after {
+    opacity: 1;
+    content: 'Editing'; }
 
 .cm-s-twilight.CodeMirror {
   position: relative;
@@ -14005,6 +14001,27 @@ tr.blocked-file {
     color: rgba(255, 255, 255, 0.6); }
   .ph-item-icon.ph-video-item:before {
     content: '\f03d'; }
+  .ph-item-icon.ph-embedded-item:before {
+    content: url(https://storage.googleapis.com/risemedialibrary-f114ad26-949d-44b4-87e9-8528afc76ce4/icon_presentation.svg); }
+
+.ph-item-text {
+  text-align: right;
+  color: #fff;
+  padding: 4px 8px;
+  margin-left: 52px;
+  z-index: 9999;
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555; }
+
+.ph-item-error {
+  color: red;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 /* Deprecate Below
  +   ========================================================================== 
