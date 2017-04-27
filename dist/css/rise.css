@@ -13402,8 +13402,8 @@ tr.blocked-file {
   width: 100%; }
   @media (max-width: 768px) {
     .modal-body.storage-full .scrollable-list, .modal-body.storage-full .template-grid {
-      max-height: calc(100vh - 380px);
-      min-height: 240px; } }
+      max-height: calc(100vh - 460px);
+      min-height: 210px; } }
 
 .file-empty-state path {
   fill: #969595;

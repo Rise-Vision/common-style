@@ -67,8 +67,8 @@
     max-height: calc(100vh - 380px);
     width: 100%;
       @media (max-width: $screen-sm){ 
-        max-height: calc(100vh - 380px);
-        min-height: 240px;
+        max-height: calc(100vh - 460px);
+        min-height: 210px;
       }
   }
 }
