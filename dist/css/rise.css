@@ -13400,6 +13400,10 @@ tr.blocked-file {
   padding: 4px;
   max-height: calc(100vh - 380px);
   width: 100%; }
+  @media (max-width: 768px) {
+    .modal-body.storage-full .scrollable-list, .modal-body.storage-full .template-grid {
+      max-height: calc(100vh - 380px);
+      min-height: 240px; } }
 
 .file-empty-state path {
   fill: #969595;
