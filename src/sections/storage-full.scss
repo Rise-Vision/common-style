@@ -1,5 +1,4 @@
-.storage-full,
-.storage-modal {
+.storage-full {
   .table {
     .folder,
     .file {
@@ -54,10 +53,18 @@
   }
 }
 
-.storage-full {
+.container.storage-full {
   .scrollable-list {
     padding: 4px;
     max-height: calc(100vh - 300px);
+    width: 100%;
+  }
+}
+
+.modal-body.storage-full {
+  .scrollable-list {
+    padding: 4px;
+    max-height: calc(100vh - 380px);
     width: 100%;
   }
 }
