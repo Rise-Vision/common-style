@@ -46,16 +46,17 @@ $panel-width: 290px;
                 display: inline;
             }
         }
-        .zoom-selector {
-            display: flex;
-            width: 140px;
-            align-items: center;
-            justify-content: space-between;
-            @media (max-width: $screen-md) {
-              display: none;
-            }
-        }
-        
+         .zoom-selector {
+             display: inline-flex;
+             width: 140px;
+             align-items: center;
+             justify-content: space-between;
+             background-color: #fff;
+               @media (max-width: $screen-sm) {
+                   display: none;
+               }
+         }
+
         .presentation-name {
             display: inline;
             line-height: 32px;
@@ -571,6 +572,8 @@ $panel-width: 290px;
   border-top-width: 60px;
   margin-top: 60px;
   padding: 12px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .active-banner {

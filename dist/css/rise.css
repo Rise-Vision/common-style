@@ -13551,11 +13551,12 @@ tr.blocked-file {
       .workspace .workspace-toolbar .flex-title .btn, .workspace .workspace-toolbar .flex-title .icon-nav label, .icon-nav .workspace .workspace-toolbar .flex-title label {
         display: inline; }
     .workspace .workspace-toolbar .zoom-selector {
-      display: flex;
+      display: inline-flex;
       width: 140px;
       align-items: center;
-      justify-content: space-between; }
-      @media (max-width: 992px) {
+      justify-content: space-between;
+      background-color: #fff; }
+      @media (max-width: 768px) {
         .workspace .workspace-toolbar .zoom-selector {
           display: none; } }
     .workspace .workspace-toolbar .presentation-name {
@@ -13979,7 +13980,9 @@ tr.blocked-file {
   border: 12px solid #d4d4d4;
   border-top-width: 60px;
   margin-top: 60px;
-  padding: 12px; }
+  padding: 12px;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .active-banner {
   padding-bottom: 0 !important; }
