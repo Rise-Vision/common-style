@@ -51,6 +51,9 @@ $panel-width: 290px;
             width: 140px;
             align-items: center;
             justify-content: space-between;
+            @media (max-width: $screen-md) {
+              display: none;
+            }
         }
         }
         .presentation-name {

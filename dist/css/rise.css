@@ -13555,6 +13555,9 @@ tr.blocked-file {
       width: 140px;
       align-items: center;
       justify-content: space-between; }
+      @media (max-width: 992px) {
+        .workspace .workspace-toolbar .zoom-selector {
+          display: none; } }
   .workspace .presentation-name {
     display: inline;
     line-height: 32px;
