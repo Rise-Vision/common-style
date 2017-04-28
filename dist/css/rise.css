@@ -13685,44 +13685,43 @@ tr.blocked-file {
           /* Safari */
           transform: translateX(0);
           display: block; } }
-
-.workspace-board {
-  background-color: #FFF;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  height: calc(100vh - 105px);
-  position: relative;
-  z-index: 80;
-  margin-left: 290px;
-  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /* Safari 3.1 to 6.0 */
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  perspective: 800px; }
-  @media (max-width: 992px) {
-    .workspace-board {
-      height: calc(100vh - 125px); } }
-  @media (max-width: 768px) {
-    .workspace-board {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      margin-left: 0;
-      width: 100%;
-      z-index: 40; } }
-  .workspace-board.hide-sidebar .workspace-toolbar {
+  .workspace .workspace-board {
+    background-color: #FFF;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: calc(100vh - 105px);
+    position: relative;
+    z-index: 80;
+    margin-left: 290px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Safari 3.1 to 6.0 */
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    perspective: 800px; }
+    @media (max-width: 992px) {
+      .workspace .workspace-board {
+        height: calc(100vh - 125px); } }
+    @media (max-width: 768px) {
+      .workspace .workspace-board {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        z-index: 40; } }
+  .workspace.hide-sidebar .workspace-toolbar {
     width: calc(100% - 11px);
     left: 0;
     padding-left: 11px; }
-  .workspace-board.hide-sidebar .workspace-sidebar {
+  .workspace.hide-sidebar .workspace-sidebar {
     -webkit-transform: translateX(-290px);
     /* Safari */
     transform: translateX(-290px); }
-  .workspace-board.hide-sidebar .workspace-board {
+  .workspace.hide-sidebar .workspace-board {
     margin-left: 0; }
   @media (max-width: 768px) {
-    .workspace-board.hide-sidebar .workspace-toolbar {
+    .workspace.hide-sidebar .workspace-toolbar {
       width: 100%; }
-    .workspace-board.hide-sidebar .workspace-sidebar {
+    .workspace.hide-sidebar .workspace-sidebar {
       -webkit-transform: translateX(-100%);
       /* Safari */
       transform: translateX(-100%); } }
@@ -13978,7 +13977,7 @@ tr.blocked-file {
   -moz-box-shadow: 0 0 0 10000px #d4d4d4;
   box-shadow: 0 0 0 10000px #d4d4d4;
   border: 12px solid #d4d4d4;
-  border-top-width: 60px;
+  border-top-width: 0px;
   margin-top: 60px;
   padding: 12px;
   -webkit-transition: all .4s;

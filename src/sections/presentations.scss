@@ -213,7 +213,7 @@ $panel-width: 290px;
       }
     }
   }  //sidebar
-} //workspace
+
 
   .workspace-board {
     background-color: #FFF;
@@ -238,7 +238,7 @@ $panel-width: 290px;
       width: 100%;
       z-index: 40;
     }
-  
+  }
   &.hide-sidebar {
     .workspace-toolbar {
       width: calc(100% - 11px);
@@ -264,7 +264,7 @@ $panel-width: 290px;
       }
     }
   }
-}
+} //workspace
 
 .active-banner-mode {
   .workspace-board {
@@ -569,7 +569,7 @@ $panel-width: 290px;
   -moz-box-shadow: 0 0 0 10000px #d4d4d4;
   box-shadow: 0 0 0 10000px #d4d4d4;
   border: 12px solid #d4d4d4;
-  border-top-width: 60px;
+  border-top-width: 0px;
   margin-top: 60px;
   padding: 12px;
   -webkit-transition: all .4s;
