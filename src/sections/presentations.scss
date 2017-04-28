@@ -212,6 +212,7 @@ $panel-width: 290px;
     -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     /* Safari 3.1 to 6.0 */
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    perspective: 800px;
     @media (max-width: $screen-md) {
       height: calc(100vh - 125px);
     }
@@ -555,6 +556,8 @@ $panel-width: 290px;
   box-shadow: 0 0 0 10000px #d4d4d4;
   border: 12px solid #d4d4d4;
   border-top-width: 60px;
+  margin-top: 60px;
+  padding: 12px;
 }
 
 .active-banner {
