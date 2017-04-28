@@ -67,6 +67,11 @@ All utilities have a prefix u_ added to them
   border-radius: $border-radius-base;
 }
 
+.u_bordered {
+  border: 1px solid $gray-lightest;
+  border-radius: $border-radius-base;
+}
+
 .fa.u_icon-gray:before {
     color: #BBB;
 }
