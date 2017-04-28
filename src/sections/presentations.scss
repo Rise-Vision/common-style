@@ -46,6 +46,13 @@ $panel-width: 290px;
                 display: inline;
             }
         }
+        .zoom-selector {
+            display: flex;
+            width: 140px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        }
         .presentation-name {
             display: inline;
             line-height: 32px;
@@ -224,7 +231,7 @@ $panel-width: 290px;
       width: 100%;
       z-index: 40;
     }
-  }
+  
   &.hide-sidebar {
     .workspace-toolbar {
       width: calc(100% - 11px);
