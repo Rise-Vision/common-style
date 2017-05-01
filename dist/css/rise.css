@@ -13395,6 +13395,9 @@ tr.blocked-file {
   padding: 4px;
   max-height: calc(100vh - 300px);
   width: 100%; }
+  @media (max-width: 768px) {
+    .container.storage-full .scrollable-list, .container.storage-full .template-grid {
+      max-height: calc(100vh - 330px); } }
 
 .modal-body.storage-full .scrollable-list, .modal-body.storage-full .template-grid {
   padding: 4px;
