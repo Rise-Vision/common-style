@@ -7,7 +7,7 @@
   left: 0px;
   bottom: 0px;
   z-index: $zindex-off-canvas;
-  padding: 0;
+  padding: 1px;
 
   @include box-shadow(0 0 8px rgba(0, 0, 0, 0.2));
 
