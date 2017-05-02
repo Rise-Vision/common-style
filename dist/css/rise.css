@@ -11016,7 +11016,7 @@ a[data-wysihtml5-command=underline].active {
   left: 0px;
   bottom: 0px;
   z-index: 1051;
-  padding: 1px;
+  padding: 0;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(0, 100%, 0);
