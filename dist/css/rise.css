@@ -7845,10 +7845,6 @@ All utilities have a prefix u_ added to them
   border: 1px solid #d5d5d5;
   border-radius: 4px; }
 
-.u_bordered {
-  border: 1px solid #e6e6e6;
-  border-radius: 4px; }
-
 .fa.u_icon-gray:before {
   color: #BBB; }
 
