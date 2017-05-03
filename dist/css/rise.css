@@ -13409,7 +13409,7 @@ tr.blocked-file {
       min-height: 210px; } }
 
 @media (max-width: 768px) {
-  .modal-md .modal-body.storage-full .scrollable-list, .modal-md .modal-body.storage-full .template-grid {
+  .storage-app .modal-body.storage-full .scrollable-list, .storage-app .modal-body.storage-full .template-grid {
     max-height: calc(100vh - 290px); } }
 
 .file-empty-state path {

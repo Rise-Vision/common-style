@@ -76,7 +76,7 @@
     }
 }
 
-.modal-md .modal-body.storage-full {
+.storage-app .modal-body.storage-full {
     .scrollable-list {
         @media (max-width: $screen-sm) {
             max-height: calc(100vh - 290px);
