@@ -58,14 +58,18 @@
         width: 16px;
         height: 16px;
         display: inline-block;
+        top: -2px;
+        position: relative;
+        margin-right: 7px;
       }
       span:last-child {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 125px;
+        width: 105px;
         display: inline-block;
-        line-height: 16px;
+        top: 2px;
+        position: relative;
       }
     }
     // p:last-child {
