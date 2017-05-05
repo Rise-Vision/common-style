@@ -14017,32 +14017,21 @@ tr.blocked-file {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2); }
   .ph-item-icon:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome,Arial,Helvetica Neue,Helvetica,sans-serif;
     content: '\f009';
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
-    top: 42%;
-    left: 50%;
-    margin-left: -30px;
-    margin-top: -30px;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.6); }
-  .ph-item-icon:after {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
     top: 50%;
-    position: relative;
+    left: 50%;
+    position: absolute;
+    line-height: 60px;
+    padding: 9px 12px;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.6);
-    padding: 12px; }
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .ph-item-icon.ph-video-item:before {
-    content: '\f03d'; }
-  .ph-item-icon.ph-video-item:after {
-    content: 'Video'; }
+    content: '\f03d \00a0 Video'; }
   .ph-item-icon.ph-embedded-item:before {
     padding: 6px 12px;
     content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjAgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYwIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42IiBkPSJNNTMuMSwySDYuN0MzLjgsMiwxLjQsNC4zLDEuNCw3LjJ2MzcuOGMwLDIuOSwyLjMsNS4yLDUuMiw1LjJoNDYuNWMyLjksMCw1LjItMi4zLDUuMi01LjJWNy4yQzU4LjQsNC4zLDU2LDIsNTMuMSwyeiBNMTAuNCwzNS4xbDkuNS0xOC45bDkuNSwxOC45SDEwLjR6IE00OC44LDM0LjlIMzUuMWMtMC43LDAtMS4zLTAuNi0xLjMtMS4zYzAtMC43LDAuNi0xLjMsMS4zLTEuM2gxMy43YzAuNywwLDEuMywwLjYsMS4zLDEuM0M1MC4xLDM0LjMsNDkuNSwzNC45LDQ4LjgsMzQuOXogTTQ4LjgsMjcuNEgzNS4xYy0wLjcsMC0xLjMtMC42LTEuMy0xLjNjMC0wLjcsMC42LTEuMywxLjMtMS4zaDEzLjdjMC43LDAsMS4zLDAuNiwxLjMsMS4zQzUwLjEsMjYuOCw0OS41LDI3LjQsNDguOCwyNy40eiBNNDguOCwxOS44SDM1LjFjLTAuNywwLTEuMy0wLjYtMS4zLTEuM3MwLjYtMS4zLDEuMy0xLjNoMTMuN2MwLjcsMCwxLjMsMC42LDEuMywxLjNTNDkuNSwxOS44LDQ4LjgsMTkuOHoiLz48L2c+PC9zdmc+); }
