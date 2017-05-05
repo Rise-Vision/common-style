@@ -13822,36 +13822,6 @@ tr.blocked-file {
     font-weight: 600;
     background: rgba(50, 50, 50, 0.35);
     text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555; }
-  .ph-block .ph-type {
-    position: absolute;
-    right: 3px;
-    line-height: 23px;
-    top: 3px;
-    z-index: 9999;
-    color: #FFF;
-    display: inline-block;
-    padding: 0 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    background: rgba(50, 50, 50, 0.35);
-    text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555; }
-    .ph-block .ph-type span:first-child {
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      margin-right: 7px; }
-    .ph-block .ph-type span:last-child {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      max-width: 125px;
-      display: inline-block;
-      position: relative;
-      top: 3px; }
-    .ph-block .ph-type svg {
-      fill: white;
-      -webkit-filter: drop-shadow(-2px 1px 1px #000);
-      filter: drop-shadow(-2px 1px 1px #000); }
   .ph-block.edit-mode {
     -webkit-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
     -moz-box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.65);
@@ -13934,7 +13904,7 @@ tr.blocked-file {
     color: white;
     z-index: 9999;
     border-radius: 11px;
-    border: 2px solid #00aaff; }
+    border: 2px solid #eee; }
     .artboard-presentation .edit-mode .resize.n-resize {
       top: -11px;
       left: calc(50% - 11px);
@@ -14051,7 +14021,7 @@ tr.blocked-file {
     content: '\f009';
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
-    top: 50%;
+    top: 42%;
     left: 50%;
     margin-left: -30px;
     margin-top: -30px;
@@ -14061,8 +14031,18 @@ tr.blocked-file {
     line-height: 60px;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.6); }
+  .ph-item-icon:after {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    top: 50%;
+    position: relative;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px; }
   .ph-item-icon.ph-video-item:before {
     content: '\f03d'; }
+  .ph-item-icon.ph-video-item:after {
+    content: 'Video'; }
   .ph-item-icon.ph-embedded-item:before {
     padding: 6px 12px;
     content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjAgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYwIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42IiBkPSJNNTMuMSwySDYuN0MzLjgsMiwxLjQsNC4zLDEuNCw3LjJ2MzcuOGMwLDIuOSwyLjMsNS4yLDUuMiw1LjJoNDYuNWMyLjksMCw1LjItMi4zLDUuMi01LjJWNy4yQzU4LjQsNC4zLDU2LDIsNTMuMSwyeiBNMTAuNCwzNS4xbDkuNS0xOC45bDkuNSwxOC45SDEwLjR6IE00OC44LDM0LjlIMzUuMWMtMC43LDAtMS4zLTAuNi0xLjMtMS4zYzAtMC43LDAuNi0xLjMsMS4zLTEuM2gxMy43YzAuNywwLDEuMywwLjYsMS4zLDEuM0M1MC4xLDM0LjMsNDkuNSwzNC45LDQ4LjgsMzQuOXogTTQ4LjgsMjcuNEgzNS4xYy0wLjcsMC0xLjMtMC42LTEuMy0xLjNjMC0wLjcsMC42LTEuMywxLjMtMS4zaDEzLjdjMC43LDAsMS4zLDAuNiwxLjMsMS4zQzUwLjEsMjYuOCw0OS41LDI3LjQsNDguOCwyNy40eiBNNDguOCwxOS44SDM1LjFjLTAuNywwLTEuMy0wLjYtMS4zLTEuM3MwLjYtMS4zLDEuMy0xLjNoMTMuN2MwLjcsMCwxLjMsMC42LDEuMywxLjNTNDkuNSwxOS44LDQ4LjgsMTkuOHoiLz48L2c+PC9zdmc+); }
