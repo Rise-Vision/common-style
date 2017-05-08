@@ -13555,10 +13555,17 @@ tr.blocked-file {
         display: inline; }
     .workspace .workspace-toolbar .zoom-selector {
       display: inline-flex;
-      width: 140px;
+      width: 148px;
+      cursor: pointer;
       align-items: center;
       justify-content: space-between;
       background-color: #fff; }
+      .workspace .workspace-toolbar .zoom-selector .dropdown-menu {
+        left: initial;
+        margin: -5px 13px 0;
+        min-width: 78px; }
+        .workspace .workspace-toolbar .zoom-selector .dropdown-menu li a {
+          color: #4d4d4d; }
       @media (max-width: 768px) {
         .workspace .workspace-toolbar .zoom-selector {
           display: none; } }

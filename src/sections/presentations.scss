@@ -47,15 +47,24 @@ $panel-width: 290px;
             }
         }
          .zoom-selector {
-             display: inline-flex;
-             width: 140px;
-             align-items: center;
-             justify-content: space-between;
-             background-color: #fff;
-               @media (max-width: $screen-sm) {
-                   display: none;
-               }
-         }
+              display: inline-flex;
+              width: 148px;
+              cursor: pointer;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #fff;
+              .dropdown-menu {
+                  left: initial;
+                  margin: -5px 13px 0;
+                  min-width: 78px;
+                  li a {
+                     color: #4d4d4d;
+                  }
+              }
+              @media (max-width: $screen-sm) {
+                  display: none;
+              }
+          }
 
         .presentation-name {
             display: inline;
