@@ -13898,44 +13898,44 @@ tr.blocked-file {
   width: 80%; }
   .artboard-presentation .edit-mode .resize {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
     background: white;
     color: white;
     z-index: 9999;
-    border-radius: 11px;
-    border: 2px solid #eee; }
+    border-radius: 8px;
+    border: 2px solid #bbb; }
     .artboard-presentation .edit-mode .resize.n-resize {
-      top: -11px;
-      left: calc(50% - 11px);
+      top: -8px;
+      left: calc(50% - 8px);
       cursor: n-resize; }
     .artboard-presentation .edit-mode .resize.e-resize {
-      top: calc(50% - 11px);
-      left: calc(100% - 11px);
+      top: calc(50% - 88px);
+      left: calc(100% - 8px);
       cursor: e-resize; }
     .artboard-presentation .edit-mode .resize.s-resize {
-      top: calc(100% - 11px);
-      left: calc(50% - 11px);
+      top: calc(100% - 8px);
+      left: calc(50% - 8px);
       cursor: s-resize; }
     .artboard-presentation .edit-mode .resize.w-resize {
-      top: calc(50% - 11px);
-      left: -11px;
+      top: calc(50% - 8px);
+      left: -8px;
       cursor: w-resize; }
     .artboard-presentation .edit-mode .resize.nw-resize {
-      top: -11px;
-      left: -11px;
+      top: -8px;
+      left: -8px;
       cursor: nw-resize; }
     .artboard-presentation .edit-mode .resize.ne-resize {
-      top: -11px;
-      left: calc(100% - 11px);
+      top: -8px;
+      left: calc(100% - 8px);
       cursor: ne-resize; }
     .artboard-presentation .edit-mode .resize.se-resize {
-      top: calc(100% - 11px);
-      left: calc(100% - 11px);
+      top: calc(100% - 8px);
+      left: calc(100% - 8px);
       cursor: se-resize; }
     .artboard-presentation .edit-mode .resize.sw-resize {
-      top: calc(100% - 11px);
-      left: -11px;
+      top: calc(100% - 8px);
+      left: -8px;
       cursor: sw-resize; }
 
 .html-editor {

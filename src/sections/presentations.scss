@@ -516,51 +516,51 @@ $panel-width: 290px;
     width: 80%;
     .edit-mode .resize {
         position: absolute;
-        width: 22px;
-        height: 22px;
+        width: 16px;
+        height: 16px;
         background: white;
         color: white;
         z-index: 9999;
-        border-radius: 11px;
-        border: 2px solid #eee;
+        border-radius: 8px;
+        border: 2px solid #bbb;
         &.n-resize {
-            top: -11px;
-            left: calc(50% - 11px);
+            top: -8px;
+            left: calc(50% - 8px);
             cursor: n-resize;
         }
         &.e-resize {
-            top: calc(50% - 11px);
-            left: calc(100% - 11px);
+            top: calc(50% - 88px);
+            left: calc(100% - 8px);
             cursor: e-resize;
         }
         &.s-resize {
-            top: calc(100% - 11px);
-            left: calc(50% - 11px);
+            top: calc(100% - 8px);
+            left: calc(50% - 8px);
             cursor: s-resize;
         }
         &.w-resize {
-            top: calc(50% - 11px);
-            left: -11px;
+            top: calc(50% - 8px);
+            left: -8px;
             cursor: w-resize;
         }
         &.nw-resize {
-            top: -11px;
-            left: -11px;
+            top: -8px;
+            left: -8px;
             cursor: nw-resize;
         }
         &.ne-resize {
-            top: -11px;
-            left: calc(100% - 11px);
+            top: -8px;
+            left: calc(100% - 8px);
             cursor: ne-resize;
         }
         &.se-resize {
-            top: calc(100% - 11px);
-            left: calc(100% - 11px);
+            top: calc(100% - 8px);
+            left: calc(100% - 8px);
             cursor: se-resize;
         }
         &.sw-resize {
-            top: calc(100% - 11px);
-            left: -11px;
+            top: calc(100% - 8px);
+            left: -8px;
             cursor: sw-resize;
         }
     }
