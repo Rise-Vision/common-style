@@ -53,9 +53,22 @@ $panel-width: 290px;
               align-items: center;
               justify-content: space-between;
               background-color: #fff;
+              & > div {
+                  height: 32px;
+                  width: 53px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  -webkit-touch-callout: none;
+                  -webkit-user-select: none;
+                  -khtml-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+              }
               .dropdown-menu {
                   left: initial;
-                  margin: -5px 13px 0;
+                  margin: -3px 22px 0;
                   min-width: 78px;
                   li a {
                      color: #4d4d4d;
@@ -65,6 +78,7 @@ $panel-width: 290px;
                   display: none;
               }
           }
+
 
         .presentation-name {
             display: inline;
