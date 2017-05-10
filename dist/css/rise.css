@@ -13910,7 +13910,7 @@ tr.blocked-file {
       left: calc(50% - 8px);
       cursor: n-resize; }
     .artboard-presentation .edit-mode .resize.e-resize {
-      top: calc(50% - 88px);
+      top: calc(50% - 8px);
       left: calc(100% - 8px);
       cursor: e-resize; }
     .artboard-presentation .edit-mode .resize.s-resize {
