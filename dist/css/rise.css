@@ -12791,7 +12791,7 @@ ul.tree ul li:last-child:before {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      width: 105px;
+      width: 125px;
       display: inline-block;
       line-height: 16px; }
   .name-container svg path {
