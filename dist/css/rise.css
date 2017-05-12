@@ -11455,7 +11455,7 @@ li.dropdown-header {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   margin-bottom: 5px;
-  padding: 8px 8px 3px 8px; }
+  padding: 8px; }
   .editor-playlist .editor-playlist-item:hover {
     border: 1px solid #bcbcbc; }
   .editor-playlist .editor-playlist-item p,
@@ -12794,9 +12794,6 @@ ul.tree ul li:last-child:before {
       width: 125px;
       display: inline-block;
       line-height: 16px; }
-  .name-container p:last-child {
-    position: relative;
-    top: -7px; }
   .name-container svg path {
     fill: #0081BA; }
   .name-container p span {
@@ -14017,6 +14014,9 @@ tr.blocked-file {
 .workspace-sidebar-content .image-placeholder {
   width: auto;
   height: 128px; }
+
+.workspace-sidebar-content .editor-playlist-item {
+  padding: 8px 8px 3px 8px; }
 
 .ph-item-icon {
   position: absolute;
