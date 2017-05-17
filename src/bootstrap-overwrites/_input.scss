@@ -1,3 +1,31 @@
 .form-control {
-	box-shadow: none;
+    box-shadow: none;
+}
+
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+::-webkit-outer-spin-button {
+	-webkit-appearance: none;
 }

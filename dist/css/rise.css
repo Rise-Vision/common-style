@@ -5460,7 +5460,7 @@ button.close {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
-.fa-rotate-90 {
+.fa-rotate-90, .fa-rotate-grip {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -7370,6 +7370,29 @@ button.close {
 .form-control {
   box-shadow: none; }
 
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0; }
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
 /* ==========================================================================
    Modals
    ========================================================================== */
@@ -7800,11 +7823,27 @@ All utilities have a prefix u_ added to them
    ==========================================================================
    To be used with forms and buttons
 */
-.u_ellipsis, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
+.u_ellipsis, .u_ellipsis-sm, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+@media (max-width: 767px) {
+  .u_ellipsis-sm {
+    width: 60px; } }
+
+@media (min-width: 768px) {
+  .u_ellipsis-sm {
+    max-width: 100px; } }
+
+@media (min-width: 992px) {
+  .u_ellipsis-sm {
+    max-width: 140px; } }
+
+@media (min-width: 1200px) {
+  .u_ellipsis-sm {
+    max-width: 160px; } }
 
 @media (max-width: 767px) {
   .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .box-list .title, .box-list p, .box-list .box-list-body, .box-list .box-list-aside, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
@@ -8044,12 +8083,19 @@ All utilities have a prefix u_ added to them
   background: url("//s3.amazonaws.com/rise-common-test/images/glyphicons-back.png") center no-repeat; }
 
 .fa.fa-grip-large {
-  position: relative;
+  position: absolute;
   left: -11px;
   top: 20px;
   color: #ddd; }
   .fa.fa-grip-large:before {
     content: "\f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142"; }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .fa-rotate-grip {
+      -webkit-transform: rotate(90deg) scaleX(2);
+      left: -5px !important;
+      top: 21px !important; } } }
 
 /* ==========================================================================
    Glyphicons
@@ -10352,7 +10398,7 @@ All utilities have a prefix u_ added to them
 /* Display Layouts
    ========================================================================== */
 .l_display-screenshot .panel-body {
-  min-height: 300px;
+  min-height: 270px;
   max-height: 300px;
   height: 300px;
   padding-top: 105px;
@@ -11486,6 +11532,7 @@ li.dropdown-header {
       border-radius: 0 0 3px 3px; }
 
 .editor-playlist .list-grip {
+  position: relative;
   float: left;
   width: 25px;
   margin-right: 3px;
@@ -13666,6 +13713,8 @@ tr.blocked-file {
         .workspace .workspace-sidebar .ph-list .editor-playlist {
           margin-right: 0;
           max-height: calc(100vh - 300px); } }
+      .workspace .workspace-sidebar .ph-list .editor-playlist .editor-playlist-item div:nth-child(2) {
+        display: flex; }
     @media (max-width: 768px) {
       .workspace .workspace-sidebar .ph-settings .scrollable-list, .workspace .workspace-sidebar .ph-settings .template-grid {
         max-height: calc(100vh - 350px) !important; } }
@@ -13999,9 +14048,6 @@ tr.blocked-file {
 .workspace-sidebar-content .image-placeholder {
   width: auto;
   height: 128px; }
-
-.workspace-sidebar-content .editor-playlist-item {
-  padding: 8px 8px 3px 8px; }
 
 .ph-item-icon {
   position: absolute;

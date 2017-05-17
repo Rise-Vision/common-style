@@ -29,11 +29,23 @@
 }
 
 .fa.fa-grip-large {
-  position: relative;
+  position: absolute;
   left: -11px;
   top: 20px;
   color:#ddd;
     &:before {
       content: "\f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142 \202F \f142";
+    }
+  }
+
+  .fa-rotate-grip {
+    @extend .fa-rotate-90;
+    @media not all and (min-resolution:.001dpcm)
+    {
+        @supports (-webkit-appearance: none) {
+            -webkit-transform: rotate(90deg) scaleX(2);
+            left: -5px !important;
+            top: 21px !important;
+        }
     }
   }

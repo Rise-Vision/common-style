@@ -184,6 +184,11 @@ $panel-width: 290px;
         margin-right: 0;
         max-height: calc(100vh - 300px);
       }
+      .editor-playlist-item {
+           & div:nth-child(2) {
+          display: flex;
+        }
+      }
     }
   }
     .ph-settings {
@@ -606,10 +611,6 @@ $panel-width: 290px;
   .image-placeholder {
     width: auto;
     height: 128px;
-  }
-
-  .editor-playlist-item {
-    padding: 8px 8px 3px 8px;
   }
 }
 

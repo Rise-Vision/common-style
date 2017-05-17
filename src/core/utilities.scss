@@ -25,6 +25,22 @@ All utilities have a prefix u_ added to them
   white-space: nowrap;
 }
 
+.u_ellipsis-sm {
+  @extend .u_ellipsis;
+  @media(max-width: $screen-xs-max){
+    width: 60px;
+  }
+  @media(min-width: $screen-sm){
+    max-width: 100px;
+  }
+  @media(min-width: $screen-md){
+    max-width: 140px;
+  }
+  @media(min-width: $screen-lg){
+    max-width: 160px;
+  }
+}
+
 .u_ellipsis-md {
   @extend .u_ellipsis;
   @media(max-width: $screen-xs-max){
