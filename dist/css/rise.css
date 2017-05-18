@@ -13941,47 +13941,62 @@ tr.blocked-file {
 .artboard-presentation {
   position: absolute;
   width: 80%; }
-  .artboard-presentation .edit-mode {
+  .artboard-presentation .n-resize {
     position: absolute;
-    width: 16px;
-    height: 16px;
-    background: white;
-    color: white;
-    z-index: 9999;
-    border-radius: 8px;
-    border: 2px solid #bbb; }
-    .artboard-presentation .edit-mode .n-resize {
-      top: -8px;
-      left: calc(50% - 8px);
-      cursor: n-resize; }
-    .artboard-presentation .edit-mode .e-resize {
-      top: calc(50% - 8px);
-      left: calc(100% - 8px);
-      cursor: e-resize; }
-    .artboard-presentation .edit-mode .s-resize {
-      top: calc(100% - 8px);
-      left: calc(50% - 8px);
-      cursor: s-resize; }
-    .artboard-presentation .edit-mode .w-resize {
-      top: calc(50% - 8px);
-      left: -8px;
-      cursor: w-resize; }
-    .artboard-presentation .edit-mode .nw-resize {
-      top: -8px;
-      left: -8px;
-      cursor: nw-resize; }
-    .artboard-presentation .edit-mode .ne-resize {
-      top: -8px;
-      left: calc(100% - 8px);
-      cursor: ne-resize; }
-    .artboard-presentation .edit-mode .se-resize {
-      top: calc(100% - 8px);
-      left: calc(100% - 8px);
-      cursor: se-resize; }
-    .artboard-presentation .edit-mode .sw-resize {
-      top: calc(100% - 8px);
-      left: -8px;
-      cursor: sw-resize; }
+    top: -3px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    cursor: n-resize; }
+  .artboard-presentation .e-resize {
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 2px);
+    width: 5px;
+    height: 100%;
+    cursor: w-resize; }
+  .artboard-presentation .s-resize {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    cursor: s-resize; }
+  .artboard-presentation .w-resize {
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    width: 5px;
+    height: 100%;
+    cursor: e-resize; }
+  .artboard-presentation .nw-resize {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    cursor: nw-resize; }
+  .artboard-presentation .ne-resize {
+    position: absolute;
+    top: -3px;
+    left: calc(100% - 4px);
+    width: 7px;
+    height: 7px;
+    cursor: ne-resize; }
+  .artboard-presentation .se-resize {
+    position: absolute;
+    top: calc(100% - 4px);
+    left: calc(100% - 4px);
+    width: 7px;
+    height: 7px;
+    cursor: se-resize; }
+  .artboard-presentation .sw-resize {
+    position: absolute;
+    top: calc(100% - 4px);
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    cursor: sw-resize; }
 
 .html-editor {
   position: absolute;
