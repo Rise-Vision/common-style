@@ -483,7 +483,7 @@ $panel-width: 290px;
 .artboard-presentation {
     position: absolute;
     width: 80%;
-    .edit-mode .resize {
+    .edit-mode {
         position: absolute;
         width: 16px;
         height: 16px;
@@ -492,42 +492,42 @@ $panel-width: 290px;
         z-index: 9999;
         border-radius: 8px;
         border: 2px solid #bbb;
-        &.n-resize {
+        .n-resize {
             top: -8px;
             left: calc(50% - 8px);
             cursor: n-resize;
         }
-        &.e-resize {
+        .e-resize {
             top: calc(50% - 8px);
             left: calc(100% - 8px);
             cursor: e-resize;
         }
-        &.s-resize {
+        .s-resize {
             top: calc(100% - 8px);
             left: calc(50% - 8px);
             cursor: s-resize;
         }
-        &.w-resize {
+        .w-resize {
             top: calc(50% - 8px);
             left: -8px;
             cursor: w-resize;
         }
-        &.nw-resize {
+        .nw-resize {
             top: -8px;
             left: -8px;
             cursor: nw-resize;
         }
-        &.ne-resize {
+        .ne-resize {
             top: -8px;
             left: calc(100% - 8px);
             cursor: ne-resize;
         }
-        &.se-resize {
+        .se-resize {
             top: calc(100% - 8px);
             left: calc(100% - 8px);
             cursor: se-resize;
         }
-        &.sw-resize {
+        .sw-resize {
             top: calc(100% - 8px);
             left: -8px;
             cursor: sw-resize;

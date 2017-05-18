@@ -13941,7 +13941,7 @@ tr.blocked-file {
 .artboard-presentation {
   position: absolute;
   width: 80%; }
-  .artboard-presentation .edit-mode .resize {
+  .artboard-presentation .edit-mode {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -13950,35 +13950,35 @@ tr.blocked-file {
     z-index: 9999;
     border-radius: 8px;
     border: 2px solid #bbb; }
-    .artboard-presentation .edit-mode .resize.n-resize {
+    .artboard-presentation .edit-mode .n-resize {
       top: -8px;
       left: calc(50% - 8px);
       cursor: n-resize; }
-    .artboard-presentation .edit-mode .resize.e-resize {
+    .artboard-presentation .edit-mode .e-resize {
       top: calc(50% - 8px);
       left: calc(100% - 8px);
       cursor: e-resize; }
-    .artboard-presentation .edit-mode .resize.s-resize {
+    .artboard-presentation .edit-mode .s-resize {
       top: calc(100% - 8px);
       left: calc(50% - 8px);
       cursor: s-resize; }
-    .artboard-presentation .edit-mode .resize.w-resize {
+    .artboard-presentation .edit-mode .w-resize {
       top: calc(50% - 8px);
       left: -8px;
       cursor: w-resize; }
-    .artboard-presentation .edit-mode .resize.nw-resize {
+    .artboard-presentation .edit-mode .nw-resize {
       top: -8px;
       left: -8px;
       cursor: nw-resize; }
-    .artboard-presentation .edit-mode .resize.ne-resize {
+    .artboard-presentation .edit-mode .ne-resize {
       top: -8px;
       left: calc(100% - 8px);
       cursor: ne-resize; }
-    .artboard-presentation .edit-mode .resize.se-resize {
+    .artboard-presentation .edit-mode .se-resize {
       top: calc(100% - 8px);
       left: calc(100% - 8px);
       cursor: se-resize; }
-    .artboard-presentation .edit-mode .resize.sw-resize {
+    .artboard-presentation .edit-mode .sw-resize {
       top: calc(100% - 8px);
       left: -8px;
       cursor: sw-resize; }
