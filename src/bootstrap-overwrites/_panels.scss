@@ -1,64 +1,32 @@
 .panel {
  border-color: $light-border-color;
- //TODO: Is this required?
- // > .panel-heading {
- //   position: relative;
- //   background: #f7f7f7;
- //   padding: 8px;
- //   border: none;
- //   border-left: 0;
- //    }
 }
 
-//TODO: TURN TO 'PENDING ACTIONS PANEL? KEEP INFO PANEL?'
-.panel-info {
-    border: 1px solid lighten($rise-blue, 40%);
-    > .panel-heading {
-        .toolbar {
-            text-align: right;
-            margin-right: 30px;
-            padding: 3px 0;
-            @media (max-width: $screen-sm) {
-                margin-right: 0;
-                margin-top: 10px;
-                .btn {
-                    display: block;
-                    width: 100%;
-                    margin-bottom: 4px;
-                }
-            }
-        }
-    }
-    > .panel-body {
-        // border-left: 3px solid lighten($rise-blue, 40%);
-        background: lighten($rise-blue, 55%);
-        padding: 0 15px;
-        .table {
+// .panel-info {
+//     border: 1px solid lighten($rise-blue, 40%);
+//     > .panel-body {
+//         background: lighten($rise-blue, 55%);
+//         padding: 0 15px;
+//     }
+// }
+
+.progress-panel {
+    overflow: hidden;
+    .panel-body {
+        border-left: 3px solid #d4d4d4;
+         .table { // see if this is required?
           margin-bottom: 0;
             tbody > tr {
                 > td {
                     padding: 12px 8px;
                     line-height: 1.22857;
                     vertical-align: top;
-                    border-top: 1px solid #87daff;
                 }
                 &:first-child > td {
                     border-top: 0;
                 }
-                //TODO: Does this serve a function?
-                // &:last-child > td {
-                //         text-align: right;
-                // }
             }
         }
-    }
-}
-
-//TODO: TURN TO UPLOAD PANEL
-.upload-panel {
-    overflow: hidden;
-    .panel-body {
-        border-left: 3px solid #d4d4d4;
     }
     .panel-header {  //TODO: Should this be global?
         background: #f7f7f7;
@@ -87,18 +55,6 @@
             float: right;
         }
     }
-    // .ellipsed {
-    //     text-overflow: ellipsis;
-    //     overflow: hidden;
-    //     display: inline-block;
-    //     vertical-align: top;
-    //     @media (max-width: $screen-xs) {
-    //         width: 120px;
-    //     }
-    //     @media (max-width: $screen-sm) {
-    //         width: 180px;
-    //     }
-    // }
     .actions-block {
         text-align: right;
     }
@@ -109,19 +65,3 @@
         float: right;
     }
 }
-
-/* Deprecate
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== 
-   ========================================================================== */
-   
-// .content-box {
-//     @extend .panel,
-//     .panel-default;
-// }
-
-// .content-box-body {
-//     @extend .panel-body;
-// }
