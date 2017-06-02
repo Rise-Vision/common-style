@@ -639,7 +639,7 @@ $panel-width: 290px;
   background: rgba(0, 0, 0, 0.2);
   &:before {
     font-family: FontAwesome,Arial,Helvetica Neue,Helvetica,sans-serif;
-    content: '\f009';
+    content: '\f009 \00a0' attr(data-before);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     top: 50%;
@@ -647,7 +647,7 @@ $panel-width: 290px;
     position: absolute;
     width: auto;
     height: auto;
-    line-height: 43px;
+    line-height: 30px;
     padding: 2px 17px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
@@ -656,7 +656,7 @@ $panel-width: 290px;
   }
   &.ph-video-item {
     &:before {
-      content: '\f03d \00a0 Video';
+      content: '\f03d \00a0' attr(data-before);
     }
   }
   &.ph-embedded-item {
@@ -668,5 +668,3 @@ $panel-width: 290px;
             }
   }
 }
-
-

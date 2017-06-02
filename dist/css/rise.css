@@ -14050,7 +14050,7 @@ tr.blocked-file {
   background: rgba(0, 0, 0, 0.2); }
   .ph-item-icon:before {
     font-family: FontAwesome,Arial,Helvetica Neue,Helvetica,sans-serif;
-    content: '\f009';
+    content: " " attr(data-before);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     top: 50%;
@@ -14058,14 +14058,14 @@ tr.blocked-file {
     position: absolute;
     width: auto;
     height: auto;
-    line-height: 43px;
+    line-height: 30px;
     padding: 2px 17px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .ph-item-icon.ph-video-item:before {
-    content: '\f03d \00a0 Video'; }
+    content: " " attr(data-before); }
   .ph-item-icon.ph-embedded-item:before {
     width: 47px;
     height: 45px;
