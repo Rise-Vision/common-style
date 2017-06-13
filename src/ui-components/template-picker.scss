@@ -29,7 +29,7 @@
   	display: none;
   	font-family: FontAwesome;
   	width: 100%;
-  	height: calc(100% - 64px);
+  	height: calc(100% - 76px);
   	position: absolute;
   	background: rgba(50,50,50,0.8);
   	font-size: 24px;
@@ -38,11 +38,13 @@
   	top:0;
   	z-index: 1000;
     &:before {
-      content:'\f002';
-      display: block;
+      content: '\f002';
+      display: flex;
       text-align: center;
       color: #FFF;
-      line-height: 150px;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
   }
   &:hover {
@@ -119,18 +121,27 @@
 	h3 {
 		margin: 0 0 8px;
 		font-size: 14px;
-		max-width: 200px;
+		max-width: 165px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-	p {
-		margin: 0;
-		font-size: 12px;
-		color: #999;
-		line-height: 10px;
-	}
+  .template-price {
+        margin: 0;
+        font-size: 12px;
+        line-height: 10px;
+        padding: 5px;
+        width: 60px;
+        color: $rise-blue;
+        border: 1px solid $rise-blue;
+        &.free {
+            width: 36px;
+            color: $rise-green;
+            border: 1px solid $rise-green;
+        }
+    }
 }
+
 
 .suggest-template {
 	text-align: left;
@@ -173,3 +184,15 @@
     margin-right: 4px;
   }
 }
+.template-splash-image {
+    padding: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    & img {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+

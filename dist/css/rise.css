@@ -10455,6 +10455,19 @@ iframe.modal-dialog {
   /* Display & Box Model */
   min-width: 50px; }
 
+/* Alignment classes */
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.justify {
+  text-align: justify; }
+
 /* ==========================================================================
    Font Picker
    ========================================================================== */
@@ -12569,7 +12582,7 @@ ul.tree ul li:last-child:before {
     display: none;
     font-family: FontAwesome;
     width: 100%;
-    height: calc(100% - 64px);
+    height: calc(100% - 76px);
     position: absolute;
     background: rgba(50, 50, 50, 0.8);
     font-size: 24px;
@@ -12579,10 +12592,12 @@ ul.tree ul li:last-child:before {
     z-index: 1000; }
     .template-grid li .show-details:before {
       content: '\f002';
-      display: block;
+      display: flex;
       text-align: center;
       color: #FFF;
-      line-height: 150px; }
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
   .template-grid li:hover .show-details {
     display: block; }
 
@@ -12639,15 +12654,22 @@ ul.tree ul li:last-child:before {
   .template-info h3 {
     margin: 0 0 8px;
     font-size: 14px;
-    max-width: 200px;
+    max-width: 165px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  .template-info p {
+  .template-info .template-price {
     margin: 0;
     font-size: 12px;
-    color: #999;
-    line-height: 10px; }
+    line-height: 10px;
+    padding: 5px;
+    width: 60px;
+    color: #0081BA;
+    border: 1px solid #0081BA; }
+    .template-info .template-price.free {
+      width: 36px;
+      color: #4ab767;
+      border: 1px solid #4ab767; }
 
 .suggest-template {
   text-align: left; }
@@ -12680,6 +12702,16 @@ ul.tree ul li:last-child:before {
     font-weight: 800;
     color: #222;
     margin-right: 4px; }
+
+.template-splash-image {
+  padding: 16px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center; }
+  .template-splash-image img {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; }
 
 #intercom-launcher {
   list-style: none;
