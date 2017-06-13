@@ -12723,10 +12723,10 @@ ul.tree ul li:last-child:before {
 .template-splash-image {
   padding: 16px;
   border-radius: 4px;
-  text-align: center;
-  display: block; }
+  display: inline-block;
+  text-align: center; }
   .template-splash-image img {
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin: 0 auto; }
 
