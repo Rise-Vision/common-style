@@ -187,12 +187,17 @@
 .template-splash-image {
     padding: 16px;
     border-radius: 4px;
-    display: inline-block;
     text-align: center;
+    height: 412px;
+    display: inline-flex;
     & img {
         width: 80%;
         text-align: center;
         margin: 0 auto;
     }
 }
+
+// #addStoreProductModal {
+//   width: 96%;
+// }
 
