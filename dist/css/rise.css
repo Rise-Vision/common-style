@@ -12708,7 +12708,7 @@ ul.tree ul li:last-child:before {
   border-radius: 4px;
   text-align: center;
   height: 412px;
-  display: inline-flex; }
+  display: block; }
   .template-splash-image img {
     width: 80%;
     text-align: center;
