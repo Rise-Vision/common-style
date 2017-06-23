@@ -12854,7 +12854,7 @@ ul.tree ul li:last-child:before {
   cursor: default;
   margin: 0;
   padding: 10px 10px 10px 50px;
-  width: 22%;
+  width: 23%;
   height: 100%;
   float: left;
   position: relative;
@@ -12922,8 +12922,7 @@ ul.tree ul li:last-child:before {
   border-left: 37px solid #ddd; }
 
 .arrow-steps .step.completed span:first-child {
-  font-size: 17px;
-  margin-left: 0; }
+  font-size: 17px; }
 
 .arrow-steps .step.completed span:first-child:before {
   content: "✔";
@@ -12964,14 +12963,51 @@ ul.tree ul li:last-child:before {
   justify-content: center;
   line-height: 17px; }
 
+@media (max-width: 1200px) {
+  .arrow-steps .step span:first-child {
+    font-size: 14px;
+    display: flex;
+    line-height: 16px; }
+  .arrow-steps .step.completed span:first-child {
+    font-size: 14px;
+    display: flex;
+    line-height: 16px; }
+  .arrow-steps .step.completed span.completed-tag {
+    font-size: 14px; }
+  .arrow-steps .step.completed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
+
+@media (max-width: 992px) {
+  .onboard-actions .btn, .onboard-actions .icon-nav label, .icon-nav .onboard-actions label {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px; }
+  .arrow-steps .step span:first-child {
+    font-size: 12px;
+    display: flex;
+    line-height: 16px; }
+  .arrow-steps .step.completed span:first-child {
+    font-size: 12px;
+    display: flex;
+    line-height: 16px; }
+  .arrow-steps .step.completed span.completed-tag {
+    font-size: 12px; }
+  .arrow-steps .step.completed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
+
 .proto-nav {
   position: absolute;
   right: 20px;
   top: 60px; }
   .proto-nav a {
     background-color: green;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: inline-block; }
   .proto-nav a:first-child {
     background-color: blue; }
