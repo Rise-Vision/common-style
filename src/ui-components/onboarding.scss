@@ -1,7 +1,7 @@
 .arrow-steps {
 	height: 80px;
 	width: 100%;
-	
+
 }
 
 // STEP COMPONENT
@@ -153,6 +153,12 @@
     justify-content: center;
     line-height: 17px;
     margin-left: 5px;
+}
+
+.arrow-steps .step.completed span:last-child:before {
+	content: "";
+	top: -2px;
+	left: -20px;
 }
 
 //RESPONSIVE CLASSES

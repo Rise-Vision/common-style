@@ -12966,6 +12966,11 @@ ul.tree ul li:last-child:before {
   line-height: 17px;
   margin-left: 5px; }
 
+.arrow-steps .step.completed span:last-child:before {
+  content: "";
+  top: -2px;
+  left: -20px; }
+
 @media (max-width: 1200px) {
   .arrow-steps .step span:first-child {
     font-size: 14px;
