@@ -1,8 +1,7 @@
 .arrow-steps {
 	height: 80px;
 	width: 100%;
-	margin-bottom: 20px;
-	margin-top: 10px;
+	
 }
 
 // STEP COMPONENT
@@ -23,7 +22,6 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none; 
-  	// transition: background-color 0.2s ease;
   	border-left: 5px solid #fff;
 }
 .arrow-steps .step:first-child {
@@ -43,7 +41,6 @@
     border-bottom: 39px solid transparent;
     border-left: 37px solid #eee;
     z-index: 2;
-    // transition: border-color .2s ease;
 }
 
 .arrow-steps .step:before {
@@ -65,7 +62,6 @@
 	border: 0;
 }
 
-
 // STEP CONTENTS
 
 .arrow-steps .step span:first-child {
@@ -80,6 +76,11 @@
 	background-color: #def4e4;
 }
 
+.arrow-steps .step.current span:first-child {
+	color: #444;
+    font-weight: 500;
+}
+
 .arrow-steps .step.current:after {
 	border-left: 37px solid #def4e4;	
 }
@@ -91,13 +92,11 @@
     width: 100%;
 }
 
-
 // STEP - COMPLETED
 
 .arrow-steps .step.completed {
 	color: #8d8d8d;
 	background-color: #ddd;
-
 }
 
 .arrow-steps .step.completed:after {
@@ -106,7 +105,6 @@
 
 .arrow-steps .step.completed span:first-child {
     font-size: 17px;
-    // margin-left: 0;
 }
 
 .arrow-steps .step.completed span:first-child:before {
@@ -120,22 +118,6 @@
     font-size: 14px;
     display: block;
 }
-// .arrow-steps .step.completed span.completed-tag:first-child {
-//     left: 0;
-// }
-// .arrow-steps .step.completed span.completed-tag:after,
-// {
-// 	content: " ";
-//     position: absolute;
-//     top: 0;
-//     right: -21px;
-//     width: 0;
-//     height: 0;
-//     border-top: 0px solid transparent;
-//     border-bottom: 23px solid transparent;
-//     border-left: 22px solid #ccc;
-//     z-index: 3;
-// }
 
 //FINAL STEP TALLY
 
@@ -170,6 +152,7 @@
     flex-direction: column;
     justify-content: center;
     line-height: 17px;
+    margin-left: 5px;
 }
 
 //RESPONSIVE CLASSES

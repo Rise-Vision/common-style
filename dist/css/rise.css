@@ -12843,9 +12843,7 @@ ul.tree ul li:last-child:before {
 
 .arrow-steps {
   height: 80px;
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 10px; }
+  width: 100%; }
 
 .arrow-steps .step {
   font-size: 14px;
@@ -12905,6 +12903,10 @@ ul.tree ul li:last-child:before {
   color: #4ab667;
   background-color: #def4e4; }
 
+.arrow-steps .step.current span:first-child {
+  color: #444;
+  font-weight: 500; }
+
 .arrow-steps .step.current:after {
   border-left: 37px solid #def4e4; }
 
@@ -12961,7 +12963,8 @@ ul.tree ul li:last-child:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 17px; }
+  line-height: 17px;
+  margin-left: 5px; }
 
 @media (max-width: 1200px) {
   .arrow-steps .step span:first-child {
