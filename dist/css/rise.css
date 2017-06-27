@@ -12987,7 +12987,7 @@ ul.tree ul li:last-child:before {
     flex-direction: column;
     justify-content: space-between; } }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .onboard-actions .btn, .onboard-actions .icon-nav label, .icon-nav .onboard-actions label {
     padding: 1px 5px;
     font-size: 12px;
@@ -13006,7 +13006,11 @@ ul.tree ul li:last-child:before {
   .arrow-steps .step.completed {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .arrow-steps .step:last-child span {
+    height: 100%;
+    margin-left: 0;
+    flex-direction: column; } }
 
 .proto-nav {
   position: absolute;
