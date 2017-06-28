@@ -12844,132 +12844,108 @@ ul.tree ul li:last-child:before {
 .arrow-steps {
   height: 80px;
   width: 100%; }
-
-.arrow-steps .step {
-  font-size: 14px;
-  text-align: center;
-  color: #666;
-  cursor: default;
-  margin: 0;
-  padding: 10px 10px 10px 50px;
-  width: 23%;
-  height: 100%;
-  float: left;
-  position: relative;
-  background-color: #eee;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-left: 5px solid #fff; }
-
-.arrow-steps .step:first-child {
-  padding-left: 30px;
-  width: 19%; }
-
-.arrow-steps .step:after,
-.arrow-steps .step:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: -37px;
-  width: 0;
-  height: 0;
-  border-top: 42px solid transparent;
-  border-bottom: 39px solid transparent;
-  border-left: 37px solid #eee;
-  z-index: 2; }
-
-.arrow-steps .step:before {
-  right: auto;
-  left: 0;
-  border-left: 37px solid #fff;
-  z-index: 0; }
-
-.arrow-steps .step:first-child:before {
-  border: none; }
-
-.arrow-steps .step:first-child {
-  border: 0; }
-
-.arrow-steps .step:last-child:after {
-  border: 0; }
-
-.arrow-steps .step span:first-child {
-  font-size: 17px;
-  margin-left: 12px; }
-
-.arrow-steps .step.current {
-  color: #4ab667;
-  background-color: #def4e4; }
-
-.arrow-steps .step.current span:first-child {
-  color: #444;
-  font-weight: 500; }
-
-.arrow-steps .step.current:after {
-  border-left: 37px solid #def4e4; }
-
-.arrow-steps .step.current span:nth-child(2) {
-  position: absolute;
-  bottom: 10px;
-  left: 18px;
-  width: 100%; }
-
-.arrow-steps .step.completed {
-  color: #8d8d8d;
-  background-color: #ddd; }
-
-.arrow-steps .step.completed:after {
-  border-left: 37px solid #ddd; }
-
-.arrow-steps .step.completed span:first-child {
-  font-size: 17px; }
-
-.arrow-steps .step.completed span:first-child:before {
-  content: "✔";
-  top: -2px;
-  left: -20px; }
-
-.arrow-steps .step.completed span.completed-tag {
-  background-color: #ccc;
-  font-size: 14px;
-  display: block; }
-
-.arrow-steps .step:last-child {
-  background-color: #fff;
-  width: 12%;
-  display: flex;
-  justify-content: center;
-  padding-left: 30px; }
-
-.arrow-steps .step:last-child span {
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 17px; }
-
-.arrow-steps .step.current:last-child {
-  color: #4ab667;
-  background-color: #def4e4;
-  width: 12%;
-  display: flex;
-  justify-content: center;
-  padding-left: 30px; }
-
-.arrow-steps .step.current:last-child span {
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 17px;
-  margin-left: 5px; }
-
-.arrow-steps .step.completed span:last-child:before {
-  content: "";
-  top: -2px;
-  left: -20px; }
+  .arrow-steps .step {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    cursor: default;
+    margin: 0;
+    padding: 10px 10px 10px 50px;
+    width: 23%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: #eee;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-left: 5px solid #fff; }
+    .arrow-steps .step:first-child {
+      padding-left: 30px;
+      width: 19%; }
+    .arrow-steps .step:after, .arrow-steps .step:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: -37px;
+      width: 0;
+      height: 0;
+      border-top: 42px solid transparent;
+      border-bottom: 39px solid transparent;
+      border-left: 37px solid #eee;
+      z-index: 2; }
+    .arrow-steps .step:before {
+      right: auto;
+      left: 0;
+      border-left: 37px solid #fff;
+      z-index: 0; }
+    .arrow-steps .step:first-child:before {
+      border: none; }
+    .arrow-steps .step:first-child, .arrow-steps .step:last-child:after {
+      border: 0; }
+    .arrow-steps .step span:first-child {
+      font-size: 17px;
+      margin-left: 12px; }
+    .arrow-steps .step.current {
+      color: #4ab667;
+      background-color: #def4e4; }
+    .arrow-steps .step.current span:first-child {
+      color: #444;
+      font-weight: 500; }
+    .arrow-steps .step.current:after {
+      border-left: 37px solid #def4e4; }
+    .arrow-steps .step.current span:nth-child(2) {
+      position: absolute;
+      bottom: 10px;
+      left: 18px;
+      width: 100%; }
+    .arrow-steps .step.completed {
+      color: #8d8d8d;
+      background-color: #ddd; }
+    .arrow-steps .step.completed:after {
+      border-left: 37px solid #ddd; }
+    .arrow-steps .step.completed span:first-child {
+      font-size: 17px; }
+    .arrow-steps .step.completed span:first-child:before {
+      content: "✔";
+      top: -2px;
+      left: -20px;
+      color: #4ab767; }
+    .arrow-steps .step.completed span.completed-tag {
+      background-color: #ccc;
+      font-size: 14px;
+      display: block; }
+    .arrow-steps .step:last-child {
+      background-color: #fff;
+      width: 12%;
+      display: flex;
+      justify-content: center;
+      padding-left: 30px; }
+    .arrow-steps .step:last-child span {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 17px; }
+    .arrow-steps .step.current:last-child {
+      color: #4ab667;
+      background-color: #def4e4;
+      width: 12%;
+      display: flex;
+      justify-content: center;
+      padding-left: 30px; }
+    .arrow-steps .step.current:last-child span {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 17px;
+      margin-left: 5px; }
+    .arrow-steps .step.completed span:last-child:before {
+      content: "";
+      top: -2px;
+      left: -20px; }
 
 @media (max-width: 1200px) {
   .arrow-steps .step span:first-child {
@@ -12988,11 +12964,6 @@ ul.tree ul li:last-child:before {
     justify-content: space-between; } }
 
 @media (max-width: 1200px) {
-  .onboard-actions .btn, .onboard-actions .icon-nav label, .icon-nav .onboard-actions label {
-    padding: 1px 5px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 2px; }
   .arrow-steps .step span:first-child {
     font-size: 12px;
     display: flex;
@@ -13010,7 +12981,12 @@ ul.tree ul li:last-child:before {
   .arrow-steps .step:last-child span {
     height: 100%;
     margin-left: 0;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .onboard-actions .btn, .onboard-actions .icon-nav label, .icon-nav .onboard-actions label {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px; } }
 
 .proto-nav {
   position: absolute;
@@ -13813,7 +13789,7 @@ tr.blocked-file {
     padding: 8px 0;
     position: absolute;
     top: 49px;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 190px);
     width: 290px;
     overflow: hidden;
     background-color: #f7f7f7;
@@ -13915,7 +13891,7 @@ tr.blocked-file {
     background-color: #FFF;
     overflow-x: scroll;
     overflow-y: scroll;
-    height: calc(100vh - 105px);
+    height: calc(100vh - 185px);
     position: relative;
     z-index: 80;
     margin-left: 290px;
