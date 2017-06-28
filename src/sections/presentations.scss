@@ -115,7 +115,7 @@ $panel-width: 290px;
     padding: 8px 0;
     position: absolute;
     top: 49px;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 140px);
     width: $panel-width;
     overflow: hidden;
     background-color: #f7f7f7;
@@ -247,7 +247,7 @@ $panel-width: 290px;
     background-color: #FFF;
     overflow-x: scroll;
     overflow-y: scroll;
-    height: calc(100vh - 185px);
+    height: calc(100vh - 105px);
     position: relative;
     z-index: 80;
     margin-left: $panel-width;
@@ -303,6 +303,15 @@ $panel-width: 290px;
 .active-banner-mode-double {
   .workspace-board {
     height: calc(100vh - 150px);
+  }
+}
+
+.active-onboard-mode {
+  .workspace-board {
+   height: calc(100vh - 185px);
+  }
+  .workspace-sidebar {
+    height: calc(100vh - 190px);
   }
 }
 

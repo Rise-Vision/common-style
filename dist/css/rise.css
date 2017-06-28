@@ -13789,7 +13789,7 @@ tr.blocked-file {
     padding: 8px 0;
     position: absolute;
     top: 49px;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 140px);
     width: 290px;
     overflow: hidden;
     background-color: #f7f7f7;
@@ -13891,7 +13891,7 @@ tr.blocked-file {
     background-color: #FFF;
     overflow-x: scroll;
     overflow-y: scroll;
-    height: calc(100vh - 185px);
+    height: calc(100vh - 105px);
     position: relative;
     z-index: 80;
     margin-left: 290px;
@@ -13933,6 +13933,12 @@ tr.blocked-file {
 
 .active-banner-mode-double .workspace-board {
   height: calc(100vh - 150px); }
+
+.active-onboard-mode .workspace-board {
+  height: calc(100vh - 185px); }
+
+.active-onboard-mode .workspace-sidebar {
+  height: calc(100vh - 190px); }
 
 .placeholder-item-name {
   width: 180px;
