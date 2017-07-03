@@ -12557,7 +12557,7 @@ ul.tree ul li:last-child:before {
 /* -- FLUID GRID STYLES -- */
 .template-grid {
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   border: none;
   max-height: calc(100vh - 320px); }
 
