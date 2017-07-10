@@ -12730,6 +12730,9 @@ ul.tree ul li:last-child:before {
     text-align: center;
     margin: 0 auto; }
 
+#productDetailsModal ul li {
+  font-size: 12px; }
+
 #intercom-launcher {
   list-style: none;
   position: fixed;
