@@ -196,11 +196,14 @@
         margin: 0 auto;
     }
 }
-#productDetailsModal ul li {
+#productDetailsModal  {
+  & ul li {
   font-size: 12px;
+  }
+  @media (max-width: 996px){
+    .img-responsive {
+       width: 80%;
+        margin: 0 auto;
+    }
+  }
 }
-
-// #addStoreProductModal {
-//   width: 96%;
-// }
-
