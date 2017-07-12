@@ -11362,6 +11362,11 @@ li.dropdown-header {
           width: 100%;
           margin: 0 0 5px;
           padding: 8px 0; } }
+  .app-header .info-link {
+    display: inline-block;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px; }
 
 .toolbar {
   overflow: hidden;
@@ -14283,6 +14288,17 @@ tr.blocked-file {
 
 .online:before {
   color: #4ab767; }
+
+.display-product {
+  padding: 4px 8px; }
+  .display-product a {
+    font-size: 12px; }
+
+.display-status {
+  padding: 4px 8px; }
+  .display-status a {
+    font-size: 12px;
+    display: block; }
 
 .panel .panel__header, .select-subcompany-modal .list-group .panel__header, .panel-editable .panel__header, .card .panel__header, #appLauncherContainer .scrollable-list .panel__header, #appLauncherContainer .template-grid .panel__header {
   font-size: 1.8em;
