@@ -41,15 +41,15 @@
    }
  }
 .display-product {
-  padding: 4px 8px;
+  padding: 4px 8px !important;
   & a {
     font-size:12px;
   }
 }
 .display-status {
-  padding: 4px 8px;
+  padding: 4px 8px !important;
   & a {
-    font-size: 12px;
+    font-size: 12px ;
     display: block;
   }
 }

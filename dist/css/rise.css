@@ -14290,12 +14290,12 @@ tr.blocked-file {
   color: #4ab767; }
 
 .display-product {
-  padding: 4px 8px; }
+  padding: 4px 8px !important; }
   .display-product a {
     font-size: 12px; }
 
 .display-status {
-  padding: 4px 8px; }
+  padding: 4px 8px !important; }
   .display-status a {
     font-size: 12px;
     display: block; }
