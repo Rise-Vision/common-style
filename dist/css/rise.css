@@ -13935,10 +13935,10 @@ tr.blocked-file {
   height: calc(100vh - 150px); }
 
 .active-onboard-mode .workspace-board {
-  height: calc(100vh - 185px); }
+  height: calc(100vh - 225px); }
 
 .active-onboard-mode .workspace-sidebar {
-  height: calc(100vh - 190px); }
+  height: calc(100vh - 225px); }
 
 .placeholder-item-name {
   width: 180px;
