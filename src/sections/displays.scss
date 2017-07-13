@@ -53,3 +53,13 @@
     display: block;
   }
 }
+
+#displaysListTable {
+  .btn-link.btn-xs {
+    display: block;
+    text-decoration: underline;
+  }
+  span, a {
+    margin-left: 7px;
+  }
+}
