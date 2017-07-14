@@ -12988,18 +12988,6 @@ ul.tree ul li:last-child:before {
     line-height: 1.5;
     border-radius: 2px; } }
 
-.proto-nav {
-  position: absolute;
-  right: 20px;
-  top: 60px; }
-  .proto-nav a {
-    background-color: green;
-    width: 10px;
-    height: 10px;
-    display: inline-block; }
-  .proto-nav a:first-child {
-    background-color: blue; }
-
 /* Sections/Views
    ========================================================================== */
 /* ==========================================================================

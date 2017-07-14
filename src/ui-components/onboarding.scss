@@ -192,19 +192,3 @@
         border-radius: 2px;
     }
 }
-
-// TEMPORARY PROTOTYPE BUTTONS FOR TESTING
-.proto-nav {
-    position: absolute;
-    right: 20px;
-    top: 60px;
-    & a {
-        background-color: green;
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-    }
-    & a:first-child {
-        background-color: blue;
-    }
-}
