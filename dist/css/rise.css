@@ -7076,6 +7076,21 @@ button.close {
     width: 100%;
     margin-bottom: 10px; } }
 
+.btn-promo span::first-child {
+  display: block;
+  font-weight: bold;
+  font-size: 18px; }
+
+.btn-promo span::nth-child(2) {
+  display: block;
+  font-weight: bold;
+  font-size: 18px; }
+
+.btn-promo + ul {
+  display: none;
+  list-style-type: square;
+  padding-left: 40px; }
+
 .dropdown .dropdown-menu {
   top: 120%;
   left: auto;

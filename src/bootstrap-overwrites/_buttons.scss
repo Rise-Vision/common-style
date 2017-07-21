@@ -59,3 +59,24 @@
         }
     }
 }
+
+.btn-promo {
+    span::first-child { 
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    span::nth-child(2) { 
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    & + ul {
+        display: none;
+        list-style-type: square;
+        padding-left: 40px;
+    }
+}
+
+
+
