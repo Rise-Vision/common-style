@@ -7090,6 +7090,8 @@ button.close {
   display: none;
   list-style-type: square;
   padding-left: 40px; }
+  .btn-promo ~ ul li {
+    font-size: 12px; }
 
 .dropdown .dropdown-menu {
   top: 120%;
@@ -12727,14 +12729,6 @@ ul.tree ul li:last-child:before {
     width: 60%;
     text-align: center;
     margin: 0 auto; }
-
-#productDetailsModal ul li {
-  font-size: 12px; }
-
-@media (max-width: 996px) {
-  #productDetailsModal .img-responsive {
-    width: 80%;
-    margin: 0 auto; } }
 
 #intercom-launcher {
   list-style: none;
