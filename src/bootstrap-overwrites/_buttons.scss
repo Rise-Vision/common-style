@@ -67,9 +67,9 @@
         font-size: 18px;
     }
     span:nth-child(2) { 
+        word-break: break-word;
+        white-space: normal;
         display: block;
-        font-weight: bold;
-        font-size: 18px;
     }
     & ~ ul {
         display: none;
