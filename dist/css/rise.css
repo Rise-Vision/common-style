@@ -7082,15 +7082,9 @@ button.close {
   font-size: 18px; }
 
 .btn-promo span:nth-child(2) {
-<<<<<<< 5f2f58d920a52891776b38f611ac3c871d160cb3
   word-break: break-word;
   white-space: normal;
   display: block; }
-=======
-  display: block;
-  font-weight: bold;
-  font-size: 18px; }
->>>>>>> New button class
 
 .btn-promo ~ ul {
   display: none;
