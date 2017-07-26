@@ -7076,21 +7076,21 @@ button.close {
     width: 100%;
     margin-bottom: 10px; } }
 
-.btn-promo span:first-child {
+.btn-multi-line span:first-child {
   display: block;
   font-weight: bold;
   font-size: 18px; }
 
-.btn-promo span:nth-child(2) {
+.btn-multi-line span:nth-child(2) {
   word-break: break-word;
   white-space: normal;
   display: block; }
 
-.btn-promo ~ ul {
+.btn-multi-line ~ ul {
   display: none;
   list-style-type: square;
   padding-left: 40px; }
-  .btn-promo ~ ul li {
+  .btn-multi-line ~ ul li {
     font-size: 12px; }
 
 .dropdown .dropdown-menu {
