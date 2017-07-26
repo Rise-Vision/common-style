@@ -7087,7 +7087,6 @@ button.close {
   display: block; }
 
 .btn-multi-line ~ ul {
-  display: none;
   list-style-type: square;
   padding-left: 40px; }
   .btn-multi-line ~ ul li {
