@@ -14291,20 +14291,20 @@ tr.blocked-file {
 
 .display-product {
   padding: 4px 8px !important; }
-  .display-product a {
-    font-size: 12px; }
+  .display-product span, .display-product a {
+    font-size: 12px;
+    margin-left: 7px; }
+  .display-product .btn-link.btn-xs, .display-product .btn-group-xs > .btn-link.btn, .display-product .icon-nav .btn-group-xs > label.btn-link, .icon-nav .display-product .btn-group-xs > label.btn-link {
+    display: block; }
 
 .display-status {
   padding: 4px 8px !important; }
-  .display-status a {
+  .display-status span, .display-status a {
     font-size: 12px;
+    display: block;
+    margin-left: 7px; }
+  .display-status .btn-link.btn-xs, .display-status .btn-group-xs > .btn-link.btn, .display-status .icon-nav .btn-group-xs > label.btn-link, .icon-nav .display-status .btn-group-xs > label.btn-link {
     display: block; }
-
-#displaysListTable .btn-link.btn-xs, #displaysListTable .btn-group-xs > .btn-link.btn, #displaysListTable .icon-nav .btn-group-xs > label.btn-link, .icon-nav #displaysListTable .btn-group-xs > label.btn-link {
-  display: block; }
-
-#displaysListTable span, #displaysListTable a {
-  margin-left: 7px; }
 
 .panel .panel__header, .select-subcompany-modal .list-group .panel__header, .panel-editable .panel__header, .card .panel__header, #appLauncherContainer .scrollable-list .panel__header, #appLauncherContainer .template-grid .panel__header {
   font-size: 1.8em;
