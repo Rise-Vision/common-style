@@ -30,16 +30,17 @@
     color:#e74c3c;
    }
 }
-.notinstalled {
+ .notinstalled {
    &:before {
      color:#444;
    }
-}
-.online {
+ }
+ .online {
    &:before {
      color:$rise-green;
    }
  }
+ 
 .display-product {
   padding: 4px 8px !important;
   & span, a {
