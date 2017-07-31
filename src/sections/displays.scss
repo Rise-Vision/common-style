@@ -41,7 +41,7 @@
 .display-product {
   padding: 4px 8px !important;
   & span, a {
-    font-size:12px;
+    display: block;
     // margin-left: 7px;
   }
   & a {
