@@ -47,9 +47,9 @@
   & a {
     font-size: 12px ;
   }
-  // & .btn-link.btn-xs {
-  //   display: block; 
-  // }
+  & span:nth-child(2) {
+    display: inline;
+  }
 }
 .display-status {
   padding: 4px 8px !important;
