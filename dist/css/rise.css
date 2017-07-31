@@ -14292,7 +14292,7 @@ tr.blocked-file {
 .display-product {
   padding: 4px 8px !important; }
   .display-product span, .display-product a {
-    font-size: 12px; }
+    display: block; }
   .display-product a {
     font-size: 12px; }
 
