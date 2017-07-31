@@ -14292,15 +14292,16 @@ tr.blocked-file {
 .display-product {
   padding: 4px 8px !important; }
   .display-product span, .display-product a {
-    font-size: 12px;
-    margin-left: 7px; }
+    font-size: 12px; }
+  .display-product a {
+    font-size: 12px; }
 
 .display-status {
   padding: 4px 8px !important; }
   .display-status span, .display-status a {
-    font-size: 12px;
-    display: block;
-    margin-left: 7px; }
+    display: block; }
+  .display-status a {
+    font-size: 12px; }
   .display-status .btn-link.btn-xs, .display-status .btn-group-xs > .btn-link.btn, .display-status .icon-nav .btn-group-xs > label.btn-link, .icon-nav .display-status .btn-group-xs > label.btn-link {
     display: block; }
 
