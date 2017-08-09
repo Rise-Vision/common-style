@@ -193,6 +193,28 @@
     top: 3px;
 }
 
+// ONBOARDING INPUT FORM
+.pt-onboarding-list li {
+      height: 137px;
+      width: 137px;
+          span {
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 100%;
+            padding: 0 12px;
+            word-wrap: normal;
+            white-space: pre-line;
+            line-height: 15px;
+          }
+          img {
+            width: 40%;
+            height: 40%;
+            margin-top: 29px;
+            margin-left: 0px;
+        }
+}
+
 // REPLACE ABOVE WITH SCROLLING THUMBS IMGS
 .btn-upload {
     background: #f2f2f2;
