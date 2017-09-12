@@ -30,7 +30,14 @@
 }
 
 .btn-google-auth {
-    @include button-variant($gray, $white, $btn-default-bg, $btn-default-border-disabled, darken($google-red, 10%), lighten($google-red, 5%));
+    @include button-variant($white, #4285F4, $btn-default-bg, $btn-default-border-disabled, darken($google-red, 10%), lighten($google-red, 5%));
+    & img {
+        width: 9%;
+        background-color: white;
+        margin-right: 10px;
+        padding: 2px;
+
+    }
 }
 
 .btn-white {

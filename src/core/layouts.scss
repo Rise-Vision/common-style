@@ -30,3 +30,42 @@
         }
     }
 }
+
+/* Dividers and Labels
+   ========================================================================== */
+.section-divider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    align-items: stretch;
+    border: 0 solid #d82a2a;
+    display: flex;
+    flex-shrink: 0;
+    padding: 0;
+    position: relative;
+    & div {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        background-color: #c7c7c7;
+        height: 1px;
+        position: relative;
+        top: .45em;
+        }
+    & span {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 15px;
+        margin: 0 18px;
+    }
+}

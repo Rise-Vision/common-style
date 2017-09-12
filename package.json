@@ -1,6 +1,6 @@
 {
   "name": "rv-common-style",
-  "version": "1.4.27",
+  "version": "1.5.0",
   "description": "Common CSS/SASS styling to be shared across Rise Vision apps, widgets and components.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

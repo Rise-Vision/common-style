@@ -237,8 +237,8 @@
 }
 
 .app-launcher-login {
-	padding-top: 64px;
-	background: url('https://s3.amazonaws.com/Rise-Images/UI/triangles.svg');
+	padding-top: 44px;
+	background-color: #f2fcf4;
 	background-size: cover;
 	height: 100vh;
 	h1 {
@@ -249,8 +249,7 @@
 	}
 	.rise-logo {
 		text-align: center;
-		border-right: 1px solid #CCC;
-		padding: 110px 0;
+		padding: 210px 0;
 		img {
 			width: 150px;
 		}
@@ -258,6 +257,7 @@
 			border-right: none;
 			text-align: left;
 			padding:0;
+			margin-bottom: 22px;
 			img {
 				width: 100px;
 			}

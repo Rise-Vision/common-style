@@ -7023,13 +7023,13 @@ button.close {
     border-color: #5cbe76; }
 
 .btn-google-auth {
-  color: #5b5b5b;
-  background-color: #fff;
+  color: #fff;
+  background-color: #4285F4;
   border-color: #e8e8e8; }
   .btn-google-auth:hover, .btn-google-auth:focus, .btn-google-auth:active, .btn-google-auth.active,
   .open > .btn-google-auth.dropdown-toggle {
-    color: #5b5b5b;
-    background-color: #f2f2f2;
+    color: #fff;
+    background-color: #2a75f3;
     border-color: #c9c9c9;
     outline: 0; }
   .btn-google-auth.disabled, .btn-google-auth.disabled:hover, .btn-google-auth.disabled:focus, .btn-google-auth.disabled:active, .btn-google-auth.disabled.active, .btn-google-auth[disabled], .btn-google-auth[disabled]:hover, .btn-google-auth[disabled]:focus, .btn-google-auth[disabled]:active, .btn-google-auth[disabled].active,
@@ -7038,8 +7038,13 @@ button.close {
   fieldset[disabled] .btn-google-auth:focus,
   fieldset[disabled] .btn-google-auth:active,
   fieldset[disabled] .btn-google-auth.active {
-    background-color: #fff;
+    background-color: #4285F4;
     border-color: #e25d48; }
+  .btn-google-auth img {
+    width: 9%;
+    background-color: white;
+    margin-right: 10px;
+    padding: 2px; }
 
 .btn-white {
   color: #3b9352;
@@ -10410,6 +10415,42 @@ All utilities have a prefix u_ added to them
   filter: gray;
   filter: grayscale(100%);
   filter: url(desaturate.svg#greyscale); }
+
+/* Dividers and Labels
+   ========================================================================== */
+.section-divider {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  align-items: stretch;
+  border: 0 solid #d82a2a;
+  display: flex;
+  flex-shrink: 0;
+  padding: 0;
+  position: relative; }
+  .section-divider div {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    background-color: #c7c7c7;
+    height: 1px;
+    position: relative;
+    top: .45em; }
+  .section-divider span {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0 18px; }
 
 /* UI-Components
    ========================================================================== */
@@ -16113,8 +16154,8 @@ a.mfp-iframe:hover:after {
       font-weight: 800; }
 
 .app-launcher-login {
-  padding-top: 64px;
-  background: url("https://s3.amazonaws.com/Rise-Images/UI/triangles.svg");
+  padding-top: 44px;
+  background-color: #f2fcf4;
   background-size: cover;
   height: 100vh; }
   .app-launcher-login h1 {
@@ -16123,14 +16164,14 @@ a.mfp-iframe:hover:after {
     padding: 32px; }
   .app-launcher-login .rise-logo {
     text-align: center;
-    border-right: 1px solid #CCC;
-    padding: 110px 0; }
+    padding: 210px 0; }
     .app-launcher-login .rise-logo img {
       width: 150px; }
     @media (max-width: 768px) {
       .app-launcher-login .rise-logo {
         border-right: none;
         text-align: left;
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 22px; }
         .app-launcher-login .rise-logo img {
           width: 100px; } }
