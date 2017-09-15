@@ -10979,7 +10979,7 @@ a[data-wysihtml5-command=underline].active {
   height: 100%;
   width: 100%;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.75); }
