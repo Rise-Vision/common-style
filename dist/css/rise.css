@@ -11697,7 +11697,10 @@ li.dropdown-header {
 /* Bullet List
    ========================================================================== */
 .bullet-list ul li {
-  list-style-type: disc; }
+  list-style-type: disc;
+  margin-left: 30px; }
+  .bullet-list ul li:first-child {
+    margin-top: 12px; }
 
 .store.grid-list {
   /* Small devices  */
