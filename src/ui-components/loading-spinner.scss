@@ -37,3 +37,10 @@
   left: 0;
   background: rgba(255, 255, 255, .75);
 }
+
+ul, .inner-box, .panel, .scrollable-list, .modal-dialog {
+  .spinner-backdrop {
+    //Absolute position for tables/lists/panels using rv-spinner
+    position: absolute;
+  }
+}
