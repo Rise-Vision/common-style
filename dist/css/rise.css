@@ -13926,7 +13926,7 @@ tr.blocked-file {
       float: right;
       opacity: 0; }
       .workspace .workspace-sidebar .ph-properties .scrollable-list, .workspace .workspace-sidebar .ph-properties .template-grid {
-        max-height: calc(100vh - 450px); }
+        max-height: calc(100vh - 240px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-properties {
           -webkit-transform: translateX(0);
@@ -14009,6 +14009,8 @@ tr.blocked-file {
 
 .active-onboard-mode .workspace-sidebar {
   height: calc(100vh - 225px); }
+  .active-onboard-mode .workspace-sidebar .ph-properties .scrollable-list, .active-onboard-mode .workspace-sidebar .ph-properties .template-grid {
+    max-height: calc(100vh - 450px); }
 
 .placeholder-item-name {
   width: 180px;
