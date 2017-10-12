@@ -13869,7 +13869,7 @@ tr.blocked-file {
     border-right: 1px solid #e6e6e6; }
     .workspace .workspace-sidebar .scrollable-list, .workspace .workspace-sidebar .template-grid {
       min-height: 45px;
-      max-height: calc(100vh - 450px);
+      max-height: calc(100vh - 150px);
       font-size: 13px; }
     .workspace .workspace-sidebar #listWithHandle.scrollable-list, .workspace .workspace-sidebar #listWithHandle.template-grid {
       max-height: calc(100vh - 290px); }
@@ -13926,7 +13926,7 @@ tr.blocked-file {
       float: right;
       opacity: 0; }
       .workspace .workspace-sidebar .ph-properties .scrollable-list, .workspace .workspace-sidebar .ph-properties .template-grid {
-        max-height: calc(100vh - 240px); }
+        max-height: calc(100vh - 450px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-properties {
           -webkit-transform: translateX(0);
