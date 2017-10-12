@@ -13869,7 +13869,7 @@ tr.blocked-file {
     border-right: 1px solid #e6e6e6; }
     .workspace .workspace-sidebar .scrollable-list, .workspace .workspace-sidebar .template-grid {
       min-height: 45px;
-      max-height: calc(100vh - 150px);
+      max-height: calc(100vh - 450px);
       font-size: 13px; }
     .workspace .workspace-sidebar #listWithHandle.scrollable-list, .workspace .workspace-sidebar #listWithHandle.template-grid {
       max-height: calc(100vh - 290px); }
