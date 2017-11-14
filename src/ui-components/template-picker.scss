@@ -1,198 +1,69 @@
-/* -- FLUID GRID STYLES -- */
-
-.template-grid {
-  @extend .scrollable-list;
-  padding: 0;
-  margin-bottom: 0;
-  border: none;
-  max-height: calc(100vh - 320px);
-}
-
-.template-grid li{
-  display: inline-block;
-  box-shadow: 0 2px 5px 0 rgba(80,80,80,0.1),0 2px 10px 0 rgba(80,80,80,0.1);
-  background: #eee;
-  margin-right: 22px;
-  width: 22.6%;
-  padding-top: calc(14% + 64px); /* Used instead of height to give elements fluid, width-based height */
-  margin-bottom: 2.5%;
-  position: relative;
-  > .template-image {
-  	display: block;
-  	position: absolute;
+.product-grid {
+  .product-grid_image {
     overflow: hidden;
-  	top: 0;
-  	width: 100%;
-  	height: 100%;
-  }
-  .show-details {
-  	display: none;
-  	font-family: FontAwesome;
-  	width: 100%;
-  	height: calc(100% - 76px);
-  	position: absolute;
-  	background: rgba(50,50,50,0.8);
-  	font-size: 24px;
-  	color: #FFF;
-  	font-weight: 800;
-  	top:0;
-  	z-index: 1000;
-    &:before {
-      content: '\f002';
-      display: flex;
-      text-align: center;
-      color: #FFF;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-  }
-  &:hover {
-  	.show-details {
-  		display: block;
-  	}
-  }
-}
-
-.template-grid:after{
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-.template-grid .placeholder{
-  padding: 0;
-}
-
-/* 2 COL */
-
-@media (max-width: 996px){
-  .template-grid li{
-    width: 48%;
-    padding-top: calc(26.4% + 64px);
-    margin-bottom: 4%;
-    margin-right: 5px;
-  }
-}
-
-/* SINGLE COL */
-
-@media (max-width: $screen-sm){
-  .template-grid li{
-    width: 100%;
-    padding-top: calc(55.2% + 64px);
-    margin-bottom: 5%;
-    margin-right: 0;
-  }
-}
-
-.blank-template {
-	.template-image {
-		color: #999;
-	}
-  a {
-    color: $rise-green;
-  }
-	p {
-		text-align: center;		
-		height: 100%;
-		padding-top: 26%;
-		background: #FFF;
-		font-size: 24px;
-		span {
-			display: block;
-		}
-	}
-	&:hover {
-  	&:before {
-  		display:none !important;
-  	}
-  }
-}
-
-.template-info {
-	background: #FFF;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 15px;
-	color: $gray;
-	text-align: left;
-	h3 {
-		margin: 0 0 8px;
-		font-size: 14px;
-		max-width: 165px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-  .template-price {
-        margin: 0;
-        font-size: 12px;
-        line-height: 10px;
-        padding: 5px;
-        width: 60px;
-        color: $rise-blue;
-        border: 1px solid $rise-blue;
-        &.free {
-            width: 36px;
-            color: $rise-green;
-            border: 1px solid $rise-green;
-        }
-    }
-}
-
-
-.suggest-template {
-	text-align: left;
-	.template-image {
-		padding: 0 20px;
-		display: block;
-		background: $rise-green;
-		color: #FFF;
-    a {
-      color: #FFF;
-    }
-	}
-	h3 {
-		margin: 0 0 5px 0;
-		padding-top: 26%;
-		color: #FFF;
-		font-size: 21px;
-	}
-	p {
-		margin: 0;
-	}
-	&:hover {
-  	&:before {
-  		display:none !important;
-  	}
-  }
-}
-
-.template-pricing {
-  color: #666;
-  line-height: 30px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  span {
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: 32px;
-    font-weight: 800;
-    color: #222;
-    margin-right: 4px;
-  }
-}
-.template-splash-image {
-    padding: 16px;
-    border-radius: 4px;
+    background: #222;
     text-align: center;
-    // height: 412px;
-    display: block;
-    & img {
-        width: 60%;
-        text-align: center;
-        margin: 0 auto;
+    position: relative;
+    img {
+      width: 100%;
     }
+  }
+  .product-grid_details {
+    padding: 1em;
+    h4 {
+      margin-top:0;
+    }
+  }
+}
+
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+   ========================================================================== */
+
+ 
+@media (min-width: 768px) {
+  .product-grid {
+    .product-grid_image {
+      height: 220px;
+      img {
+        bottom: -5000px;
+        left: -5000px;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: -5000px;
+        top: -5000px;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   Medium devices (desktops, 992px and up) 
+   ========================================================================== */
+   
+@media (min-width: 992px) {
+  .product-grid {
+    .product-grid_image {
+      height: 180px;
+    }
+    .product-grid_details {
+      h4 {
+        min-height: 44px;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   Large devices (desktops, 1200px and up) 
+   ========================================================================== */
+   
+@media (min-width: 1200px) {
+  .product-grid {
+    .product-grid_image {
+      height: 150px;
+    }
+  }
 }
